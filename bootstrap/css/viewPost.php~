@@ -1,0 +1,13 @@
+<?php
+   include "DAO/attendantDAO.php";
+   
+   session_start();
+   
+   $username=$_SESSION['username'];
+   
+   $action = new Attendant();
+   $action = ViewPost($username);   
+   
+
+
+?>

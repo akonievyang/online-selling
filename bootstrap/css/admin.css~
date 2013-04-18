@@ -1,0 +1,209 @@
+table{
+   font-family:monospace;
+ 
+}
+div.topko{ 
+   background-color:#9FC5E8;
+   height:100px;  
+   width:100%  
+   font-family:cursive;
+   font-weight:normal;
+   font-size:20px;
+   color:#E8E8E8;
+   
+}  
+div.maincontent{
+ 
+   background-color:#ededde;
+   position:absolute;
+   height:100%;
+   width:100%;
+
+}
+div.wholecontent{
+   
+   position:relative;
+   background-color:#fff;
+   height:100%;
+   width:80%;
+   left:10%;
+   border: 10px solid #fff; 
+   box-shadow: 6px 0 4px -4px #222 , -6px 0 4px -4px #222; 
+   -moz-box-shadow: 6px 0 4px -4px #222, -6px 0 4px -4px #222; 
+   -webkit-box-shadow: 6px 0 4px -4px #222, -6px 0 4px -4px #222;
+}
+span.icon-remove{
+    cursor:pointer;
+    float:right;
+    background-color:#fff;
+}
+div.down{
+   background-color:#000;
+   width:100%;
+   height:100%;
+}
+#iconV{
+   margin-left:30%;
+}
+#iconC{
+   margin-left:20px;
+}
+
+div#profilepic{
+
+   margin-left:80%;
+   position:absolute;
+   width:10%;
+   height:15%;
+   
+}
+
+div.home,div#tabss{
+   left:0;
+   top:170px;
+}
+div#video_div{
+   height:60%;
+}
+
+div#customer_div,div#video_div,div.addAttendant{
+   width:20%; 
+   top:25%;
+   background-color:#000;
+   margin-left:40%;
+}
+
+div#loading,div#customer,div.dialog,div.errorMessage,div#overlay_customer,div#overlay_video,#addfile,
+#savev,div#tabss,div.addAttendant,div.uploading,div.overlay_addt,#rentals  {
+     display:none;   
+}
+div.home,div#tabss,div#overlay_customer,div#overlay_video,fieldset.topForm,div.overlay_addt{
+   width:100%;
+   height:100%;
+}
+div#overlay_customer,div#overlay_video,div.overlay_addt{
+  background-color:rgba(225,225,225, .50);
+}
+div.errorMessage,div#overlay_customer,div#overlay_video,div.overlay_addt{
+    top:0;
+}
+div#overlay_customer,div#overlay_video,div#customer_div,div#video_div,div.overlay_addt,div.addAttendant{
+    position:fixed;
+    left:0;
+}
+div.home,div#tabss{
+   position:absolute;
+      
+}
+
+div.allmessages{
+   width:100%;
+   top:50px;  
+   
+}
+
+input[type="button"]{
+   font-family:monospace;
+
+}
+
+li,th{
+   font-size:20px;
+   font-weight:bold;
+   font-family:arial;
+}
+label{
+
+  color:#fff;
+}
+div.errorMessage{
+   background-color:#A9A9A9;
+   width:20%;
+   height:80px;
+   box-shadow:10px 10px 5px #888888;
+   margin-left:35%;
+   border-radius:10px;
+
+}
+
+div.mainbut{
+  float:right;
+  margin:10px;
+  border-right:1px solid #003399; 
+  display:inline;
+  
+} 
+
+div.topForm{
+   position:absolute;
+   top:0;
+   background-color:#00f;  
+    width:100%;  
+}
+
+h3,form{
+   padding-left:18px;
+    
+}
+div.form{
+   margin-top:100px;
+}
+
+button.bt_id{
+   width:70%;
+   height:40px;;
+}
+
+
+textarea#txtInput{ 
+ height:40px;
+ width:700px;
+ overflow:hidden;
+
+}
+button#clickpost{
+   margin-left:620px;
+
+
+}
+
+.addworker p{
+   text-decoration:underline;
+   width:100px;
+   height:100%;
+   background-color:#000;
+   color:#fff;
+}
+div#post{
+   margin-left:15%;
+}
+div.allmessages{
+   margin-top:40px;
+}
+.linkbut{
+  
+    text-decoration:underline;
+    margin-left:5px;
+    background-color:orange;
+    width:150px;
+    font-size:20px;
+    text-align:center;
+}
+
+#litem{
+   top:180px;
+}
+#lmem{
+   top:350px;
+
+}
+.wholeTable{
+   position:relative;
+   top:50px;
+   
+}
+#ladd{
+   top:520px;
+}
+
+

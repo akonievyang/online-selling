@@ -1,0 +1,20 @@
+<?php
+
+   include "DAO/baseDAO.php";
+   class OnlineSelling extends BaseDAO {
+   
+      function Messages($msg){
+         $this->open();
+     
+            $stmt=$this->dbh->prepare("Insert into visitor values(null,?)");
+            $stmt->bindParam(1,$msg);
+            $stmt->execute();
+     
+            echo "<p id='you'>You:</p> ".$msg;
+         $this->close();
+      }
+   
+
+   }
+?>
+

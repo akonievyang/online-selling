@@ -1,0 +1,221 @@
+
+
+div.logOut{
+   padding-left:90%;
+
+}
+
+
+.addcustomer , .return ,.addrentals,.rentals,div.overlay_customer,
+.customer,#tablesearch,#tablesearch,.itemrented{
+ 
+   display: none;
+}
+
+div.intop{
+   background-color:#9FC5E8;
+   height:100px;  
+   width:100%;
+  
+}
+div.wholeth{
+   color:#E8E8E8;
+   background:transparent;
+   padding-top:50px;
+   padding-left:50px; 
+   float:right;
+   font-family:cursive;
+   font-weight:normal;
+   
+}
+div.mainBut{
+  margin:10px;
+  border-right:1px solid #003399; 
+  
+} 
+#logout,div.mainBut{
+   font-size:20px;
+   font-family:arial;
+   display:inline;
+   cursor:pointer;
+}
+  
+ .return ,.items,.rentals,.addrentals,.customer{
+   margin-top:10%;
+   font-family:monospace;
+   font-size:20px;
+   margin-left:5%;
+   background-color:#fff;
+}
+
+.addcustomer {
+   position:fixed;
+   top:10%;
+   left:42%;
+
+}
+
+div.overlay_customer{
+   position:fixed;
+   width:100%;
+   height:100%;
+   top:0;
+   left:0;
+   color:#fff;
+   background-color:rgba(225,225,225, .50);
+   z-index:1000;  
+}
+
+div.addcustomer,div.allsearch,span.icon-remove{
+    background-color:#fff;
+
+}
+div.addcustomer,div.allsearch{  
+   width:20%;
+}
+div.allsearch{ 
+   margin-left:75%;
+   top:100px;
+}
+form label{
+   font-size:25px;
+}
+
+form{  
+   padding-left:25px;
+   padding-top:20px;
+   font-family:serif;
+    
+}
+
+fieldset.bgBlue,.top{
+   background-color:#00f; 
+}
+fieldset.bgBlue{
+   width:272px; 
+   font-family:berlin sans fb demi;
+}
+
+
+h3,h4{  
+  
+   padding-left:17px;  
+   color:#000;
+}
+div.li{
+   padding-top:20px;
+   padding:50px;
+
+}
+li{
+   padding:10px;
+
+}
+
+div.rentinfo{
+   width:20%;
+   height:50%;
+   border:2px solid #bbb;
+   background-color:#000;
+   left:35%;
+   top:30%;
+}
+.inputButton{
+   margin-top:30px;
+  
+}
+span.icon-remove{
+   float:right;
+}
+   
+
+.icon-remove{
+   cursor:pointer;
+   
+}
+.overlay_addCustomer{
+   background-color:#000;
+}
+div.maincontent{
+   background-image:url('../images/bg.jpeg');
+   background-color:#ededde;
+   position:absolute;
+   height:100%;
+   width:100%;
+
+}
+div.wholecontent{
+   background-color:#fff;
+   height:100%;
+   width:80%;
+   margin-left:10%;
+   border: 10px solid #fff; 
+   box-shadow: 6px 0 4px -4px #222 , -6px 0 4px -4px #222; 
+    -moz-box-shadow: 6px 0 4px -4px #222, -6px 0 4px -4px #222; 
+   -webkit-box-shadow: 6px 0 4px -4px #222,-6px 0 4px -4px #222; ;
+}
+
+
+
+div.customerADD{
+  border: 2px solid orange;
+   display:inline;
+   width:150px;
+   position:absolute;
+   background-color:orange;
+   text-align:center;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position:absolute;
+  font-size:20px;
+  left:88px;
+  cursor:pointer;  
+  text-align:center;
+  top:20%;
+  height:30px;
+
+}
+
+div.title{
+   border-radius:10px;
+   border: 5px solid red ;
+   width:200px;
+   text-align:center; 
+   background-color:yellow;
+   position:relative;
+   top:20px;
+}
+.itemrented{
+   position:relative;
+   margin-left:20%;  
+}
+
+.all{
+   
+   width:500px;
+   border:15px solid green;
+   background-color:green;
+   border-radius:20px;
+   
+}
+.rentedContent{
+      
+   margin-top:30px;
+}
+.right{
+   float:right;
+
+}
+div.goyes{
+   margin-left:40%;
+}
+#tablesearch {
+   float:right;
+   width:200px;
+   border:5px ridge #dedede;
+   background-color:#dedede;
+}
+
