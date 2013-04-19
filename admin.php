@@ -4,9 +4,16 @@
 <html>
 	<head></head>
 	<body>
-		<div class="add_item">
+		<div class="wholePage">
+			<div class="content">
+
 				
-		<div>
-	
+
+
+			</div>
+			<div class="add_item">
+					
+			<div>
+		</div>
 	</body>
 </html>
