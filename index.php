@@ -46,6 +46,8 @@
     <button id="button_reg">REGISTER</button>
     <button id="button_log">Log-In</button>
 
+    <header><b>MyPhone</b></header>
+
     <div id = 'Log-inForm'>
 			
 			<h1>LOG-IN</h1>
@@ -77,11 +79,7 @@
 				?>
 				</p>
 						</br>
-				
 
-				</form>
-			
-				
 			</div>
 		</div>
 
@@ -90,24 +88,45 @@
 			<h2>Register</h2>
  
 		     <form>
-			 
 
-		         Firstname:	<input type="text" name ="firstname">
-				 Middlename:<input type="text" name ="middlename">
-				Lastname: <input type ="text" name ="lastname">
-				Address: <input type ="text" name ="address">
-				Age: 	<input type="text" name ="age">
-		       Gender: <select id = "gender" name = "gender">
-		            <option value = "male">Male</option>
-		            <option value = "female">Female</option>
-		            </select>
-		        Username:<input type="text" name="username">
-		        Password:<input type="password" name="password">
+                <p>
+                 Firstname:	<input type="text" name ="firstname">
+                 </p>
+                 <p>
+                 Middlename:   <input type="text" name ="middlename">
+                 </p>
+                 <p>
+                 Lastname: <input type ="text" name ="lastname">
+                 </p>
+                 <p>
+                 Address: <input type ="text" name ="address">
+                 </p>
+                 <p>
+                 Age: 	<br><input type="text" name ="age">
+                 </p>
+                     <tr>
+                 Gender: <select id = "gender" name = "gender">
+                     <option value = "male">Male</option>
+                     <option value = "female">Female</option>
+                 </select>
+                     </tr>
+                 <p>
+                 Username:<input type="text" name="username">
+                 </p>
+                 <p>
+                 Password:<input type="password" name="password">
+                 </p>
+
 		       
 		     </form>
-				<button id="reg">REGISTER</button>
+              <input type='submit' value='Register'/>
 		 </div>
-		
 
-	</body>
+                <div id = 'image'>
+                    <img src= "images/mp.jpg"/>
+                 </div>
+                    <p>Simply Amazing.Mura na Gawang Pinoy pa.</p>
+
+
+</body>
 </html>

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-alert('sakfzkSBf')
+
     $("#Register_Form").hide();
     $("#button_reg").click(function(){
         $("#Register_Form").dialog({
@@ -65,3 +65,4 @@ alert('sakfzkSBf')
 
 
 });
+

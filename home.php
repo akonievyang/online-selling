@@ -30,11 +30,13 @@
                     
                         <div class="topmenu">
                            <div class="menu" id="home"> Home </div>
-                           <div class="menu">Cellphone</div>     
-                           <div class="menu">COmputer</div>                              
+                           <div class="menu">Products</div>
+                           <div class="menu">Promos</div>
+                           <div class="menu">Contact Us</div>
                         </div>
 
-                        <div class="mainPic" id="slideshow">
+
+                      <div class="mainPic" id="slideshow">
                            <img src="images/img1.png" class="active" />
                            <img src="images/img2.png"  />
                            <img src="images/img3.png"  />
@@ -47,7 +49,7 @@
 
 
                         </div>
-                       
+
                  
                   <br>
                      <div class="product-view">
