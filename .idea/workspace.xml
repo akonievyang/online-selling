@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/bootstrap/css/home.css" line="80" />
-    <bookmark url="file://$PROJECT_DIR$/home.php" line="40" />
+    <bookmark url="file://$PROJECT_DIR$/bootstrap/css/home.css" line="98" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.min.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367629540736" ignored="false" />
+    <file path="/Dummy.txt" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367615898905" ignored="false" />
     <file path="/index.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367633008162" ignored="false" />
     <file path="/Dummy.regexp" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367553664852" ignored="false" />
     <file path="/injection.txt" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367553664852" ignored="false" />
@@ -44,7 +41,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="30" selection-start="1471" selection-end="1481" vertical-scroll-proportion="17.291666">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -53,7 +50,7 @@
       <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="7" selection-start="184" selection-end="184" vertical-scroll-proportion="-11.875">
+            <state line="19" column="7" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,7 +68,7 @@
       <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="27" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+            <state line="17" column="13" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,16 +77,7 @@
       <file leaf-file-name="Online_SellingDAO.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="18" selection-start="42" selection-end="55" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+            <state line="3" column="18" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,8 +86,10 @@
       <file leaf-file-name="home.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bootstrap/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="4" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.85714287">
-              <folding />
+            <state line="98" column="0" selection-start="1444" selection-end="1444" vertical-scroll-proportion="2.1585903">
+              <folding>
+                <marker date="1367615601833" expanded="true" signature="798:1176" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,16 +97,7 @@
       <file leaf-file-name="home.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="7" selection-start="1689" selection-end="1689" vertical-scroll-proportion="-14.583333">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sample" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="33" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0">
+            <state line="47" column="7" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -165,9 +146,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Unnamed" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="52" />
-    <option name="width" value="1440" />
-    <option name="height" value="824" />
+    <option name="x" value="-1" />
+    <option name="y" value="24" />
+    <option name="width" value="1442" />
+    <option name="height" value="853" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -235,80 +217,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -325,7 +233,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="92" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="119" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1017" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1017" />
@@ -390,14 +298,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="52" width="1440" height="824" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="24" width="1442" height="853" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27363896" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25107914" sideWeight="0.6704871" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25035867" sideWeight="0.6704871" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -473,9 +381,39 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/index.css">
+    <entry file="file://$PROJECT_DIR$/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0">
+        <state line="15" column="13" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="18" selection-start="42" selection-end="55" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="0" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1367615601833" expanded="true" signature="798:1176" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="7" selection-start="1624" selection-end="1624" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewDisplay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -497,13 +435,10 @@
     <entry file="file://$PROJECT_DIR$/bootstrap/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="30" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1367615601833" expanded="true" signature="798:1176" placeholder="{...}" />
+          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addMember.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="69" selection-end="69" vertical-scroll-proportion="-2.5" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/all.js">
@@ -515,7 +450,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="42" selection-end="55" vertical-scroll-proportion="0.0">
+        <state line="3" column="18" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -527,59 +462,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="1688" selection-end="1688" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="7" selection-start="184" selection-end="184" vertical-scroll-proportion="-11.875">
+        <state line="19" column="7" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="27" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0">
+        <state line="17" column="13" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="30" selection-start="1471" selection-end="1481" vertical-scroll-proportion="17.291666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="7" selection-start="1689" selection-end="1689" vertical-scroll-proportion="-14.583333">
+        <state line="47" column="7" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="4" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.85714287">
-          <folding />
+        <state line="98" column="0" selection-start="1444" selection-end="1444" vertical-scroll-proportion="2.1585903">
+          <folding>
+            <marker date="1367615601833" expanded="true" signature="798:1176" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
