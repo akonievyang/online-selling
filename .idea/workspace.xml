@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.php" afterPath="$PROJECT_DIR$/product.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/product.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +42,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -98,7 +98,7 @@
       <file leaf-file-name="home.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="7" selection-start="2183" selection-end="2183" vertical-scroll-proportion="-20.75">
+            <state line="50" column="7" selection-start="2183" selection-end="2183" vertical-scroll-proportion="-31.25">
               <folding />
             </state>
           </provider>
@@ -482,7 +482,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
@@ -498,7 +498,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="7" selection-start="2183" selection-end="2183" vertical-scroll-proportion="-20.75">
+        <state line="50" column="7" selection-start="2183" selection-end="2183" vertical-scroll-proportion="-31.25">
           <folding />
         </state>
       </provider>
