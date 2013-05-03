@@ -27,6 +27,7 @@
 
 ?>
 <!DOCTYPE HTML>
+<title>LogIn</title>
 <html>
 <head>
 
