@@ -1,3 +1,6 @@
+body{
+    background: url("../../images/myphone_logo1.jpg");
+}
 
 #home{
    border-left:1px solid #cccccc;
@@ -63,6 +66,11 @@
    line-height: normal;
    right:20px;
    top:200px;
+}
+h3{
+ text-align: center;
+ 
+
 }
 
 
