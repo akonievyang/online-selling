@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/product.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/online.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
@@ -20,6 +20,7 @@
     <file path="/addMember.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367556553004" ignored="false" />
     <file path="/index.js" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367558975117" ignored="false" />
     <file path="/index.css" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367636266064" ignored="false" />
+    <file path="/promo.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367619155493" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,10 +105,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="product.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="7" selection-start="7616" selection-end="7616" vertical-scroll-proportion="3.2985554">
+            <state line="137" column="7" selection-start="7616" selection-end="7616" vertical-scroll-proportion="-85.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="promo.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/promo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,6 +162,7 @@
         <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/bootstrap/css/home.css" />
         <option value="$PROJECT_DIR$/product.php" />
+        <option value="$PROJECT_DIR$/promo.php" />
       </list>
     </option>
   </component>
@@ -392,13 +403,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="42" selection-end="55" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="0" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0">
@@ -505,7 +509,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="7" selection-start="7616" selection-end="7616" vertical-scroll-proportion="3.2985554">
+        <state line="137" column="7" selection-start="7616" selection-end="7616" vertical-scroll-proportion="-85.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
