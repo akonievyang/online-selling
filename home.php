@@ -23,29 +23,52 @@
          </div>
         
                <div class="Content">
-                 
-                  <div class="topDesign">
-                           <h3>Welcome To MyPhone Community</h3>
-                  </div>
-                 
-                     <div class="topmenu">
-                        <div class="menu" id="home"> Home </div>
-                        <div class="menu">New product</div>
-                        <div class="menu">Top product </div>
-                               
+                  <div class="relative">
+                     <div class="topDesign">
+                        <h3>Have Fun</h3>               
                      </div>
-                     <div class="mainPic"></div>
-                     <div class="indemand"></div>
-                     </div>
-             
+                    
+                        <div class="topmenu">
+                           <div class="menu" id="home"> Home </div>
+                           <div class="menu">Cellphone</div>     
+                           <div class="menu">COmputer</div>                              
+                        </div>
+
+                        <div class="mainPic" id="slideshow">
+                           <img src="images/img1.png" class="active" />
+                           <img src="images/img2.png"  />
+                           <img src="images/img3.png"  />
+                           <img src="images/img4.png"  />
+                           <img src="images/img5.png"  />
+                           <img src="images/img6.png"  />
+                           <img src="images/img7.png"  />
+                           <img src="images/img8.png"  />
+                           <img src="images/img9.png"  />
+
+
+                        </div>
+                       
+                 
+                  <br>
+                     <div class="product-view">
+            
+                        <div class="advertise" id="latest product">
+                           <div class="title">Latest Product</div>
+                        </div>       
+                        <br>
+                        <div class="advertise" id="top product">
+                           <div class="title">Top Product</div>
+                        </div>    
+                        <br>
+                        <div class="advertise" id="recommended product">
+                           <div class="title">Recommended Product</div>
+                        </div>   
+                     </div>  
+                  </div>  
                </div>
-         
-               <div class="addDealer">
-                   
-               </div>>        
-        
       </div>
       
       
    </body>
 </html>
+
