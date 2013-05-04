@@ -5,10 +5,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/css/index.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/home.css" afterPath="$PROJECT_DIR$/bootstrap/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/index.css" afterPath="$PROJECT_DIR$/bootstrap/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,10 +38,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="30" selection-start="1471" selection-end="1481" vertical-scroll-proportion="-26.458334">
+            <state line="61" column="30" selection-start="1471" selection-end="1481" vertical-scroll-proportion="-0.37903225">
               <folding />
             </state>
           </provider>
@@ -95,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="1" selection-start="723" selection-end="725" vertical-scroll-proportion="0.32453415">
+            <state line="40" column="1" selection-start="723" selection-end="725" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -586,16 +583,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="30" selection-start="1471" selection-end="1481" vertical-scroll-proportion="-26.458334">
+        <state line="40" column="1" selection-start="723" selection-end="725" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/index.css">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="1" selection-start="723" selection-end="725" vertical-scroll-proportion="0.32453415">
+        <state line="61" column="30" selection-start="1471" selection-end="1481" vertical-scroll-proportion="-0.37903225">
           <folding />
         </state>
       </provider>
