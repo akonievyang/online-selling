@@ -2,22 +2,25 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/bootstrap/css/home.css" line="80" />
-    <bookmark url="file://$PROJECT_DIR$/home.php" line="40" />
+    <bookmark url="file://$PROJECT_DIR$/home.php" line="41" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/css/index.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.min.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/home.css" afterPath="$PROJECT_DIR$/bootstrap/css/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367629540736" ignored="false" />
-    <file path="/index.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367633008162" ignored="false" />
+    <file path="/index.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367644640143" ignored="false" />
     <file path="/Dummy.regexp" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367553664852" ignored="false" />
     <file path="/injection.txt" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367553664852" ignored="false" />
-    <file path="/home.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367642753149" ignored="false" />
-    <file path="/home.css" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367642800832" ignored="false" />
+    <file path="/home.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367644746962" ignored="false" />
+    <file path="/home.css" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367644457170" ignored="false" />
     <file path="/a.dummy" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367556329211" ignored="false" />
     <file path="/addMember.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367556553004" ignored="false" />
     <file path="/index.js" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367558975117" ignored="false" />
@@ -44,7 +47,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="30" selection-start="1471" selection-end="1481" vertical-scroll-proportion="17.291666">
+            <state line="29" column="8" selection-start="616" selection-end="616" vertical-scroll-proportion="-18.125">
               <folding />
             </state>
           </provider>
@@ -95,19 +98,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="4" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.85714287">
+            <state line="95" column="30" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="7" selection-start="1689" selection-end="1689" vertical-scroll-proportion="-14.583333">
+            <state line="34" column="23" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.44394618">
               <folding />
             </state>
           </provider>
@@ -155,19 +158,20 @@
         <option value="$PROJECT_DIR$/admin.php" />
         <option value="$PROJECT_DIR$/js/home.js" />
         <option value="$PROJECT_DIR$/js/index.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/sample" />
         <option value="$PROJECT_DIR$/bootstrap/css/index.css" />
-        <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/bootstrap/css/home.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/home.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Unnamed" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="52" />
-    <option name="width" value="1440" />
-    <option name="height" value="824" />
+    <option name="x" value="495" />
+    <option name="y" value="122" />
+    <option name="width" value="923" />
+    <option name="height" value="663" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -390,14 +394,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="52" width="1440" height="824" extended-state="6" />
-    <editor active="true" />
+    <frame x="495" y="122" width="923" height="663" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27363896" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25107914" sideWeight="0.6704871" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2187858" sideWeight="0.6704871" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -555,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="30" selection-start="1471" selection-end="1481" vertical-scroll-proportion="17.291666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="24" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
@@ -569,16 +566,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.php">
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="7" selection-start="1689" selection-end="1689" vertical-scroll-proportion="-14.583333">
+        <state line="95" column="30" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/home.css">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="4" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.85714287">
+        <state line="29" column="8" selection-start="616" selection-end="616" vertical-scroll-proportion="-18.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="23" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.44394618">
           <folding />
         </state>
       </provider>

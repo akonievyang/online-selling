@@ -1,5 +1,6 @@
 
 <!doctype html>
+<title>Home</title>
 <html>
    <head>
       
@@ -25,7 +26,7 @@
                <div class="Content">
                   <div class="relative">
                      <div class="topDesign">
-                        <h3>Welcome To MyPhone Community</h3>
+                        <h3>Welcome To my|phone Community</h3>
                      </div>
                     
                         <div class="topmenu">
@@ -40,9 +41,10 @@
                           <img src="images/promo2.JPG" alt="promo1" height="500" width="300">
                           <img src="images/promo1.jpg" alt="promo2" height="700" width="300">
                       </div>
+                        <br>
                               <p1> Introducing </p1>
-                              <p1>The New Endorser of My|Phone: </p1>
-                             <p1> <b> <u> Daniel Padilla</u></b></p1>
+                              <p1>The New Endorser of my|phone: </p1>
+                               <p1> <b> <u> Daniel Padilla</u></b></p1>
 
 
                      </div>  
