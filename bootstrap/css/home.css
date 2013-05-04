@@ -69,7 +69,11 @@ body{
    top:200px;
 }
 h3{
- text-align: center;
+    text-align: center;
+    border-style: ridge;
+    border-color: #000000;
+    background-color: #f2dede;
+
  
 
 }

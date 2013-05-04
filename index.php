@@ -52,14 +52,14 @@
 			
 			<h1>LOG-IN</h1>
 					
-								<p>			
+
 						<label for='username'>Username:</label>
 						<input type='text' id='username' name='username' >
-					</p>
-					<p>
+
 						<label for='password'>Password:</label>
 						<input type='password' id='password' name='password' />
-					</p>
+
+                    <br> </br>
 					 <tr>
 						<td>TYPE:</td>
 						<td> <select name = "type">
@@ -67,18 +67,17 @@
 								<option value = "buyer">Buyer</option>
 							</select> </td>
 					</tr>
-					
+
 					<br> </br>
 				
 					<input type='submit' value='Log-In'/>
-				<p class='status'>
+				<div class='status'>
 				<?php 
 					if(isset($errMsg)){
 						echo $errMsg;
 					}
 				?>
-				</p>
-						</br>
+				</div>
 
 			</div>
 		</div>
@@ -89,43 +88,37 @@
  
 		     <form>
 
-                <p>
+
                  Firstname:	<input type="text" name ="firstname">
-                 </p>
-                 <p>
+
                  Middlename:   <input type="text" name ="middlename">
-                 </p>
-                 <p>
+
                  Lastname: <input type ="text" name ="lastname">
-                 </p>
-                 <p>
-                 Address: <input type ="text" name ="address">
-                 </p>
-                 <p>
-                 Age: 	<br><input type="text" name ="age">
-                 </p>
+
+                 Address: <input type ="text" name ="address"> <br> </br>
+
+                 Age: 	 <input type="text" name ="age">
+
                      <tr>
                  Gender: <select id = "gender" name = "gender">
                      <option value = "male">Male</option>
                      <option value = "female">Female</option>
                  </select>
-                     </tr>
-                 <p>
-                 Username:<input type="text" name="username">
-                 </p>
-                 <p>
-                 Password:<input type="password" name="password">
-                 </p>
+                     </tr> <br> </br>
 
-		       
+                 Username:<input type="text" name="username">
+
+                 Password:<input type="password" name="password">
+
+
+            <br> </br>
 		     </form>
               <input type='submit' value='Register'/>
 		 </div>
-
-                <div id = 'image'>
-                    <img src= "images/mp.jpg"/>
-                 </div>
-                    <p>Simply Amazing.Mura na Gawang Pinoy pa.</p>
+                <div id = "image">
+                    <img src="images/DYK.jpg" alt="myPhone">
+                </div>
+                    <p>Simply Amazing. Mura na Gawang Pinoy pa.</p>
 
 
 </body>

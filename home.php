@@ -25,7 +25,7 @@
                <div class="Content">
                   <div class="relative">
                      <div class="topDesign">
-                        <h3>Have Fun</h3>               
+                        <h3>Welcome To MyPhone Community</h3>
                      </div>
                     
                         <div class="topmenu">

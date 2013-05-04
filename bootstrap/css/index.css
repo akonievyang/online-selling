@@ -1,52 +1,69 @@
 body{
  background: url("../../images/myphone_logo1.jpg");
 }
-#Log-inForm{
-	margin : 0px auto;
-	font-family: Arial;
-	font-size: 20px;
-
-
-}
 h1{
     color: #000000;
+    font-size: 20px;
+    border-style: ridge;
+    border-color: brown;
     text-align: center;
     font-family: "Verdana";
 
 }
-#Register_form{
-}
-
 h2{
     color: #000000;
+    font-size: 20px;
+    border-style: ridge;
+    border-color: brown;
     text-align: center;
-    font-family: "Courier New";
+    font-family: "Verdana";
 }
 #button_reg{
 
     color: #000000;
-    font-family: Arial;
+    font-family: "Arial";
     font-size: 20px;
     margin: 0px;
-
-
+    border-style: ridge;
+    border-color: #003399;
+    background-color: #fcefa1;
 
 }
 #button_log{
 
     color: #000000;
-    font-family: Arial;
+    font-family: "Arial";
     font-size: 20px;
     margin: 0px;
+    border-style: ridge;
+    border-color: #003399;
+    background-color: #fcefa1;
 }
 header{
- font-family: Arial;
+ font-family: "Arial";
  font-size: 50px;
     text-align: center;
 }
 p{
- font-family: Arial;
+    border-style: ridge;
+    border-color: #000000;
+    font-family: "Arial";
     font-size: 30px;
     text-align: center;
-    margin: 500px;
+    margin: 100px;
+    margin-top: 100px;
+    background-color: #fcefa1;
 }
+#image{
+    width: 800;
+    height: 500;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+header{
+    background-color: #f2dede;
+    border-style: double;
+    border-color: #d6e9c6;
+
+}
+
