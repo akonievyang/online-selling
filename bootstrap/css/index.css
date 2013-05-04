@@ -7,7 +7,7 @@ h1{
     border-style: ridge;
     border-color: brown;
     text-align: center;
-    font-family: "Verdana";
+    font-family: Verdana;
 
 }
 h2{
@@ -16,12 +16,12 @@ h2{
     border-style: ridge;
     border-color: brown;
     text-align: center;
-    font-family: "Verdana";
+    font-family: Verdana;
 }
 #button_reg{
 
     color: #000000;
-    font-family: "Arial";
+    font-family: Arial;
     font-size: 20px;
     margin: 0px;
     border-style: ridge;
@@ -32,7 +32,7 @@ h2{
 #button_log{
 
     color: #000000;
-    font-family: "Arial";
+    font-family: Arial;
     font-size: 20px;
     margin: 0px;
     border-style: ridge;
@@ -40,14 +40,14 @@ h2{
     background-color: #fcefa1;
 }
 header{
- font-family: "Arial";
+ font-family: Arial;
  font-size: 50px;
     text-align: center;
 }
 p{
     border-style: ridge;
     border-color: #000000;
-    font-family: "Arial";
+    font-family: Arial;
     font-size: 30px;
     text-align: center;
     margin: 100px;

@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/bootstrap/css/home.css" line="80" />
+    <bookmark url="file://$PROJECT_DIR$/home.php" line="40" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/css/index.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.min.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/home.css" afterPath="$PROJECT_DIR$/bootstrap/css/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/index.css" afterPath="$PROJECT_DIR$/bootstrap/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
@@ -13,8 +20,8 @@
     <file path="/index.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367633008162" ignored="false" />
     <file path="/Dummy.regexp" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367553664852" ignored="false" />
     <file path="/injection.txt" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367553664852" ignored="false" />
-    <file path="/home.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367633595923" ignored="false" />
-    <file path="/home.css" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367633731993" ignored="false" />
+    <file path="/home.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367642753149" ignored="false" />
+    <file path="/home.css" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367642800832" ignored="false" />
     <file path="/a.dummy" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367556329211" ignored="false" />
     <file path="/addMember.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367556553004" ignored="false" />
     <file path="/index.js" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367558975117" ignored="false" />
@@ -38,10 +45,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="30" selection-start="1471" selection-end="1481" vertical-scroll-proportion="-0.37903225">
+            <state line="61" column="30" selection-start="1471" selection-end="1481" vertical-scroll-proportion="17.291666">
               <folding />
             </state>
           </provider>
@@ -50,7 +57,7 @@
       <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="7" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+            <state line="19" column="7" selection-start="184" selection-end="184" vertical-scroll-proportion="-11.875">
               <folding />
             </state>
           </provider>
@@ -68,7 +75,7 @@
       <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="27" selection-start="0" selection-end="977" vertical-scroll-proportion="0.0">
+            <state line="15" column="27" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,19 +90,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/index.js">
+      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="0" selection-start="1688" selection-end="1688" vertical-scroll-proportion="0.0">
+            <state line="9" column="24" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap/css/index.css">
+      <file leaf-file-name="home.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bootstrap/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="1" selection-start="723" selection-end="725" vertical-scroll-proportion="0.0">
+            <state line="94" column="4" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.85714287">
               <folding />
             </state>
           </provider>
@@ -104,7 +111,16 @@
       <file leaf-file-name="home.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="56" selection-start="1132" selection-end="1132" vertical-scroll-proportion="-5.625">
+            <state line="39" column="7" selection-start="1689" selection-end="1689" vertical-scroll-proportion="-14.583333">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sample" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="33" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,15 +130,6 @@
         <entry file="file://$PROJECT_DIR$/viewDisplay.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="0" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap/css/home.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="13" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,10 +159,11 @@
         <option value="$PROJECT_DIR$/admin.php" />
         <option value="$PROJECT_DIR$/js/home.js" />
         <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/sample" />
+        <option value="$PROJECT_DIR$/bootstrap/css/index.css" />
         <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/bootstrap/css/home.css" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/bootstrap/css/index.css" />
       </list>
     </option>
   </component>
@@ -270,24 +278,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -487,13 +477,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="1688" selection-end="1688" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="0" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0">
@@ -541,23 +524,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="7" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/viewDisplay.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="27" selection-start="0" selection-end="977" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -569,30 +538,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.php">
+    <entry file="file://$PROJECT_DIR$/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="56" selection-start="1132" selection-end="1132" vertical-scroll-proportion="-5.625">
+        <state line="19" column="7" selection-start="184" selection-end="184" vertical-scroll-proportion="-11.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/home.css">
+    <entry file="file://$PROJECT_DIR$/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="13" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
+        <state line="15" column="27" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/index.css">
+    <entry file="file://$PROJECT_DIR$/sample">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="1" selection-start="723" selection-end="725" vertical-scroll-proportion="0.0">
+        <state line="28" column="33" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="30" selection-start="1471" selection-end="1481" vertical-scroll-proportion="-0.37903225">
+        <state line="61" column="30" selection-start="1471" selection-end="1481" vertical-scroll-proportion="17.291666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="7" selection-start="1689" selection-end="1689" vertical-scroll-proportion="-14.583333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="4" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.85714287">
           <folding />
         </state>
       </provider>
