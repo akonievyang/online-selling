@@ -117,11 +117,13 @@
 
                while($rows=$stmt->fetch()){
                    echo "<tr id=' ".$rows[0]." '>";
-                   echo "<td><input type='checkbox' onclick='Edit_item(".$rows[0].")'/></td>";
+                   echo "<td><input type='checkbox' /></td>";
                    echo "<td>$rows[1]</td>";
                    echo "<td>$rows[2]</td>";
                    echo "<td>$rows[5]</td>";
+                   echo "<td><input type='button' value='edit' onclick='Edit_item(".$rows[0].")'></td>";
                    echo "</tr>";
+
                }
            $this->close();
        }
@@ -131,6 +133,49 @@
                $stmt=$this->dbh->prepare(" Delete From gadgets where gadget_id=? ");
                $stmt->bindParam(1, $id);
                $stmt->execute();
+
+           $this->close();
+
+       }
+       function Retrieve_item($id){
+
+               $this->open();
+
+               $stmt=$this->dbh->prepare("Select * from gadgets Where gadget_id=?");
+               $stmt->bindParam(1,$id);
+               $stmt->execute();
+
+               $rows=$stmt->fetch();
+               $video_retrieve=array('id'=>$rows[0],'name'=>$rows[1],'brand'=>$rows[2],
+                   'desc'=>$rows[3],''=>$rows[4]);
+               $json_string=json_encode($video_retrieve);
+
+               echo $json_string;
+
+
+
+               $this->close();
+       }
+
+       function SaveVideo($id,$quantity,$title,$genre,$price){
+
+           $this->open();
+
+           $stmt=$this->dbh->prepare("Update cd SET Copies=?,Title=?,Genre=?,Price=? where video_id=?");
+           $stmt->bindParam(1,$quantity);
+           $stmt->bindParam(2,$title);
+           $stmt->bindParam(3,$genre);
+           $stmt->bindParam(4,$price);
+           $stmt->bindParam(5,$id);
+           $stmt->execute();
+
+           echo "<td><input type='checkbox' name='checkVideo'
+                    onclick='btnv_edit(".$id.")'/></td>";
+           echo "<td>".$title."</td>";
+           echo "<td>".$genre."</td>";
+           echo "<td>".$quantity."</td>";
+           echo "<td>".$price."</td>";
+           echo "<td><input type='button'  value='edit' onclick='btnv_edit(".$id.")'/>";
 
            $this->close();
 

@@ -21,6 +21,7 @@
                         <td>Name</td>
                         <td>Brand</td>
                         <td>Cost</td>
+                        <td>Action</td>
                         </tr>
                         <tr>
                         <tbody id="items"></tbody>

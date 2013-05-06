@@ -87,3 +87,22 @@ function DeleteItem(){
     });
 
     }
+    function Edit_item(id){
+        $.ajax({
+            type:"POST",
+            url:"editVideo.php",
+            data:{"id":id},
+            success:function(data){
+                var obj = JSON.parse(data);
+                $('#id').val(obj.id);
+                $('#title').val(obj.title);
+                $('#genre').val(obj.genre);
+                $('#quantity').val(obj.quantity);
+                $('#price').val(obj.price);
+            },
+            error:function(data){
+                alert(data);
+            }
+        });
+
+    }

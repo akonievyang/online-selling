@@ -11,6 +11,4 @@ include "DAO/Online_SellingDAO.php";
         $action->DeleteItem($id[$i]);
 
     }
-
-
 ?>
