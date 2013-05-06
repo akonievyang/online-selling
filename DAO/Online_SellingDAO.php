@@ -107,31 +107,33 @@
                    $stmt->bindParam(5, $price);
                    $stmt->execute();
 
-                   echo "<tr>";
-                   echo "<td>$name</td>";
-                   echo "<td>$brand</td>";
-                   echo "<td>$price</td>";
-                   echo "</tr>";
-
-
-           echo "sulod";
             $this->close();
        }
 
        function ViewItem(){
            $this->open();
-               $stmt=$this->dbh->prepare("Select name,brand,price from gadgets");
+               $stmt=$this->dbh->prepare("Select * from gadgets");
                $stmt->execute();
 
                while($rows=$stmt->fetch()){
-                   echo "<tr id='.$rows[0]'.>";
-                   echo "<td id=".$rows[0]."><input type='checkbox' name='item'/></td>";
+                   echo "<tr id=' ".$rows[0]." '>";
+                   echo "<td><input type='checkbox' onclick='Edit_item(".$rows[0].")'/></td>";
                    echo "<td>$rows[1]</td>";
                    echo "<td>$rows[2]</td>";
-                   echo "<td>$rows[3]</td>";
+                   echo "<td>$rows[5]</td>";
                    echo "</tr>";
                }
            $this->close();
+       }
+       function DeleteItem($id){
+           $this->open();
+
+               $stmt=$this->dbh->prepare(" Delete From gadgets where gadget_id=? ");
+               $stmt->bindParam(1, $id);
+               $stmt->execute();
+
+           $this->close();
+
        }
 
    }

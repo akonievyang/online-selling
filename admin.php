@@ -22,9 +22,12 @@
                         <td>Brand</td>
                         <td>Cost</td>
                         </tr>
-                        <tbody id="item"></tbody>
+                        <tr>
+                        <tbody id="items"></tbody>
+                        </tr>
 
                     </table>
+                    <input type="button" id="delete_item" value="delete" class="btn btn-primary"/>
                 </div>
             <div class="view_item">
 

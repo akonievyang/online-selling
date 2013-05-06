@@ -20,8 +20,7 @@ $(function(){
           url:"add_item.php",
           data:obj,
           success:function(data){
-             $("#item").append(data);
-              console.log(data);
+              ViewItem();
           },
           error:function(data){
               alert(data);
@@ -30,14 +29,17 @@ $(function(){
 
    });
 
-   $("#item").on('click','tr',function(){
+   $("#items").on('click','tr',function(){
        var tbID=document.getElementById($(this).context.id);
        var checkbox=tbID.getElementsByTagName('td')[0].getElementsByTagName('input')[0];
        checkbox.checked ? checkbox.checked=false : checkbox.checked=true;
    });
 
 
+    $("#delete_item").click(function(){
 
+        DeleteItem();
+    });
 
 });
 
@@ -46,7 +48,7 @@ function ViewItem(){
        type:"POST",
        url:"viewItem.php",
        success:function(data){
-           $("#item").html(data);
+           $("#items").html(data);
            console.log(data);
        },
        error:function(data){
@@ -56,9 +58,9 @@ function ViewItem(){
 
 }
 function DeleteItem(){
-    function deleteVideos(){
-        var deletevideo=new Array();
-        var tbod=document.getElementById('v_tbod');
+
+        var item_id=new Array();
+        var tbod=document.getElementById("items");
         var tr=tbod.getElementsByTagName('tr');
 
         for( var i=0;i<tr.length;i++){
@@ -66,26 +68,22 @@ function DeleteItem(){
             var checkbox=trID.getElementsByTagName('td')[0].getElementsByTagName('input')[0];
 
             if(checkbox.checked){
-                deletevideo.push(tr[i].id);
+                item_id.push(tr[i].id);
             }
+
         }
-        var check=$("input[name='checkVideo']:checkbox:checked").length>0;
+        $.ajax({
 
-            var deleteId={"id":deletevideo};
-            $.ajax({
+            type:"POST",
+            url:"delete_item.php",
+            data:{"id":item_id},
+            success: function(data){
+                ViewItem();
+            },
+            error: function(data){
+                alert(data);
+            }
 
-                type:"POST",
-                url:"deleteVideo.php",
-                data:deleteId,
-                success: function(data){
-                    console.log(data);
-                    for (var ctr=0; ctr<deletevideo.length; ctr++){
-                        $('#'+deletevideo[ctr]).remove();
-                    }
-                },
-                error: function(data){
-                    alert(data);
-                }
+    });
 
-            });
     }
