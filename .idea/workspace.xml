@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" afterPath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin.js" afterPath="$PROJECT_DIR$/js/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete_item.php" afterPath="$PROJECT_DIR$/delete_item.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/myhome.css" afterPath="$PROJECT_DIR$/bootstrap/css/myhome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhome.php" afterPath="$PROJECT_DIR$/myhome.php" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +30,8 @@
     <file path="/admin.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367824272188" ignored="false" />
     <file path="/delete_item.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367821570855" ignored="false" />
     <file path="/edit_item.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367824769136" ignored="false" />
-    <file path="/myhome.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367828708777" ignored="false" />
-    <file path="/myhome.css" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367826390580" ignored="false" />
+    <file path="/myhome.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367832795380" ignored="false" />
+    <file path="/myhome.css" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367832846838" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <file leaf-file-name="myhome.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myhome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="-2.8846154">
+            <state line="62" column="20" selection-start="2222" selection-end="2222" vertical-scroll-proportion="-13.557693">
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -114,7 +112,7 @@
       <file leaf-file-name="myhome.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bootstrap/css/myhome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="14" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.47804877">
+            <state line="124" column="17" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.8073171">
               <folding />
             </state>
           </provider>
@@ -152,8 +150,8 @@
         <option value="$PROJECT_DIR$/js/admin.js" />
         <option value="$PROJECT_DIR$/edit_item.php" />
         <option value="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
-        <option value="$PROJECT_DIR$/bootstrap/css/myhome.css" />
         <option value="$PROJECT_DIR$/myhome.php" />
+        <option value="$PROJECT_DIR$/bootstrap/css/myhome.css" />
       </list>
     </option>
   </component>
@@ -385,7 +383,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="52" width="1440" height="852" extended-state="1" />
+    <frame x="11" y="52" width="1440" height="852" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -564,7 +562,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myhome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="-2.8846154">
+        <state line="62" column="20" selection-start="2222" selection-end="2222" vertical-scroll-proportion="-13.557693">
           <folding>
             <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -573,7 +571,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/myhome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="14" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.47804877">
+        <state line="124" column="17" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.8073171">
           <folding />
         </state>
       </provider>

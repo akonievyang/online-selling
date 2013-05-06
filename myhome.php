@@ -1,5 +1,5 @@
 <!DOCTYPE html >
-<html>
+<html xmlns="http://www.w3.org/1999/html">
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>The Best Gadget </title>
@@ -20,7 +20,8 @@
 
                     </div>
 
-                    <p class="meta">Latest product</p>
+
+
                 </div>
 
                 <div class="post">
@@ -30,9 +31,36 @@
                         </blockquote>
 
                     </div>
-                    <p class="meta">Recommended Product</p>
+                    <p class="meta">Latest product</p>
                 </div>
+                <br/>
+                <div class="post">
 
+                    <p class="meta">Recommended Product</p>
+                    <div id="body">
+                    <div class="inner">
+                        <div class="leftbox">
+                            <h3>Star Wars Trilogy (Widescreen Edition)</h3>
+                            <img src="images/photo_1.jpg" width="93" height="95" alt="photo 1" class="left" />
+                            <p><b>Price:</b> <b>$225.97</b></p>
+
+                        </div>
+                        <!-- end .leftbox -->
+                        <div class="rightbox">
+                            <h3>Batman - The Animated Series </h3>
+                            <img src="images/photo_4.jpg" width="107" height="91" alt="photo 4" class="left" />
+                            <p><b>Price:</b> <b>$125</b> &amp; eligible for FREE Super Saver Shipping on orders over <b>$105</b>.</p>
+                            <p><b>Availability:</b> Usually ships within 24 hours</p>
+                        </div>
+                        <!-- end .rightbox -->
+                    </div>
+                    <!-- end .inner -->
+                    </div>
+                    <!-- end #body -->
+                </div>
+                <!-- end .post -->
+
+                <br/>
                 <div class="post">
                     <div class="entry">
                         <blockquote>
@@ -61,11 +89,11 @@
                     <li>
                         <h2>Archives</h2>
                         <ul>
-                            <li><a href="#">August 2007</a> (1)</li>
-                            <li><a href="#">July 2007</a> (31)</li>
-                            <li><a href="#">June 2007</a> (30)</li>
-                            <li><a href="#">May 2007</a> (31)</li>
-                            <li><a href="#">April 2007</a> (30)</li>
+                            <li>August 2007 (1)</li>
+                            <li>July 2007 (31)</li>
+                            <li>June 2007 (30)</li>
+                            <li>May 2007 (31)</li>
+                            <li>April 2007 (30)</li>
                         </ul>
                     </li>
                     <li>
