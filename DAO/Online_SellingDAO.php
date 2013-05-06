@@ -2,7 +2,7 @@
 
    include "BaseDAO.php";
    class OnlineSelling extends BaseDAO {
-   
+
       function Messages($msg){
          $this->open();
      
@@ -95,6 +95,44 @@
            $this->close();
        }
 
+       /*------------------------ ADD FUNCTION ------------------------------------------- */
+
+       function AddItem($name,$brand,$desc,$features,$price){
+            $this->open();
+                $stmt=$this->dbh->prepare("INSERT INTO gadgets VALUES(null,?,?,?,?,?)");
+                   $stmt->bindParam(1, $name);
+                   $stmt->bindParam(2, $brand);
+                   $stmt->bindParam(3, $desc);
+                   $stmt->bindParam(4, $features);
+                   $stmt->bindParam(5, $price);
+                   $stmt->execute();
+
+                   echo "<tr>";
+                   echo "<td>$name</td>";
+                   echo "<td>$brand</td>";
+                   echo "<td>$price</td>";
+                   echo "</tr>";
+
+
+           echo "sulod";
+            $this->close();
+       }
+
+       function ViewItem(){
+           $this->open();
+               $stmt=$this->dbh->prepare("Select name,brand,price from gadgets");
+               $stmt->execute();
+
+               while($rows=$stmt->fetch()){
+                   echo "<tr id='.$rows[0]'.>";
+                   echo "<td id=".$rows[0]."><input type='checkbox' name='item'/></td>";
+                   echo "<td>$rows[1]</td>";
+                   echo "<td>$rows[2]</td>";
+                   echo "<td>$rows[3]</td>";
+                   echo "</tr>";
+               }
+           $this->close();
+       }
 
    }
 ?>
