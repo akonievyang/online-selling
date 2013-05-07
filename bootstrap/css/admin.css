@@ -1,7 +1,31 @@
+
+div.wholePage{
+    width: 95%;
+}
 div.content{
+    float:left;
+    width: 800px;
+	border:1px solid #bbbbbb;
+    margin-left:10%;
+}
+div.view_item{
 
-	width:80%;
-	border:1px solid #dadada;
+    width: 750px;
+    margin:20px;
+}
+div#add_item{
+    float:right;
+    width: 230px ;
+    border: 1px solid #bbbbbb;
+    padding: 15px;
+    margin-right: 150px;
 
-
+}
+div#item_pic{
+    display:none;
+}
+div.pic{
+    width: 150px;
+    height: 200px;
+    border: 1px solid #bbbbbb;
 }

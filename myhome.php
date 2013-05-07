@@ -25,36 +25,32 @@
                 </div>
 
                 <div class="post">
+                    <p class="meta">Latest product</p>
                     <div class="entry">
                         <blockquote>
 
                         </blockquote>
 
                     </div>
-                    <p class="meta">Latest product</p>
+
                 </div>
                 <br/>
                 <div class="post">
 
                     <p class="meta">Recommended Product</p>
                     <div id="body">
-                    <div class="inner">
-                        <div class="leftbox">
-                            <h3>Star Wars Trilogy (Widescreen Edition)</h3>
-                            <img src="images/photo_1.jpg" width="93" height="95" alt="photo 1" class="left" />
-                            <p><b>Price:</b> <b>$225.97</b></p>
+                        <div class="inner">
+                            <div class="leftbox">
 
+
+                            </div>
+                            <!-- end .leftbox -->
+                            <div class="rightbox">
+
+                            </div>
+                            <!-- end .rightbox -->
                         </div>
-                        <!-- end .leftbox -->
-                        <div class="rightbox">
-                            <h3>Batman - The Animated Series </h3>
-                            <img src="images/photo_4.jpg" width="107" height="91" alt="photo 4" class="left" />
-                            <p><b>Price:</b> <b>$125</b> &amp; eligible for FREE Super Saver Shipping on orders over <b>$105</b>.</p>
-                            <p><b>Availability:</b> Usually ships within 24 hours</p>
-                        </div>
-                        <!-- end .rightbox -->
-                    </div>
-                    <!-- end .inner -->
+                        <!-- end .inner -->
                     </div>
                     <!-- end #body -->
                 </div>
@@ -76,6 +72,22 @@
             <!-- end content -->
             <div id="sidebar">
                 <ul>
+                    <li>
+                        <h2>Login User</h2>
+                        <form method="get" action="">
+                            <fieldset>
+                                <form method="POST" action="login.php">
+                                    <label>Username:</label>
+                                    <input type="text" id="s" name="username"  />
+                                    <br />
+                                    <label>Password:</label>
+                                    <input type="password" id="s" name="password" />
+                                    <br />
+                                    <input  type="submit" id="login" value="check me out" />
+                                </form>
+                            </fieldset>
+                        </form>
+                    </li>
                     <li>
                         <h2>Search</h2>
                         <form method="get" action="">

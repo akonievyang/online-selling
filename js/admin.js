@@ -7,25 +7,29 @@
  */
 
 $(function(){
-    ViewItem();
-   $("#add_item").click(function(){
+    Search();
+
+   $("#add").click(function(){
+
        var obj = {"name":$("#name").val(),
                   "brand":$("#brand").val(),
                   "desc":$("#desc").val(),
                   "features":$("#features").val(),
-                  "price":$("#price").val()};
+                  "price":$("#price").val()
+                 };
 
        $.ajax({
           type:"POST",
           url:"add_item.php",
           data:obj,
           success:function(data){
-              ViewItem();
+              Search;
           },
           error:function(data){
               alert(data);
           }
        });
+
 
    });
 
@@ -40,23 +44,13 @@ $(function(){
 
         DeleteItem();
     });
+    $("#search").keyup(function(){
+        Search();
+    });
 
 });
 
-function ViewItem(){
-    $.ajax({
-       type:"POST",
-       url:"viewItem.php",
-       success:function(data){
-           $("#items").html(data);
-           console.log(data);
-       },
-       error:function(data){
-           alert(data);
-       }
-    });
 
-}
 function DeleteItem(){
 
         var item_id=new Array();
@@ -78,7 +72,7 @@ function DeleteItem(){
             url:"delete_item.php",
             data:{"id":item_id},
             success: function(data){
-                ViewItem();
+               Search();
             },
             error: function(data){
                 alert(data);
@@ -87,6 +81,7 @@ function DeleteItem(){
     });
 
     }
+
     function Edit_item(id){
         $.ajax({
             type:"POST",
@@ -106,3 +101,61 @@ function DeleteItem(){
         });
 
     }
+    function Number(){
+        var status=/^[0-9]$/;
+        var price=$("#price").val();
+        var pL = price.length;
+
+
+        if(!status.test(price)){
+            var p = price.substring(0,pL-1);
+            $("#price").val(p);
+
+        }
+        if(pL>4){
+            var p = price.substring(0,4);
+            $("#price").val(p);
+        }
+    }
+    function ViewAllProducts(){
+        $.ajax({
+            type:"POST",
+            url:"viewAll.php",
+            success:function(data){
+
+            },
+            error:function(data){
+                alert(data);
+            }
+
+        });
+    }
+    function ViewAddedPicture(){
+        $.ajax({
+            type:"POST",
+            url:"viewAddedPic.php",
+            success:function(data){
+
+            },
+            error:function(data){
+                alert(data);
+            }
+
+        });
+    }
+    function Search(){
+
+        $.ajax({
+            type:"POST",
+            url:"search_item.php",
+            data:{"search":$("#search").val()},
+            success:function(data){
+                $("#items").html(data);
+            },
+            error:function(data){
+                alert(data);
+            }
+        });
+
+    }
+

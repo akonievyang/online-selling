@@ -1,5 +1,13 @@
-<!DOCTYPE HTML>
+<?php
+session_start();
 
+if(!isset($_SESSION['username'])){
+    header('location:myhome.php');
+}
+
+?>
+
+<!DOCTYPE HTML>
 <html>
 	<head>
 			<script src="js/jquery-latest.js"></script>
@@ -12,6 +20,7 @@
 			<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css"/>
 	</head>
 	<body>
+        <h1>Welcome!</h1>
 		<div class="container">
 			<div class="mainselect">
 			
