@@ -126,23 +126,6 @@ img.right {
 
 }
 
-.post .title {
-	margin: 0;
-}
-
-
-.post .title a:hover {
-	color: #145BF9;
-}
-
-.post .date {
-	margin: 0 0 2em 0;
-	font-size: .7em;
-}
-
-.post .entry {
-
-}
 
 .post .meta {
 	padding: 5px 20px;

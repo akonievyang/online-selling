@@ -14,7 +14,9 @@
 	<body>
 
         <div class="wholePage">
+
             <div class="main">
+
                 <div class="content">
 
                         <div class="view_item">
@@ -81,13 +83,15 @@
                          <!--- end inner ---->
                     <br/>
                     <div class="category">
-                        <h4 style=" color: #FFFFFF;">Records</h4>
-                        <ul>
-                            <li>Item</li>
-                            <li>Customer</li>
-                            <li>Sales</li>
 
-                        </ul>
+                            <h4 style=" color: #FFFFFF;">Records</h4>
+                            <ul>
+                                <li id="li_item">Item</li>
+                                <li id="li_customer">Customer</li>
+                                <li id="li_sales">Sales</li>
+
+                            </ul>
+
                     </div>
 
                 </div>

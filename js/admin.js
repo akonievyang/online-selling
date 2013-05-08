@@ -10,6 +10,18 @@ $(function(){
     SearchItem();
     SearchMember();
 
+   $("#li_item").click(function(){
+
+        $(".view_item").show();
+         $(".member").hide();
+    });
+
+    $("#li_customer").click(function(){
+
+        $(".view_item").hide();
+        $(".member").show();
+    });
+
    $("#add").click(function(){
         var inputfield=$("#form_item").serializeArray();
         var status=false;

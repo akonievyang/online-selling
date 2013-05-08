@@ -25,28 +25,30 @@
                 </div>
 
                 <div class="post">
-                    <p class="meta">Latest product</p>
-                    <div class="entry">
-                        <blockquote>
-
-                        </blockquote>
-
+                    <p class="meta">Latest Product</p>
+                    <div id="body">
+                        <div class="inner">
+                            <div class="leftbox">
+                            </div>
+                            <!-- end .leftbox -->
+                            <div class="rightbox">
+                            </div>
+                            <!-- end .rightbox -->
+                        </div>
+                        <!-- end .inner -->
                     </div>
-
+                    <!-- end #body -->
                 </div>
+                <!-- end .post -->
                 <br/>
                 <div class="post">
-
                     <p class="meta">Recommended Product</p>
                     <div id="body">
                         <div class="inner">
                             <div class="leftbox">
-
-
                             </div>
                             <!-- end .leftbox -->
                             <div class="rightbox">
-
                             </div>
                             <!-- end .rightbox -->
                         </div>
@@ -58,14 +60,21 @@
 
                 <br/>
                 <div class="post">
-                    <div class="entry">
-                        <blockquote>
-
-                        </blockquote>
-
-                    </div>
                     <p class="meta">Top Product</p>
+                    <div id="body">
+                        <div class="inner">
+                            <div class="leftbox">
+                            </div>
+                            <!-- end .leftbox -->
+                            <div class="rightbox">
+                            </div>
+                            <!-- end .rightbox -->
+                        </div>
+                        <!-- end .inner -->
+                    </div>
+                    <!-- end #body -->
                 </div>
+                <!-- end .post -->
 
 
             </div>
