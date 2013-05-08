@@ -15,14 +15,13 @@ div.content{
 	border:1px solid #bbbbbb;
 
 }
-div.view_item{
+div.view_item,.member{
     padding: 10px;
 }
 div#add_item{
     float:right;
-    width: 170px ;
     border: 1px solid #bbbbbb;
-    padding: 15px;
+
 }
 div#item_pic{
     display:none;
@@ -32,3 +31,27 @@ div.pic{
     height: 200px;
     border: 1px solid #bbbbbb;
 }
+.inner,.category{
+    border: 1px solid #bbbbbb;
+    width: 170px ;
+    padding: 15px;
+}
+li,label{
+   color: #145BF9;
+}
+li{
+
+
+    text-decoration: none;
+    border-bottom: 1px solid #BFC6E3;
+    list-style: none;
+
+}
+h4 {
+    font-size: 1.8em;
+    margin: 0;
+    padding: 5px 15px;
+    background: #ff5dda;
+
+}
+

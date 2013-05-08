@@ -7,7 +7,8 @@
  */
 
 $(function(){
-    Search();
+    SearchItem();
+    SearchMember();
 
    $("#add").click(function(){
         var inputfield=$("#form_item").serializeArray();
@@ -39,7 +40,7 @@ $(function(){
                url:"add_item.php",
                data:obj,
                success:function(data){
-                   Search();
+                   SearchItem();
                },
                error:function(data){
                    alert(data);
@@ -60,7 +61,10 @@ $(function(){
         DeleteItem();
     });
     $("#search").keyup(function(){
-        Search();
+        SearchItem();
+    });
+    $("#searchM").keyup(function(){
+        SearchMember();
     });
 
 });
@@ -87,7 +91,7 @@ function DeleteItem(){
             url:"delete_item.php",
             data:{"id":item_id},
             success: function(data){
-               Search();
+               SearchItemI();
             },
             error: function(data){
                 alert(data);
@@ -158,7 +162,7 @@ function DeleteItem(){
 
         });
     }
-    function Search(){
+    function SearchItem(){
 
         $.ajax({
             type:"POST",
@@ -166,6 +170,19 @@ function DeleteItem(){
             data:{"search":$("#search").val()},
             success:function(data){
                 $("#items").html(data);
+            },
+            error:function(data){
+                alert(data);
+            }
+        });
+    }
+    function SearchMember(){
+        $.ajax({
+            type:"POST",
+            url:"search_member.php",
+            data:{"search":$("#searchM").val()},
+            success:function(data){
+                $("#member").html(data);
             },
             error:function(data){
                 alert(data);

@@ -19,7 +19,7 @@
 
                         <div class="view_item">
                             <input type="text" class="search-query input-medium" id="search" placeholder="search"/>                                            <hr>
-                            <table class="table table-bordered table-hover ">
+                            <table  class="table table-bordered table-hover ">
                                 <tr>
                                 <td></td>
                                 <td>Name</td>
@@ -34,28 +34,65 @@
                              <input type="button" id="delete_item" value="delete" class="btn btn-primary"/>
                          </div>
                         <!--- end view item --->
+                        <br/>
+                        <div class="member">
+                            <input type="text" class="search-query input-medium" id="searchM" placeholder="search"/>
+                            <hr>
+                            <table style="width: 730px;" class="table table-bordered table-hover">
+                                <tr >
+                                    <td>Fullname</td>
+                                    <td>Username</td>
+                                    <td>Gender</td>
+                                    <td>Age</td>
+                                    <td>Address</td>
+                                    <td>Contact</td>
+                                </tr>
+                                <tr>
+                                    <tbody id="member"></tbody>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--- end content ---->
                 </div>
                 <!--- end content ---->
                 <div   id="add_item">
-                        <div id="add_info">
-                            <form id="form_item">
-                                <span style="display: none;" class="warning"></span>
-                                <label>Name</label>
-                                <input type="text"  class="input-medium" id="name" name='name'/>
-                                <label>Brand</label>
-                                <input type="text" class="input-medium"  id="brand" name='brand'/>
-                                <label>Description</label>
-                                <input type="text" class="input-medium"  id="desc" name='desc'/>
-                                <label>Features</label>
-                                <input type="text" class="input-medium"  id="features" name='features'/>
-                                <label>Price</label>
-                                <input type="text" class="input-medium"  id="price" name='price' onkeyup="Number()"/>
+                        <div class="inner">
+                            <h4 style=" color: #FFFFFF;">Add Item</h4>
+                            <div id="add_info">
+                                    <form id="form_item">
+                                        <span style="display: none;" class="warning"></span>
+                                        <label>Name</label>
+                                        <input type="text"  class="input-medium" id="name" name='name'/>
+                                        <label>Brand</label>
+                                        <input type="text" class="input-medium"  id="brand" name='brand'/>
+                                        <label>Description</label>
+                                        <input type="text" class="input-medium"  id="desc" name='desc'/>
+                                        <label>Features</label>
+                                        <input type="text" class="input-medium"  id="features" name='features'/>
+                                        <label>Price</label>
+                                        <input type="text" class="input-medium"  id="price" name='price' onkeyup="Number()"/>
 
-                            </form>
+                                    </form>
+
+                            </div>
+                            <!--- end add_info ---->
+                            <input type="button" id="add" value="add item" class="btn btn-primary"/>
                         </div>
-                    <!--- end add_info ---->
-                        <input type="button" id="add" value="add item" class="btn btn-primary"/>
+                         <!--- end inner ---->
+                    <br/>
+                    <div class="category">
+                        <h4 style=" color: #FFFFFF;">Records</h4>
+                        <ul>
+                            <li>Item</li>
+                            <li>Customer</li>
+                            <li>Sales</li>
+
+                        </ul>
+                    </div>
+
                 </div>
+
+
                 <!--- end add item ---->
             </div>
             <!--- main ---->

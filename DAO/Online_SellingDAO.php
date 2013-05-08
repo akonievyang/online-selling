@@ -223,7 +223,8 @@
        }
        function SearchItem($search){
            $this->open();
-               $stmt=$this->dbh->prepare("SELECT * FROM `gadgets` WHERE name like '".$search."%' or brand like '".$search."%'  or discription like '".$search."%' or date_added like '".$search."%'   ");
+               $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE name like '".$search."%' or brand like '".$search."%'
+                                          or discription like '".$search."%' or date_added like '".$search."%'   ");
                $stmt->execute();
                    $status=false;
 
@@ -250,6 +251,34 @@
 
 
            $this->close();
+       }
+       function SearchMember($search){
+           $this->open();
+            $stmt=$this->dbh->prepare("SELECT * FROM customer WHERE firstname like '".$search."%' or lastname like '".$search."%' or username like '".$search."%'
+                                       or gender like '".$search."%'  or age like '".$search."%' or contact like '".$search."%' or address like '".$search."%'  ");
+
+               $stmt->execute();
+
+                   $status=false;
+                   while($rows=$stmt->fetch()){
+                       $status=true;
+
+                       echo "<tr id=".$rows[0].">";
+                       echo "<td>".$rows[1]." ".$rows[3]."</td>";
+                       echo "<td>".$rows[9]."</td>";
+                       echo "<td>".$rows[4]."</td>";
+                       echo "<td>".$rows[5]."</td>";
+                       echo "<td>".$rows[6]."</td>";
+                       echo "<td>".$rows[7]."</td>";
+                       echo "</tr>";
+                   }
+                   if(!$status){
+                       echo "<tr>";
+                       echo "<td colspan='10'>No Data </td>";
+                       echo "</tr>";
+
+                   }
+            $this->close();
        }
 
 
