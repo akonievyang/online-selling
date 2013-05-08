@@ -3,7 +3,7 @@
 <html>
 	<head>
 			<script src="js/jquery-latest.js"></script>
-			<script src="js/all.js"></script>
+			<script src="js/customer.js"></script>
 			
 			
 			<link rel="stylesheet" type="text/css" href="bootstrap/css/jquery-ui-sample.css"/>
@@ -25,6 +25,23 @@
                         <h1>Welcome!</h1>
 
                         <div class="post">
+                            <p class="meta">Related Search</p>
+                            <div id="body">
+                                <div class="entry">
+                                    <div class="leftbox">
+                                    </div>
+                                    <!-- end .leftbox -->
+                                    <div class="rightbox">
+                                    </div>
+                                    <!-- end .rightbox -->
+                                </div>
+                                <!-- end .inner -->
+                            </div>
+                            <!-- end #body -->
+                        </div>
+                        <!-- end .post -->
+                        <br/>
+                        <div class="post">
                             <p class="meta">Latest Product</p>
                             <div id="body">
                                 <div class="entry">
@@ -41,6 +58,7 @@
                         </div>
                         <!-- end .post -->
                         <br/>
+
                         <div class="post">
                             <p class="meta">Recommended Product</p>
                             <div id="body">

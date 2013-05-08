@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include "DAO/Online_SellingDAO.php";
 
 $filename=$_FILES['uploadPic']['name'];
@@ -22,11 +22,13 @@ if($error>0){
 
         move_uploaded_file($temp_name,$directory.$filename);
 
+        $_SESSION['ivysalos'] = "<img src='".$directory.$filename."'>";
+
         header("location:admin.php");
 
 
-       $action= new OnlineSelling();
-       $action->UploadItemPic($filename);
+      // $action= new OnlineSelling();
+      // $action->UploadItemPic($filename);
     }
 
 

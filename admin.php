@@ -1,4 +1,7 @@
+<?php
+    session_start();
 
+?>
 
 <!DOCTYPE HTML>
 
@@ -14,6 +17,17 @@
 	<body>
 
         <div class="wholePage">
+            <div class="pic">
+                <?php if(isset($_SESSION['ivysalos'])):
+                        echo $_SESSION['ivysalos'];
+                    endif;
+                ?>
+            </div>
+            <form action="uploadDemo.php" enctype="multipart/form-data" method="POST"">
+                <input type="file" name="uploadPic"/>
+                <input type="submit" id="upload" value="upload"/>
+
+            </form>
 
             <div class="main">
 
