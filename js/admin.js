@@ -10,27 +10,42 @@ $(function(){
     Search();
 
    $("#add").click(function(){
+        var inputfield=$("#form_item").serializeArray();
+        var status=false;
+       for(var ctr=0;ctr<inputfield.length;ctr++){
 
-       var obj = {"name":$("#name").val(),
-                  "brand":$("#brand").val(),
-                  "desc":$("#desc").val(),
-                  "features":$("#features").val(),
-                  "price":$("#price").val()
-                 };
+           if(inputfield[ctr].value==="" || inputfield[ctr].value=== NaN || inputfield[ctr].value===null || inputfield[ctr].value=== " "){
+               status=true;
+               break;
+           }else{
+               status=false;
+           }
 
-       $.ajax({
-          type:"POST",
-          url:"add_item.php",
-          data:obj,
-          success:function(data){
-              Search;
-          },
-          error:function(data){
-              alert(data);
-          }
-       });
+       }
+       if(status){
+           $(".warning").html("Some fields not yet filled up").fadeIn().fadeOut(5000).css({"color":"red"});
+       }else{
 
 
+           var obj = {"name":$("#name").val(),
+               "brand":$("#brand").val(),
+               "desc":$("#desc").val(),
+               "features":$("#features").val(),
+               "price":$("#price").val()
+           };
+
+           $.ajax({
+               type:"POST",
+               url:"add_item.php",
+               data:obj,
+               success:function(data){
+                   Search();
+               },
+               error:function(data){
+                   alert(data);
+               }
+           });
+       }
    });
 
    $("#items").on('click','tr',function(){
@@ -112,7 +127,7 @@ function DeleteItem(){
             $("#price").val(p);
 
         }
-        if(pL>4){
+        if(status.test(price)){
             var p = price.substring(0,4);
             $("#price").val(p);
         }

@@ -1,25 +1,28 @@
 
 div.wholePage{
-    width: 95%;
+    margin-left: 150px;
+    position: absolute;
+    width: 1000px;
+    border: 1px solid #f0f;
+}
+div.main{
+    padding:20px;
+
 }
 div.content{
     float:left;
-    width: 800px;
+    width:750px;
 	border:1px solid #bbbbbb;
-    margin-left:10%;
+
 }
 div.view_item{
-
-    width: 750px;
-    margin:20px;
+    padding: 10px;
 }
 div#add_item{
     float:right;
-    width: 230px ;
+    width: 170px ;
     border: 1px solid #bbbbbb;
     padding: 15px;
-    margin-right: 150px;
-
 }
 div#item_pic{
     display:none;
