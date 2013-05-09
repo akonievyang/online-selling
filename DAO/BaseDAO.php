@@ -1,14 +1,14 @@
 <?php
 class BaseDAO{
 
-	protected $user="root";
-	protected $pass="";
+	protected $user="student1";
+	protected $pass="password";
 	protected $db_name="online_selling";
 	protected $dbh=null;
 
 	function open(){
 
-		$this->dbh=new PDO("mysql:host=localhost;dbname=".$this->db_name,$this->user,$this->pass);
+		$this->dbh=new PDO("mysql:host=student1.e2ps; dbname=".$this->db_name,$this->user,$this->pass);
 
 	}
 	function close(){

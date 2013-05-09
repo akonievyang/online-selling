@@ -2,7 +2,7 @@
 
    include "BaseDAO.php";
    class OnlineSelling extends BaseDAO {
-   
+
       function Messages($msg){
          $this->open();
      
@@ -93,6 +93,192 @@
            echo "</tr>";
 
            $this->close();
+       }
+
+       /*------------------------ ADD FUNCTION ------------------------------------------- */
+
+       function AddItem($name,$brand,$desc,$features,$price){
+            $this->open();
+                $stmt=$this->dbh->prepare("INSERT INTO gadgets VALUES(null,?,?,?,?,?,NOW())");
+                   $stmt->bindParam(1, $name);
+                   $stmt->bindParam(2, $brand);
+                   $stmt->bindParam(3, $desc);
+                   $stmt->bindParam(4, $features);
+                   $stmt->bindParam(5, $price);
+
+                   $stmt->execute();
+
+            $this->close();
+       }
+
+       function ViewItem(){
+           $this->open();
+               $stmt=$this->dbh->prepare("Select * from gadgets");
+               $stmt->execute();
+
+               while($rows=$stmt->fetch()){
+                   echo "<tr id=' ".$rows[0]." '>";
+                   echo "<td><input type='checkbox' /></td>";
+                   echo "<td>$rows[1]</td>";
+                   echo "<td>$rows[2]</td>";
+                   echo "<td>$rows[5]</td>";
+                   echo "<td><input type='button' value='edit' onclick='Edit_item(".$rows[0].")'></td>";
+                   echo "</tr>";
+
+               }
+           $this->close();
+       }
+       function DeleteItem($id){
+           $this->open();
+
+               $stmt=$this->dbh->prepare(" Delete From gadgets where gadget_id=? ");
+               $stmt->bindParam(1, $id);
+               $stmt->execute();
+
+           $this->close();
+
+       }
+       function Retrieve_item($id){
+
+               $this->open();
+
+               $stmt=$this->dbh->prepare("Select * from gadgets Where gadget_id=?");
+               $stmt->bindParam(1,$id);
+               $stmt->execute();
+
+               $rows=$stmt->fetch();
+               $video_retrieve=array('id'=>$rows[0],'name'=>$rows[1],'brand'=>$rows[2],
+                   'desc'=>$rows[3],''=>$rows[4]);
+               $json_string=json_encode($video_retrieve);
+
+               echo $json_string;
+
+
+
+               $this->close();
+       }
+
+       function SaveVideo($id,$quantity,$title,$genre,$price){
+
+           $this->open();
+
+           $stmt=$this->dbh->prepare("Update cd SET Copies=?,Title=?,Genre=?,Price=? where video_id=?");
+           $stmt->bindParam(1,$quantity);
+           $stmt->bindParam(2,$title);
+           $stmt->bindParam(3,$genre);
+           $stmt->bindParam(4,$price);
+           $stmt->bindParam(5,$id);
+           $stmt->execute();
+
+           echo "<td><input type='checkbox' name='checkVideo'
+                    onclick='btnv_edit(".$id.")'/></td>";
+           echo "<td>".$title."</td>";
+           echo "<td>".$genre."</td>";
+           echo "<td>".$quantity."</td>";
+           echo "<td>".$price."</td>";
+           echo "<td><input type='button'  value='edit' onclick='btnv_edit(".$id.")'/>";
+
+           $this->close();
+
+       }
+
+       function loginMember($username,$password){
+           $this->open();
+               echo "pad";
+               $stmt=$this->dbh->prepare("SELECT username,password from customer where username=?  and password=password(?)  ");
+               $stmt->bindParam(1,$username);
+               $stmt->bindParam(2,$password);
+               $stmt->execute();
+
+               if($stmt->fetch()){
+                   return true;
+               }else{
+                   return false;
+               }
+           $this->close();
+       }
+
+       function UploadItemPic($filename){
+           $this->open();
+                $stmt=$this->dbh->prepare("Insert into picture(large_pic) values(?)");
+                $stmt->bindParam(1,$filename);
+                $stmt->execute();
+           $this->close();
+
+        }
+       function ViewAddedPic(){
+           $this->open();
+           $stmt=$this->dbh->prepare("Select large_pic from picture where picture_id=?");
+           $stmt->bindParam(1,$id);
+           $stmt->execute();
+           $this->close();
+       }
+       function ViewAll(){
+           $this->open();
+              $stmt=$this->dbh->prepare("Select name,price from gadgets");
+              $stmt->execute();
+           $this->close();
+
+
+       }
+       function SearchItem($search){
+           $this->open();
+               $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE name like '".$search."%' or brand like '".$search."%'
+                                          or discription like '".$search."%' or date_added like '".$search."%'   ");
+               $stmt->execute();
+                   $status=false;
+
+                   while($rows=$stmt->fetch()){
+                       $status=true;
+
+                       echo "<tr id=".$rows[0].">";
+                       echo "<td><input type='checkbox' name='checkVideo'
+                       onclick='btnv_edit(".$rows[0].")'/></td>";
+                       echo "<td>".$rows[1]."</td>";
+                       echo "<td>".$rows[2]."</td>";
+                       echo "<td>".$rows[5]."</td>";
+                       echo "<td><input type='button'  value='edit' onclick='btnv_edit(".$rows[0].")'/>";
+                       echo "</tr>";
+
+
+                   }
+                   if(!$status){
+                       echo "<tr>";
+                       echo "<td colspan='10'>No Data </td>";
+                       echo "</tr>";
+
+                   }
+
+
+           $this->close();
+       }
+       function SearchMember($search){
+           $this->open();
+            $stmt=$this->dbh->prepare("SELECT * FROM customer WHERE firstname like '".$search."%' or lastname like '".$search."%' or username like '".$search."%'
+                                       or gender like '".$search."%'  or age like '".$search."%' or contact like '".$search."%' or address like '".$search."%'  ");
+
+               $stmt->execute();
+
+                   $status=false;
+                   while($rows=$stmt->fetch()){
+                       $status=true;
+
+                       echo "<tr id=".$rows[0].">";
+                       echo "<td>".$rows[1]." ".$rows[3]."</td>";
+                       echo "<td>".$rows[9]."</td>";
+                       echo "<td>".$rows[4]."</td>";
+                       echo "<td>".$rows[5]."</td>";
+                       echo "<td>".$rows[6]."</td>";
+                       echo "<td>".$rows[7]."</td>";
+                       echo "</tr>";
+                   }
+                   if(!$status){
+                       echo "<tr>";
+                       echo "<td colspan='10'>No Data </td>";
+                       echo "</tr>";
+
+                   }
+            $this->close();
        }
 
 

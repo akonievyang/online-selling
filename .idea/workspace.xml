@@ -2,6 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="639cf2ef-a656-46d8-8ab7-5a2271a75a3b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/8.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/A888 Duo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/A888_DUO.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/A919 Duo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/My-Phone-Logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/bg1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/g.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/im.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/images.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/img01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/img02.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/img02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/img03.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/img04.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/img05.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/img06.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/img1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/img5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/mini ipod.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/online-selling" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/promo1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/promo2.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/add_item.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/admin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/customer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/delete_item.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/edit_item.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/css/myhome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhome.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/online_selling (1).sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/search_item.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/search_member.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploadDemo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/viewAddedPic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/viewAll.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/viewItem.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/all.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/A818gDuo.png" afterPath="$PROJECT_DIR$/images/A818gDuo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/A818i Duo.png" afterPath="$PROJECT_DIR$/images/A818i Duo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/A848i Duo.png" afterPath="$PROJECT_DIR$/images/A848i Duo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/A888Duo.png" afterPath="$PROJECT_DIR$/images/A888Duo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/A919 Duo.png" afterPath="$PROJECT_DIR$/images/A919 Duo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/A919i Duo.png" afterPath="$PROJECT_DIR$/images/A919i Duo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/DYK.jpg" afterPath="$PROJECT_DIR$/images/DYK.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/My-Phone-Logo.png" afterPath="$PROJECT_DIR$/images/My-Phone-Logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/img1.png" afterPath="$PROJECT_DIR$/images/img1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/img2.png" afterPath="$PROJECT_DIR$/images/img2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/img3.png" afterPath="$PROJECT_DIR$/images/img3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/img4.png" afterPath="$PROJECT_DIR$/images/img4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/img5.png" afterPath="$PROJECT_DIR$/images/img5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/img6.png" afterPath="$PROJECT_DIR$/images/img6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/img7.png" afterPath="$PROJECT_DIR$/images/img7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/img8.png" afterPath="$PROJECT_DIR$/images/img8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/img9.png" afterPath="$PROJECT_DIR$/images/img9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mp.jpg" afterPath="$PROJECT_DIR$/images/mp.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/myPhone.jpg" afterPath="$PROJECT_DIR$/images/myPhone.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/myphone_logo1.jpg" afterPath="$PROJECT_DIR$/images/myphone_logo1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/promo.jpg" afterPath="$PROJECT_DIR$/images/promo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/promo1.jpg" afterPath="$PROJECT_DIR$/images/promo1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/promo2.JPG" afterPath="$PROJECT_DIR$/images/promo2.JPG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/promo3.jpg" afterPath="$PROJECT_DIR$/images/promo3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/BaseDAO.php" afterPath="$PROJECT_DIR$/DAO/BaseDAO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" afterPath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addMember.php" afterPath="$PROJECT_DIR$/addMember.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/admin.css" afterPath="$PROJECT_DIR$/bootstrap/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/customer.css" afterPath="$PROJECT_DIR$/bootstrap/css/customer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer.php" afterPath="$PROJECT_DIR$/customer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/index.css" afterPath="$PROJECT_DIR$/bootstrap/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/jquery-ui-1.9.0.custom.css" afterPath="$PROJECT_DIR$/bootstrap/css/jquery-ui-1.9.0.custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.css" afterPath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/jquery-ui-1.9.0.custom.min.css" afterPath="$PROJECT_DIR$/bootstrap/css/jquery-ui-1.9.0.custom.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.min.css" afterPath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/online-selling.iml" afterPath="$PROJECT_DIR$/.idea/online-selling.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/online.php" afterPath="$PROJECT_DIR$/online.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.php" afterPath="$PROJECT_DIR$/product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample" afterPath="$PROJECT_DIR$/sample" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/student2.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/student2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
@@ -30,18 +122,13 @@
       <file leaf-file-name="online.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/online.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="7" selection-start="15222" selection-end="15222" vertical-scroll-proportion="0.90029764">
+            <state line="110" column="35" selection-start="10840" selection-end="10840" vertical-scroll-proportion="0.7204969">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FindManager">
-    <FindUsagesManager>
-      <setting name="OPEN_NEW_TAB" value="false" />
-    </FindUsagesManager>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,12 +145,11 @@
       </list>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="24" />
-    <option name="width" value="1440" />
-    <option name="height" value="880" />
+    <option name="width" value="1442" />
+    <option name="height" value="853" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -91,7 +177,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -112,6 +197,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,14 +219,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1440" height="880" extended-state="7" />
-    <editor active="false" />
+    <frame x="-1" y="24" width="1442" height="853" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25322813" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25322813" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -225,7 +311,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="7" selection-start="15222" selection-end="15222" vertical-scroll-proportion="0.90029764">
+        <state line="110" column="35" selection-start="10840" selection-end="10840" vertical-scroll-proportion="0.7204969">
           <folding />
         </state>
       </provider>
