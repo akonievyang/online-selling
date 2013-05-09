@@ -1,8 +1,8 @@
 <?php
 class BaseDAO{
 
-	protected $user="student1";
-	protected $pass="password";
+	protected $user="akonievyang";
+	protected $pass="mgaebay";
 	protected $db_name="online_selling";
 	protected $dbh=null;
 
