@@ -2,8 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/BaseDAO.php" afterPath="$PROJECT_DIR$/DAO/BaseDAO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin.js" afterPath="$PROJECT_DIR$/js/admin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/8887352885.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/B12-myphone.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Martin-del-Rosario-My-Phone.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/MyPhone A868 DUO Price and Specs.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/MyPhone-A919-Duo-feature-image.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/MyPhone-Sale-2013.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Myphone A878.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Myphone Black QW30 WiFi.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/QW28-Actual-Product2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Sell-old-cell-phone.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ZT9Zs.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image9.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/iphone-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myPhone_5_preview_image.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone a919 duo-iloilo-philippines.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-1388-52624-1-product.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-3582-92164-1-product.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-3585-42164-1-product.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-8425-81624-1-product.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-s60-bb-standby.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone4.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone5.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pile of cellphones.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/q22 duo myphone (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ myphone A868 DUO" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/500x" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone A878" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone Q22" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone a858 duo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone black qw3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone ts1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-1388" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-3582-92164-1-product" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-3585" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-8425" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-a919-duo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-s60" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone_5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/online_selling.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/qw28" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/8.jpeg" afterPath="$PROJECT_DIR$/uploaded_file/8.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/A888 Duo.png" afterPath="$PROJECT_DIR$/uploaded_file/A888 Duo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/A888_DUO.png" afterPath="$PROJECT_DIR$/uploaded_file/A888_DUO.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/A919 Duo.png" afterPath="$PROJECT_DIR$/uploaded_file/A919 Duo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/My-Phone-Logo.png" afterPath="$PROJECT_DIR$/uploaded_file/My-Phone-Logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/add.png" afterPath="$PROJECT_DIR$/uploaded_file/add.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/bg1.png" afterPath="$PROJECT_DIR$/uploaded_file/bg1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/g.jpg" afterPath="$PROJECT_DIR$/uploaded_file/g.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/im.jpeg" afterPath="$PROJECT_DIR$/uploaded_file/im.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/images.jpeg" afterPath="$PROJECT_DIR$/uploaded_file/images.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/img1.png" afterPath="$PROJECT_DIR$/uploaded_file/img1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/img5.png" afterPath="$PROJECT_DIR$/uploaded_file/img5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/promo1.jpg" afterPath="$PROJECT_DIR$/uploaded_file/promo1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/promo2.JPG" afterPath="$PROJECT_DIR$/uploaded_file/promo2.JPG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/x.png" afterPath="$PROJECT_DIR$/images/x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/online.php" afterPath="$PROJECT_DIR$/online.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_item.php" afterPath="$PROJECT_DIR$/search_item.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_member.php" afterPath="$PROJECT_DIR$/search_member.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewAddedPic.php" afterPath="$PROJECT_DIR$/viewAddedPic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewAll.php" afterPath="$PROJECT_DIR$/viewAll.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
