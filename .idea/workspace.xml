@@ -1,82 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/8887352885.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/B12-myphone.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Martin-del-Rosario-My-Phone.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/MyPhone A868 DUO Price and Specs.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/MyPhone-A919-Duo-feature-image.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/MyPhone-Sale-2013.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Myphone A878.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Myphone Black QW30 WiFi.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/QW28-Actual-Product2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Sell-old-cell-phone.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ZT9Zs.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image9.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/iphone-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myPhone_5_preview_image.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone a919 duo-iloilo-philippines.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-1388-52624-1-product.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-3582-92164-1-product.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-3585-42164-1-product.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-8425-81624-1-product.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-s60-bb-standby.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone4.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone5.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pile of cellphones.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/q22 duo myphone (1).jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ myphone A868 DUO" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/500x" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/image9" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone A878" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone Q22" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone a858 duo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone black qw3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone ts1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-1388" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-3582-92164-1-product" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-3585" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-8425" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-a919-duo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone-s60" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/myphone_5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/online_selling.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/qw28" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/8.jpeg" afterPath="$PROJECT_DIR$/uploaded_file/8.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/A888 Duo.png" afterPath="$PROJECT_DIR$/uploaded_file/A888 Duo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/A888_DUO.png" afterPath="$PROJECT_DIR$/uploaded_file/A888_DUO.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/A919 Duo.png" afterPath="$PROJECT_DIR$/uploaded_file/A919 Duo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/My-Phone-Logo.png" afterPath="$PROJECT_DIR$/uploaded_file/My-Phone-Logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/add.png" afterPath="$PROJECT_DIR$/uploaded_file/add.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/bg1.png" afterPath="$PROJECT_DIR$/uploaded_file/bg1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/g.jpg" afterPath="$PROJECT_DIR$/uploaded_file/g.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/im.jpeg" afterPath="$PROJECT_DIR$/uploaded_file/im.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/images.jpeg" afterPath="$PROJECT_DIR$/uploaded_file/images.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/img1.png" afterPath="$PROJECT_DIR$/uploaded_file/img1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/img5.png" afterPath="$PROJECT_DIR$/uploaded_file/img5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/promo1.jpg" afterPath="$PROJECT_DIR$/uploaded_file/promo1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/promo2.JPG" afterPath="$PROJECT_DIR$/uploaded_file/promo2.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/x.png" afterPath="$PROJECT_DIR$/images/x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/BaseDAO.php" afterPath="$PROJECT_DIR$/DAO/BaseDAO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin.js" afterPath="$PROJECT_DIR$/js/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/online.php" afterPath="$PROJECT_DIR$/online.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_item.php" afterPath="$PROJECT_DIR$/search_item.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_member.php" afterPath="$PROJECT_DIR$/search_member.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadDemo.php" afterPath="$PROJECT_DIR$/uploadDemo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewAddedPic.php" afterPath="$PROJECT_DIR$/viewAddedPic.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewAll.php" afterPath="$PROJECT_DIR$/viewAll.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="" />
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368060861738" ignored="false" />
@@ -133,10 +58,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Online_SellingDAO.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Online_SellingDAO.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="8" selection-start="2163" selection-end="2163" vertical-scroll-proportion="1.4003165">
+            <state line="59" column="8" selection-start="2163" selection-end="2163" vertical-scroll-proportion="10.0">
               <folding />
             </state>
           </provider>
@@ -145,7 +70,7 @@
       <file leaf-file-name="myhome.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myhome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="62" selection-start="4642" selection-end="4642" vertical-scroll-proportion="-26.875">
+            <state line="118" column="62" selection-start="4642" selection-end="4642" vertical-scroll-proportion="-12.5">
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -153,14 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseDAO.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BaseDAO.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DAO/BaseDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.0">
-              <folding>
-                <marker date="1368073995328" expanded="true" signature="556:559" placeholder="..." />
-                <marker date="1368073995328" expanded="true" signature="579:602" placeholder="..." />
-              </folding>
+            <state line="5" column="30" selection-start="82" selection-end="82" vertical-scroll-proportion="0.11627907">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -539,7 +461,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="52" width="1440" height="824" extended-state="6" />
+    <frame x="0" y="52" width="1440" height="824" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -742,28 +664,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/BaseDAO.php">
+    <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.0">
-          <folding>
-            <marker date="1368073995328" expanded="true" signature="556:559" placeholder="..." />
-            <marker date="1368073995328" expanded="true" signature="579:602" placeholder="..." />
-          </folding>
+        <state line="59" column="8" selection-start="2163" selection-end="2163" vertical-scroll-proportion="10.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myhome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="62" selection-start="4642" selection-end="4642" vertical-scroll-proportion="-26.875">
+        <state line="118" column="62" selection-start="4642" selection-end="4642" vertical-scroll-proportion="-12.5">
           <folding>
             <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
+    <entry file="file://$PROJECT_DIR$/DAO/BaseDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="8" selection-start="2163" selection-end="2163" vertical-scroll-proportion="1.4003165">
+        <state line="5" column="30" selection-start="82" selection-end="82" vertical-scroll-proportion="0.11627907">
           <folding />
         </state>
       </provider>
