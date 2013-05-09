@@ -105,6 +105,7 @@ Designed to go toe-to-toe with other China-bred Android heavyweights, the MyPhon
 
 <h2>MyPhone A868 DUO Price and Specs</h2>
 <center><img src="images/MyPhone A868 DUO Price and Specs.JPG"></center>
+    <h2>price at 5,999.000</h2>
 <p>MyPhone A868 DUO is A858 with 3G on board and front-facing VGA camera. They have the same specs but the capability of 3G internet is a big difference.
 </p>
 
