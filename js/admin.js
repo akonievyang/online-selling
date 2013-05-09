@@ -9,6 +9,10 @@
 $(function(){
     SearchItem();
     SearchMember();
+    $("input[type='checkbox']").focus(function(){
+        $(this).next("<input>").css('display','inline').fadeOut(1000);;
+
+    });
 
    $("#li_item").click(function(){
 
@@ -41,10 +45,9 @@ $(function(){
 
 
            var obj = {"name":$("#name").val(),
-               "brand":$("#brand").val(),
-               "desc":$("#desc").val(),
-               "features":$("#features").val(),
-               "price":$("#price").val()
+                      "brand":$("#brand").val(),
+                      "features":$("#features").val(),
+                      "price":$("#price").val()
            };
 
            $.ajax({
@@ -103,7 +106,7 @@ function DeleteItem(){
             url:"delete_item.php",
             data:{"id":item_id},
             success: function(data){
-               SearchItemI();
+               SearchItem();
             },
             error: function(data){
                 alert(data);
@@ -182,7 +185,22 @@ function DeleteItem(){
             data:{"search":$("#search").val()},
             success:function(data){
 
-		alert(JSON.stringify(data))
+
+                $("#items").html(data);
+            },
+            error:function(data){
+                alert(data);
+            }
+        });
+    }
+    function pagination(){
+        $.ajax({
+            type:"POST",
+            url:"item_pagination.php",
+            data:{"search":$("#search").val()},
+            success:function(data){
+
+
                 $("#items").html(data);
             },
             error:function(data){

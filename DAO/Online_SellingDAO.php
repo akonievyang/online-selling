@@ -97,37 +97,21 @@
 
        /*------------------------ ADD FUNCTION ------------------------------------------- */
 
-       function AddItem($name,$brand,$desc,$features,$price){
+       function AddItem($name,$brand,$features,$price){
             $this->open();
-                $stmt=$this->dbh->prepare("INSERT INTO gadgets VALUES(null,?,?,?,?,?,NOW())");
+                $stmt=$this->dbh->prepare("INSERT INTO gadgets VALUES(null,?,?,?,?,NOW())");
                    $stmt->bindParam(1, $name);
                    $stmt->bindParam(2, $brand);
-                   $stmt->bindParam(3, $desc);
-                   $stmt->bindParam(4, $features);
-                   $stmt->bindParam(5, $price);
+                   $stmt->bindParam(3, $features);
+                   $stmt->bindParam(4, $price);
+
 
                    $stmt->execute();
 
             $this->close();
        }
 
-       function ViewItem(){
-           $this->open();
-               $stmt=$this->dbh->prepare("Select * from gadgets");
-               $stmt->execute();
 
-               while($rows=$stmt->fetch()){
-                   echo "<tr id=' ".$rows[0]." '>";
-                   echo "<td><input type='checkbox' /></td>";
-                   echo "<td>$rows[1]</td>";
-                   echo "<td>$rows[2]</td>";
-                   echo "<td>$rows[5]</td>";
-                   echo "<td><input type='button' value='edit' onclick='Edit_item(".$rows[0].")'></td>";
-                   echo "</tr>";
-
-               }
-           $this->close();
-       }
        function DeleteItem($id){
            $this->open();
 
@@ -206,13 +190,7 @@
            $this->close();
 
         }
-       function ViewAddedPic(){
-           $this->open();
-           $stmt=$this->dbh->prepare("Select large_pic from picture where picture_id=?");
-           $stmt->bindParam(1,$id);
-           $stmt->execute();
-           $this->close();
-       }
+
        function ViewAll(){
            $this->open();
               $stmt=$this->dbh->prepare("Select name,price from gadgets");
@@ -223,9 +201,9 @@
        }
        function SearchItem($search){
            $this->open();
-               $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE name like '".$search."%' or brand like '".$search."%'
-                                          or discription like '".$search."%' or date_added like '".$search."%'   ");
-               $stmt->execute();
+           $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE name like '".$search."%' or brand like '".$search."%'
+                                           or color like '".$search."%' or quantity or  date_added like '".$search."%'   ");
+           $stmt->execute();
                    $status=false;
 
                    while($rows=$stmt->fetch()){
@@ -236,7 +214,7 @@
                        onclick='btnv_edit(".$rows[0].")'/></td>";
                        echo "<td>".$rows[1]."</td>";
                        echo "<td>".$rows[2]."</td>";
-                       echo "<td>".$rows[5]."</td>";
+                       echo "<td>".$rows[6]."</td>";
                        echo "<td><input type='button'  value='edit' onclick='btnv_edit(".$rows[0].")'/>";
                        echo "</tr>";
 
@@ -279,8 +257,8 @@
 
                    }
             $this->close();
-       }
 
+       }
 
    }
 ?>

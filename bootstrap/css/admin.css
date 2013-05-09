@@ -23,13 +23,22 @@ div#add_item{
     border: 1px solid #bbbbbb;
 
 }
-div#item_pic{
-    display:none;
+
+div#pic{
+    width: 200px;
+    padding: 20px;
+
 }
-div.pic{
-    width: 150px;
-    height: 200px;
+div.upload_container{
+    margin: 20px;
+    padding: 20px;
+    width: 700px;
     border: 1px solid #bbbbbb;
+
+
+}
+.right_side{
+    float:right;
 }
 .inner,.category{
     border: 1px solid #bbbbbb;
@@ -56,3 +65,7 @@ h4 {
 div.member{
     display:none;
 }
+input[type='text']{
+    display:none;
+}
+
