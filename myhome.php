@@ -4,6 +4,10 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>The Best Gadget </title>
         <link href="bootstrap/css/myhome.css" rel="stylesheet" type="text/css" />
+        <script src = "js/customer.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "bootstrap/css/jquery-ui-1.9.0.custom.min.css" />
+        <link rel = "stylesheet" type = "text/css" href = "bootstrap/ccs/jquery-ui-1.9.0.custom.css"/>
+
     </head>
     <body>
         <div id="header">
@@ -93,10 +97,36 @@
                                     <input type="password" id="s" name="password" />
                                     <br />
                                     <input  type="submit" id="login" value="check me out" />
+                                    <br> </br>
                                 </form>
                             </fieldset>
                         </form>
                     </li>
+                    <div id = 'Reg_Form'>
+
+                        <h3>Register (New Member)</h3>
+
+                        <form>
+
+                            Firstname:	<input type="text" name ="firstname">
+                            Middlename:   <input type="text" name ="middlename">
+                            Lastname: <input type ="text" name ="lastname">
+                            Address: <input type ="text" name ="address"> <br>
+                            Age: <br> <input type="text" name ="age">
+                            <tr>
+                            Gender: <select id = "gender" name = "gender">
+                                    <option value = "male"> Male</option>
+                                    <option value = "female"> Female</option>
+                                </select>
+                            </tr> <br>
+                            Contact Number: <input type = "text" name = "contactNum">
+                            Username:<input type="text" name="username">
+                            Password:<input type="password" name="password">
+
+                            <input type='submit' value='Register'/>
+                        </form>
+
+                    </div>
                     <li>
                         <h2>Search</h2>
                         <form method="get" action="">
@@ -119,12 +149,18 @@
                     </li>
                     <li>
                         <h2>Categories</h2>
+
                         <ul>
-                            <li>Cellphones</li>
-                            <li>Computer</li>
-                            <li>Television</li>
+                            <li> <a href="#Cellphone"> <strong>Cellphones</strong> </a></li>
+                            <li> <a href="#Computer"> <strong> Computer </strong> </a></li>
+                            <li> <a href="#Television"> <strong> Television</strong> </a></li>
 
                         </ul>
+
+                            <div id="Computer">
+
+                            </div>
+
                     </li>
                 </ul>
             </div>
