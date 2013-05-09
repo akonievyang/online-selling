@@ -18,8 +18,8 @@
 
         <div class="wholePage">
             <div class="pic">
-                <?php if(isset($_SESSION['ivysalos'])):
-                        echo $_SESSION['ivysalos'];
+                <?php if(isset($_SESSION['imageuploaded'])):
+                        echo $_SESSION['imageuploaded'];
                     endif;
                 ?>
             </div>

@@ -90,6 +90,7 @@ Designed to go toe-to-toe with other China-bred Android heavyweights, the MyPhon
 
 <h2>MyPhone-A919-Duo-feature-image</h2>
 <center><img src="images/MyPhone-A919-Duo-feature-image.jpg"></center>
+  <h2>price at 7,999.00</h2>
 <p>If you’ve been holding out for an affordable dual-core, dual-SIM smartphone with a big-ass display, then you’re in luck. Say hello to the Samsung Galaxy S III’s cousin MyPhone A919 Duo, the forthcoming 5-inch Android variant from the guys responsible for the 4.3-inch MyPhone A878 Duo.
 
     Officially priced cheaper than most kids on the block, especially considering how massive this thing is, the A919 Duo will retail at P7,999.
@@ -104,6 +105,7 @@ Designed to go toe-to-toe with other China-bred Android heavyweights, the MyPhon
 
 <h2>MyPhone A868 DUO Price and Specs</h2>
 <center><img src="images/MyPhone A868 DUO Price and Specs.JPG"></center>
+    <h2>price at 5,999.000</h2>
 <p>MyPhone A868 DUO is A858 with 3G on board and front-facing VGA camera. They have the same specs but the capability of 3G internet is a big difference.
 </p>
 

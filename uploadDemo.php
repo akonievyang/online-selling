@@ -22,7 +22,7 @@ if($error>0){
 
         move_uploaded_file($temp_name,$directory.$filename);
 
-        $_SESSION['ivysalos'] = "<img src='".$directory.$filename."'>";
+        $_SESSION['imageuploaded'] = "<img src='".$directory.$filename."'>";
 
         header("location:admin.php");
 
