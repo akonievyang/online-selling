@@ -181,6 +181,8 @@ function DeleteItem(){
             url:"search_item.php",
             data:{"search":$("#search").val()},
             success:function(data){
+
+		alert(JSON.stringify(data))
                 $("#items").html(data);
             },
             error:function(data){
