@@ -16,7 +16,7 @@
             <div class="wholePage">
                 <div class="main">
                     <div style="margin-bottom: 20px;">
-                        <input class="input-xxlarge" type="text" placeholder="What you want?">
+                        <input class="input-xxlarge" type="text" placeholder="What you want?:" id="search">
                         <input type="button" class="btn btn-primary btn-large" value="Search"/>
                     </div>
 
@@ -25,15 +25,22 @@
                         <h1>Welcome!</h1>
 
                         <div class="post">
+                            <p class="meta">The Best Gadgets </p>
+                            <div id="body">
+                                <div class="entry">
+
+                                </div>
+                                <!-- end .inner -->
+                            </div>
+                            <!-- end #body -->
+                        </div>
+                        <br/>
+
+                        <div class="post">
                             <p class="meta">Related Search</p>
                             <div id="body">
                                 <div class="entry">
-                                    <div class="leftbox">
-                                    </div>
-                                    <!-- end .leftbox -->
-                                    <div class="rightbox">
-                                    </div>
-                                    <!-- end .rightbox -->
+
                                 </div>
                                 <!-- end .inner -->
                             </div>

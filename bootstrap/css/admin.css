@@ -24,22 +24,24 @@ div#add_item{
 
 }
 
-div#pic{
+div.pic{
 
     border: 1px solid #bbbbbb;
     width: 150px;
-    height: 100px;
+    height: 200px;
     padding: 20px;
 
 }
 div.upload_container{
     display: none;
-    margin: 20px;
     padding: 20px;
-    width: 700px;
+    width: 300px;
     border: 1px solid #bbbbbb;
 
-
+}
+img{
+    width: 150px;
+    height: 100px;
 }
 .right_side{
     float:right;

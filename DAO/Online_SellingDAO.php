@@ -97,15 +97,25 @@
 
        /*------------------------ ADD FUNCTION ------------------------------------------- */
 
-       function AddItem($name,$brand,$features,$price){
+       function AddItem($name,$brand,$features,$price,$filename){
             $this->open();
-                $stmt=$this->dbh->prepare("INSERT INTO gadgets(name,brand,features,price,date_added) VALUES(?,?,?,?,NOW())");
+                $stmt=$this->dbh->prepare("INSERT INTO gadgets(gadget_name,brand,features,price,date_added) VALUES(?,?,?,?,NOW())");
                    $stmt->bindParam(1, $name);
                    $stmt->bindParam(2, $brand);
                    $stmt->bindParam(3, $features);
                    $stmt->bindParam(4, $price);
-
                    $stmt->execute();
+                   $gad_id=$this->dbh->lastInsertId();
+
+                $stmt=$this->dbh->prepare("Insert into picture values(null,?)");
+                   $stmt->bindParam(1,$filename);
+                   $stmt->execute();
+                   $pic_id=$this->dbh->lastInsertId();
+
+                $stmt=$this->dbh->prepare("Insert into item values(null,?,?)");
+                    $stmt->bindParam(1,$gad_id);
+                    $stmt->bindParam(2,$pic_id);
+                    $stmt->execute();
 
             $this->close();
        }
@@ -200,7 +210,7 @@
        }
        function SearchItem($search){
            $this->open();
-           $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE name like '".$search."%' or brand like '".$search."%'
+           $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE gadget_name like '".$search."%' or brand like '".$search."%'
                                            or color like '".$search."%' or quantity or  date_added like '".$search."%'   ");
            $stmt->execute();
                    $status=false;
@@ -231,8 +241,10 @@
        }
        function SearchMember($search){
            $this->open();
-            $stmt=$this->dbh->prepare("SELECT * FROM customer WHERE firstname like '".$search."%' or lastname like '".$search."%' or username like '".$search."%'
-                                       or gender like '".$search."%'  or age like '".$search."%' or contact like '".$search."%' or address like '".$search."%'  ");
+            $stmt=$this->dbh->prepare("SELECT * FROM customer WHERE firstname like '".$search."%' or
+                                       lastname like '".$search."%' or username like '".$search."%'
+                                       or gender like '".$search."%'  or age like '".$search."%' or
+                                       contact like '".$search."%' or address like '".$search."%'  ");
 
                $stmt->execute();
 
@@ -257,6 +269,33 @@
                    }
             $this->close();
 
+       }
+       function CustomerViewItem($search){
+           $this->open();
+               $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE gadget_name like '".$search."%' or
+                                       brand like '".$search."%' or price like '".$search."%'
+                                       or features like '".$search."%'   ");
+
+               $stmt->execute();
+
+                   $status=false;
+                   while($rows=$stmt->fetch()){
+                       $status=true;
+
+                       echo "<div id=".$rows[0].">";
+                       echo "<p>".$rows[1]."</p>";
+                       echo "<p>".$rows[3]."</p>";
+                       echo "<p>".$rows[6]."</p>";
+                       echo "<p>"."<input type='button' onclick='Buy(".$rows[0].")'/>"."</p>";
+                       echo "</div>";
+                   }
+                   if(!$status){
+                       echo "<tr>";
+                       echo "<td colspan='10'>No Data </td>";
+                       echo "</tr>";
+
+                   }
+           $this->close();
        }
 
    }

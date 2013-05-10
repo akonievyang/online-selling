@@ -1,5 +1,43 @@
 <?php
-    session_start();
+include "DAO/Online_SellingDAO.php";
+global $display;
+
+$name=$_POST['name'];
+$brand=$_POST['brand'];
+$features=$_POST['features'];
+$price=$_POST['price'];
+
+$filename=$_FILES['uploadPic']['name'];
+$type=$_FILES['uploadPic']['type'];
+$error=$_FILES['uploadPic']['error'];
+$temp_name=$_FILES['uploadPic']['tmp_name'];
+$directory="uploaded_file/";
+$thumb_dir="uploaded_file/thumblr";
+
+if($error>0){
+     $display= "<p class='errorupload'>'Error'.$error</p>";
+
+}else if($type=='image/jpeg'||$type=='image/jpg'||$type=='image/png') {
+    if(file_exists($directory.$filename)){
+
+        $display= "<p class='errorupload'>Already exist </p>";
+    }else{
+
+        move_uploaded_file($temp_name,$directory.$filename);
+
+        $display = "<img src='".$directory.$filename."' />";
+
+        $action= new OnlineSelling();
+        $action->AddItem($name,$brand,$features,$price,$filename);
+    }
+
+
+
+}else{
+
+       $display= "<p class='errorupload'> Not supported file </p>";
+
+}
 
 ?>
 
@@ -17,44 +55,6 @@
 	<body>
 
         <div class="wholePage">
-
-            <div class="upload_container">
-                <?php
-                if(isset($_SESSION['upload_pic'])):
-                    echo  $_SESSION['not_supported'];
-                endif;
-
-                if(isset($_SESSION['exists'])):
-                    echo $_SESSION['errors'];
-                endif;
-
-                if(isset($_SESSION['exists'])):
-                    echo  $_SESSION['exists'];
-                endif;
-
-
-
-                ?>
-                <div id="pic">
-                    <?php if(isset($_SESSION['upload_pic'])):
-                              echo $_SESSION['upload_pic'];
-
-                        endif;
-                    ?>
-
-                </div>
-
-                <div style="padding: 10px;">
-                    <form action="uploadDemo.php" enctype="multipart/form-data" method="POST"">
-                        <input type="file" name="uploadPic"/>
-                        <input type="submit" id="upload" value="upload"/>
-
-                    </form>
-                </div>
-                <input type="button" id="saveItem" value = "save" class="btn btn-primary"/>
-                <input type="button" class="close_item" value = "close" class="btn "/>
-            </div>
-
             <div class="main">
 
                 <div class="content">
@@ -101,22 +101,33 @@
                         <div class="inner">
                             <h4 style=" color: #FFFFFF;">Add Item</h4>
                             <div id="add_info">
-                                    <form id="form_item">
-                                        <span style="display: none;" class="warning"></span>
-                                        <label>Name</label>
-                                        <input type="text"  class="input-medium" id="name" name='name' required="required"/>
-                                        <label>Brand</label>
-                                        <input type="text"  class="input-medium"  id="brand" name='brand' required/>
-                                        <label>Features</label>
-                                        <input type="text"  class="input-medium"  id="features" name='features' required/>
-                                        <label>Price</label>
-                                        <input type="text"  class="input-medium"  id="price" name='price' onkeyup="Number()" required/>
-
-                                    </form>
-
+                                <form action="admin.php" enctype="multipart/form-data" method="POST"">
+                                        <div id="item_form">
+                                            <span style="display: none;" class="warning"></span>
+                                            <label>Name</label>
+                                            <input type="text"  class="input-medium" id="name" name='name' required="required"/>
+                                            <label>Brand</label>
+                                            <input type="text"  class="input-medium"  id="brand" name='brand' required/>
+                                            <label>Features</label>
+                                            <input type="text"  class="input-medium"  id="features" name='features' required/>
+                                            <label>Price</label>
+                                            <input type="text"  class="input-medium"  id="price" name='price' onkeyup="Number()" required/>
+                                            <input type="button" id="add" value="add item" class="btn btn-primary"/>
+                                        </div>
+                                        <div class="upload_container">
+                                            <div class="pic">
+                                                <?php
+                                                    echo $display;
+                                                ?>
+                                            </div>
+                                                <p>Upload picture</p>
+                                                <input type="file" name="uploadPic"/>
+                                                <input type="submit" id="upload" class="btn btn-primary"  value="upload"/>
+                                                 <input type="button" id="save" class="btn btn-primary"  value="save"/>
+                                        </div>
+                                </form>
                             </div>
                             <!--- end add_info ---->
-                            <input type="button" id="add" value="add item" class="btn btn-primary"/>
                         </div>
                          <!--- end inner ---->
                     <br/>

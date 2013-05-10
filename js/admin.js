@@ -7,6 +7,7 @@
  */
 
 $(function(){
+
     SearchItem();
     SearchMember();
     $("div.pickcolor").click(function(){
@@ -27,47 +28,12 @@ $(function(){
         $(".member").show();
     });
 
+    $("#save").click(function(){
+        $(".upload_container").fadeOut();
+    });
+
    $("#add").click(function(){
-       var inputfield=$("#form_item").serializeArray();
-       var status=false;
-       for(var ctr=0;ctr<inputfield.length;ctr++){
-
-           if(inputfield[ctr].value==="" || inputfield[ctr].value=== NaN || inputfield[ctr].value===null || inputfield[ctr].value=== " "){
-               status=true;
-               break;
-           }else{
-               status=false;
-           }
-
-       }
-       if(status){
-           $(".warning").html("Some fields not yet filled up").fadeIn().fadeOut(5000).css({"color":"red"});
-       }else{
-           $(".upload_container").show();
-
-           $("#saveItem").click(function(){
-
-               var obj = {"name":$("#name").val(),
-                          "brand":$("#brand").val(),
-                          "features":$("#features").val(),
-                          "price":$("#price").val()
-               };
-
-                   $.ajax({
-                       type:"POST",
-                       url:"add_item.php",
-                       data:obj,
-                       success:function(data){
-                           alert(data);
-                           SearchItem();
-                       },
-                       error:function(data){
-                           alert(data);
-                       }
-                   });
-           });
-       }
-
+       $(".upload_container").show();
    });
 
    $("#items").on('click','tr',function(){
@@ -170,7 +136,7 @@ function DeleteItem(){
 
         });
     }
-    function ViewAddedPicture(){
+    function SaveUploaded(id){
         $.ajax({
             type:"POST",
             url:"viewAddedPic.php",
@@ -182,6 +148,7 @@ function DeleteItem(){
             }
 
         });
+
     }
     function SearchItem(){
 
