@@ -436,6 +436,8 @@ You cannot fully say that this is just a myphone a919 downgrade as there are som
     Battery: 	Standard battery, Li-Ion 1000 mAh
     Others: 	MP3/MP4 player, Yamaha amplifier, Sound recorder, Stereo FM radio, SRS WOW HD
     Accessories: 	Stereo Headset, USB Cable</p>
+
+
 </html>
 </body>
 </head>

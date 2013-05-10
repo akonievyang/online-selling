@@ -6,7 +6,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/A888 Duo.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/A919i Duo.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/image9.JPG" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/online.php" afterPath="$PROJECT_DIR$/online.php" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +34,7 @@
       <file leaf-file-name="online.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/online.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="324" column="43" selection-start="22258" selection-end="22258" vertical-scroll-proportion="-1.841615">
+            <state line="439" column="0" selection-start="26988" selection-end="26988" vertical-scroll-proportion="0.8369565">
               <folding />
             </state>
           </provider>
@@ -235,7 +235,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="324" column="43" selection-start="22258" selection-end="22258" vertical-scroll-proportion="-1.841615">
+        <state line="439" column="0" selection-start="26988" selection-end="26988" vertical-scroll-proportion="0.8369565">
           <folding />
         </state>
       </provider>
