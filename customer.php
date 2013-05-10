@@ -11,6 +11,7 @@
 			<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
 			<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css"/>
 	</head>
+    <title>MyPage</title>
 	<body>
 
             <div class="wholePage">
@@ -125,8 +126,8 @@
                             <h4 style=" color: #FFFFFF;">Category</h4>
                             <ul>
                                 <li>Cellphones</li>
-                                <li>Televesion</li>
-                                <li>Computer</li>
+                                <li>Laptops</li>
+                                <li>Digital Camera</li>
 
                             </ul>
                         </div>

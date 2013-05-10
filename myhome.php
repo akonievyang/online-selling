@@ -151,12 +151,12 @@
                         <h2>Categories</h2>
 
                         <ul>
-                            <li> <a href="#Cellphone"> <strong>Cellphones</strong> </a></li>
-                            <li> <a href="#Computer"> <strong> Computer </strong> </a></li>
-                            <li> <a href="#Television"> <strong> Television</strong> </a></li>
+                            <li> <a href="product.php"> <strong> Cellphones </strong> </a></li>
+                            <li> <a href="laptop.php"> <strong> Laptops </strong> </a></li>
+                            <li> <a href="camera.php"> <strong> Digital Cameras' </strong> </a></li>
 
                         </ul>
-
+                            <div id="Cellphone">
                             <div id="Computer">
 
                             </div>

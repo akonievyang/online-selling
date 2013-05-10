@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
 	</head>
+    <title>admin</title>
 	<body>
 
         <div class="wholePage">

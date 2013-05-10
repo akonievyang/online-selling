@@ -48,7 +48,7 @@
 
        function addMember($firstname, $middlename, $lastname, $address, $age, $gender, $contactNum, $username, $password){
            $this->open();
-           $stmt = $this->dbh->prepare("INSERT INTO user VALUES (null, ?, ?, ?, ?, ?, ?, ?, ?, ?) ");
+           $stmt = $this->dbh->prepare("INSERT INTO customer VALUES (null, ?, ?, ?, ?, ?, ?, ?, ?, ?) ");
 
 
            $stmt->bindParam(1, $firstname);
