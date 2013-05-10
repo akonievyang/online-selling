@@ -203,3 +203,18 @@ img.right {
 #body .rightbox {
     margin-right: 10px;
 }
+#Reg_Form{
+    text-decoration: none;
+    border-bottom: 1px solid #BFC6E3;
+    color: #145BF9;
+    margin-bottom: 10px;
+    background: #FF8DF0;
+
+}
+#Reg_Form h3{
+    margin: 0;
+    padding: 5px 15px;
+    background: #FF5DDA;
+    font-size: 1.4em;
+    color: #FFFFFF;
+}

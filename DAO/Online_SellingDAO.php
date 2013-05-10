@@ -282,6 +282,7 @@
                    while($rows=$stmt->fetch()){
                        $status=true;
 
+
                        echo "<div id=".$rows[0].">";
                        echo "<p>".$rows[1]."</p>";
                        echo "<p>".$rows[3]."</p>";

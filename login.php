@@ -21,6 +21,7 @@ if(isset($_POST['username']) && isset($_POST['password']) ){
     }else{
        echo 'Unable to login';
     }
+
 }
 
 ?>

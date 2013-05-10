@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title> Products</title>
+    <title> my|phone Cellphones </title>
     <script src="js/home.js"> </script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/jquery-ui-sample.css"/>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/home.css"/>

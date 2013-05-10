@@ -2,7 +2,9 @@ $(function(){
 
 
 
-})
+
+
+});
 
 
     function CustomerViewItem(){
@@ -18,11 +20,16 @@ $(function(){
 
             }
 
-        })
+        });
     }
 
     function Buy(id){
 
 
     }
+
+
+
+
+
 

@@ -11,10 +11,14 @@
 			<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
 			<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css"/>
 	</head>
+    <title>MyPage</title>
+
+
 	<body>
 
             <div class="wholePage">
                 <div class="main">
+                    <input name="submit" id="logOut" value="Log-Out"/>
                     <div style="margin-bottom: 20px;">
                         <input class="input-xxlarge" type="text" placeholder="What you want?:" id="search">
                         <input type="button" class="btn btn-primary btn-large" value="Search"/>
@@ -132,8 +136,8 @@
                             <h4 style=" color: #FFFFFF;">Category</h4>
                             <ul>
                                 <li>Cellphones</li>
-                                <li>Televesion</li>
-                                <li>Computer</li>
+                                <li>Laptops</li>
+                                <li>Digital Camera</li>
 
                             </ul>
                         </div>
