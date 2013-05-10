@@ -15,11 +15,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/uploaded_file/mini ipod.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/uploaded_file/promo1.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/uploaded_file/promo2.JPG" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" afterPath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/admin.css" afterPath="$PROJECT_DIR$/bootstrap/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin.js" afterPath="$PROJECT_DIR$/js/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,10 +75,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Online_SellingDAO.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Online_SellingDAO.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="108" selection-start="3617" selection-end="3617" vertical-scroll-proportion="-14.375">
+            <state line="98" column="0" selection-start="3425" selection-end="3425" vertical-scroll-proportion="0.27182865">
               <folding />
             </state>
           </provider>
@@ -98,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="44" selection-start="1104" selection-end="1113" vertical-scroll-proportion="0.49752882">
+            <state line="39" column="44" selection-start="1104" selection-end="1113" vertical-scroll-proportion="-16.333334">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -593,13 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="108" selection-start="3617" selection-end="3617" vertical-scroll-proportion="-14.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uploadDemo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="10" selection-start="742" selection-end="742" vertical-scroll-proportion="-12.708333">
@@ -609,7 +597,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="44" selection-start="1104" selection-end="1113" vertical-scroll-proportion="0.49752882">
+        <state line="39" column="44" selection-start="1104" selection-end="1113" vertical-scroll-proportion="-16.333334">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -617,6 +605,13 @@
             <element signature="n#style#0;n#span#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="3425" selection-end="3425" vertical-scroll-proportion="0.27182865">
+          <folding />
         </state>
       </provider>
     </entry>
