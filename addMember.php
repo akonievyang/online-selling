@@ -10,7 +10,7 @@ $lastname = $_POST['lastname'];
 $address = $_POST['address'];
 $age = $_POST['age'];
 $gender = $_POST['gender'];
-$contact = $_POST['contactNum'];
+$contactNum = $_POST['contactNum'];
 $username = $_POST['username'];
 $password = $_POST['password'];
 
