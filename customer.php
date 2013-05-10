@@ -12,10 +12,13 @@
 			<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css"/>
 	</head>
     <title>MyPage</title>
+
+
 	<body>
 
             <div class="wholePage">
                 <div class="main">
+                    <input name="submit" id="logOut" value="Log-Out"/>
                     <div style="margin-bottom: 20px;">
                         <input class="input-xxlarge" type="text" placeholder="What you want?">
                         <input type="button" class="btn btn-primary btn-large" value="Search"/>

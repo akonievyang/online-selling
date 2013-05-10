@@ -57,16 +57,22 @@
             <img src="images/canonpowershot_a2300_lens_extended_1341993609.jpg" width="350" height="350"/>
             <br> </br>
              <p>
-                 <b> * </b> 16.0 megapixel sensor <br> </br>
-                 <b> * </b> 5x optical zoom lens (35mm equiv: 28-140mm)<br> </br>
-                 <b> * </b> Digital Image Stabilisation<br> </br>
-                 <b> * </b> 2.7 inch touch LCD screen<br> </br>
-                 <b> * </b> Smart Auto (32 scenes)<br> </br>
-                 <b> * </b> 720p HD video recording<br> </br>
-                 <b> * </b> ISO 100-1600<br> </br>
-                 <b> * </b> 3cm minimum focusing distance<br> </br>
-                 <b> * </b>  Several creative modes<br> </br>
-                 <b> * </b> Available in black, silver, pink and blue<br> </br>
+                 <b> * </b> 16.0 mega pixel sensor <br>
+                 <b> * </b> 5x optical zoom lens (35mm equiv: 28-140mm)<br>
+                 <b> * </b> Digital Image Stabilisation<br>
+                 <b> * </b> 2.7 inch touch LCD screen<br>
+                 <b> * </b> Smart Auto (32 scenes)<br>
+                 <b> * </b> 720p HD video recording<br>
+                 <b> * </b> ISO 100-1600<br>
+                 <b> * </b> 3cm minimum focusing distance<br>
+                 <b> * </b>  Several creative modes<br>
+                 <b> * </b> Available in black, silver, pink and blue. <br>
+                <p1>
+                    <b> * </b> Built-in help guide <br>
+                    <b> * </b> Available in a good range of colours  <br>
+                    <b> * </b> Good creative modes  <br>
+                    <b> * </b> Images have really good colour reproduction  <br>
+                    <b> * </b>  Easy to use  <br>
              </p>
 
         </div>
