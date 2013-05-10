@@ -9,8 +9,9 @@
 $(function(){
     SearchItem();
     SearchMember();
-    $("input[type='checkbox']").focus(function(){
-        $(this).next("<input>").css('display','inline').fadeOut(1000);;
+    $("div.pickcolor").click(function(){
+     var id=document.getElementById(this.id);
+        $().sho()
 
     });
 
@@ -27,8 +28,8 @@ $(function(){
     });
 
    $("#add").click(function(){
-        var inputfield=$("#form_item").serializeArray();
-        var status=false;
+       var inputfield=$("#form_item").serializeArray();
+       var status=false;
        for(var ctr=0;ctr<inputfield.length;ctr++){
 
            if(inputfield[ctr].value==="" || inputfield[ctr].value=== NaN || inputfield[ctr].value===null || inputfield[ctr].value=== " "){
@@ -42,26 +43,31 @@ $(function(){
        if(status){
            $(".warning").html("Some fields not yet filled up").fadeIn().fadeOut(5000).css({"color":"red"});
        }else{
+           $(".upload_container").show();
 
+           $("#saveItem").click(function(){
 
-           var obj = {"name":$("#name").val(),
-                      "brand":$("#brand").val(),
-                      "features":$("#features").val(),
-                      "price":$("#price").val()
-           };
+               var obj = {"name":$("#name").val(),
+                          "brand":$("#brand").val(),
+                          "features":$("#features").val(),
+                          "price":$("#price").val()
+               };
 
-           $.ajax({
-               type:"POST",
-               url:"add_item.php",
-               data:obj,
-               success:function(data){
-                   SearchItem();
-               },
-               error:function(data){
-                   alert(data);
-               }
+                   $.ajax({
+                       type:"POST",
+                       url:"add_item.php",
+                       data:obj,
+                       success:function(data){
+                           alert(data);
+                           SearchItem();
+                       },
+                       error:function(data){
+                           alert(data);
+                       }
+                   });
            });
        }
+
    });
 
    $("#items").on('click','tr',function(){

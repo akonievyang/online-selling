@@ -32,8 +32,8 @@
                     echo  $_SESSION['exists'];
                 endif;
 
-                session_unset();
-                session_destroy();
+
+
                 ?>
                 <div id="pic">
                     <?php if(isset($_SESSION['upload_pic'])):
@@ -44,42 +44,7 @@
 
                 </div>
 
-                <div class="right_side">
-                    <input type="button" id="quanity" value="quantity"/>
-                    <br/>
-                    <p>Choose color:</p>
-
-                    <p><input type="checkbox" id="cb"/>
-                    <labe> black </labe>
-                    <input type="text" id="black"  class="input-mini"/></p>
-                    <br/>
-                    <p> <input type="checkbox" id="cw"/>
-                    <labe> white </labe>
-                    <input type="text" id="white" class="input-mini"/></p>
-                    <br/>
-                    <p> <input type="checkbox" id="cr"/>
-                    <labe> red </labe>
-                    <input type="text" id="red" class="input-mini"/></p>
-                    <br/>
-                    <p><input type="checkbox" id="cy"/>
-                    <labe> yellow </labe>
-                    <input type="text" id="yellow" class="input-mini"/></p>
-                    <br/>
-                    <p><input type="checkbox" id="cblk"/>
-                    <labe> bue </labe>
-                    <input type="text" id="blue" class="input-mini"/></p>
-                    <br/>
-                    <p><input type="checkbox" id="cg"/>
-                    <labe> green </labe>
-                    <input type="text" id="green" class="input-mini"/></p>
-                    <br/>
-                    <p><input type="checkbox" id="cv"/>
-                    <labe> violet </labe>
-                    <input type="text" id="violet" class="input-mini"/></p>
-                    <br/>
-                </div>
-                <div style="clear:both"></div>
-               <div style="padding: 10px;">
+                <div style="padding: 10px;">
                     <form action="uploadDemo.php" enctype="multipart/form-data" method="POST"">
                         <input type="file" name="uploadPic"/>
                         <input type="submit" id="upload" value="upload"/>

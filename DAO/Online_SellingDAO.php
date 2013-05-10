@@ -99,12 +99,11 @@
 
        function AddItem($name,$brand,$features,$price){
             $this->open();
-                $stmt=$this->dbh->prepare("INSERT INTO gadgets VALUES(null,?,?,?,?,NOW())");
+                $stmt=$this->dbh->prepare("INSERT INTO gadgets(name,brand,features,price,date_added) VALUES(?,?,?,?,NOW())");
                    $stmt->bindParam(1, $name);
                    $stmt->bindParam(2, $brand);
                    $stmt->bindParam(3, $features);
                    $stmt->bindParam(4, $price);
-
 
                    $stmt->execute();
 

@@ -25,11 +25,15 @@ div#add_item{
 }
 
 div#pic{
-    width: 200px;
+
+    border: 1px solid #bbbbbb;
+    width: 150px;
+    height: 100px;
     padding: 20px;
 
 }
 div.upload_container{
+    display: none;
     margin: 20px;
     padding: 20px;
     width: 700px;
