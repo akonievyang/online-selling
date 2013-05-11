@@ -2,78 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c599ff06-af49-46e9-99f8-cf2749ea85a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ myphone A868 DUO.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.gitIgnore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/500x.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/A848i Duo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/DYK.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/Sell-old-cell-phone.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/ZT9Zs.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/canon-0569-41085-1-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/canon_powershot_a2300_battery_and_memory_card_1341993505.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/canon_powershot_a2300_front_1341993524.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/canonpowershot_a2300_lens_extended_1341993609.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/fujifilm-3326-73695-1-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/fujifilm-3330-73695-2-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/fujifilm-3339-33695-1-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/icon-zoom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/img01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/img2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/img3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/img4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myPhone.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/olympus-8457-36725-1-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/olympus-8459-36725-2-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/samsung-4875-12795-1-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/samsung-4894-02795-1-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/samsung-4909-91795-1-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/samsung-4914-91795-4-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Register.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajaximage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/camera.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customerViewItem.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/item_pagination.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DAO/viewMember.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/home.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/A818i Duo.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/A888 Duo.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/A919i Duo.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/image9.JPG" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/8.jpeg" afterPath="$PROJECT_DIR$/uploaded_file/8.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/A888 Duo.png" afterPath="$PROJECT_DIR$/uploaded_file/A888 Duo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/A919 Duo.png" afterPath="$PROJECT_DIR$/uploaded_file/A919 Duo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/My-Phone-Logo.png" afterPath="$PROJECT_DIR$/uploaded_file/My-Phone-Logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/bg1.png" afterPath="$PROJECT_DIR$/uploaded_file/bg1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/im.jpeg" afterPath="$PROJECT_DIR$/uploaded_file/im.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/images.jpeg" afterPath="$PROJECT_DIR$/uploaded_file/images.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/img1.png" afterPath="$PROJECT_DIR$/uploaded_file/img1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/img5.png" afterPath="$PROJECT_DIR$/uploaded_file/img5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/BaseDAO.php" afterPath="$PROJECT_DIR$/DAO/BaseDAO.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" afterPath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addMember.php" afterPath="$PROJECT_DIR$/addMember.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_item.php" afterPath="$PROJECT_DIR$/add_item.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/admin.css" afterPath="$PROJECT_DIR$/bootstrap/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin.js" afterPath="$PROJECT_DIR$/js/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/customer.css" afterPath="$PROJECT_DIR$/bootstrap/css/customer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/customer.js" afterPath="$PROJECT_DIR$/js/customer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer.php" afterPath="$PROJECT_DIR$/customer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/myhome.css" afterPath="$PROJECT_DIR$/bootstrap/css/myhome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhome.php" afterPath="$PROJECT_DIR$/myhome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.php" afterPath="$PROJECT_DIR$/product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_item.php" afterPath="$PROJECT_DIR$/search_item.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadDemo.php" afterPath="$PROJECT_DIR$/uploadDemo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="c599ff06-af49-46e9-99f8-cf2749ea85a6" time="1368255936882" ignored="false" />
+    <file path="/Online_SellingDAO.php" changelist="c599ff06-af49-46e9-99f8-cf2749ea85a6" time="1368256669424" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,10 +33,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="laptop.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="laptop.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laptop.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_member.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edit_member.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customer.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="151" column="0" selection-start="6183" selection-end="6183" vertical-scroll-proportion="-62.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customer.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/customer.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Online_SellingDAO.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="159" column="46" selection-start="5875" selection-end="5875" vertical-scroll-proportion="0.7919255">
               <folding />
             </state>
           </provider>
@@ -117,6 +93,15 @@
       <MyDateState />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
+        <option value="$PROJECT_DIR$/customer.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="24" />
@@ -137,7 +122,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -148,13 +133,66 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DAO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/laptop.php" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -167,14 +205,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1442" height="853" extended-state="7" />
+    <frame x="-1" y="24" width="1442" height="853" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -250,9 +288,37 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/customer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/laptop.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit_member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="0" selection-start="6183" selection-end="6183" vertical-scroll-proportion="-62.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="46" selection-start="5875" selection-end="5875" vertical-scroll-proportion="0.7919255">
           <folding />
         </state>
       </provider>

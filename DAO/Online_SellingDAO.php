@@ -60,13 +60,11 @@
            $this->close();
        }
 
-<<<<<<< HEAD
        /*---------------------------------add ug mga member----------------------------------------*/
 
-       function addMember($firstname, $middlename, $lastname, $age, $address, $gender, $username, $password, $type){
-=======
+
        function addMember($firstname, $middlename, $lastname, $address, $age, $gender, $contactNum, $username, $password){
->>>>>>> 7ec2809fb97674a8a2aa6f20110d4dc09c4a64b5
+
            $this->open();
            $stmt = $this->dbh->prepare("INSERT INTO customer VALUES (null, ?, ?, ?, ?, ?, ?, ?, ?, ?) ");
 
@@ -78,8 +76,8 @@
            $stmt->bindParam(5, $age);
            $stmt->bindParam(6, $gender);
            $stmt->bindParam(7, $contactNum);
-           $stmt->bindParam(8,$password );
-           $stmt->bindParam(9,$username );
+           $stmt->bindParam(8,$username );
+           $stmt->bindParam(9,$password );
 
            $stmt->execute();
            $customer_id = $this->dbh->lastInsertId();
@@ -93,16 +91,11 @@
            echo "<td>".$address."</td>";
            echo "<td>".$contactNum."</td>";
            echo "<td>".$gender."</td>";
-<<<<<<< HEAD
            echo "<td>".$username."</td>";
            echo "<td>".$password."</td>";
-           echo "<td>".$type."</td>";
            echo "<td><img src='images/delete.png' onclick='deleteEntry(".$customer_id.")'/>";
            echo "<img src='images/edit.png' onclick='editEntry(".$customer_id.")'/></td>";
-=======
-           echo "<td><img src='images/delete.png' onclick='deleteEntry(".$id.")'/>";
-           echo "<img src='images/edit.png' onclick='editEntry(".$id.")'/></td>";
->>>>>>> 7ec2809fb97674a8a2aa6f20110d4dc09c4a64b5
+
            echo "</tr>";
 
            $this->close();
@@ -142,7 +135,7 @@
 
        /*-------------------------edit para sa mga member-----------------------------------------*/
 
-       function edit_member($customer_id,$firstname, $middlename, $lastname, $age, $address, $gender, $username, $password , $type){
+       function edit_member($customer_id,$firstname, $middlename, $lastname, $age, $address, $gender, $username, $password){
 
             $this->open();
 
@@ -155,7 +148,6 @@
             $stmt->bindParam(6,$gender);
             $stmt->bindParam(7,$username);
             $stmt->bindParam(8,$password);
-            $stmt->bindParam(9,$type);
             $stmt->execute();
 
                 echo "<td>".$customer_id."</td>";
@@ -166,7 +158,6 @@
                 echo "<td>".$gender."</td>";
                 echo "<td>".$username."</td>";
                 echo "<td>".$password."</td>";
-                echo "td>".$type."</td>";
                 echo "<td><img src='images/delete.png' onclick='deleteEntry(".$customer_id.")'/>";
                 echo "<img src='images/edit.png' onclick='editEntry(".$customer_id.")'/></td>";
                 echo "</tr>";
