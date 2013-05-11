@@ -1,11 +1,3 @@
-/**
- * Created with JetBrains PhpStorm.
- * User: student1
- * Date: 5/6/13
- * Time: 9:21 AM
- * To change this template use File | Settings | File Templates.
- */
-
 $(function(){
     SearchItem();
     SearchMember();
