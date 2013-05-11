@@ -59,41 +59,30 @@
 
            $this->close();
        }
-
-       function addMember($firstname, $middlename, $lastname, $age, $address, $gender, $username, $password, $type){
-           $this->open();
-           $type="buyer";
-           $stmt = $this->dbh->prepare("INSERT INTO user VALUES (null, ?, ?, ?, ?, ?, ?, ?, ?, ?) ");
+      function RegisterCustomer($firstname, $middlename, $lastname, $address, $age, $gender, $contactNum, $username, $password){
+          $this->open();
+          $stmt = $this->dbh->prepare("INSERT INTO customer VALUES (null, ?, ?, ?, ?, ?, ?, ?, password('?'), ?) ");
 
 
-           $stmt->bindParam(1, $firstname);
-           $stmt->bindParam(2, $middlename);
-           $stmt->bindParam(3, $lastname);
-           $stmt->bindParam(4, $age);
-           $stmt->bindParam(5, $address);
-           $stmt->bindParam(6, $gender);
-           $stmt->bindParam(7, $username);
-           $stmt->bindParam(8, $password);
-           $stmt->bindParam(9, $type);
+          $stmt->bindParam(1, $firstname);
+          $stmt->bindParam(2, $middlename);
+          $stmt->bindParam(3, $lastname);
+          $stmt->bindParam(4, $address);
+          $stmt->bindParam(5, $age);
+          $stmt->bindParam(6, $gender);
+          $stmt->bindParam(7, $contactNum);
+          $stmt->bindParam(8, $password);
+          $stmt->bindParam(9, $username);
 
-           $stmt->execute();
-           $id = $this->dbh->lastInsertId();
 
-           echo "<tr id=".$id.">";
-           echo "<td>".$id."</td>";
-           echo "<td>".$firstname."</td>";
-           echo "<td>".$middlename."</td>";
-           echo "<td>".$lastname."</td>";
-           echo "<td>".$age."</td>";
-           echo "<td>".$address."</td>";
-           echo "<td>".$gender."</td>";
-           echo "<td>".$type."</td>";
-           echo "<td><img src='images/delete.png' onclick='deleteEntry(".$id.")'/>";
-           echo "<img src='images/edit.png' onclick='editEntry(".$id.")'/></td>";
-           echo "</tr>";
 
-           $this->close();
-       }
+          $stmt->execute();
+          $id = $this->dbh->lastInsertId();
+
+
+
+          $this->close();
+      }
 
        /*------------------------ ADD FUNCTION ------------------------------------------- */
 

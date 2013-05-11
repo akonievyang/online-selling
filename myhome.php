@@ -107,22 +107,22 @@
 
                         <h3>Register (New Member)</h3>
 
-                        <form>
+                        <form action="Register.php" method = "POST">
 
-                            Firstname:	<input type="text" name ="firstname">
-                            Middlename:   <input type="text" name ="middlename">
-                            Lastname: <input type ="text" name ="lastname">
-                            Address: <input type ="text" name ="address"> <br>
-                            Age: <br> <input type="text" name ="age">
+                            Firstname:	<input type="text" name ="firstname" required>
+                            Middlename:   <input type="text" name ="middlename" required>
+                            Lastname: <input type ="text" name ="lastname" required>
+                            Address: <input type ="text" name ="address" required> <br>
+                            Age: <br> <input type="text" name ="age" required>
                             <tr>
-                            Gender: <select id = "gender" name = "gender">
+                            Gender: <select id = "gender" name = "gender" >
                                     <option value = "male"> Male</option>
-                                    <option value = "female"> Female</option>
+                                    <option value = "female"> Female</option >
                                 </select>
                             </tr> <br>
-                            Contact Number: <input type = "text" name = "contactNum">
-                            Username:<input type="text" name="username">
-                            Password:<input type="password" name="password">
+                            Contact Number: <input type = "text" name = "contactNum" required>
+                            Username:<input type="text" name="username" required>
+                            Password:<input type="password" name="password" required>
 
                             <input type='submit' id ="reg" value='Register'/>
                         </form>
