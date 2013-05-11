@@ -36,11 +36,54 @@ $(function(){
     });
 
     $("#saveitem").click(function(){
-        alert($("#photoimg").val());
+
+        var inputfield=$("#form_item").serializeArray();
+        var status=false;
+        for(var ctr=0;ctr<inputfield.length;ctr++){
+
+            if(inputfield[ctr].value==="" || inputfield[ctr].value=== NaN || inputfield[ctr].value===null || inputfield[ctr].value=== " "){
+                status=true;
+                break;
+            }else{
+                status=false;
+            }
+
+        }
+        if(status){
+            $(".errorwarning").html("Some fields not yet filled up").fadeIn().fadeOut(5000).css({"color":"red"});
+        }else{
+
+
+            var obj = {"name":$("#name").val(),
+                "brand":$("#brand").val(),
+                "features":$("#features").val(),
+                "price":$("#price").val(),
+                "picture":$("#photoimg").val()
+            };
+            if(obj.picture==null||obj.picture==""||obj.picture==NaN||obj.picture==" "){
+                $(".errorwarning").html("Upload picture").fadeIn().fadeOut(5000).css({"color":"red"});
+            }else{
+
+            }
+
+            $.ajax({
+                type:"POST",
+                url:"add_item.php",
+                data:obj,
+                success:function(data){
+                    $(".upload_container").hide();
+                    SearchItem();
+                },
+                error:function(data){
+                    alert(data);
+                }
+            });
+
+        }
     });
 
    $("#add").click(function(){
-
+        $(".upload_container").show();
    });
 
 

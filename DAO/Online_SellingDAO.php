@@ -14,32 +14,28 @@
          $this->close();
       }
       
-      function ViewDisplay(){
+      function CustomerViewItem($search){
       	$this->open();
-      		$stmt=$this->dbh->prepare("Select item.item_id,gadgets.discription,gadgets.features,picture.large_pic,gadgets.price,gadgets.name,gadgets.brand
-      											from item,gadgets,picture where item.gadget_id=gadgets.gadget_id and item.pic_id=picture.pic_id");
+      		$stmt=$this->dbh->prepare(" SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
+                                        gadgets.price, picture.large_pic,gadgets.features
+                                        FROM item, gadgets, picture
+                                        WHERE item.gadget_id = gadgets.gadget_id
+                                        AND item.pic_id = picture.pic_id
+                                        AND gadgets.gadget_name ");
       		$stmt->execute();
-      		
+
+
       		$status=false;
       		while($rows=$stmt->fetch()){
-      			$status=true;
-      			echo "<div>";
-      			echo "<div class='shop' id='big_pic'>"."<img src='images/".$rows[3]."'/>"."</div>";      			
-      			echo "<div class='shop' id='features'>"."<h3>"."Features"."</h3>".$rows[2]."</div>";
-      			echo "</div>";
-      			
-      			echo "<div>";
-      			echo "<div class='selling_status'>";
-      			echo "<label>"."Price: ".$rows[4]." ONLY"."  "."<img src='images/add.png' onclick='BuyNow(".$rows[0],$rows[4],$rows[5],$rows[6].")'/>"."</label>";   			
-      			echo "</div>";
-      			echo "</div>";
-      			
-      			echo "<div class='describe'>";
-					echo "<div id='descriptions'>"."<h3>"."Description"."</h3>".$rows[1]."</div>";
-      			echo "</div>";
-      			
-      		
-      		}if(!$status){
+
+
+      			    echo "<img class='itempic' src='uploaded_file/".$rows[4]."'/>"."</div>";
+                    echo "<label>".$rows[1]."</label>";
+                    echo "<label style='display:inline;'>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
+                    echo "<input type='button' value='buy now' onclick='BuyNow(".$rows[0].",".$rows[1].",".$rows[2].",".$rows[3].",".$rows[5].")'/>";
+
+      		}
+            if(!$status){
       			echo "<div > Not available here </div>";
   					    		
       		}
@@ -60,44 +56,9 @@
            $this->close();
        }
 
-       function addMember($firstname, $middlename, $lastname, $age, $address, $gender, $username, $password, $type){
-           $this->open();
-           $type="buyer";
-           $stmt = $this->dbh->prepare("INSERT INTO user VALUES (null, ?, ?, ?, ?, ?, ?, ?, ?, ?) ");
-
-
-           $stmt->bindParam(1, $firstname);
-           $stmt->bindParam(2, $middlename);
-           $stmt->bindParam(3, $lastname);
-           $stmt->bindParam(4, $age);
-           $stmt->bindParam(5, $address);
-           $stmt->bindParam(6, $gender);
-           $stmt->bindParam(7, $username);
-           $stmt->bindParam(8, $password);
-           $stmt->bindParam(9, $type);
-
-           $stmt->execute();
-           $id = $this->dbh->lastInsertId();
-
-           echo "<tr id=".$id.">";
-           echo "<td>".$id."</td>";
-           echo "<td>".$firstname."</td>";
-           echo "<td>".$middlename."</td>";
-           echo "<td>".$lastname."</td>";
-           echo "<td>".$age."</td>";
-           echo "<td>".$address."</td>";
-           echo "<td>".$gender."</td>";
-           echo "<td>".$type."</td>";
-           echo "<td><img src='images/delete.png' onclick='deleteEntry(".$id.")'/>";
-           echo "<img src='images/edit.png' onclick='editEntry(".$id.")'/></td>";
-           echo "</tr>";
-
-           $this->close();
-       }
-
        /*------------------------ ADD FUNCTION ------------------------------------------- */
 
-       function AddItem($name,$brand,$features,$price,$filename){
+       function AddItem($name,$brand,$features,$price,$picture){
             $this->open();
                 $stmt=$this->dbh->prepare("INSERT INTO gadgets(gadget_name,brand,features,price,date_added) VALUES(?,?,?,?,NOW())");
                    $stmt->bindParam(1, $name);
@@ -108,7 +69,7 @@
                    $gad_id=$this->dbh->lastInsertId();
 
                 $stmt=$this->dbh->prepare("Insert into picture values(null,?)");
-                   $stmt->bindParam(1,$filename);
+                   $stmt->bindParam(1,$picture);
                    $stmt->execute();
                    $pic_id=$this->dbh->lastInsertId();
 
@@ -264,34 +225,11 @@
                    }
             $this->close();
 
+
+
        }
-       function CustomerViewItem($search){
-           $this->open();
-               $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE gadget_name like '".$search."%' or
-                                       brand like '".$search."%' or price like '".$search."%'
-                                       or features like '".$search."%'   ");
+       function AddToCart($id,$name,$brand,$price){
 
-               $stmt->execute();
-
-                   $status=false;
-                   while($rows=$stmt->fetch()){
-                       $status=true;
-
-
-                       echo "<div id=".$rows[0].">";
-                       echo "<p>".$rows[1]."</p>";
-                       echo "<p>".$rows[3]."</p>";
-                       echo "<p>".$rows[6]."</p>";
-                       echo "<p>"."<input type='button' onclick='Buy(".$rows[0].")'/>"."</p>";
-                       echo "</div>";
-                   }
-                   if(!$status){
-                       echo "<tr>";
-                       echo "<td colspan='10'>No Data </td>";
-                       echo "</tr>";
-
-                   }
-           $this->close();
        }
 
    }
