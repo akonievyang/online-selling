@@ -148,6 +148,11 @@
                 <!--- end main --->
             <div>
             <!--- whole page --->
-	</body>
+
+
+                <center><input type="submit" class="btn btn-primary" value="Edit"/></center>
+
+
+    </body>
 
 </html>
