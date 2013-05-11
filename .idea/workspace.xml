@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="639cf2ef-a656-46d8-8ab7-5a2271a75a3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laptop/08-ces2013toshibaunveilsupdatedlineupofsatelliteandaiolaptops.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laptop/6a010535c50a83970b0105371d8bec970b_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laptop/HD-Wallpapers-For-Laptop-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laptop/Increase-Laptop-Performance.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laptop/black-laptop.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laptop/samsung-0859-39464-5-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laptop/samsung-156in-windows-8-4gb-ram-500gb-laptop-d-2012113018070313~227229_040.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laptop/samsung-3195-39464-1-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laptop/samsung-ativ-book-5_front-625x1000.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/edit_member.php" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/A818i Duo.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/A888 Duo.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/A919i Duo.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/image9.JPG" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" afterPath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin.js" afterPath="$PROJECT_DIR$/js/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer.php" afterPath="$PROJECT_DIR$/customer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laptop.php" afterPath="$PROJECT_DIR$/laptop.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,7 +76,7 @@
       <file leaf-file-name="Online_SellingDAO.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="0" selection-start="5108" selection-end="5108" vertical-scroll-proportion="1.0481366">
+            <state line="134" column="0" selection-start="5108" selection-end="5108" vertical-scroll-proportion="0.9083851">
               <folding />
             </state>
           </provider>
@@ -424,7 +409,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="0" selection-start="5108" selection-end="5108" vertical-scroll-proportion="1.0481366">
+        <state line="134" column="0" selection-start="5108" selection-end="5108" vertical-scroll-proportion="0.9083851">
           <folding />
         </state>
       </provider>
