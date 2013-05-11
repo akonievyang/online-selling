@@ -1,11 +1,3 @@
-/**
- * Created with JetBrains PhpStorm.
- * User: student1
- * Date: 5/6/13
- * Time: 9:21 AM
- * To change this template use File | Settings | File Templates.
- */
-
 $(function(){
 
     SearchItem();
@@ -245,37 +237,5 @@ function DeleteItem(){
         });
 
     }
-function addMember(){
-          $.ajax({
-            type: "POST",
-            url: "addMember.php",
 
-            data: {
-                "firstname":$("input[name = 'firstname']").val(),
-                "middlename":$("input[name = 'middlename']").val(),
-                "lastname": $("input[name ='lastname']").val(),
-                "address": $("input[name = 'address']").val(),
-                "age": $("input[name = 'age']").val(),
-                "gender": $("#gender").val(),
-                "contactNum": $("input[name = 'contactNum']").val(),
-                "username": $("input[name = 'username']").val(),
-                "password": $("input[name = 'password']").val()
-
-            },
-
-
-            success:function(data){
-
-
-                $('#user').append(data);
-
-            },
-        error: function(data){
-            /*alert("Error="+data);*/
-            alert("sahgbglsdg")
-
-            }
-        });
-
-}
 

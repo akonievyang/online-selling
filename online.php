@@ -1,5 +1,5 @@
 <!doctype HTML>
-/<html>
+<html>
 <head>
 	<body>
 <style>
@@ -15,6 +15,7 @@
 
 <h2>Myphone a919 DUO-white</h2>
     <center><img src="images/myphone a919 duo-iloilo-philippines.jpg"/></center>
+    <h2>price at P7,999.00</h2>
 <p>If you’ve been holding out for an affordable dual-core, dual-SIM smartphone with a big-ass display, then you’re in luck. Say hello to the Samsung Galaxy S III’s cousin MyPhone A919 Duo, the forthcoming 5-inch Android variant from the guys responsible for the 4.3-inch MyPhone A878 Duo.
 
     Officially priced cheaper than most kids on the block, especially considering how massive this thing is, the A919 Duo will retail at P7,999.
@@ -27,13 +28,14 @@ Designed to go toe-to-toe with other China-bred Android heavyweights, the MyPhon
 
     According to a MyPhone executive, the A919 Duo ships with Android Ice Cream </p>
 
-<h2>Myphone BM2 DUO</h2>
+<h2>Myphone BM2 DUO orange</h2>
     <center><img src="images/myphone1.jpg"/></center>
 <p>Communicate and enjoy endless possibilities with the multitasking BM2 Duo. This device features dual SIM capabilities, offering efficient management of your very social lifestyle.
     The 2MP camera allows you to capture memorable moments with family and friends. You can also listen to your favorite music via its pre-installed music player or FM radio. Feature packed and functional, this mobile phone will aid your communication needs efficiently. </p>
 
 <h2>MyPhone A919i DUO </h2>
     <center><img src="images/image9.JPG"></center>
+    <h2>price at P9,590.00</h2>
 <p>It just hit local store shelves yesterday, but the MyPhone A919i Duo, priced at P9,590, is already getting ready to be tortured in our gadget lab.
 
     Our first impressions? MyPhone's latest entry to the smartphone wars is going to give other devices a good fight. </p>
@@ -67,6 +69,7 @@ Designed to go toe-to-toe with other China-bred Android heavyweights, the MyPhon
 
 <h2>Myphone Black QW30 WiFi</h2>
     <center><img src="images/Myphone Black QW30 WiFi.jpg"></center>
+    <h2>price at P4,999.00 w/54% OFF</h2>
 <p>Today's Deal: Only P2,290 for the Myphone QW30 WiFi QWERTY Phone - FREE DELIVERY within Metro Manila (valued at P4,999) That's 54% OFF! Details Delivery starts from January 4, 2013 to January 15, 2013Pick-Up available from January 4, 2013 to January 18, 2013Pick-Up at CashCashPinoy office, Mondays t
 
     Today’s Deal: Only P2,290 for the Myphone QW30 WiFi QWERTY Phone – FREE DELIVERY within Metro Manila (valued at P4,999) That’s 54% OFF!
@@ -77,6 +80,7 @@ Designed to go toe-to-toe with other China-bred Android heavyweights, the MyPhon
 
 <h2>QW28-Actual-Product2</h2>
     <center><img src="images/QW28-Actual-Product2.jpg"></center>
+    <h2>price at P5,990.00</h2>
 <p>This beauty from my!phone is dual sim and costs only PhP 5,990 and is feature-packed.  Infact it claims to do what blackberry does in a cheaper manner.  I like this one better if only it comes in red. It boasts of a 3.2 megapixel camera, bluetooth connectivity, and wifi.  What else would you need?
 
     But really i have been itching to buy an underwater camera for sometime.  Not that, i have any plans of scuba diving soon.  My children are mermaids.  Abby particularly, sometimes wears her pink necklace, touches it and says " I want to be human." During our ferry boat rides from liloan ,leyte to lipata, surigao city when we were sailing beneath the stars and i told them to make a wish because i saw a shooting star, they wished that they become mermaids.  And i told them to shut up( He he).  Good parenting huh?! Seriously, they take to water like ducks. If it were upto me, i would spend every other weekend near a body of water just so they would really swim and play to their hearts content.
@@ -123,7 +127,8 @@ Designed to go toe-to-toe with other China-bred Android heavyweights, the MyPhon
 
 
 <h2>A888 Duo</h2>
-<center><img src="images/A888 Duo.png"></center>
+<center><img src="images/A888Duo.png"></center>
+    <h2>price at P7,499.00</h2>
 <p>It’s official, my|phone fan page posted an update to announce their latest Android phone offering, taking the name: myphone A888 Duo. Its a dual core Android phone, with 4.5 inch of IPS screen at qHD resolution. Catch more info about the MyPhone A888 Duo after the jump.While many of the geeks have been expecting to see a quad-core here on the A888 model, I just think its really too early for that. What we have here on this official myphone A888 duo is a dual-core with 1GHz clock-speed which is not bad at all. On another note, I see people saying that its just a downgrade of the 5-inch myPhone A919 phablet, its kind of but not that actually as they have a lot of differences and edge.
 
     Lets take a look first on the specs and features of this myPhone A888 Duo:
@@ -149,7 +154,290 @@ You cannot fully say that this is just a myphone a919 downgrade as there are som
 
     The posted price of the myphone a888 duo is P7,499. Not sure if its the final price, as it was just posted as the introductory price. We cannot say if it will go up or down. Well for you, what can you say about the pricing?Not mentioned as well if its already available in stores right now. We’ll see if I could be able to do a hands-on with this new myphone a888 duo. I’ll keep you posted.</p>
 
-</div>
+<h2>Myphone B88TV DUO</h2>
+<center><img src="images/myphone2.jpg"></center>
+ <p>You won’t miss any minute of your favorite TV shows with the MyPhone B88TV Duo. This basic dual-SIM phone has a mobile TV feature so you will enjoy watching even when you’re on the go. It will take your entertainment and music experience to the next level with its wireless FM radio feature and MP3/MP4 player. The built-in camera lets you capture your most precious moments. With integrated Bluetooth technology, it allows you to share photos, music, and more with other devices. An easy-to-use phone packed with features that provide entertainment and pleasure.
+    </p>
+
+ <h2></h2>
+<center><img src="images/myphone5.jpeg"></center>
+<p>My Phone 5
+
+    100% After Effects, CS4 or higher
+
+    No plugin required (prerendered Optical Flares version included if you don’t have this plugin)
+
+    You can change the colors of the phone, black and white versions included
+
+    10, 15, 30 seconds 1920×1080 Full HD
+
+    The phone was build inside After Effects and can be animate it as you want.
+
+    The app icons, interface and screen wallpaper can be changed inside After Effects, just add your image and text and it will be automatically updated.
+
+    quick edit video tutorial included</p>
+
+<h2>B12-myphone DUO</h2>
+<center><img src="images/B12-myphone.jpg"></center>
+<h2>price at P1,199.00</h2>
+<p>FEATURES
+    Type: 	Dual SIM phone
+    Data Connection: 	GSM
+    Frequency Range: 	900/1800 MHz
+    Display: 	1.8“ 128X160 pixels TFT
+    Browser: 	WAP 2.0
+    Messaging: 	SMS, MMS, EMS, Chat
+    Ringing Melody: 	MP3, True Tones, MIDI, WAV
+    Applications: 	Games, Calendar, To Do List,  Alarm, Calculator, Unit & Currency Converter, World Clock, Health, Stopwatch
+    Connectivity: 	N/A
+    Imaging: 	N/A
+    Phonebook: 	500 entries
+    Card slot: 	microSD (TransFlash) up to 4GB
+    SPECIFICATIONS
+    Weight: 	55g
+    Dimensions: 	108X46X14.2mm
+    Talk/Standby Time: 	6h/ 190h
+    Battery: 	Standard battery, Li-Ion 900 mAh
+    Others: 	MP3 player, Sound recorder, Stereo FM radio, Flashlight
+    Accessories: 	Stereo Headset</p>
+
+<h2>B15-myphone DUO</h2>
+<center><img src="images/B15-myphone.jpg"></center>
+<h2>price at P1,390.00</h2>
+<p>FEATURES
+    Type: 	Dual SIM Bar phone
+    Data Connection: 	GSM / GPRS Class 12
+    Frequency Range: 	900/1800 MHz
+    Display: 	1.77“ 128X160 pixels TFT
+    Browser: 	WAP 2.0
+    Messaging: 	SMS, MMS
+    Ringing Melody: 	MP3, MIDI
+    Applications: 	Games, Calendar, Alarm, Calculator, Unit & Currency Converter, World Clock, Health, Stopwatch, Ebook Reader, Torch
+    Connectivity: 	N/A
+    Imaging: 	0.1 Megapixels
+    Phonebook: 	500 entries
+    Card slot: 	microSD (TransFlash) up to 2GB
+    SPECIFICATIONS
+    Weight: 	80g
+    Dimensions: 	108.5X45X14mm
+    Talk/Standby Time: 	389 mins / 232 hours
+    Battery: 	Standard battery, Li-Ion 900 mAh
+    Others: 	MP3 Player, FM Sound recorder, Audio Recorder, FM Radio Built-in Telescopic Antenna, Flashlight
+    Accessories: 	Stereo Headset, USB Cable</p>
+
+<h2>B1-myphone DUO</h2>
+<center><img src="images/BM1-myphone.jpg"></center>
+<h2>price at P2,999.00</h2>
+<p>FEATURES
+    Type: 	Dual SIM Bar Music phone
+    Data Connection: 	GSM/GPRS Class 12
+    Frequency Range: 	900/1800/1900 MHz
+    Display: 	2.4“ 240 x 320 pixels TFT,  QVGA
+    Browser: 	WAP 2.0
+    Messaging: 	SMS, MMS
+    Ringing Melody: 	MP3, MIDI, AMR
+    Applications: 	Games, Calendar, Alarm, Calculator, Unit & Currency Converter, World Clock, Health, Stopwatch, Notes, Ebook Reader
+    Connectivity: 	Bluetooth/micro USB 2.0
+    Imaging: 	2.0 MP
+    Phonebook: 	500 entries
+    Card slot: 	microSD (TransFlash) up to 8GB
+    SPECIFICATIONS
+    Weight: 	101g
+    Dimensions: 	114X49X10.8mm
+    Talk/Standby Time: 	489mins/ 148hrs
+    Battery: 	Standard battery, Li-Ion 950 mAh
+    Others: 	MP3 player, Video player/recorder, Sound recorder, FM radio, SRS WOW HD
+    Accessories: 	Stereo Headset (3.5mm jack),Free 2GB microSD</p>
+
+<h2>Q19i-myphone DUO</h2>
+<center><img src="images/Q19i-myphone.jpg"></center>
+<h2>price at P1,888.00</h2>
+<p>FEATURES
+    Type: 	Dual SIM Qwerty phone
+    Data Connection: 	GSM / GPRS
+    Frequency Range: 	900/1800MHz
+    Display: 	2.0“ 220×176 pixels TFT
+    Browser: 	WAP 2.0
+    Messaging: 	SMS, MMS
+    Ringing Melody: 	MP3, MIDI
+    Applications: 	Games, Calendar, Alarm, Calculator, Unit & Currency Converter, World Clock, E-book reader, MSN, Yahoo messenger, Facebook(wap),twitter(wap)
+    Imaging: 	0.1 Megapixels
+    Phonebook: 	500 entries
+    Card slot: 	microSD (TransFlash) up to 4GB
+    SPECIFICATIONS
+    Weight: 	72g
+    Dimensions: 	111.2X61.2X13mm
+    Talk/Standby Time: 	5hrs / 267hrs
+    Battery: 	Standard battery, Li-Ion 1000 mAh
+    Others: 	MP3 player, Sound recorder, Stereo FM radio
+    Accessories: 	Stereo Headset</p>
+
+<h2>QP29-myphone DUO</h2>
+<center><img src="images/QP29-myphone.jpg"></center>
+<h2>price at P2,588.00</h2>
+<p>FEATURES
+    Type: 	Dual SIM Qwerty phone
+    Data Connection: 	GSM / EDGE/ GPRS
+    Frequency Range: 	900/1800/1900 MHz
+    Display: 	2.2“ 240X320 pixels QVGA screen
+    Messaging: 	SMS, MMS, EMS, Chat, Email
+    Ringing Melody: 	MP3, MIDI
+    Applications: 	Java, Google maps, MSN, Yahoo messenger, Gtalk, Skype, Facebook
+    Connectivity: 	Bluetooth 2.0 / Micro USB / 3.5mm jack
+    Imaging: 	2.0 Mega pixels
+    Phonebook: 	1000 entries
+    Card slot: 	microSD (TransFlash) up to 16GB
+    SPECIFICATIONS
+    Dimensions: 	114X60X10.4mm
+    Battery: 	Standard battery, Li-Ion 1000 mAh
+    Others: 	MP3/MP4 player, SRS, FM Radio
+    Accessories: 	Stereo mp3 Earphone, micro USB cable</p>
+
+<h2>QT7-myphone DUO</h2>
+<center><img src="images/QT7-myphone.jpg"></center>
+<h2>price at P2,990.00</h2>
+<p>FEATURES
+    Type: 	Dual SIM Qwerty phone
+    Data Connection: 	GSM / EDGE/ GPRS Class 12
+    Frequency Range: 	900/1800 /1900MHz
+    Display: 	2.2“ 240X320 pixels QVGA screen
+    Browser: 	WAP 2.0
+    Messaging: 	SMS, MMS, EMS, Chat, Email
+    Ringing Melody: 	MP3, True Tones, MIDI, WAV
+    Applications: 	Java, Google Map, Google search, MSN, Yahoo messenger, Gtalk, Skype, Ebuddy, Opera mini, Facebook, Games, World Clock, Health, Stopwatch, E-book reader
+    Connectivity: 	Bluetooth 2.0 / USB / 3.5mm jack
+    Imaging: 	2.0 Mega pixels
+    Phonebook: 	1000 entries
+    Card slot: 	microSD (TransFlash) up to 8GB
+    SPECIFICATIONS
+    Weight: 	107g
+    Dimensions: 	115X62X12.5mm
+    Talk/Standby Time: 	6hrs / 270hrs
+    Battery: 	Standard battery, Li-Ion 1000 mAh
+    Others: 	MP3/MP4 player, Yamaha amplifier, Sound recorder, Stereo FM radio
+    Accessories: 	Stereo Headset, USB cable</p>
+
+<h2>QTV20-myphone DUO</h2>
+<center><img src="images/QTV20-myphone.jpg"></center>
+<h2>price at P2,488.00</h2>
+<p>FEATURES
+    Type: 	Dual SIM Qwerty TV phone
+    Data Connection: 	GSM / GPRS Class 12
+    Frequency Range: 	900/1800/1900MHz
+    Display: 	2.2“ 220X176 pixels TFT
+    Browser: 	WAP 2.0
+    Messaging: 	SMS, MMS, EMS, Chat
+    Ringing Melody: 	MP3, True Tones, MIDI, WAV
+    Applications: 	MSN, Yahoo messenger, Facebook, Twitter, Games, World Clock, Health, Stopwatch, E-book reader
+    Connectivity: 	Bluetooth / USB
+    Imaging: 	VGA camera
+    Phonebook: 	500 entries
+    Card slot: 	microSD (TransFlash) up to 4GB
+    SPECIFICATIONS
+    Weight: 	100g
+    Dimensions: 	111*61*12.9mm
+    Talk/Standby Time: 	436mins / 248hrs
+    Battery: 	Standard battery, Li-Ion 950 mAh
+    Others: 	Analog TV, MP3/MP4 player, Sound recorder, Stereo FM radio
+    Accessories: 	Stereo Headse</p>
+
+<h2>QV27-myphone DUO</h2>
+<center><img src="images/QV27-Duo-myphone.jpg"></center>
+<h2>price at P3,990.00</h2>
+<p>FEATURES
+    Type: 	Swarovski Swivel Qwerty phone
+    Data Connection: 	GSM / EDGE/ GPRS Class 12
+    Frequency Range: 	900/1800/1900 MHz
+    Display: 	2.4“ 240X320 pixels QVGA screen
+    Browser: 	WAP 2.0
+    Messaging: 	SMS, MMS, EMS, Chat, Email
+    Ringing Melody: 	MP3, True Tones, MIDI, WAV
+    Applications: 	Java, Google maps, MSN, Yahoo messenger, Gtalk, Skype, Ebuddy, Opera mini, Facebook, Games, World Clock, Health, Stopwatch, E-book reader
+    Connectivity: 	Bluetooth 2.0 / USB / 3.5mm jack
+    Imaging: 	2.0 Megapixels
+    Phonebook: 	1000 entries
+    Card slot: 	microSD (TransFlash) up to 8GB
+    SPECIFICATIONS
+    Weight: 	90g
+    Dimensions: 	70X70X16.3mm
+    Talk/Standby Time: 	6hrs / 246hrs
+    Battery: 	Standard battery, Li-Ion 850 mAh
+    Others: 	MP3/MP4 player, Yamaha amplifier, Sound recorder, Stereo FM radio
+    Accessories: 	Headset, USB cable</p>
+
+<h2>QW29-myphone DUO</h2>
+<center><img src="images/QW29-myphone.jpg"></center>
+<h2>price at P3,888.00</h2>
+<p>FEATURES
+    Type: 	Dual SIM WIFI Qwerty phone
+    Data Connection: 	GSM / EDGE/ GPRS Class 12
+    Frequency Range: 	900/1800/1900 MHz
+    Display: 	2.4“ 240X320 pixels QVGA screen
+    Browser: 	WAP 2.0
+    Messaging: 	SMS, MMS, EMS, Chat, Email
+    Ringing Melody: 	MP3, True Tones, MIDI, WAV
+    Applications: 	Java, Google maps, Google Search, MSN, Yahoo messenger, Gtalk, Skype, Ebuddy, Opera mini, Facebook, Games, World Clock, Health, Stopwatch, E-book reader
+    Connectivity: 	Bluetooth 2.0 / USB / 3.5mm jack / WIFI
+    Imaging: 	3.2 Mega pixels
+    Phonebook: 	1000 entries
+    Card slot: 	microSD (TransFlash) up to 8GB
+    SPECIFICATIONS
+    Weight:
+    Dimensions: 	116X63.2X12.3mm
+    Talk/Standby Time:
+    Battery: 	Standard battery, Li-Ion 1200 mAh
+    Others: 	MP3/MP4 player, Yamaha amplifier, Sound recorder, Stereo FM radio, SRS WOW HD
+    Accessories: 	Stereo Headset, USB cable</p>
+
+<h2>T23-myphone DUO</h2>
+<center><img src="images/T23-myphone.jpg"></center>
+<h2>price at P2,888.00</h2>
+<p>FEATURES
+    Type: 	Dual SIM Full Touch Phone
+    Data Connection: 	GSM / EDGE / GPRS Class 12
+    Frequency Range: 	900/1800/1900MHz
+    Display: 	2.8“ 240X320 pixels QVGA full touch screen
+    Browser: 	WAP 2.0
+    Messaging: 	SMS, MMS, EMS, Chat, Email
+    Ringing Melody: 	MP3, True Tones, MIDI, WAV
+    Applications: 	Java, Google, MSN, Yahoo messenger, Gtalk, Opera mini, Facebook, Twitter, Games, World Clock, Health, Stopwatch, E-book reader
+    Connectivity: 	Bluetooth 2.0 / USB / 3.5mm jack
+    Imaging: 	2 Mega pixels
+    Phonebook: 	1000 entries
+    Card slot: 	microSD (TransFlash) up to 8GB
+    SPECIFICATIONS
+    Weight: 	91g
+    Dimensions: 	104.8*56*12.9mm
+    Talk/Standby Time: 	435mins / 215hrs
+    Battery: 	Standard battery, Li-Ion 900 mAh
+    Others: 	MP3/MP4 player, Yamaha amplifier, Sound recorder, Stereo FM radio
+    Accessories: 	Stereo Headset, USB Cable</p>
+
+<h2>TW1-myphone DUO</h2>
+<center><img src="images/TW1-myphone.jpg"></center>
+<h2>price at P3,999.00</h2>
+<p>FEATURES
+    Type: 	Dual SIM Full Touch Phone
+    Data Connection: 	GSM / EDGE / GPRS Class 12
+    Frequency Range: 	900/1800/1900MHz
+    Display: 	3.2“ 240X400 pixels full touch screen (resistive)
+    Browser: 	WAP 2.0
+    Messaging: 	SMS, MMS, EMS, Chat, Email
+    Ringing Melody: 	MP3, True Tones, MIDI, WAV
+    Applications: 	Java, Google search, MSN, Yahoo messenger, Gtalk, Opera mini, Facebook, Twitter, Games, World Clock, Health, Stopwatch, E-book reader
+    Connectivity: 	WIFI / Bluetooth / micro USB 2.0/ 3.5mm jack
+    Imaging: 	3.2 Mega pixels
+    Phonebook: 	1000 entries
+    Card slot: 	microSD (TransFlash) up to 8GB
+    SPECIFICATIONS
+    Weight: 	100g
+    Dimensions: 	111x54x13.2mm
+    Talk/Standby Time:
+    Battery: 	Standard battery, Li-Ion 1000 mAh
+    Others: 	MP3/MP4 player, Yamaha amplifier, Sound recorder, Stereo FM radio, SRS WOW HD
+    Accessories: 	Stereo Headset, USB Cable</p>
+
+
 </html>
 </body>
 </head>
