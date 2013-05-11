@@ -18,7 +18,7 @@ div.content{
 div.view_item,.member{
     padding: 10px;
 }
-div#add_item{
+div#leftside{
     float:right;
     border: 1px solid #bbbbbb;
 
@@ -33,7 +33,7 @@ div.pic{
 
 }
 div.upload_container{
-    display: none;
+
     padding: 20px;
     width: 300px;
     border: 1px solid #bbbbbb;
@@ -73,5 +73,20 @@ div.member{
 }
 input[type='text']{
     display:none;
+}
+body
+{
+    font-family:arial;
+}
+.preview
+{
+    width:200px;
+    border:solid 1px #dedede;
+    padding:10px;
+}
+#preview
+{
+    color:#cc0000;
+    font-size:12px
 }
 
