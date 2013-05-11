@@ -1,6 +1,6 @@
 <?php
 
-   include "BaseDAO.php";
+   include "DAO/BaseDAO.php";
    class OnlineSelling extends BaseDAO {
 
       function Messages($msg){
@@ -177,7 +177,7 @@
 
        function loginMember($username,$password){
            $this->open();
-               echo "pad";
+
                $stmt=$this->dbh->prepare("SELECT username,password from customer where username=?  and password=password(?)  ");
                $stmt->bindParam(1,$username);
                $stmt->bindParam(2,$password);
@@ -210,33 +210,28 @@
        }
        function SearchItem($search){
            $this->open();
-           $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE gadget_name like '".$search."%' or brand like '".$search."%'
-                                           or color like '".$search."%' or quantity or  date_added like '".$search."%'   ");
-           $stmt->execute();
-                   $status=false;
+               $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE gadget_name like '".$search."%' or brand like '".$search."%'
+                                                           or color like '".$search."%' or quantity or  date_added like '".$search."%'   ");
+               $stmt->execute();
+               $status=false;
 
                    while($rows=$stmt->fetch()){
-                       $status=true;
+                        $status=true;
 
-                       echo "<tr id=".$rows[0].">";
-                       echo "<td><input type='checkbox' name='checkVideo'
-                       onclick='btnv_edit(".$rows[0].")'/></td>";
-                       echo "<td>".$rows[1]."</td>";
-                       echo "<td>".$rows[2]."</td>";
-                       echo "<td>".$rows[6]."</td>";
-                       echo "<td><input type='button'  value='edit' onclick='btnv_edit(".$rows[0].")'/>";
-                       echo "</tr>";
-
-
+                        echo "<tr id=".$rows[0].">";
+                        echo "<td>"."<input type='checkbox'/>"."</td>";
+                        echo "<td>".$rows[1]."</td>";
+                        echo "<td>".$rows[2]."</td>";
+                        echo "<td>".$rows[6]."</td>";
+                        echo "<td><input type='button'  value='edit' onclick='Edit_item(".$rows[0].")'/>"."</td>";
+                        echo "</tr>";
                    }
                    if(!$status){
-                       echo "<tr>";
-                       echo "<td colspan='10'>No Data </td>";
-                       echo "</tr>";
+                        echo "<tr>";
+                        echo "<td colspan='10'>No Data </td>";
+                        echo "</tr>";
 
                    }
-
-
            $this->close();
        }
        function SearchMember($search){

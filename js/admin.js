@@ -17,7 +17,6 @@ $(function(){
     });
 
    $("#li_item").click(function(){
-
         $(".view_item").show();
          $(".member").hide();
     });
@@ -27,14 +26,24 @@ $(function(){
         $(".view_item").hide();
         $(".member").show();
     });
+    $('#photoimg').live('change', function(){
+        $("#preview").html('');
+        $("#preview").html('<img src="images/loader.gif" alt="Uploading...."/>');
+        $("#imageform").ajaxForm({
+            target: '#preview'
+        }).submit();
 
-    $("#save").click(function(){
-        $(".upload_container").fadeOut();
+    });
+
+    $("#saveitem").click(function(){
+        alert($("#photoimg").val());
     });
 
    $("#add").click(function(){
-       $(".upload_container").show();
+
    });
+
+
 
    $("#items").on('click','tr',function(){
        var tbID=document.getElementById($(this).context.id);
@@ -157,8 +166,6 @@ function DeleteItem(){
             url:"search_item.php",
             data:{"search":$("#search").val()},
             success:function(data){
-
-
                 $("#items").html(data);
             },
             error:function(data){
