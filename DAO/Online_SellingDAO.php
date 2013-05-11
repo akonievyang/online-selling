@@ -1,6 +1,6 @@
 <?php
 
-   include "BaseDAO.php";
+   include "DAO/BaseDAO.php";
    class OnlineSelling extends BaseDAO {
 
       function Messages($msg){
@@ -60,23 +60,26 @@
            $this->close();
        }
 
+<<<<<<< HEAD
        /*---------------------------------add ug mga member----------------------------------------*/
 
        function addMember($firstname, $middlename, $lastname, $age, $address, $gender, $username, $password, $type){
+=======
+       function addMember($firstname, $middlename, $lastname, $address, $age, $gender, $contactNum, $username, $password){
+>>>>>>> 7ec2809fb97674a8a2aa6f20110d4dc09c4a64b5
            $this->open();
-           $type="buyer";
-           $stmt = $this->dbh->prepare("INSERT INTO user VALUES (null, ?, ?, ?, ?, ?, ?, ?, ?, ?) ");
+           $stmt = $this->dbh->prepare("INSERT INTO customer VALUES (null, ?, ?, ?, ?, ?, ?, ?, ?, ?) ");
 
 
            $stmt->bindParam(1, $firstname);
            $stmt->bindParam(2, $middlename);
            $stmt->bindParam(3, $lastname);
-           $stmt->bindParam(4, $age);
-           $stmt->bindParam(5, $address);
+           $stmt->bindParam(4, $address);
+           $stmt->bindParam(5, $age);
            $stmt->bindParam(6, $gender);
-           $stmt->bindParam(7, $username);
-           $stmt->bindParam(8, $password);
-           $stmt->bindParam(9, $type);
+           $stmt->bindParam(7, $contactNum);
+           $stmt->bindParam(8,$password );
+           $stmt->bindParam(9,$username );
 
            $stmt->execute();
            $customer_id = $this->dbh->lastInsertId();
@@ -88,16 +91,54 @@
            echo "<td>".$lastname."</td>";
            echo "<td>".$age."</td>";
            echo "<td>".$address."</td>";
+           echo "<td>".$contactNum."</td>";
            echo "<td>".$gender."</td>";
+<<<<<<< HEAD
            echo "<td>".$username."</td>";
            echo "<td>".$password."</td>";
            echo "<td>".$type."</td>";
            echo "<td><img src='images/delete.png' onclick='deleteEntry(".$customer_id.")'/>";
            echo "<img src='images/edit.png' onclick='editEntry(".$customer_id.")'/></td>";
+=======
+           echo "<td><img src='images/delete.png' onclick='deleteEntry(".$id.")'/>";
+           echo "<img src='images/edit.png' onclick='editEntry(".$id.")'/></td>";
+>>>>>>> 7ec2809fb97674a8a2aa6f20110d4dc09c4a64b5
            echo "</tr>";
 
            $this->close();
        }
+      function RegisterCustomer($firstname, $middlename, $lastname, $address, $age, $gender, $contactNum, $username, $password){
+          $this->open();
+          $stmt = $this->dbh->prepare("INSERT INTO customer VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) ");
+
+
+          $stmt->bindParam(1, $firstname);
+          $stmt->bindParam(2, $middlename);
+          $stmt->bindParam(3, $lastname);
+          $stmt->bindParam(4, $address);
+          $stmt->bindParam(5, $age);
+          $stmt->bindParam(6, $gender);
+          $stmt->bindParam(7, $contactNum);
+          $stmt->bindParam(8, $username);
+          $stmt->bindParam(9, $password);
+
+          $stmt->execute();
+          $id = $this->dbh->lastInsertId();
+
+          echo "<tr id=".$id.">";
+          echo "<td>".$id."</td>";
+          echo "<td>".$firstname."</td>";
+          echo "<td>".$middlename."</td>";
+          echo "<td>".$lastname."</td>";
+          echo "<td>".$age."</td>";
+          echo "<td>".$address."</td>";
+          echo "<td>".$contactNum."</td>";
+          echo "<td>".$gender."</td>";
+
+          echo "</tr>";
+
+          $this->close();
+      }
 
        /*-------------------------edit para sa mga member-----------------------------------------*/
 
@@ -135,37 +176,30 @@
 
        /*------------------------ ADD FUNCTION ------------------------------------------- */
 
-       function AddItem($name,$brand,$desc,$features,$price){
+       function AddItem($name,$brand,$features,$price,$filename){
             $this->open();
-                $stmt=$this->dbh->prepare("INSERT INTO gadgets VALUES(null,?,?,?,?,?,NOW())");
+                $stmt=$this->dbh->prepare("INSERT INTO gadgets(gadget_name,brand,features,price,date_added) VALUES(?,?,?,?,NOW())");
                    $stmt->bindParam(1, $name);
                    $stmt->bindParam(2, $brand);
-                   $stmt->bindParam(3, $desc);
-                   $stmt->bindParam(4, $features);
-                   $stmt->bindParam(5, $price);
-
+                   $stmt->bindParam(3, $features);
+                   $stmt->bindParam(4, $price);
                    $stmt->execute();
+                   $gad_id=$this->dbh->lastInsertId();
+
+                $stmt=$this->dbh->prepare("Insert into picture values(null,?)");
+                   $stmt->bindParam(1,$filename);
+                   $stmt->execute();
+                   $pic_id=$this->dbh->lastInsertId();
+
+                $stmt=$this->dbh->prepare("Insert into item values(null,?,?)");
+                    $stmt->bindParam(1,$gad_id);
+                    $stmt->bindParam(2,$pic_id);
+                    $stmt->execute();
 
             $this->close();
        }
 
-       function ViewItem(){
-           $this->open();
-               $stmt=$this->dbh->prepare("Select * from gadgets");
-               $stmt->execute();
 
-               while($rows=$stmt->fetch()){
-                   echo "<tr id=' ".$rows[0]." '>";
-                   echo "<td><input type='checkbox' /></td>";
-                   echo "<td>$rows[1]</td>";
-                   echo "<td>$rows[2]</td>";
-                   echo "<td>$rows[5]</td>";
-                   echo "<td><input type='button' value='edit' onclick='Edit_item(".$rows[0].")'></td>";
-                   echo "</tr>";
-
-               }
-           $this->close();
-       }
        function DeleteItem($id){
            $this->open();
 
@@ -222,7 +256,7 @@
 
        function loginMember($username,$password){
            $this->open();
-               echo "pad";
+
                $stmt=$this->dbh->prepare("SELECT username,password from customer where username=?  and password=password(?)  ");
                $stmt->bindParam(1,$username);
                $stmt->bindParam(2,$password);
@@ -244,13 +278,7 @@
            $this->close();
 
         }
-       function ViewAddedPic(){
-           $this->open();
-           $stmt=$this->dbh->prepare("Select large_pic from picture where picture_id=?");
-           $stmt->bindParam(1,$id);
-           $stmt->execute();
-           $this->close();
-       }
+
        function ViewAll(){
            $this->open();
               $stmt=$this->dbh->prepare("Select name,price from gadgets");
@@ -261,39 +289,36 @@
        }
        function SearchItem($search){
            $this->open();
-               $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE name like '".$search."%' or brand like '".$search."%'
-                                          or discription like '".$search."%' or date_added like '".$search."%'   ");
+               $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE gadget_name like '".$search."%' or brand like '".$search."%'
+                                                           or color like '".$search."%' or quantity or  date_added like '".$search."%'   ");
                $stmt->execute();
-                   $status=false;
+               $status=false;
 
                    while($rows=$stmt->fetch()){
-                       $status=true;
+                        $status=true;
 
-                       echo "<tr id=".$rows[0].">";
-                       echo "<td><input type='checkbox' name='checkVideo'
-                       onclick='btnv_edit(".$rows[0].")'/></td>";
-                       echo "<td>".$rows[1]."</td>";
-                       echo "<td>".$rows[2]."</td>";
-                       echo "<td>".$rows[5]."</td>";
-                       echo "<td><input type='button'  value='edit' onclick='btnv_edit(".$rows[0].")'/>";
-                       echo "</tr>";
-
-
+                        echo "<tr id=".$rows[0].">";
+                        echo "<td>"."<input type='checkbox'/>"."</td>";
+                        echo "<td>".$rows[1]."</td>";
+                        echo "<td>".$rows[2]."</td>";
+                        echo "<td>".$rows[6]."</td>";
+                        echo "<td><input type='button'  value='edit' onclick='Edit_item(".$rows[0].")'/>"."</td>";
+                        echo "</tr>";
                    }
                    if(!$status){
-                       echo "<tr>";
-                       echo "<td colspan='10'>No Data </td>";
-                       echo "</tr>";
+                        echo "<tr>";
+                        echo "<td colspan='10'>No Data </td>";
+                        echo "</tr>";
 
                    }
-
-
            $this->close();
        }
        function SearchMember($search){
            $this->open();
-            $stmt=$this->dbh->prepare("SELECT * FROM customer WHERE firstname like '".$search."%' or lastname like '".$search."%' or username like '".$search."%'
-                                       or gender like '".$search."%'  or age like '".$search."%' or contact like '".$search."%' or address like '".$search."%'  ");
+            $stmt=$this->dbh->prepare("SELECT * FROM customer WHERE firstname like '".$search."%' or
+                                       lastname like '".$search."%' or username like '".$search."%'
+                                       or gender like '".$search."%'  or age like '".$search."%' or
+                                       contact like '".$search."%' or address like '".$search."%'  ");
 
                $stmt->execute();
 
@@ -317,8 +342,36 @@
 
                    }
             $this->close();
-       }
 
+       }
+       function CustomerViewItem($search){
+           $this->open();
+               $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE gadget_name like '".$search."%' or
+                                       brand like '".$search."%' or price like '".$search."%'
+                                       or features like '".$search."%'   ");
+
+               $stmt->execute();
+
+                   $status=false;
+                   while($rows=$stmt->fetch()){
+                       $status=true;
+
+
+                       echo "<div id=".$rows[0].">";
+                       echo "<p>".$rows[1]."</p>";
+                       echo "<p>".$rows[3]."</p>";
+                       echo "<p>".$rows[6]."</p>";
+                       echo "<p>"."<input type='button' onclick='Buy(".$rows[0].")'/>"."</p>";
+                       echo "</div>";
+                   }
+                   if(!$status){
+                       echo "<tr>";
+                       echo "<td colspan='10'>No Data </td>";
+                       echo "</tr>";
+
+                   }
+           $this->close();
+       }
 
    }
 ?>

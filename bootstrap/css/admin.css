@@ -18,18 +18,33 @@ div.content{
 div.view_item,.member{
     padding: 10px;
 }
-div#add_item{
+div#leftside{
     float:right;
     border: 1px solid #bbbbbb;
 
 }
-div#item_pic{
-    display:none;
-}
+
 div.pic{
+
+    border: 1px solid #bbbbbb;
     width: 150px;
     height: 200px;
+    padding: 20px;
+
+}
+div.upload_container{
+
+    padding: 20px;
+    width: 300px;
     border: 1px solid #bbbbbb;
+
+}
+img{
+    width: 150px;
+    height: 100px;
+}
+.right_side{
+    float:right;
 }
 .inner,.category{
     border: 1px solid #bbbbbb;
@@ -56,3 +71,22 @@ h4 {
 div.member{
     display:none;
 }
+input[type='text']{
+    display:none;
+}
+body
+{
+    font-family:arial;
+}
+.preview
+{
+    width:200px;
+    border:solid 1px #dedede;
+    padding:10px;
+}
+#preview
+{
+    color:#cc0000;
+    font-size:12px
+}
+

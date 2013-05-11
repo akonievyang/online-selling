@@ -1,9 +1,14 @@
 $(function(){
+
     SearchItem();
     SearchMember();
+    $("div.pickcolor").click(function(){
+     var id=document.getElementById(this.id);
+        $().sho()
+
+    });
 
    $("#li_item").click(function(){
-
         $(".view_item").show();
          $(".member").hide();
     });
@@ -13,45 +18,24 @@ $(function(){
         $(".view_item").hide();
         $(".member").show();
     });
+    $('#photoimg').live('change', function(){
+        $("#preview").html('');
+        $("#preview").html('<img src="images/loader.gif" alt="Uploading...."/>');
+        $("#imageform").ajaxForm({
+            target: '#preview'
+        }).submit();
+
+    });
+
+    $("#saveitem").click(function(){
+        alert($("#photoimg").val());
+    });
 
    $("#add").click(function(){
-        var inputfield=$("#form_item").serializeArray();
-        var status=false;
-       for(var ctr=0;ctr<inputfield.length;ctr++){
 
-           if(inputfield[ctr].value==="" || inputfield[ctr].value=== NaN || inputfield[ctr].value===null || inputfield[ctr].value=== " "){
-               status=true;
-               break;
-           }else{
-               status=false;
-           }
-
-       }
-       if(status){
-           $(".warning").html("Some fields not yet filled up").fadeIn().fadeOut(5000).css({"color":"red"});
-       }else{
-
-
-           var obj = {"name":$("#name").val(),
-               "brand":$("#brand").val(),
-               "desc":$("#desc").val(),
-               "features":$("#features").val(),
-               "price":$("#price").val()
-           };
-
-           $.ajax({
-               type:"POST",
-               url:"add_item.php",
-               data:obj,
-               success:function(data){
-                   SearchItem();
-               },
-               error:function(data){
-                   alert(data);
-               }
-           });
-       }
    });
+
+
 
    $("#items").on('click','tr',function(){
        var tbID=document.getElementById($(this).context.id);
@@ -95,7 +79,7 @@ function DeleteItem(){
             url:"delete_item.php",
             data:{"id":item_id},
             success: function(data){
-               SearchItemI();
+               SearchItem();
             },
             error: function(data){
                 alert(data);
@@ -153,7 +137,7 @@ function DeleteItem(){
 
         });
     }
-    function ViewAddedPicture(){
+    function SaveUploaded(id){
         $.ajax({
             type:"POST",
             url:"viewAddedPic.php",
@@ -165,6 +149,7 @@ function DeleteItem(){
             }
 
         });
+
     }
     function SearchItem(){
 
@@ -173,6 +158,21 @@ function DeleteItem(){
             url:"search_item.php",
             data:{"search":$("#search").val()},
             success:function(data){
+                $("#items").html(data);
+            },
+            error:function(data){
+                alert(data);
+            }
+        });
+    }
+    function pagination(){
+        $.ajax({
+            type:"POST",
+            url:"item_pagination.php",
+            data:{"search":$("#search").val()},
+            success:function(data){
+
+
                 $("#items").html(data);
             },
             error:function(data){
@@ -194,4 +194,5 @@ function DeleteItem(){
         });
 
     }
+
 

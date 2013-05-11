@@ -4,7 +4,12 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>The Best Gadget </title>
         <link href="bootstrap/css/myhome.css" rel="stylesheet" type="text/css" />
+        <script src = "js/customer.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "bootstrap/css/jquery-ui-1.9.0.custom.min.css" />
+        <link rel = "stylesheet" type = "text/css" href = "bootstrap/ccs/jquery-ui-1.9.0.custom.css"/>
+
     </head>
+  <
     <body>
         <div id="header">
             <h1>The Best Gadget</a></h1>
@@ -93,10 +98,38 @@
                                     <input type="password" id="s" name="password" />
                                     <br />
                                     <input  type="submit" id="login" value="check me out" />
+                                    <br> </br>
                                 </form>
                             </fieldset>
                         </form>
                     </li>
+                    <div id = 'Reg_Form'>
+
+                        <h3>Register (New Member)</h3>
+
+                        <form action="Register.php" method = "POST">
+
+                            Firstname:	<input type="text" name ="firstname" required>
+                            Middlename:   <input type="text" name ="middlename" required>
+                            Lastname: <input type ="text" name ="lastname" required>
+                            Address: <input type ="text" name ="address" required> <br>
+                            Age: <br> <input type="text" name ="age" required>
+                            <tr>
+                            Gender: <select id = "gender" name = "gender" >
+                                    <option value = "male"> Male</option>
+                                    <option value = "female"> Female</option >
+                                </select>
+                            </tr> <br>
+                            Contact Number: <input type = "text" name = "contactNum" required>
+                            Username:<input type="text" name="username" required>
+                            Password:<input type="password" name="password" required>
+
+                          <!--  <input type='submit' id ="reg" value='Register'/>
+                        -->
+                            <input type="button" id="reg" value="register">
+                        </form>
+
+                    </div>
                     <li>
                         <h2>Search</h2>
                         <form method="get" action="">
@@ -119,12 +152,18 @@
                     </li>
                     <li>
                         <h2>Categories</h2>
+
                         <ul>
-                            <li>Cellphones</li>
-                            <li>Computer</li>
-                            <li>Television</li>
+                            <li> <a href="product.php"> <strong> Cellphones </strong> </a></li>
+                            <li> <a href="laptop.php"> <strong> Laptops </strong> </a></li>
+                            <li> <a href="camera.php"> <strong> Cameras' </strong> </a></li>
 
                         </ul>
+                            <div id="Cellphone">
+                            <div id="Computer">
+
+                            </div>
+
                     </li>
                 </ul>
             </div>

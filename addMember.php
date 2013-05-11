@@ -2,17 +2,19 @@
 	
 include'DAO/Online_SellingDAO.php';
 
-$execute = new Online_SellingDAO();
 
 $firstname = $_POST['firstname'];
 $middlename = $_POST['middlename'];
 $lastname = $_POST['lastname'];
-$age = $_POST['age'];
 $address = $_POST['address'];
+$age = $_POST['age'];
 $gender = $_POST['gender'];
-$contact = $_POST['contact'];
+$contactNum = $_POST['contactNum'];
+$username = $_POST['username'];
+$password = $_POST['password'];
 
-$execute->Addmember($firstname, $middlename, $lastname, $age, $address, $gender ,$contact);
+$action= new OnlineSelling();
+$execute-> addMember($firstname, $middlename, $lastname, $address, $age, $gender, $contactNum, $username, $password);
 
 
 ?>
