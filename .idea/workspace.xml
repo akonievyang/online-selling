@@ -6,6 +6,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/A888 Duo.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/A919i Duo.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/image9.JPG" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="customer.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/customer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="0" selection-start="6183" selection-end="6183" vertical-scroll-proportion="-62.5">
+            <state line="151" column="0" selection-start="6183" selection-end="6183" vertical-scroll-proportion="2.2831051">
               <folding />
             </state>
           </provider>
@@ -66,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Online_SellingDAO.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Online_SellingDAO.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="159" column="46" selection-start="5875" selection-end="5875" vertical-scroll-proportion="0.7919255">
+            <state line="159" column="46" selection-start="5875" selection-end="5875" vertical-scroll-proportion="-21.25">
               <folding />
             </state>
           </provider>
@@ -101,7 +102,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
-    <option name="y" value="24" />
+    <option name="y" value="-876" />
     <option name="width" value="1442" />
     <option name="height" value="853" />
   </component>
@@ -202,7 +203,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1442" height="853" extended-state="6" />
+    <frame x="-1" y="-876" width="1442" height="853" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -306,16 +307,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customer.php">
+    <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="0" selection-start="6183" selection-end="6183" vertical-scroll-proportion="-62.5">
+        <state line="159" column="46" selection-start="5875" selection-end="5875" vertical-scroll-proportion="-21.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
+    <entry file="file://$PROJECT_DIR$/customer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="46" selection-start="5875" selection-end="5875" vertical-scroll-proportion="0.7919255">
+        <state line="151" column="0" selection-start="6183" selection-end="6183" vertical-scroll-proportion="2.2831051">
           <folding />
         </state>
       </provider>
