@@ -1,10 +1,12 @@
 <!DOCTYPE html >
-<html xmlns="http://www.w3.org/1999/html">
+
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.form.js"></script>
+        <script src = "js/customer.js"></script>
         <title>The Best Gadget </title>
         <link href="bootstrap/css/myhome.css" rel="stylesheet" type="text/css" />
-        <script src = "js/customer.js"></script>
+
         <link rel = "stylesheet" type = "text/css" href = "bootstrap/css/jquery-ui-1.9.0.custom.min.css" />
         <link rel = "stylesheet" type = "text/css" href = "bootstrap/ccs/jquery-ui-1.9.0.custom.css"/>
 
@@ -88,7 +90,7 @@
                 <ul>
                     <li>
                         <h2>Login User</h2>
-                        <form method="get" action="">
+
                             <fieldset>
                                 <form method="POST" action="login.php">
                                     <label>Username:</label>
@@ -101,32 +103,29 @@
                                     <br> </br>
                                 </form>
                             </fieldset>
-                        </form>
                     </li>
                     <div id = 'Reg_Form'>
 
                         <h3>Register (New Member)</h3>
 
-                        <form action="Register.php" method = "POST">
+                        <form >
 
-                            Firstname:	<input type="text" name ="firstname" required>
-                            Middlename:   <input type="text" name ="middlename" required>
-                            Lastname: <input type ="text" name ="lastname" required>
-                            Address: <input type ="text" name ="address" required> <br>
-                            Age: <br> <input type="text" name ="age" required>
+                            Firstname:	<input type="text" name ="firstname" required/>
+                            Middlename:   <input type="text" name ="middlename" required/>
+                            Lastname: <input type ="text" name ="lastname" required/>
+                            Address: <input type ="text" name ="address" required/> <br>
+                            Age: <br> <input type="text" name ="age" required/>
                             <tr>
-                            Gender: <select id = "gender" name = "gender" >
+                            Gender: <select id = "gender" name = "gender"/>
                                     <option value = "male"> Male</option>
-                                    <option value = "female"> Female</option >
+                                    <option value = "female"> Female</option>
                                 </select>
                             </tr> <br>
-                            Contact Number: <input type = "text" name = "contactNum" required>
-                            Username:<input type="text" name="username" required>
-                            Password:<input type="password" name="password" required>
+                            Contact Number: <input type = "text" name = "contactNum" required/>
+                            Username:<input type="text" name="users" required/>
+                            Password:<input type="password" name="pass"  required/>
 
-                          <!--  <input type='submit' id ="reg" value='Register'/>
-                        -->
-                            <input type="button" id="reg" value="register">
+                            <input type="reset" id="register" value="register"/>
                         </form>
 
                     </div>

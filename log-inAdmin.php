@@ -10,14 +10,14 @@ if(isset($_POST['username']) && isset($_POST['password']) ){
 
     $action = new OnlineSelling();
 
-     $result=$action->loginMember($username,$password);
+    $result=$action->LogInAdmin($username,$password);
 
     if($result=="true"){
         echo "jfjsa";
-            $_SESSION['users'] = $username;
-            header('location:customer.php');
+        $_SESSION['users'] = $username;
+        header('location:admin.php');
     }else{
-       echo 'Unable to login';
+        echo 'Unable to login';
     }
 
 }
