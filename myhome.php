@@ -124,7 +124,9 @@
                             Username:<input type="text" name="username" required>
                             Password:<input type="password" name="password" required>
 
-                            <input type='submit' id ="reg" value='Register'/>
+                          <!--  <input type='submit' id ="reg" value='Register'/>
+                        -->
+                            <input type="button" id="reg" value="register">
                         </form>
 
                     </div>
@@ -154,7 +156,7 @@
                         <ul>
                             <li> <a href="product.php"> <strong> Cellphones </strong> </a></li>
                             <li> <a href="laptop.php"> <strong> Laptops </strong> </a></li>
-                            <li> <a href="camera.php"> <strong> Digital Cameras' </strong> </a></li>
+                            <li> <a href="camera.php"> <strong> Cameras' </strong> </a></li>
 
                         </ul>
                             <div id="Cellphone">

@@ -37,7 +37,7 @@
 </style>
 
 <body id="rl">
-<div class="menu"> <a href="home.php"> <strong> Home </strong> </a> </div>
+<div class="menu"> <a href="myhome.php"> <strong> Home </strong> </a> </div>
 <div class="container">
 
     <div id="tabs">

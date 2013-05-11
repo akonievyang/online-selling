@@ -135,9 +135,9 @@
                         <div class="inner">
                             <h4 style=" color: #FFFFFF;">Category</h4>
                             <ul>
-                                <li>Cellphones</li>
-                                <li>Laptops</li>
-                                <li>Digital Camera</li>
+                                <li> Cellphones </li>
+                                <li> Laptops </li>
+                                <li> Cameras </li>
 
                             </ul>
                         </div>
