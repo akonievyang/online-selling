@@ -1,5 +1,10 @@
-<!DOCTYPE html >
+<?php
+    session_start();
 
+    if()
+
+?>
+<!DOCTYPE html >
     <head>
         <script src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.form.js"></script>

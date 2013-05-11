@@ -252,6 +252,19 @@
                }
            $this->close();
        }
+       function SearchUser($username,$password){
+           $this->open();
+           $stmt=$this->dbh->prepare("SELECT customer_id,username from customer where username=?  and password=password(?)");
+           $stmt->bindParam(1,$username);
+           $stmt->bindParam(2,$password);
+           $stmt->execute();
+
+           $rows=$stmt->fetch();
+
+                echo $rows[0];
+                echo $rows[1];
+           $this->close();
+       }
 
        function UploadItemPic($filename){
            $this->open();
@@ -325,8 +338,6 @@
 
                    }
             $this->close();
-
-
 
        }
        function AddToCart($id,$name,$brand,$price){
