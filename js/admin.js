@@ -31,19 +31,6 @@ $(function(){
 
         var inputfield=$("#form_item").serializeArray();
         var status=false;
-        for(var ctr=0;ctr<inputfield.length;ctr++){
-
-            if(inputfield[ctr].value==="" || inputfield[ctr].value=== NaN || inputfield[ctr].value===null || inputfield[ctr].value=== " "){
-                status=true;
-                break;
-            }else{
-                status=false;
-            }
-
-        }
-        if(status){
-            $(".errorwarning").html("Some fields not yet filled up").fadeIn().fadeOut(5000).css({"color":"red"});
-        }else{
 
 
             var obj = {"name":$("#name").val(),
@@ -52,11 +39,7 @@ $(function(){
                 "price":$("#price").val(),
                 "picture":$("#photoimg").val()
             };
-            if(obj.picture==null||obj.picture==""||obj.picture==NaN||obj.picture==" "){
-                $(".errorwarning").html("Upload picture").fadeIn().fadeOut(5000).css({"color":"red"});
-            }else{
 
-            }
 
             $.ajax({
                 type:"POST",
@@ -71,11 +54,12 @@ $(function(){
                 }
             });
 
-        }
+
     });
 
-   $("#add").click(function(){
+   $("#test").submit(function(){
         $(".upload_container").show();
+       return false;
    });
 
 
@@ -152,7 +136,7 @@ function DeleteItem(){
 
     }
     function Number(){
-        var status=/^[0-9]$/;
+        var status=/^[0-9]+$/;
         var price=$("#price").val();
         var pL = price.length;
 
@@ -162,7 +146,7 @@ function DeleteItem(){
             $("#price").val(p);
 
         }
-        if(status.test(price)){
+       else{
             var p = price.substring(0,4);
             $("#price").val(p);
         }

@@ -3,7 +3,10 @@ $(function(){
 
 
     CustomerViewItem();
-
+    $(".closed").click(function(){
+        alert("pass")
+        $(".overlay").hide();
+    });
     $("#register").click(function(){
 
         var entry = {
@@ -54,42 +57,33 @@ $(function(){
         });
     }
 
-    function BuyNow(id,name,brand,price,features){
+    function buyNow(id,fname,lname,brand,price,pic,features){
 
+
+        $(".secondcontent").show();
+        $("#item_picture").html("<img src="+pic+" />");
         $("#itemp").html(price);
         $("#itemF").html(features);
-        $("#itemN").html(name);
+        $("#itemN").html(fname+" "+lname);
         $("#itemB").html(brand);
 
-        $("#buyclick").click(function(){
+       $("#buyclick").click(function(){
+           $(".overlay").show();
+           $("shopping_cart").show();
             var obj={
                 "name":$("#itemN").html(),
                 "brand":$("#itemB").html(),
                 "price":$("#itemp").html()
-            };
-            alert(obj.name);
-
-           /* $("#cart").append("<tr>"+
-                "<td>"+obj.name+"</td>"+
-                "<td><input type='text' id='pcs' /></td>"+
-                "<td>"+obj.price+"</td>"+
-                "<td><input type='text' readonly='readonly' id='total'/></td>"+
-                "</tr>");
-            $("#pcs").keyup(function(){
-                var quantity=($("#pcs").val());
-                var total=obj.price*quantity;
-                $("#total").val(total);
-
-                var tr=$("#tb_cart").serializeArray();
+                };
 
 
-            });*/
              $.ajax({
              type:"POST",
              url:"addToCart.php",
              data:{"search":$("#search").val()},
              success:function(data){
-             $(".shopping_cart").show();
+             //$(".shopping_cart").show();
+                 $("#cart").append(data);
              },
              error:function(data){
              alert(data);
@@ -97,8 +91,16 @@ $(function(){
              }
 
              });
-
         });
+
+
+
+    }
+    function Quantity(price,id){
+            alert(id)
+
+            var total= $("#quantity").val()*price;
+            $("#totalprice"+id).val(total);
 
     }
 

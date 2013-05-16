@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php" line="196" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php" line="200" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="">
@@ -11,12 +11,21 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/uploaded_file/promo1.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/uploaded_file/promo2.JPG" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" afterPath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/admin.css" afterPath="$PROJECT_DIR$/bootstrap/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin.js" afterPath="$PROJECT_DIR$/js/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/customer.css" afterPath="$PROJECT_DIR$/bootstrap/css/customer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/customer.js" afterPath="$PROJECT_DIR$/js/customer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer.php" afterPath="$PROJECT_DIR$/customer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/myhome.css" afterPath="$PROJECT_DIR$/bootstrap/css/myhome.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhome.php" afterPath="$PROJECT_DIR$/myhome.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368254865303" ignored="false" />
+    <file path="/Dummy.txt" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368665718210" ignored="false" />
     <file path="/index.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367894840469" ignored="false" />
     <file path="/Dummy.regexp" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367553664852" ignored="false" />
     <file path="/injection.txt" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367553664852" ignored="false" />
@@ -29,27 +38,27 @@
     <file path="/promo.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367619155493" ignored="false" />
     <file path="/product.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367619459045" ignored="false" />
     <file path="/BaseDAO.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367808949309" ignored="false" />
-    <file path="/Online_SellingDAO.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368264218983" ignored="false" />
-    <file path="/admin.js" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368240704173" ignored="false" />
+    <file path="/Online_SellingDAO.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368694405582" ignored="false" />
+    <file path="/admin.js" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368674833705" ignored="false" />
     <file path="/viewMember.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367810194231" ignored="false" />
     <file path="/viewItem.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367812075371" ignored="false" />
-    <file path="/admin.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368240374213" ignored="false" />
+    <file path="/admin.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368687215416" ignored="false" />
     <file path="/delete_item.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367821570855" ignored="false" />
     <file path="/edit_item.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367824769136" ignored="false" />
-    <file path="/myhome.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368263709265" ignored="false" />
+    <file path="/myhome.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368674275427" ignored="false" />
     <file path="/myhome.css" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367985452244" ignored="false" />
-    <file path="/admin.css" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368240139288" ignored="false" />
+    <file path="/admin.css" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368688564187" ignored="false" />
     <file path="/uploadDemo.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368157534499" ignored="false" />
-    <file path="/login.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368264274430" ignored="false" />
-    <file path="/customer.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368262531354" ignored="false" />
+    <file path="/login.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368670756832" ignored="false" />
+    <file path="/customer.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368693433524" ignored="false" />
     <file path="/viewAddedPic.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367912278671" ignored="false" />
     <file path="/add_item.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368239873007" ignored="false" />
     <file path="/viewAll.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367913693577" ignored="false" />
     <file path="/search_item.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368233182982" ignored="false" />
     <file path="/search_member.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367983815538" ignored="false" />
-    <file path="/customer.css" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368258597266" ignored="false" />
+    <file path="/customer.css" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368693525721" ignored="false" />
     <file path="/item_pagination.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368078040817" ignored="false" />
-    <file path="/customer.js" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368262902116" ignored="false" />
+    <file path="/customer.js" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368694360968" ignored="false" />
     <file path="/customerViewItem.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368259239513" ignored="false" />
     <file path="/ajaximage.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368238358890" ignored="false" />
     <file path="/addToCart.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368259284952" ignored="false" />
@@ -77,20 +86,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="customer.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap/css/customer.css">
+      <file leaf-file-name="customer.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="257" selection-end="257" vertical-scroll-proportion="-9.571428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="31" selection-start="350" selection-end="350" vertical-scroll-proportion="0.36290324">
-              <folding />
+            <state line="96" column="45" selection-start="3846" selection-end="3846" vertical-scroll-proportion="-7.326923">
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,50 +108,34 @@
       <file leaf-file-name="Online_SellingDAO.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="264" column="30" selection-start="9636" selection-end="9636" vertical-scroll-proportion="-8.576923">
+            <state line="353" column="30" selection-start="13039" selection-end="13039" vertical-scroll-proportion="-11.038462">
               <folding>
-                <marker date="1368264232898" expanded="true" signature="10682:10734" placeholder="..." />
-                <marker date="1368264232898" expanded="true" signature="11160:11205" placeholder="..." />
-                <marker date="1368264232898" expanded="true" signature="11995:12363" placeholder="..." />
-                <marker date="1368264232898" expanded="true" signature="12453:12497" placeholder="..." />
+                <marker date="1368694511337" expanded="true" signature="1157:1178" placeholder="..." />
+                <marker date="1368694511337" expanded="true" signature="1179:1198" placeholder="..." />
+                <marker date="1368694511337" expanded="true" signature="2858:3311" placeholder="..." />
+                <marker date="1368694511337" expanded="true" signature="4277:4621" placeholder="..." />
+                <marker date="1368694511337" expanded="true" signature="10788:10840" placeholder="..." />
+                <marker date="1368694511337" expanded="true" signature="11266:11311" placeholder="..." />
+                <marker date="1368694511337" expanded="true" signature="12101:12469" placeholder="..." />
+                <marker date="1368694511337" expanded="true" signature="12559:12603" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myhome.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myhome.php">
+      <file leaf-file-name="customer.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap/css/customer.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="8" selection-start="36" selection-end="36" vertical-scroll-proportion="-1.875">
-              <folding>
-                <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="153" column="17" selection-start="2195" selection-end="2195" vertical-scroll-proportion="-8.357142">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="customer.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/customer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="23" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buy.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/buy.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="74" selection-end="126" vertical-scroll-proportion="-2.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customerViewItem.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/customerViewItem.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="153" selection-end="153" vertical-scroll-proportion="-4.375">
+            <state line="59" column="35" selection-start="1491" selection-end="1498" vertical-scroll-proportion="0.2600897">
               <folding />
             </state>
           </provider>
@@ -165,31 +159,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/uploadDemo.php" />
-        <option value="$PROJECT_DIR$/search_item.php" />
         <option value="$PROJECT_DIR$/DAO/BaseDAO.php" />
         <option value="$PROJECT_DIR$/ajaximage.php" />
         <option value="$PROJECT_DIR$/add_item.php" />
-        <option value="$PROJECT_DIR$/admin.php" />
-        <option value="$PROJECT_DIR$/js/admin.js" />
-        <option value="$PROJECT_DIR$/bootstrap/css/admin.css" />
         <option value="$PROJECT_DIR$/customerViewItem.php" />
         <option value="$PROJECT_DIR$/addToCart.php" />
-        <option value="$PROJECT_DIR$/bootstrap/css/customer.css" />
-        <option value="$PROJECT_DIR$/customer.php" />
-        <option value="$PROJECT_DIR$/js/customer.js" />
-        <option value="$PROJECT_DIR$/myhome.php" />
-        <option value="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/js/admin.js" />
+        <option value="$PROJECT_DIR$/myhome.php" />
+        <option value="$PROJECT_DIR$/bootstrap/css/myhome.css" />
+        <option value="$PROJECT_DIR$/admin.php" />
+        <option value="$PROJECT_DIR$/bootstrap/css/admin.css" />
+        <option value="$PROJECT_DIR$/customer.php" />
+        <option value="$PROJECT_DIR$/bootstrap/css/customer.css" />
+        <option value="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
+        <option value="$PROJECT_DIR$/js/customer.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Unnamed" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="24" />
-    <option name="width" value="1442" />
-    <option name="height" value="853" />
+    <option name="y" value="52" />
+    <option name="width" value="1440" />
+    <option name="height" value="824" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -316,6 +309,24 @@
               <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -352,12 +363,12 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="119" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1017" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1017" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1017" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="119" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="112" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
   </component>
   <component name="RunManager" selected="PHP Script.index.php">
@@ -432,14 +443,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1442" height="853" extended-state="6" />
+    <frame x="0" y="52" width="1440" height="824" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27363896" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30503598" sideWeight="0.6733524" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31007195" sideWeight="0.6733524" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32664755" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -513,128 +524,139 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/search_item.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="144" selection-end="144" vertical-scroll-proportion="-3.75" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/BaseDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="175" selection-end="175" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajaximage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="34" selection-start="689" selection-end="689" vertical-scroll-proportion="-13.333333" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/add_item.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="2" selection-start="294" selection-end="294" vertical-scroll-proportion="-6.25" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="39" selection-start="1394" selection-end="1394" vertical-scroll-proportion="-4.6153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="29" selection-start="910" selection-end="910" vertical-scroll-proportion="0.6506211">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/customerViewItem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="153" selection-end="153" vertical-scroll-proportion="-4.375">
+        <state line="7" column="0" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addToCart.php">
+    <entry file="file://$PROJECT_DIR$/DAO/BaseDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="2" selection-start="212" selection-end="212" vertical-scroll-proportion="0.29032257">
+        <state line="9" column="0" selection-start="176" selection-end="176" vertical-scroll-proportion="0.21774194">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="138" selection-end="138" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="24" selection-start="329" selection-end="343" vertical-scroll-proportion="-9.375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="43" selection-start="966" selection-end="966" vertical-scroll-proportion="0.9746434">
+        <state line="43" column="20" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.48538962">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="57" selection-start="996" selection-end="1004" vertical-scroll-proportion="0.34596375">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/buy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="74" selection-end="126" vertical-scroll-proportion="-2.5">
+        <state line="8" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.19354838">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/customer.css">
+    <entry file="file://$PROJECT_DIR$/addToCart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="257" selection-end="257" vertical-scroll-proportion="-9.571428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/customer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
+        <state line="11" column="0" selection-start="209" selection-end="209" vertical-scroll-proportion="-6.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myhome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="8" selection-start="36" selection-end="36" vertical-scroll-proportion="-1.875">
+        <state line="45" column="34" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.4560811">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/myhome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="59" selection-start="1877" selection-end="1877" vertical-scroll-proportion="1.3354135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="29" selection-start="1172" selection-end="1172" vertical-scroll-proportion="-4.785714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="33" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.6677215">
           <folding>
-            <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="45" selection-start="3846" selection-end="3846" vertical-scroll-proportion="-7.326923">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/customer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="17" selection-start="2195" selection-end="2195" vertical-scroll-proportion="-8.357142">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="264" column="30" selection-start="9636" selection-end="9636" vertical-scroll-proportion="-8.576923">
+        <state line="353" column="30" selection-start="13039" selection-end="13039" vertical-scroll-proportion="-11.038462">
           <folding>
-            <marker date="1368264232898" expanded="true" signature="10682:10734" placeholder="..." />
-            <marker date="1368264232898" expanded="true" signature="11160:11205" placeholder="..." />
-            <marker date="1368264232898" expanded="true" signature="11995:12363" placeholder="..." />
-            <marker date="1368264232898" expanded="true" signature="12453:12497" placeholder="..." />
+            <marker date="1368694511337" expanded="true" signature="1157:1178" placeholder="..." />
+            <marker date="1368694511337" expanded="true" signature="1179:1198" placeholder="..." />
+            <marker date="1368694511337" expanded="true" signature="2858:3311" placeholder="..." />
+            <marker date="1368694511337" expanded="true" signature="4277:4621" placeholder="..." />
+            <marker date="1368694511337" expanded="true" signature="10788:10840" placeholder="..." />
+            <marker date="1368694511337" expanded="true" signature="11266:11311" placeholder="..." />
+            <marker date="1368694511337" expanded="true" signature="12101:12469" placeholder="..." />
+            <marker date="1368694511337" expanded="true" signature="12559:12603" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
+    <entry file="file://$PROJECT_DIR$/js/customer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="350" selection-end="350" vertical-scroll-proportion="0.36290324">
+        <state line="59" column="35" selection-start="1491" selection-end="1498" vertical-scroll-proportion="0.2600897">
           <folding />
         </state>
       </provider>

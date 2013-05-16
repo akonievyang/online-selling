@@ -13,11 +13,11 @@ if(isset($_POST['username']) && isset($_POST['password']) ){
     $result=$action->loginMember($username,$password);
 
     if($result){
-            $getIdandUser=null;
-            $getIdandUser=SearchUser($username,$password);
-            $getIdandUser
-            return $_SESSION['users'] = $username;
-            header('location:customer.php');
+           $userID=null;
+
+           $_SESSION['user_id'] = $userID;
+           // $_SESSION['users'] = $username;
+           // header('location:customer.php');
     }else{
        echo 'Unable to login';
     }

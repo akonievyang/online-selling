@@ -1,7 +1,26 @@
 <?php
-    session_start();
+session_start();
+include "DAO/Online_SellingDAO.php";
 
-    if()
+
+if(isset($_POST['user']) && isset($_POST['pass']) ){
+
+    $username=$_POST['user'];
+    $password=$_POST['pass'];
+
+    $result=null;
+    $action = new OnlineSelling();
+    $result=$action->loginMember($username,$password);
+
+    if($result){
+
+        $_SESSION['user_id']=$result;
+        header('location:customer.php');
+
+    }else{
+        echo 'Unable to login';
+    }
+}
 
 ?>
 <!DOCTYPE html >
@@ -16,7 +35,7 @@
         <link rel = "stylesheet" type = "text/css" href = "bootstrap/ccs/jquery-ui-1.9.0.custom.css"/>
 
     </head>
-  <
+
     <body>
         <div id="header">
             <h1>The Best Gadget</a></h1>
@@ -97,12 +116,12 @@
                         <h2>Login User</h2>
 
                             <fieldset>
-                                <form method="POST" action="login.php">
+                                <form method="POST" action="myhome.php">
                                     <label>Username:</label>
-                                    <input type="text" id="s" name="username"  />
+                                    <input type="text" name="user"  />
                                     <br />
                                     <label>Password:</label>
-                                    <input type="password" id="s" name="password" />
+                                    <input type="password" name="pass" />
                                     <br />
                                     <input  type="submit" id="login" value="check me out" />
                                     <br> </br>

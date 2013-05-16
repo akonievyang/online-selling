@@ -21,23 +21,27 @@
                                         FROM item, gadgets, picture
                                         WHERE item.gadget_id = gadgets.gadget_id
                                         AND item.pic_id = picture.pic_id
-                                        AND gadgets.gadget_name ");
+                                       ");
       		$stmt->execute();
 
 
       		$status=false;
+          $LI = "";
       		while($rows=$stmt->fetch()){
-
-
-      			    echo "<img class='itempic' src='uploaded_file/".$rows[4]."'/>"."</div>";
-                    echo "<label>".$rows[1]."</label>";
-                    echo "<label style='display:inline;'>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
-                    echo "<input type='button' value='buy now' onclick='BuyNow(".$rows[0].",".$rows[1].",".$rows[2].",".$rows[3].",".$rows[5].")'/>";
+                $image="uploaded_file/$rows[4]";
+                $status=true;
+                $name = explode("",$rows[1]);
+                echo "<div style='display:inline-block;'>";
+                echo "<img src=".$image." alt=$rows[1] style='width:150px; height:150px;/>";
+                echo "<label>".$rows[1]."</label>";
+                echo "<label style='display:inline;'>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
+                echo "<input type='button' value='buy now' onclick=buyNow(".$rows[0].",'".$name[0]."','".$name[1]."','".$rows[2]."','".$rows[3]."','".$image."','".$rows[5]."') />";
+                echo "</div >";
 
       		}
             if(!$status){
-      			echo "<div > Not available here </div>";
-  					    		
+      			echo "<div > Not available </div>";
+
       		}
       	$this->close();
       }
@@ -239,22 +243,19 @@
        function loginMember($username,$password){
            $this->open();
 
-               $stmt=$this->dbh->prepare("SELECT username,password from customer where username=?  and password=password(?)  ");
+               $stmt=$this->dbh->prepare("SELECT customer_id from customer where username=?  and password=password(?)  ");
                $stmt->bindParam(1,$username);
                $stmt->bindParam(2,$password);
                $stmt->execute();
 
-               if($stmt->fetch()){
+              $rows=$stmt->fetch();
+                   echo $rows[0];
 
-                   return "true";
-               }else{
-                   return false;
-               }
            $this->close();
        }
        function SearchUser($username,$password){
            $this->open();
-           $stmt=$this->dbh->prepare("SELECT customer_id,username from customer where username=?  and password=password(?)");
+           $stmt=$this->dbh->prepare("SELECT customer_id from customer where username=?  and password=password(?)");
            $stmt->bindParam(1,$username);
            $stmt->bindParam(2,$password);
            $stmt->execute();
@@ -262,7 +263,7 @@
            $rows=$stmt->fetch();
 
                 echo $rows[0];
-                echo $rows[1];
+
            $this->close();
        }
 
@@ -341,8 +342,24 @@
 
        }
        function AddToCart($id,$name,$brand,$price){
+           $this->open();
+           $stmt=$this->dbh->prepare("Select * from gadgets");
+           $stmt->execute();
+
+           $rows=$stmt->fetch();
+
+           echo "<tr id='.$rows[0].'>";
+
+           echo "<td>".$rows[1]."</td>";
+           echo "<td>".$rows[6]."</td>";
+           echo "<td>"."<input type = 'text' id='quantity'.$rows[0]. onkeyup='Quantity(".$rows[6].",".$rows[0].")'/>"."</td>";
+           echo "<td>"."<input type = 'text' id='totalprice' readonly='readonly' />"."</td>";
+           echo "</tr>";
+
+           $this->close();
 
        }
+
 
    }
 ?>
