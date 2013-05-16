@@ -16,7 +16,7 @@ div.content{
 
 }
 .shopping_cart{
-    display: none;
+
 }
 #clear_list,.right{
     float: right;
@@ -62,4 +62,31 @@ h4 {
 #logOut{
     margin-left: 700px;
     text-align: center;
+}
+#body{
+
+    width: 150px;
+    border: 1px solid #f0f;
+}
+.product{
+    display: inline;
+    border: 1px solid #f0f;
+
+}
+.itempic,.product{
+    width: 150px;
+    height: 150px;
+}
+.selling_status{
+    display: inline-block;
+}
+#pic{
+    float:left;
+    width:150px;
+    height:250px;
+    border:1px solid #bbbbbb;
+}
+.generalview{
+    width: 500px;
+    border:1px solid #bbbbbb;
 }

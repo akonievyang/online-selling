@@ -43,8 +43,8 @@
             <li> <a href="#cam1"> <strong> Canon EOS 650D 18.0 </strong> </a> </li>
             <li> <a href="#cam2"> <strong> Samsung WB250F 14.2 MP  </strong> </a></li>
             <li> <a href="#cam3"> <strong> Olympus Waterproof TG-320 </strong> </a> </li>
-            <li> <a href="#cam4"> <strong>  Fujifilm Finepix XP50 <br> 14.0 MP Waterproof </strong> </a></li>
-            <li><a href="#cam5"> <strong>  </strong> </a> </li>
+            <li> <a href="#cam4"> <strong>  Fujifilm Finepix XP50 14.0 MP <br> Waterproof </strong> </a></li>
+
 
         </ul>
 
@@ -121,7 +121,9 @@
             <b> * Wi-Fi connectivity</b> <br>
             <b> * Available Colors</b> White, Red <br>
 
+            <br>
 
+            <b><u><i> Price ₱ 7,499.00 </i></u></b>
 
         </p>
         </div>
@@ -142,6 +144,10 @@
                * iAuto and AF tracking<br>
                * 3D Photo shooting mode<br>
                * Li-42B Lithium Ion Battery<br>
+
+                <br>
+
+                <b><u><i> Price ₱ 7,499.00 </i></u></b>
 
             </b>
             </p>
@@ -165,18 +171,12 @@
                     * 6 Scene SR AUTO<br>
                     * 4-Proof Protection: Waterproof 16.5', Shockproof 5', Freezeproof 14, Dustproof<br>
 
-
+                    <br>
                        <b><u><i> Price ₱ 7,499.00 </i></u></b>
 
             </p>
         </div>
 
-        <div id="cam5">
-
-            <td> <h6> <input  type="checkbox"> </h6> </td>
-            <p> Check if you want this item!! </p>
-
-        </div>
 
     </div>
 

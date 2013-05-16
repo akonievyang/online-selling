@@ -20,13 +20,14 @@
                 <div class="content">
                     <div class="upload_container">
                         <div style="width:600px">
+                            <div id='preview'> </div>
                             <form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
                                 <form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
-                                    Upload your image <input type="file" name="photoimg" id="photoimg" />
+                                    <p>Upload your image</p>
+                                    <input type="file" name="photoimg" id="photoimg"  />
+                                    <br/>
                                     <input type="button" id="saveitem"  value="save" class="btn btn-primary"/>
                                 </form>
-
-                                <div id='preview'> </div>
                         </div>
                     </div>
 
@@ -75,7 +76,7 @@
                             <div id="add_info">
                                 <form>
                                         <div id="item_form">
-                                            <span style="display: none;" class="warning"></span>
+                                            <span style="display: none;" class="errorwarning"></span>
                                             <label>Name</label>
                                             <input type="text"  class="input-medium" id="name" name='name' required="required"/>
                                             <label>Brand</label>
