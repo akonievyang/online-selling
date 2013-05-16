@@ -14,7 +14,7 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
 
     if($result){
 
-        $_SESSION['user_id']=$result;
+        $_SESSION['customer_id']=$result;
         header('location:customer.php');
 
     }else{

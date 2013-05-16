@@ -8,6 +8,26 @@ $(function(){
 
     });
 
+
+    $("#top_category").mouseover(function(){
+        $("#top_category").css({"background-color" : "#ffffff"});
+        $(".navigation").slideDown(1000);
+        $(".profile").hide();
+        $(".category").show();
+
+
+
+    });
+    $("#top_profile").mouseover(function(){
+        $("#top_profile").css({"background-color" : "#ffffff"});
+        $(".navigation").slideDown(1000);
+        $(".category").hide();
+        $(".profile").show();
+
+
+    });
+
+
    $("#li_item").click(function(){
         $(".view_item").show();
          $(".member").hide();
