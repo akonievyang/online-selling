@@ -69,8 +69,20 @@ $(function(){
             data: personObj,
             success:function(data){
                 var Obj = JSON.parse(data);
-                $("#")
-            }
+                $("#id").val(obj.id);
+                $("#firstname").val(obj.firstname);
+                $("#middlename").val(obj.middlename);
+                $("#lastname").val(obj.lastname);
+                $("#age").val(obj.age);
+                $("#address").val(obj.address);
+                $("#gender").val(obj.gender);
+                $("#username").val(obj.username);
+                $("#password").val(obj.password);
+
+              },
+              error:function(data){
+                  alert(data);
+              }
         });
 
 
