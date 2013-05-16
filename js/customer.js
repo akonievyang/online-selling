@@ -1,6 +1,5 @@
 $(function(){
 
-
     $("#reg").click(function(){
        var entry = {
            "firstname":$("input[name = 'firstname']").val(),
@@ -56,8 +55,26 @@ $(function(){
 
     }
 
+    //editing customer
+
+    function edit_member(id){
+        alert("test");
+        var personObj = {"id":id};
+
+        $.ajax({
+
+            type: "POST",
+            url: "edit_member.php",
+            async:true,
+            data: personObj,
+            success:function(data){
+                var Obj = JSON.parse(data);
+                $("#")
+            }
+        });
 
 
+    }
 
 
 
