@@ -28,11 +28,38 @@ $(function(){
     });
 
     $("#saveitem").click(function(){
-        alert($("#photoimg").val());
+
+        var inputfield=$("#form_item").serializeArray();
+        var status=false;
+
+
+            var obj = {"name":$("#name").val(),
+                "brand":$("#brand").val(),
+                "features":$("#features").val(),
+                "price":$("#price").val(),
+                "picture":$("#photoimg").val()
+            };
+
+
+            $.ajax({
+                type:"POST",
+                url:"add_item.php",
+                data:obj,
+                success:function(data){
+                    $(".upload_container").hide();
+                    SearchItem();
+                },
+                error:function(data){
+                    alert(data);
+                }
+            });
+
+
     });
 
-   $("#add").click(function(){
-
+   $("#test").submit(function(){
+        $(".upload_container").show();
+       return false;
    });
 
 
@@ -109,7 +136,7 @@ function DeleteItem(){
 
     }
     function Number(){
-        var status=/^[0-9]$/;
+        var status=/^[0-9]+$/;
         var price=$("#price").val();
         var pL = price.length;
 
@@ -119,7 +146,7 @@ function DeleteItem(){
             $("#price").val(p);
 
         }
-        if(status.test(price)){
+       else{
             var p = price.substring(0,4);
             $("#price").val(p);
         }

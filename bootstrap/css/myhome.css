@@ -1,7 +1,6 @@
 
 body {
-	margin: 20px 0;
-	padding: 0;
+
 	background: #4C4C4C;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 13px;
@@ -40,13 +39,6 @@ p, ul, ol {
 }
 
 
-
-ul {
-}
-
-ol {
-}
-
 li{
 	text-decoration: none;
 	border-bottom: 1px solid #BFC6E3;
@@ -54,8 +46,7 @@ li{
 }
 
 
-small {
-}
+
 
 hr {
 	display: none;
@@ -63,16 +54,6 @@ hr {
 
 img {
 	border: none;
-}
-
-img.left {
-	float: left;
-	margin: 0 15px 0 0;
-}
-
-img.right {
-	float: left;
-	margin: 0 0 0 15px;
 }
 
 /* Header */

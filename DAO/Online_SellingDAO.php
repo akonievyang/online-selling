@@ -14,34 +14,34 @@
          $this->close();
       }
       
-      function ViewDisplay(){
+      function CustomerViewItem($search){
       	$this->open();
-      		$stmt=$this->dbh->prepare("Select item.item_id,gadgets.discription,gadgets.features,picture.large_pic,gadgets.price,gadgets.name,gadgets.brand
-      											from item,gadgets,picture where item.gadget_id=gadgets.gadget_id and item.pic_id=picture.pic_id");
+      		$stmt=$this->dbh->prepare(" SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
+                                        gadgets.price, picture.large_pic,gadgets.features
+                                        FROM item, gadgets, picture
+                                        WHERE item.gadget_id = gadgets.gadget_id
+                                        AND item.pic_id = picture.pic_id
+                                       ");
       		$stmt->execute();
-      		
+
+
       		$status=false;
+          $LI = "";
       		while($rows=$stmt->fetch()){
-      			$status=true;
-      			echo "<div>";
-      			echo "<div class='shop' id='big_pic'>"."<img src='images/".$rows[3]."'/>"."</div>";      			
-      			echo "<div class='shop' id='features'>"."<h3>"."Features"."</h3>".$rows[2]."</div>";
-      			echo "</div>";
-      			
-      			echo "<div>";
-      			echo "<div class='selling_status'>";
-      			echo "<label>"."Price: ".$rows[4]." ONLY"."  "."<img src='images/add.png' onclick='BuyNow(".$rows[0],$rows[4],$rows[5],$rows[6].")'/>"."</label>";   			
-      			echo "</div>";
-      			echo "</div>";
-      			
-      			echo "<div class='describe'>";
-					echo "<div id='descriptions'>"."<h3>"."Description"."</h3>".$rows[1]."</div>";
-      			echo "</div>";
-      			
-      		
-      		}if(!$status){
-      			echo "<div > Not available here </div>";
-  					    		
+                $image="uploaded_file/$rows[4]";
+                $status=true;
+                $name = explode("",$rows[1]);
+                echo "<div style='display:inline-block;'>";
+                echo "<img src=".$image." alt=$rows[1] style='width:150px; height:150px;/>";
+                echo "<label>".$rows[1]."</label>";
+                echo "<label style='display:inline;'>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
+                echo "<input type='button' value='buy now' onclick=buyNow(".$rows[0].",'".$name[0]."','".$name[1]."','".$rows[2]."','".$rows[3]."','".$image."','".$rows[5]."') />";
+                echo "</div >";
+
+      		}
+            if(!$status){
+      			echo "<div > Not available </div>";
+
       		}
       	$this->close();
       }
@@ -135,7 +135,7 @@
 
             $this->open();
 
-            $stmt = $this->dbh->prepare("UPDATE cuctomer set firstname = ?, middlename = ?, lastname = ?, age = ?, address =?, gender = ?, username = ?, password = ?, WHERE customer_id = ?");
+            $stmt = $this->dbh->prepare("UPDATE customer set firstname = ?, middlename = ?, lastname = ?, age = ?, address =?, gender = ?, username = ?, password = ?, WHERE customer_id = ?");
             $stmt->bindParam(1,$firstname);
             $stmt->bindParam(2,$middlename);
             $stmt->bindParam(3,$lastname);
@@ -161,9 +161,45 @@
             $this->close();
        }
 
+       function save_member($customer_id,$firstname,$middlename,$lastname,$age,$address,$gender,$username,$password){
+
+          $this->open();
+
+            $stmt = $this->dbh->prepare("UPDATE customer set firstname = ?, middlename = ?, lastname = ?, age = ?, address = ?, gender = ?, username = ?, password = ? WHERE customer_id = ?");
+            $stmt->bindParam(1,$firstname);
+            $stmt->bindParam(2,$middlename);
+            $stmt->bindParam(3,$lastname);
+            $stmt->bindParam(4,$age);
+            $stmt->bindParam(5,$address);
+            $stmt->bindParam(6,$gender);
+            $stmt->bindParam(7,$username);
+            $stmt->bindParam(8,$password);
+            $stmt->bindParam(9,$customer_id);
+            $stmt->execute();
+
+
+           echo "<td><input type='checkbox' name='checkVideo'
+                    onclick='btn_edit(".$customer_id.")'/></td>";
+           echo "<td>".$firstname."</td>";
+           echo "<td>".$middlename."</td>";
+           echo "<td>".$lastname."</td>";
+           echo "<td>".$age."</td>";
+           echo "<td>".$address."</td>";
+           echo "<td>".$gender."</td>";
+           echo "<td>".$username."</td>";
+           echo "<td>".$password."</td>";
+           echo "<td><input type='button'  value='edit' onclick='btn_edit(".$customer_id.")'/>";
+
+           $this->close();
+
+
+
+       }
+
+
        /*------------------------ ADD FUNCTION ------------------------------------------- */
 
-       function AddItem($name,$brand,$features,$price,$filename){
+       function AddItem($name,$brand,$features,$price,$picture){
             $this->open();
                 $stmt=$this->dbh->prepare("INSERT INTO gadgets(gadget_name,brand,features,price,date_added) VALUES(?,?,?,?,NOW())");
                    $stmt->bindParam(1, $name);
@@ -174,7 +210,7 @@
                    $gad_id=$this->dbh->lastInsertId();
 
                 $stmt=$this->dbh->prepare("Insert into picture values(null,?)");
-                   $stmt->bindParam(1,$filename);
+                   $stmt->bindParam(1,$picture);
                    $stmt->execute();
                    $pic_id=$this->dbh->lastInsertId();
 
@@ -244,7 +280,7 @@
        function loginMember($username,$password){
            $this->open();
 
-               $stmt=$this->dbh->prepare("SELECT username,password from customer where username=?  and password=password(?)  ");
+               $stmt=$this->dbh->prepare("SELECT customer_id from customer where username=?  and password=password(?)  ");
                $stmt->bindParam(1,$username);
                $stmt->bindParam(2,$password);
                $stmt->execute();
@@ -252,12 +288,22 @@
               // return $row[1];
 
 
-               if($stmt->fetch()){
+              $rows=$stmt->fetch();
+                   echo $rows[0];
 
-                   return "true";
-               }else{
-                   return false;
-               }
+           $this->close();
+       }
+       function SearchUser($username,$password){
+           $this->open();
+           $stmt=$this->dbh->prepare("SELECT customer_id from customer where username=?  and password=password(?)");
+           $stmt->bindParam(1,$username);
+           $stmt->bindParam(2,$password);
+           $stmt->execute();
+
+           $rows=$stmt->fetch();
+
+                echo $rows[0];
+
            $this->close();
        }
 
@@ -335,34 +381,25 @@
             $this->close();
 
        }
-       function CustomerViewItem($search){
+       function AddToCart($id,$name,$brand,$price){
            $this->open();
-               $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE gadget_name like '".$search."%' or
-                                       brand like '".$search."%' or price like '".$search."%'
-                                       or features like '".$search."%'   ");
+           $stmt=$this->dbh->prepare("Select * from gadgets");
+           $stmt->execute();
 
-               $stmt->execute();
+           $rows=$stmt->fetch();
 
-                   $status=false;
-                   while($rows=$stmt->fetch()){
-                       $status=true;
+           echo "<tr id='.$rows[0].'>";
 
+           echo "<td>".$rows[1]."</td>";
+           echo "<td>".$rows[6]."</td>";
+           echo "<td>"."<input type = 'text' id='quantity'.$rows[0]. onkeyup='Quantity(".$rows[6].",".$rows[0].")'/>"."</td>";
+           echo "<td>"."<input type = 'text' id='totalprice' readonly='readonly' />"."</td>";
+           echo "</tr>";
 
-                       echo "<div id=".$rows[0].">";
-                       echo "<p>".$rows[1]."</p>";
-                       echo "<p>".$rows[3]."</p>";
-                       echo "<p>".$rows[6]."</p>";
-                       echo "<p>"."<input type='button' onclick='Buy(".$rows[0].")'/>"."</p>";
-                       echo "</div>";
-                   }
-                   if(!$status){
-                       echo "<tr>";
-                       echo "<td colspan='10'>No Data </td>";
-                       echo "</tr>";
-
-                   }
            $this->close();
+
        }
+
 
    }
 ?>

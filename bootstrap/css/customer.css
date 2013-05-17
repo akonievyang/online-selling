@@ -1,22 +1,79 @@
-div.wholePage{
-    margin-left: 150px;
-    position: absolute;
-    width: 1000px;
-    border: 1px solid #f0f;
+
+body {
+    background: none repeat scroll 0 0 #4C4C4C;
+    color: #6C7496;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 13px;
 }
+div.page{
+    width: 770px;
+    margin: 0 auto;
+    background: #FFFFFF url('../../images/img02.gif') repeat-x;
+    border-right: 5px solid #414141;
+
+}
+
 div.main{
     padding:20px;
 
 }
 div.content{
-    float:left;
-    width:710px;
+    width:700px;
     border:1px solid #bbbbbb;
     padding: 20px;
 
 }
-.shopping_cart{
-    display: none;
+/* Header */
+
+#header {
+    width: 775px;
+    height: 237px;
+    margin: 0 auto;
+    background: url('../../images/img01.jpg') no-repeat;
+}
+
+#header h1, #header h2 {
+    float: left;
+    margin: 0;
+}
+
+#header h1 {
+    padding: 155px 0 0 20px;
+    letter-spacing: 5px;
+    font-size: 3em;
+}
+
+#header h2 {
+    padding: 175px 0 0 5px;
+    font-size: 1.4em;
+}
+.menu{
+
+    position:relative;
+    display:inline;
+    border-bottom: 0 none;
+    border:1px #89c561 solid;
+    border-bottom: 0 none;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background:transparent;
+    cursor:pointer;
+}
+.topmenu{
+
+    float:right;
+    padding: 0 20px  0 20px ;
+
+}
+
+
+.right{
+    padding:20px;
+
 }
 #clear_list,.right{
     float: right;
@@ -27,19 +84,25 @@ li,label{
 }
 li{
 
-
+    cursor: pointer;
     text-decoration: none;
     border-bottom: 1px solid #BFC6E3;
     list-style: none;
 
 }
 
-.inner{
+.navigation{
+
     border: 1px solid #bbbbbb;
-    width: 170px ;
-    float:right;
+    border-top: 0 none;
+    width: 273px ;
+
     padding: 15px;
 }
+.navigation,.profile{
+    display: none;
+}
+
 h4 {
     font-size: 1.8em;
     margin: 0;
@@ -63,3 +126,51 @@ h4 {
     margin-left: 700px;
     text-align: center;
 }
+
+
+.itempic,.product{
+    width: 150px;
+    height: 150px;
+}
+.selling_status{
+    display: inline-block;
+}
+#item_picture{
+    float:left;
+    width:250px;
+    height:250px;
+    border:1px solid #bbbbbb;
+}
+.generalview{
+    width: 700px;
+    border:1px solid #bbbbbb;
+    padding: 0;
+}
+.viewitem{
+
+    float:left;
+}
+.overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(225,225,225, .15);
+
+    position: fixed;
+}
+.shopping_cart{
+    background-color: #fff;
+    width: 700px;
+    margin: 200px 0  200px 370px;
+}
+
+
+
+.secondcontent{
+    display :none;
+
+}
+.firstcontent{
+
+}
+
