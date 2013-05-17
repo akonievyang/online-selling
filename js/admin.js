@@ -2,14 +2,24 @@ $(function(){
 
     SearchItem();
     SearchMember();
+
     $("div.pickcolor").click(function(){
      var id=document.getElementById(this.id);
-        $().sho()
+        $().show()
+
+    });
+    $(".closed").click(function(){
+
+        $(".overlay").slideUp();
 
     });
 
 
-    $("#top_category").mouseover(function(){
+    $("#display_add").click(function(){
+
+        $(".overlay").slideDown();
+    });
+    $("#top_category").hover(function(){
         $("#top_category").css({"background-color" : "#ffffff"});
         $(".navigation").slideDown(1000);
         $(".profile").hide();
@@ -48,6 +58,22 @@ $(function(){
     });
 
     $("#saveitem").click(function(){
+        var inputfield=$("#form_item").serializeArray();
+        var status=false;
+        for(var ctr=0;ctr<inputfield.length;ctr++){
+
+            if(inputfield[ctr].value==="" || inputfield[ctr].value=== NaN || inputfield[ctr].value===null || inputfield[ctr].value=== " "){
+                status=true;
+                break;
+            }else{
+                status=false;
+            }
+
+        }
+        if(status){
+            $(".warning").html("Some fields missing").fadeIn().fadeOut(5000).css({"color":"red"});
+        }else{
+
             var obj = {"name":$("#name").val(),
                 "brand":$("#brand").val(),
                 "features":$("#features").val(),
@@ -61,21 +87,19 @@ $(function(){
                 url:"add_item.php",
                 data:obj,
                 success:function(data){
-
                     SearchItem();
+                //    $(".overlay").slideUp();
+
                 },
                 error:function(data){
                     alert(data);
                 }
             });
 
-
+        }
     });
 
-   $("#btn_add").submit(function(){
-        $(".upload_container").show();
-       return false;
-   });
+
 
 
 
@@ -153,10 +177,6 @@ function DeleteItem(){
     function Number(){
         var status=/^[0-9]+$/;
         var price=$("#price").val();
-        $('#price').priceFormat({
-            clearPrefix: true
-        });
-
         var pL = price.length;
 
 
@@ -165,10 +185,7 @@ function DeleteItem(){
             $("#price").val(p);
 
         }
-       else{
-            var p = price.substring(0,4);
-            $("#price").val(p);
-        }
+
     }
     function ViewAllProducts(){
         $.ajax({
