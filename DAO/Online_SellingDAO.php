@@ -284,12 +284,9 @@
                $stmt->bindParam(1,$username);
                $stmt->bindParam(2,$password);
                $stmt->execute();
-      //$row = $stmt->fetch();
-              // return $row[1];
 
-
-              $rows=$stmt->fetch();
-                   echo $rows[0];
+               $row = $stmt->fetch();
+                  return $row[0];
 
            $this->close();
        }
