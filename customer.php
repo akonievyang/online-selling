@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+echo $_SESSION['customer_id'];
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -73,6 +76,9 @@
                                 </ul>
                             </div>
 
+            <div class="wholePage">
+                <div class="main">
+                    <input type="submit" id="logOut" value="Log-Out"/>
 
                         </div>
                         <!--- end category --->

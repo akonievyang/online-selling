@@ -49,6 +49,8 @@
        function LogInAdmin($username,$password){
            $this->open();
 
+
+
            $this->close();
        }
 
@@ -283,8 +285,8 @@
                $stmt->bindParam(2,$password);
                $stmt->execute();
 
-              $rows=$stmt->fetch();
-                   echo $rows[0];
+               $row = $stmt->fetch();
+                  return $row[0];
 
            $this->close();
        }

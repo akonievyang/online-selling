@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php" line="235" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/TW1-myphone.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" afterPath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addToCart.php" afterPath="$PROJECT_DIR$/addToCart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/admin.css" afterPath="$PROJECT_DIR$/bootstrap/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin.js" afterPath="$PROJECT_DIR$/js/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/customer.css" afterPath="$PROJECT_DIR$/bootstrap/css/customer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/customer.js" afterPath="$PROJECT_DIR$/js/customer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer.php" afterPath="$PROJECT_DIR$/customer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
@@ -81,16 +74,14 @@
       <file leaf-file-name="Online_SellingDAO.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="63" selection-start="1495" selection-end="1506" vertical-scroll-proportion="-6.0961537">
+            <state line="39" column="0" selection-start="1495" selection-end="1506" vertical-scroll-proportion="-6.0961537">
               <folding>
-                <marker date="1368759052981" expanded="false" signature="1157:1178" placeholder="..." />
-                <marker date="1368759052981" expanded="true" signature="1179:1198" placeholder="..." />
-                <marker date="1368759052981" expanded="true" signature="2875:3328" placeholder="..." />
-                <marker date="1368759052981" expanded="true" signature="4294:4638" placeholder="..." />
-                <marker date="1368759052981" expanded="true" signature="12156:12208" placeholder="..." />
-                <marker date="1368759052981" expanded="true" signature="12634:12679" placeholder="..." />
-                <marker date="1368759052981" expanded="true" signature="13469:13837" placeholder="..." />
-                <marker date="1368759052981" expanded="true" signature="13927:13971" placeholder="..." />
+                <marker date="1368759640533" expanded="false" signature="1157:1178" placeholder="..." />
+                <marker date="1368759640533" expanded="true" signature="1179:1198" placeholder="..." />
+                <marker date="1368759640533" expanded="true" signature="12160:12212" placeholder="..." />
+                <marker date="1368759640533" expanded="true" signature="12638:12683" placeholder="..." />
+                <marker date="1368759640533" expanded="true" signature="13473:13841" placeholder="..." />
+                <marker date="1368759640533" expanded="true" signature="13931:13975" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -105,11 +96,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="customer.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/customer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="56" selection-start="2313" selection-end="2313" vertical-scroll-proportion="-12.5">
-              <folding />
+            <state line="56" column="56" selection-start="2369" selection-end="2369" vertical-scroll-proportion="-3.7231834">
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,11 +124,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="customer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/customer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="34" selection-start="779" selection-end="779" vertical-scroll-proportion="0.13117547">
-              <folding />
+            <state line="34" column="37" selection-start="963" selection-end="1001" vertical-scroll-proportion="-11.321428">
+              <folding>
+                <marker date="1368759101113" expanded="true" signature="12:2249" placeholder="{...}" />
+                <marker date="1368759101113" expanded="true" signature="743:1157" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -590,13 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="56" selection-start="2313" selection-end="2313" vertical-scroll-proportion="-12.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="24" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0">
@@ -637,24 +634,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="63" selection-start="1495" selection-end="1506" vertical-scroll-proportion="-6.0961537">
+        <state line="39" column="0" selection-start="1495" selection-end="1506" vertical-scroll-proportion="-6.0961537">
           <folding>
-            <marker date="1368759052981" expanded="false" signature="1157:1178" placeholder="..." />
-            <marker date="1368759052981" expanded="true" signature="1179:1198" placeholder="..." />
-            <marker date="1368759052981" expanded="true" signature="2875:3328" placeholder="..." />
-            <marker date="1368759052981" expanded="true" signature="4294:4638" placeholder="..." />
-            <marker date="1368759052981" expanded="true" signature="12156:12208" placeholder="..." />
-            <marker date="1368759052981" expanded="true" signature="12634:12679" placeholder="..." />
-            <marker date="1368759052981" expanded="true" signature="13469:13837" placeholder="..." />
-            <marker date="1368759052981" expanded="true" signature="13927:13971" placeholder="..." />
+            <marker date="1368759640533" expanded="false" signature="1157:1178" placeholder="..." />
+            <marker date="1368759640533" expanded="true" signature="1179:1198" placeholder="..." />
+            <marker date="1368759640533" expanded="true" signature="12160:12212" placeholder="..." />
+            <marker date="1368759640533" expanded="true" signature="12638:12683" placeholder="..." />
+            <marker date="1368759640533" expanded="true" signature="13473:13841" placeholder="..." />
+            <marker date="1368759640533" expanded="true" signature="13931:13975" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/customer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="34" selection-start="779" selection-end="779" vertical-scroll-proportion="0.13117547">
-          <folding />
+        <state line="34" column="37" selection-start="963" selection-end="1001" vertical-scroll-proportion="-11.321428">
+          <folding>
+            <marker date="1368759101113" expanded="true" signature="12:2249" placeholder="{...}" />
+            <marker date="1368759101113" expanded="true" signature="743:1157" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="56" selection-start="2369" selection-end="2369" vertical-scroll-proportion="-3.7231834">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
