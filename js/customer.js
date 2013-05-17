@@ -81,27 +81,8 @@ $(function(){
         });
     });
 
+
 });
-
-    function LogIn_Admin(){
-        $("#logAdmin").hide();
-         $("#login_admin").click(function(){
-             $("#logAdmin").dialog({
-                 autoOpen: true,
-                 show: "explode",
-                 hide: "explode",
-                 modal: "true",
-                 buttons: {
-                     "close": function(){
-                         $("#logAdmin").dialog("close");
-                     }
-                 }
-             });
-         });
-
-    }
-
-
     function CustomerViewItem(){
         $.ajax({
             type:"POST",

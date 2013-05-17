@@ -110,9 +110,8 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
             </div>
             <!-- end content -->
             <div id="sidebar">
-                <button id="login_admin">Log-In Admin</button>
                 <ul>
-                    <div id="logAdmin">
+                    <div id="logAdmin"">
                         <h3>Login Admin</h3>
                             <form>
 
