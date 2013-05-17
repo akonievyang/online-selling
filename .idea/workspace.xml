@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/home.css" afterPath="$PROJECT_DIR$/bootstrap/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.php" afterPath="$PROJECT_DIR$/product.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
@@ -85,7 +83,7 @@
       <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="2385" selection-end="2385" vertical-scroll-proportion="-12.5">
+            <state line="61" column="0" selection-start="2501" selection-end="2501" vertical-scroll-proportion="-12.5">
               <folding />
             </state>
           </provider>
@@ -589,7 +587,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="2385" selection-end="2385" vertical-scroll-proportion="-12.5">
+        <state line="61" column="0" selection-start="2501" selection-end="2501" vertical-scroll-proportion="-12.5">
           <folding />
         </state>
       </provider>
