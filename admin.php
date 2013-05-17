@@ -14,15 +14,37 @@
 	</head>
     <title>admin</title>
 	<body>
-        <div id="header">
+    <div class="inner">
+        <h4 style=" color: #FFFFFF;">Add Item</h4>
+        <div id="add_info" >
+            <form id="form_item">
+                <span style="display: none;" class="warning"></span>
+                <label>Name</label>
+                <input type="text"  class="input-medium" id="name" name='name'/>
+                <label>Brand</label>
+                <input type="text" class="input-medium"  id="brand" name='brand'/>
+                <label>Features</label>
+                <input type="text" class="input-medium"  id="features" name='features'/>
+                <label>Price</label>
+                <input type="text" class="input-medium"  id="price" name='price' onkeyup="Number()"/>
+
+            </form>
+
+        </div>
+        <!--- end add_info ---->
+        <input type="button" id="add" value="add item" class="btn btn-primary"/>
+    </div>
+    <!--- end inner ---->
+
+    <div id="header">
             <h1>The Best Gadget</a></h1>
             <h2>we offer</h2>
 
             <div class="topmenu">
 
-                <div class="menu">category</div>
+                <div class="menu" id="top_category">category</div>
                 <div class="menu">COmputer</div>
-                <div class="menu" id="home"> profile info </div>
+                <div class="menu" id="top_profile" > profile info </div>
 
                 <div class="navigation">
                     <div class="category">

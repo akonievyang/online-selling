@@ -61,7 +61,7 @@ div.content{
     text-decoration: none;
     text-transform: uppercase;
     background:transparent;
-    cursor:pointer;
+
 }
 .topmenu{
 
@@ -69,7 +69,9 @@ div.content{
     padding: 0 20px  0 20px ;
 
 }
-
+#shop_more,li,.menu{
+    cursor:pointer;
+}
 
 .right{
     padding:20px;
@@ -84,7 +86,7 @@ li,label{
 }
 li{
 
-    cursor: pointer;
+
     text-decoration: none;
     border-bottom: 1px solid #BFC6E3;
     list-style: none;
@@ -96,8 +98,10 @@ li{
     border: 1px solid #bbbbbb;
     border-top: 0 none;
     width: 273px ;
-
     padding: 15px;
+    position: absolute;
+    background: #FFFFFF;
+
 }
 .navigation,.profile{
     display: none;

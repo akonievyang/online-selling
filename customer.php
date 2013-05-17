@@ -36,7 +36,7 @@
                             <label>Total Price:<input type="text" class="input-medium" id="total" readonly='readonly'/></label>
                             <input type="button" class="btn btn-primary" id="check_out" value="check out"/>
                             <br/>
-                            <p id="shop_more"  style="text-decoration: underline;">or shop more?</p>
+                            <label id="shop_more"  style="text-decoration: underline;">or shop more?</label>
                         </div>
                         <div style="clear: both;"></div>
 
@@ -50,9 +50,9 @@
 
                     <div class="topmenu">
 
-                        <div class="menu">category</div>
+                        <div class="menu" id="top_category">category</div>
                         <div class="menu">COmputer</div>
-                        <div class="menu" id="home"> profile info </div>
+                        <div class="menu" id="top_profile"> profile info </div>
 
                         <div class="navigation">
                             <div class="category">
