@@ -113,7 +113,7 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
                 <ul>
                     <div id="logAdmin"">
                         <h3>Login Admin</h3>
-                            <form>
+                            <form method="POST" action="admin.php">
 
                                 <label>Username: </label>
                                 <input type="text" name="adminUser"/>

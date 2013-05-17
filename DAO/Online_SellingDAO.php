@@ -45,13 +45,21 @@
       		}
       	$this->close();
       }
-      /*-----------------------------LogInAdmin-----------------------------------------------------*/
-       function LogInAdmin($username,$password){
+        /*-----------------------------LogInAdmin-----------------------------------------------------*/
+       function LogInAdmin($adminUser,$adminPass){
            $this->open();
 
-
+           $stmt=$this->dbh->prepare("SELECT adminUser, adminPass from admin where adminUser=?  and adminPass=password(?)  ");
+           $stmt->bindParam(1,$adminUser);
+           $stmt->bindParam(2,$adminPass);
+           $stmt->execute();
 
            $this->close();
+
+           $row = $stmt->fetch();
+           return $row[0];
+
+
        }
 
 
