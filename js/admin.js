@@ -48,11 +48,6 @@ $(function(){
     });
 
     $("#saveitem").click(function(){
-
-        var inputfield=$("#form_item").serializeArray();
-        var status=false;
-
-
             var obj = {"name":$("#name").val(),
                 "brand":$("#brand").val(),
                 "features":$("#features").val(),
@@ -66,7 +61,7 @@ $(function(){
                 url:"add_item.php",
                 data:obj,
                 success:function(data){
-                    $(".upload_container").hide();
+
                     SearchItem();
                 },
                 error:function(data){
@@ -77,7 +72,7 @@ $(function(){
 
     });
 
-   $("#test").submit(function(){
+   $("#btn_add").submit(function(){
         $(".upload_container").show();
        return false;
    });
@@ -158,6 +153,10 @@ function DeleteItem(){
     function Number(){
         var status=/^[0-9]+$/;
         var price=$("#price").val();
+        $('#price').priceFormat({
+            clearPrefix: true
+        });
+
         var pL = price.length;
 
 

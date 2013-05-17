@@ -14,27 +14,42 @@
 	</head>
     <title>admin</title>
 	<body>
-    <div class="inner">
-        <h4 style=" color: #FFFFFF;">Add Item</h4>
+    <div class="add_item">
+
         <div id="add_info" >
+            <h4 style=" color: #FFFFFF;">Add Item</h4>
             <form id="form_item">
                 <span style="display: none;" class="warning"></span>
                 <label>Name</label>
-                <input type="text"  class="input-medium" id="name" name='name'/>
+                <input type="text"  class="input-medium" id="name" name='name' required/>
                 <label>Brand</label>
-                <input type="text" class="input-medium"  id="brand" name='brand'/>
+                <input type="text" class="input-medium"  id="brand" name='brand' required/>
                 <label>Features</label>
-                <input type="text" class="input-medium"  id="features" name='features'/>
+                <input type="text" class="input-medium"  id="features" name='features'required/>
                 <label>Price</label>
-                <input type="text" class="input-medium"  id="price" name='price' onkeyup="Number()"/>
-
+                <input type="text" class="input-medium"  id="price" name='price' onkeyup="Number()" required/>
+                <br/>
+                <input type="submit" id="btn_add" value="add item" class="btn btn-primary"/>
             </form>
+        </div>
+        <img src='images/arrow.png' style="margin-top:50px ;position:absolute;"/>
+        <!--- end add_info ---->
+        <div class="upload_container" >
+
+                <div id='preview'> </div>
+                <form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
+                    <form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
+                        <p>Upload your image</p>
+                        <input type="file" name="photoimg" id="photoimg"  />
+                        <br/>
+                        <input type="button" id="saveitem"  value="save" class="btn btn-primary"/>
+                    </form>
 
         </div>
-        <!--- end add_info ---->
-        <input type="button" id="add" value="add item" class="btn btn-primary"/>
+        <div style="clear: both;"></div>
+
     </div>
-    <!--- end inner ---->
+    <!--- end add_item ---->
 
     <div id="header">
             <h1>The Best Gadget</a></h1>
@@ -77,18 +92,7 @@
                 <div class="main">
 
                 <div class="content">
-                    <div class="upload_container">
-                        <div style="width:600px">
-                            <div id='preview'> </div>
-                            <form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
-                                <form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
-                                    <p>Upload your image</p>
-                                    <input type="file" name="photoimg" id="photoimg"  />
-                                    <br/>
-                                    <input type="button" id="saveitem"  value="save" class="btn btn-primary"/>
-                                </form>
-                        </div>
-                    </div>
+
 
 
                         <div class="view_item">

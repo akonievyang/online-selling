@@ -1,4 +1,5 @@
 $(function(){
+    viewCart();
     $("#shop_more").click(function(){
         $(".content").show();
         $(".overlay").hide();
@@ -23,25 +24,6 @@ $(function(){
         $(".profile").show();
 
 
-    });
-    $("#buyclick").click(function(){
-        $("shopping_cart").show();
-       alert( $("#add_to_cart").attr(id));
-       /* $.ajax({
-            type:"POST",
-            url:"addToCart.php",
-            data:{"id":id},
-            success:function(data){
-                $(".overlay").show();
-
-                $("#cart").append(data);
-            },
-            error:function(data){
-                alert(data);
-
-            }
-
-        });*/
     });
 
 
@@ -101,25 +83,73 @@ $(function(){
     }
 
     function buyNow(id,fname,lname,brand,price,pic,features){
-
-
         $(".secondcontent").show();
-       var pic= $("#item_picture").html("<img src="+pic+" />");
-       var pice=$("#itemp").html(price);
+        $("#item_picture").html("<img src="+pic+" />");
+        $("#itemp").html(price);
         $("#itemF").html(features);
-       var name=$("#itemN").html(fname+" "+lname);
-       var brand=$("#itemB").html(brand);
+        $("#itemN").html(fname+" "+lname);
+        $("#itemB").html(brand);
+
+        $("#buyclick").click(function(){
+            $("shopping_cart").show();
+
+            $.ajax({
+                type:"POST",
+                url:"addToCart.php",
+                data:{"id":id},
+                success:function(data){
+                    alert(data);
+                    $(".overlay").show();
+                    viewCart();
+                },
+                error:function(data){
+                    alert(data);
+
+                }
+
+            });
+        });
+
     }
     function Quantity(price,id){
 
             var total= $("#quantity").val()*price;
-            $("#totalprice").val(total);
+            $("#totalprice").val(total+id);
             $("#total").val(total);
 
     }
 
     //editing customer
+    function viewCart(){
+        $.ajax({
+            type:"POST",
+            url:"viewCart.php",
+            success:function(data){
+                $("#cart").append(data);
+            },
+            error:function(data){
+                alert(data);
 
+            }
+
+        });
+    }
+    function removeFromCArt(id){
+
+        $.ajax({
+            type:"POST",
+            url:"removeFromCart.php",
+            data:{"id":id},
+            success:function(data){
+                viewCart();
+            },
+            error:function(data){
+                alert(data);
+
+            }
+
+        });
+    }
     function edit_member(id){
         alert("test");
         var personObj = {"id":id};

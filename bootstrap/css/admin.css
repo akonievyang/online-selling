@@ -103,21 +103,33 @@ div#leftside{
 
 }
 
-div.upload_container{
-    display: none;
-    padding: 20px;
-    width: 300px;
-    border: 1px solid #bbbbbb;
 
-}
 
 .right_side{
     float:right;
 }
-.inner{
+.add_item{
+    margin: 0 auto;
     border: 1px solid #bbbbbb;
-    width: 170px ;
+    width: 720px ;
+
+}
+#add_info{
+    float: left;
+    border: 1px solid #bbbbbb;
+    width: 200px ;
+
+}
+form,#add_info,.add_item{
     padding: 15px;
+}
+div.upload_container{
+
+    float:right;
+    padding: 20px 80px 20px 20px;
+    width: 250px;
+    border: 1px solid #bbbbbb;
+
 }
 li,label{
    color: #145BF9;

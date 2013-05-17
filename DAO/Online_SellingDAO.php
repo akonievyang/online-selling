@@ -26,16 +26,17 @@
 
 
       		$status=false;
-          $LI = "";
       		while($rows=$stmt->fetch()){
-                $image="uploaded_file/$rows[4]";
                 $status=true;
-                $name = explode("",$rows[1]);
-                echo "<div style='display:inline-block;'>";
-                echo "<img src=".$image." alt=$rows[1] style='width:150px; height:150px;/>";
-                echo "<label>".$rows[1]."</label>";
-                echo "<label style='display:inline;'>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
-                echo "<input type='button' value='buy now' id='add_to_cart' onclick=buyNow(".$rows[0].",'".$name[0]."','".$name[1]."','".$rows[2]."','".$rows[3]."','".$image."','".$rows[5]."') />";
+
+                $image="uploaded_file/$rows[4]";
+                $name = explode(" ",$rows[1]);
+
+                echo "<div class='item_id' id='.$rows[0].'>";
+                echo "<img src=".$image." title=".$name[0]."&nbsp;". $name[1]." />";
+                echo "<label>"."<h4>$rows[1]</h4>"." "."<h5>$rows[2]</h5>"."</label>";
+                echo "<label>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
+                echo "<input type='button' value='buy now' onclick=buyNow(".$rows[0].",'".$name[0]."','".$name[1]."','".$rows[2]."','".$rows[3]."','".$image."','".$rows[5]."') />";
                 echo "</div >";
 
       		}
@@ -45,6 +46,51 @@
       		}
       	$this->close();
       }
+      function viewCart(){
+           $this->open();
+               $stmt=$this->dbh->prepare("Select c.cart_id,g.brand,g.gadget_name,g.price,p.large_pic
+                                        from gadgets as g,picture as p,item as i,cart as c where
+                                        g.gadget_id=i.gadget_id and p.pic_id=i.pic_id and
+                                        i.item_id=c.item_id");
+
+               $stmt->execute();
+               $status=false;
+               while($rows=$stmt->fetch()){
+                   $status=true;
+                   echo $rows[0];
+                   $image="uploaded_file/$rows[4]";
+                   echo "<tr id=$rows[0] >";
+                   echo "<td>"."<img src='.$image.'/>"."<br/>".$rows[1]." ".$rows[2]."</td>";
+                   echo "<td>"."<input type = 'text' id='quantity' onkeyup='Quantity(".$rows[3].",".$rows[0].")'/>"."</td>";
+                   echo "<td>".$rows[3]."</td>";
+                   echo "<td>"."<input type = 'text' id='totalprice' readonly='readonly' />"."</td>";
+                   echo "<td>"."<img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/>"."</td>";
+                   echo "</tr>";
+               }
+               if(!$status){
+                   echo "<tr>";
+                   echo "<td colspan='10'>No Data </td>";
+                   echo "</tr>";
+
+               }
+           $this->close();
+       }
+       function AddToCart($id){
+           $this->open();
+               $stmt=$this->dbh->prepare("Insert into cart values(null,22,?)");
+               $stmt->bindParam(1,$id);
+               $stmt->execute();
+           $this->close();
+
+       }
+       function RemoveFromCArt($id){
+           $this->open();
+           $stmt=$this->dbh->prepare("Delete from cart where cart_id=?");
+           $stmt->bindParam(1,$id);
+           $stmt->execute();
+           $this->close();
+
+       }
       /*-----------------------------LogInAdmin-----------------------------------------------------*/
        function LogInAdmin($username,$password){
            $this->open();
@@ -378,34 +424,7 @@
             $this->close();
 
        }
-       function AddToCart($id){
-           $this->open();
-           $stmt=$this->dbh->prepare("Insert into cart values(null,22,?)");
-           $stmt->bindParam(1,$id);
-           $stmt->execute();
-           $cart_id=$this->dbh->lastInsertId();
 
-           echo $cart_id;
-
-           $stmt=$this->dbh->prepare("Select c.cart_id,g.brand,g.gadget_name,g.price,p.large_pic
-                                    from gadgets as g,picture as p,item as i,cart as c where
-                                    g.gadget_id=i.gadget_id and p.pic_id=i.pic_id and i.item_id=c.item_id and i.item_id=?");
-
-           $stmt->bindParam(1,$cart_id);
-           $stmt->execute();
-
-           $rows=$stmt->fetch();
-           $image="uploaded_file/$rows[4]";
-           echo "<tr id='.$rows[0].'>";
-           echo "<td>"."<img src='.$image.'/>"."<br/>".$rows[1]." ".$rows[2]."</td>";
-           echo "<td>"."<input type = 'text' id='quantity' onkeyup='Quantity(".$rows[3].",".$rows[0].")'/>"."</td>";
-           echo "<td>".$rows[3]."</td>";
-           echo "<td>"."<input type = 'text' id='totalprice' readonly='readonly' />"."</td>";
-           echo "</tr>";
-
-           $this->close();
-
-       }
 
 
    }
