@@ -74,7 +74,7 @@
                     <div class="profile">
 
                         <ul>
-                            <li>Setting</li>
+                            <li><a href="Settings.php">Setting</a></li>
                             <li>Log out</li>
 
                         </ul>
