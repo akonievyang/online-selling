@@ -25,14 +25,16 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
 ?>
 <!DOCTYPE html >
     <head>
+        <script src = "js/jquery-latest.js"></script>
+        <script src = "js/jquery-ui-192.js"></script>
         <script src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.form.js"></script>
         <script src = "js/customer.js"></script>
         <title>The Best Gadget </title>
         <link href="bootstrap/css/myhome.css" rel="stylesheet" type="text/css" />
-
         <link rel = "stylesheet" type = "text/css" href = "bootstrap/css/jquery-ui-1.9.0.custom.min.css" />
         <link rel = "stylesheet" type = "text/css" href = "bootstrap/ccs/jquery-ui-1.9.0.custom.css"/>
+
 
     </head>
 
@@ -50,10 +52,7 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
                     <div class="entry">
 
                     </div>
-
-
-
-                </div>
+             </div>
 
                 <div class="post">
                     <p class="meta">Latest Product</p>
@@ -111,7 +110,22 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
             </div>
             <!-- end content -->
             <div id="sidebar">
+                <button id="login_admin">Log-In Admin</button>
                 <ul>
+                    <div id="logAdmin">
+                        <h3>Login Admin</h3>
+                            <form>
+
+                                <label>Username: </label>
+                                <input type="text" name="adminUser"/>
+                                <label>Password:</label>
+                                <input type="password" name="adminPass"/>
+                                <input type="submit" id="adminLog" value="LogIn"/>
+                                <br> </br>
+
+                            </form>
+
+                    </div>
                     <li>
                         <h2>Login User</h2>
 

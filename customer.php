@@ -81,7 +81,7 @@ if(!isset($_SESSION['customer_id'])){
 
             <div class="wholePage">
                 <div class="main">
-                    <input type="submit" id="logOut" value="Log-Out"/>
+
 
                         </div>
                         <!--- end category --->
