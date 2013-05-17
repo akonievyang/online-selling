@@ -18,7 +18,7 @@
 
             <div class="wholePage">
                 <div class="main">
-                    <input name="submit" id="logOut" value="Log-Out"/>
+                    <input type="submit" id="logOut" value="Log-Out"/>
                     <div style="margin-bottom: 20px;">
                         <input class="input-xxlarge" type="text" placeholder="What you want?:" id="search">
                         <input type="button" class="btn btn-primary btn-large" value="Search"/>

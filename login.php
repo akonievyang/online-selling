@@ -2,22 +2,21 @@
 session_start();
 include "DAO/Online_SellingDAO.php";
 
-
 if(isset($_POST['username']) && isset($_POST['password']) ){
-
     $username=$_POST['username'];
     $password=$_POST['password'];
 
     $action = new OnlineSelling();
 
      $result=$action->loginMember($username,$password);
+    echo $result;
 
     if($result=="true"){
         echo "jfjsa";
-            $_SESSION['users'] = $username;
+            $_SESSION['username'] = $username;
             header('location:customer.php');
     }else{
-       echo 'Unable to login';
+       alert("Unable to login");
     }
 
 }
