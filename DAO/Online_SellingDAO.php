@@ -46,6 +46,7 @@
       		}
       	$this->close();
       }
+<<<<<<< HEAD
       function viewCart(){
            $this->open();
                $stmt=$this->dbh->prepare("Select c.cart_id,g.brand,g.gadget_name,g.price,p.large_pic
@@ -93,11 +94,23 @@
        }
       /*-----------------------------LogInAdmin-----------------------------------------------------*/
        function LogInAdmin($username,$password){
+=======
+        /*-----------------------------LogInAdmin-----------------------------------------------------*/
+       function LogInAdmin($adminUser,$adminPass){
+>>>>>>> 667d520f578667879bc0071ca9a06cec701d582e
            $this->open();
 
-
+           $stmt=$this->dbh->prepare("SELECT adminUser, adminPass from admin where adminUser=?  and adminPass=password(?)  ");
+           $stmt->bindParam(1,$adminUser);
+           $stmt->bindParam(2,$adminPass);
+           $stmt->execute();
 
            $this->close();
+
+           $row = $stmt->fetch();
+           return $row[0];
+
+
        }
 
 

@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 
+=======
+<?php
+session_start();
+echo $_SESSION['customer_id'];
+if(!isset($_SESSION['customer_id'])){
+    header("location: myhome.php");
+}
+?>
+>>>>>>> 667d520f578667879bc0071ca9a06cec701d582e
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -117,12 +127,18 @@
 
 
 
+<<<<<<< HEAD
             <div class="firstcontent">
                 <h1>Welcome!</h1>
                 <div class="post">
                     <p class="meta">Products </p>
                     <div id="body">
                         <div class="product">
+=======
+            <div class="wholePage">
+                <div class="main">
+
+>>>>>>> 667d520f578667879bc0071ca9a06cec701d582e
 
                         </div>
                         <!-- end .inner -->

@@ -63,9 +63,8 @@ $(function(){
         });
     });
 
+
 });
-
-
     function CustomerViewItem(){
         $.ajax({
             type:"POST",
