@@ -73,7 +73,10 @@
                         </div>
                 </div>
         </div>
+
         <div class="page">
+
+           <div class="">
 
             <div class="container" id="tabs">
                 <ul>
@@ -97,10 +100,10 @@
 
                            <input type="password" class="input-large" placeholder="New password">
                            <input type="password" class="input-large" placeholder="Confirm new password">
-                            <button class="btn btn-primary" type="submit" style="float: right;" >
-                                Save
-                            </button>
                         </form>
+                    <button class="btn btn-primary" type="submit" style="float: right;" >
+                        Save
+                    </button>
 
                 </div>
                 <!---------Profile--------->
@@ -125,13 +128,15 @@
                         <input type="text" class="input-large" placeholder="address"/>
                         <input type="text" class="input-large" placeholder="age"/>
                         <input type="text" class="input-large" placeholder="gender">
-                            <button class="btn btn-primary" type="submit" style="float: right;" >
-                                Save
-                        </button>
+
                    </form>
+                    <button class="btn btn-primary" type="button" style="float: right;" >
+                        Save Changes
+                    </button>
 
                 </div>
             </div>
         </div>
+       </div>
       </body>
  </html>

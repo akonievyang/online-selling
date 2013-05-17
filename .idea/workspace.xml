@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php" line="458" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/DAO/Online_SellingDAO.php" line="284" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="291efa95-c5c3-415e-b61c-730768f667b7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/ myphone A868 DUO.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/Myphone Black QW30 WiFi.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/Q19i-myphone.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/QTV20-myphone.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/QW29-myphone.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/img6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myPhone_5_preview_image.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myphone-3582-92164-1-product.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myphone-3585-42164-1-product.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/olympus-8457-36725-1-zoom.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/pile of cellphones.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/save_item_changes.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui-1.9.0.custom.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online-selling" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" afterPath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Settings.php" afterPath="$PROJECT_DIR$/Settings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/admin.css" afterPath="$PROJECT_DIR$/bootstrap/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin.js" afterPath="$PROJECT_DIR$/js/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/customer.css" afterPath="$PROJECT_DIR$/bootstrap/css/customer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +48,7 @@
     <file path="/admin.js" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368176714196" ignored="false" />
     <file path="/viewMember.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367810194231" ignored="false" />
     <file path="/viewItem.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367812075371" ignored="false" />
-    <file path="/admin.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368823150729" ignored="false" />
+    <file path="/admin.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368833423812" ignored="false" />
     <file path="/delete_item.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367821570855" ignored="false" />
     <file path="/edit_item.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1367824769136" ignored="false" />
     <file path="/myhome.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368779987823" ignored="false" />
@@ -47,8 +69,7 @@
     <file path="/Register.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368245744281" ignored="false" />
     <file path="/camera.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368255741704" ignored="false" />
     <file path="/log-inAdmin.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368778843933" ignored="false" />
-    <file path="/Settings.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368832615316" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368832621542" ignored="false" />
+    <file path="/Settings.php" changelist="291efa95-c5c3-415e-b61c-730768f667b7" time="1368834138865" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,19 +106,15 @@
       <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="44" selection-start="40" selection-end="150" vertical-scroll-proportion="25.938776">
+            <state line="40" column="62" selection-start="1249" selection-end="1249" vertical-scroll-proportion="50.0">
               <folding>
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#span#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#span#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,11 +123,11 @@
       <file leaf-file-name="Settings.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="34" selection-start="4651" selection-end="4651" vertical-scroll-proportion="0.32453415">
+            <state line="114" column="22" selection-start="4586" selection-end="4586" vertical-scroll-proportion="0.4520548">
               <folding>
                 <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#form#1;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,11 +154,11 @@
       <file leaf-file-name="admin.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="219" column="24" selection-start="5050" selection-end="5050" vertical-scroll-proportion="0.0">
+            <state line="266" column="16" selection-start="6419" selection-end="6419" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1368830865831" expanded="true" signature="2262:2323" placeholder="{...}" />
-                <marker date="1368830865831" expanded="true" signature="4244:4250" placeholder="{&quot;clearPrefix&quot;: true...}" />
-                <marker date="1368830865831" expanded="true" signature="4386:4462" placeholder="{...}" />
+                <marker date="1368832813511" expanded="true" signature="2159:2217" placeholder="{...}" />
+                <marker date="1368832813511" expanded="true" signature="5638:5644" placeholder="{&quot;clearPrefix&quot;: true...}" />
+                <marker date="1368832813511" expanded="true" signature="5780:5856" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -320,20 +337,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-selling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -479,7 +482,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27363896" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15781923" sideWeight="0.6738197" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15781923" sideWeight="0.6738197" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32618025" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -629,19 +632,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="24" selection-start="5050" selection-end="5050" vertical-scroll-proportion="0.0">
+        <state line="266" column="16" selection-start="6419" selection-end="6419" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1368830865831" expanded="true" signature="2262:2323" placeholder="{...}" />
-            <marker date="1368830865831" expanded="true" signature="4244:4250" placeholder="{&quot;clearPrefix&quot;: true...}" />
-            <marker date="1368830865831" expanded="true" signature="4386:4462" placeholder="{...}" />
+            <marker date="1368832813511" expanded="true" signature="2159:2217" placeholder="{...}" />
+            <marker date="1368832813511" expanded="true" signature="5638:5644" placeholder="{&quot;clearPrefix&quot;: true...}" />
+            <marker date="1368832813511" expanded="true" signature="5780:5856" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="15" selection-start="4272" selection-end="4272" vertical-scroll-proportion="-28.75">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,6 +657,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="15" selection-start="4272" selection-end="4272" vertical-scroll-proportion="-28.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="-8.75">
@@ -670,30 +673,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="44" selection-start="40" selection-end="150" vertical-scroll-proportion="25.938776">
+        <state line="40" column="62" selection-start="1249" selection-end="1249" vertical-scroll-proportion="50.0">
           <folding>
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#span#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="34" selection-start="4651" selection-end="4651" vertical-scroll-proportion="0.32453415">
+        <state line="114" column="22" selection-start="4586" selection-end="4586" vertical-scroll-proportion="0.4520548">
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#1;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
