@@ -1,6 +1,9 @@
 <?php
 session_start();
 echo $_SESSION['customer_id'];
+if(!isset($_SESSION['customer_id'])){
+    header("location: myhome.php");
+}
 ?>
 <!DOCTYPE HTML>
 <html>
