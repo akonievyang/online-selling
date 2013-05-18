@@ -1,5 +1,5 @@
 $(function(){
-    viewCart();
+
     $("#shop_more").click(function(){
         $(".content").show();
         $(".overlay").hide();
@@ -28,6 +28,30 @@ $(function(){
 
 
     CustomerViewItem();
+
+    $("#addToCart").click(function(){
+
+        var id=$("#dbh_itemID").val();
+
+        $.ajax({
+            type:"POST",
+            url:"addToCart.php",
+            data:{"id":id},
+            success:function(data){
+               console.log(data);
+                $("#cart").append(data);
+                $("#shopping_cart").show();
+                $(".overlay").show();
+
+            },
+            error:function(data){
+                alert(data);
+
+            }
+
+        });
+    });
+
     $(".closed").click(function(){
         alert("pass")
         $(".overlay").hide();
@@ -81,34 +105,14 @@ $(function(){
         });
     }
 
-    function buyNow(id,fname,lname,brand,price,pic,features){
+    function displayChoiceInfo(id,fname,lname,brand,price,pic,features){
         $(".secondcontent").show();
+        $("#dbh_itemID").val(id);
         $("#item_picture").html("<img src="+pic+" />");
         $("#itemp").html(price);
         $("#itemF").html(features);
         $("#itemN").html(fname+" "+lname);
         $("#itemB").html(brand);
-
-        $("#buyclick").click(function(){
-            $("shopping_cart").show();
-
-            $.ajax({
-                type:"POST",
-                url:"addToCart.php",
-                data:{"id":id},
-                success:function(data){
-                    alert(data);
-                    $(".overlay").show();
-                    viewCart();
-                },
-                error:function(data){
-                    alert(data);
-
-                }
-
-            });
-        });
-
     }
     function Quantity(price,id){
 

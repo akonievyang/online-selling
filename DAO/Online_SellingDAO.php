@@ -22,6 +22,7 @@ function CustomerViewItem($search){
                                         WHERE item.gadget_id = gadgets.gadget_id
                                         AND item.pic_id = picture.pic_id
                                        ");
+<<<<<<< HEAD
     $stmt->execute();
 
 
@@ -50,10 +51,60 @@ function CustomerViewItem($search){
 function viewCart(){
     $this->open();
     $stmt=$this->dbh->prepare("Select c.cart_id,g.brand,g.gadget_name,g.price,p.large_pic
+=======
+      		$stmt->execute();
+
+
+      		$status=false;
+      		while($rows=$stmt->fetch()){
+                $status=true;
+
+                $image="uploaded_file/$rows[4]";
+                $name = explode(" ",$rows[1]);
+
+                echo "<div class='item_id' id='.$rows[0].'>";
+
+                echo "<img src=".$image." title=".$name[0]."&nbsp;". $name[1]." />";
+                echo "<label>"."<h4>$rows[1]</h4>"." "."<h5>$rows[2]</h5>"."</label>";
+                echo "<label>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
+                echo "<input type='button' value='buy now' onclick=displayChoiceInfo(".$rows[0].",'".$name[0]."','".$name[1]."','".$rows[2]."','".$rows[3]."','".$image."','".$rows[5]."') />";
+                echo "</div >";
+
+      		}
+            if(!$status){
+      			echo "<div > Not available </div>";
+
+      		}
+        $this->close();
+      }
+      function AddToCart($id){
+
+           $this->open();
+              $stmt=$this->dbh->prepare("Select * from gadgets where gadget_id=? ");
+              $stmt->bindParam(1,$id);
+              $stmt->execute();
+
+              $rows=$stmt->feth();
+              echo "<tr id='.$rows[0]'>";
+              echo "<td>$rows[1]</td>";
+              echo "<input type='text' id='choice_quantity' />";
+              echo "<td>$rows[2]</td>";
+              echo "<input type='text' id='choice_total' />";
+              echo "<td><img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/></td>";
+              echo "</tr>";
+           $this->close();
+
+       }
+
+      function viewCart(){
+           $this->open();
+               $stmt=$this->dbh->prepare("Select c.cart_id,g.brand,g.gadget_name,g.price,p.large_pic
+>>>>>>> 098bf529f7a9357c7aa3cf4ce6b5ef75bd20e3bb
                                         from gadgets as g,picture as p,item as i,cart as c where
                                         g.gadget_id=i.gadget_id and p.pic_id=i.pic_id and
                                         i.item_id=c.item_id");
 
+<<<<<<< HEAD
     $stmt->execute();
     $status=false;
     while($rows=$stmt->fetch()){
@@ -172,6 +223,139 @@ function LogInAdmin($username,$password){
 
         $stmt->execute();
         $id = $this->dbh->lastInsertId();
+=======
+               $stmt->execute();
+               $status=false;
+               while($rows=$stmt->fetch()){
+                   $status=true;
+                   echo $rows[0];
+                   $image="uploaded_file/$rows[4]";
+                   echo "<tr id=$rows[0] >";
+                   echo "<td>"."<img src='.$image.'/>"."<br/>".$rows[1]." ".$rows[2]."</td>";
+                   echo "<td>"."<input type = 'text' id='quantity' onkeyup='Quantity(".$rows[3].",".$rows[0].")'/>"."</td>";
+                   echo "<td>".$rows[3]."</td>";
+                   echo "<td>"."<input type = 'text' id='totalprice' readonly='readonly' />"."</td>";
+                   echo "<td>"."<img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/>"."</td>";
+                   echo "</tr>";
+               }
+               if(!$status){
+                   echo "<tr>";
+                   echo "<td colspan='10'>No Data </td>";
+                   echo "</tr>";
+
+               }
+           $this->close();
+       }
+
+       function RemoveFromCArt($id){
+           $this->open();
+           $stmt=$this->dbh->prepare("Delete from cart where cart_id=?");
+           $stmt->bindParam(1,$id);
+           $stmt->execute();
+           $this->close();
+
+       }
+
+
+        /*-----------------------------LogInAdmin-----------------------------------------------------*/
+       function LogInAdmin($adminUser,$adminPass){
+
+           $this->open();
+
+           $stmt=$this->dbh->prepare("SELECT adminUser, adminPass from admin where adminUser=?  and adminPass=password(?)  ");
+           $stmt->bindParam(1,$adminUser);
+           $stmt->bindParam(2,$adminPass);
+           $stmt->execute();
+
+           $this->close();
+
+           $row = $stmt->fetch();
+           return $row[0];
+
+
+       }
+
+
+
+       /*---------------------------------add ug mga member----------------------------------------*/
+
+
+       function addMember($firstname, $middlename, $lastname, $address, $age, $gender, $contactNum, $username, $password){
+
+           $this->open();
+           $stmt = $this->dbh->prepare("INSERT INTO customer VALUES (null, ?, ?, ?, ?, ?, ?, ?, ?, ?) ");
+
+
+           $stmt->bindParam(1, $firstname);
+           $stmt->bindParam(2, $middlename);
+           $stmt->bindParam(3, $lastname);
+           $stmt->bindParam(4, $address);
+           $stmt->bindParam(5, $age);
+           $stmt->bindParam(6, $gender);
+           $stmt->bindParam(7, $contactNum);
+           $stmt->bindParam(8,$username );
+           $stmt->bindParam(9,$password );
+
+           $stmt->execute();
+           $customer_id = $this->dbh->lastInsertId();
+
+           echo "<tr id=".$customer_id.">";
+           echo "<td>".$customer_id."</td>";
+           echo "<td>".$firstname."</td>";
+           echo "<td>".$middlename."</td>";
+           echo "<td>".$lastname."</td>";
+           echo "<td>".$age."</td>";
+           echo "<td>".$address."</td>";
+           echo "<td>".$contactNum."</td>";
+           echo "<td>".$gender."</td>";
+           echo "<td>".$username."</td>";
+           echo "<td>".$password."</td>";
+           echo "<td><img src='images/delete.png' onclick='deleteEntry(".$customer_id.")'/>";
+           echo "<img src='images/edit.png' onclick='editEntry(".$customer_id.")'/></td>";
+
+           echo "</tr>";
+
+           $this->close();
+       }
+      function RegisterCustomer($firstname, $middlename, $lastname, $address, $age, $gender, $contactNum, $username, $password){
+          $this->open();
+          $stmt = $this->dbh->prepare("INSERT INTO customer VALUES (null,?, ?, ?, ?, ?, ?, ?,password(?),?) ");
+
+
+          $stmt->bindParam(1, $firstname);
+          $stmt->bindParam(2, $middlename);
+          $stmt->bindParam(3, $lastname);
+          $stmt->bindParam(4, $address);
+          $stmt->bindParam(5, $age);
+          $stmt->bindParam(6, $gender);
+          $stmt->bindParam(7, $contactNum);
+          $stmt->bindParam(8, $password);
+          $stmt->bindParam(9, $username);
+
+          $stmt->execute();
+          $id = $this->dbh->lastInsertId();
+
+          echo "<tr id=".$id.">";
+          echo "<td>".$id."</td>";
+          echo "<td>".$firstname."</td>";
+          echo "<td>".$middlename."</td>";
+          echo "<td>".$lastname."</td>";
+          echo "<td>".$age."</td>";
+          echo "<td>".$address."</td>";
+          echo "<td>".$contactNum."</td>";
+          echo "<td>".$gender."</td>";
+
+          echo "</tr>";
+
+          $this->close();
+      }
+
+       /*-------------------------edit para sa mga member-----------------------------------------*/
+
+       function edit_member($customer_id,$firstname, $middlename, $lastname, $age, $address, $gender, $username, $password){
+
+            $this->open();
+>>>>>>> 098bf529f7a9357c7aa3cf4ce6b5ef75bd20e3bb
 
         echo "<tr id=".$id.">";
         echo "<td>".$id."</td>";
