@@ -1,22 +1,43 @@
 <?php
-    session_start();
+session_start();
+include "DAO/Online_SellingDAO.php";
 
-    if()
+
+if(isset($_POST['user']) && isset($_POST['pass']) ){
+
+    $username=$_POST['user'];
+    $password=$_POST['pass'];
+
+    $result=null;
+    $action = new OnlineSelling();
+    $result=$action->loginMember($username,$password);
+
+    if($result){
+
+        $_SESSION['customer_id']=$result;
+        header('location:customer.php');
+
+    }else{
+        echo 'Unable to login';
+    }
+}
 
 ?>
 <!DOCTYPE html >
     <head>
+        <script src = "js/jquery-latest.js"></script>
+        <script src = "js/jquery-ui-192.js"></script>
         <script src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.form.js"></script>
         <script src = "js/customer.js"></script>
         <title>The Best Gadget </title>
         <link href="bootstrap/css/myhome.css" rel="stylesheet" type="text/css" />
-
         <link rel = "stylesheet" type = "text/css" href = "bootstrap/css/jquery-ui-1.9.0.custom.min.css" />
         <link rel = "stylesheet" type = "text/css" href = "bootstrap/ccs/jquery-ui-1.9.0.custom.css"/>
 
+
     </head>
-  <
+
     <body>
         <div id="header">
             <h1>The Best Gadget</a></h1>
@@ -31,10 +52,7 @@
                     <div class="entry">
 
                     </div>
-
-
-
-                </div>
+             </div>
 
                 <div class="post">
                     <p class="meta">Latest Product</p>
@@ -93,16 +111,30 @@
             <!-- end content -->
             <div id="sidebar">
                 <ul>
+                    <div id="logAdmin"">
+                        <h3>Login Admin</h3>
+                            <form method="POST" action="admin.php">
+
+                                <label>Username: </label>
+                                <input type="text" name="adminUser"/>
+                                <label>Password:</label>
+                                <input type="password" name="adminPass"/>
+                                <input type="submit" id="adminLog" value="LogIn"/>
+                                <br> </br>
+
+                            </form>
+
+                    </div>
                     <li>
                         <h2>Login User</h2>
 
                             <fieldset>
-                                <form method="POST" action="login.php">
+                                <form method="POST" action="myhome.php">
                                     <label>Username:</label>
-                                    <input type="text" id="s" name="username"  />
+                                    <input type="text" name="user"  />
                                     <br />
                                     <label>Password:</label>
-                                    <input type="password" id="s" name="password" />
+                                    <input type="password" name="pass" />
                                     <br />
                                     <input  type="submit" id="login" value="check me out" />
                                     <br> </br>

@@ -8,6 +8,26 @@ $(function(){
 
     });
 
+
+    $("#top_category").mouseover(function(){
+        $("#top_category").css({"background-color" : "#ffffff"});
+        $(".navigation").slideDown(1000);
+        $(".profile").hide();
+        $(".category").show();
+
+
+
+    });
+    $("#top_profile").mouseover(function(){
+        $("#top_profile").css({"background-color" : "#ffffff"});
+        $(".navigation").slideDown(1000);
+        $(".category").hide();
+        $(".profile").show();
+
+
+    });
+
+
    $("#li_item").click(function(){
         $(".view_item").show();
          $(".member").hide();
@@ -28,42 +48,20 @@ $(function(){
     });
 
     $("#saveitem").click(function(){
-
-        var inputfield=$("#form_item").serializeArray();
-        var status=false;
-        for(var ctr=0;ctr<inputfield.length;ctr++){
-
-            if(inputfield[ctr].value==="" || inputfield[ctr].value=== NaN || inputfield[ctr].value===null || inputfield[ctr].value=== " "){
-                status=true;
-                break;
-            }else{
-                status=false;
-            }
-
-        }
-        if(status){
-            $(".errorwarning").html("Some fields not yet filled up").fadeIn().fadeOut(5000).css({"color":"red"});
-        }else{
-
-
             var obj = {"name":$("#name").val(),
                 "brand":$("#brand").val(),
                 "features":$("#features").val(),
                 "price":$("#price").val(),
                 "picture":$("#photoimg").val()
             };
-            if(obj.picture==null||obj.picture==""||obj.picture==NaN||obj.picture==" "){
-                $(".errorwarning").html("Upload picture").fadeIn().fadeOut(5000).css({"color":"red"});
-            }else{
 
-            }
 
             $.ajax({
                 type:"POST",
                 url:"add_item.php",
                 data:obj,
                 success:function(data){
-                    $(".upload_container").hide();
+
                     SearchItem();
                 },
                 error:function(data){
@@ -71,11 +69,12 @@ $(function(){
                 }
             });
 
-        }
+
     });
 
-   $("#add").click(function(){
+   $("#btn_add").submit(function(){
         $(".upload_container").show();
+       return false;
    });
 
 
@@ -152,8 +151,12 @@ function DeleteItem(){
 
     }
     function Number(){
-        var status=/^[0-9]$/;
+        var status=/^[0-9]+$/;
         var price=$("#price").val();
+        $('#price').priceFormat({
+            clearPrefix: true
+        });
+
         var pL = price.length;
 
 
@@ -162,7 +165,7 @@ function DeleteItem(){
             $("#price").val(p);
 
         }
-        if(status.test(price)){
+       else{
             var p = price.substring(0,4);
             $("#price").val(p);
         }

@@ -21,31 +21,96 @@
                                         FROM item, gadgets, picture
                                         WHERE item.gadget_id = gadgets.gadget_id
                                         AND item.pic_id = picture.pic_id
-                                        AND gadgets.gadget_name ");
+                                       ");
       		$stmt->execute();
 
 
       		$status=false;
       		while($rows=$stmt->fetch()){
+                $status=true;
 
+                $image="uploaded_file/$rows[4]";
+                $name = explode(" ",$rows[1]);
 
-      			    echo "<img class='itempic' src='uploaded_file/".$rows[4]."'/>"."</div>";
-                    echo "<label>".$rows[1]."</label>";
-                    echo "<label style='display:inline;'>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
-                    echo "<input type='button' value='buy now' onclick='BuyNow(".$rows[0].",".$rows[1].",".$rows[2].",".$rows[3].",".$rows[5].")'/>";
+                echo "<div class='item_id' id='.$rows[0].'>";
+                echo "<img src=".$image." title=".$name[0]."&nbsp;". $name[1]." />";
+                echo "<label>"."<h4>$rows[1]</h4>"." "."<h5>$rows[2]</h5>"."</label>";
+                echo "<label>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
+                echo "<input type='button' value='buy now' onclick=buyNow(".$rows[0].",'".$name[0]."','".$name[1]."','".$rows[2]."','".$rows[3]."','".$image."','".$rows[5]."') />";
+                echo "</div >";
 
       		}
             if(!$status){
-      			echo "<div > Not available here </div>";
-  					    		
+      			echo "<div > Not available </div>";
+
       		}
       	$this->close();
       }
+<<<<<<< HEAD
+      function viewCart(){
+           $this->open();
+               $stmt=$this->dbh->prepare("Select c.cart_id,g.brand,g.gadget_name,g.price,p.large_pic
+                                        from gadgets as g,picture as p,item as i,cart as c where
+                                        g.gadget_id=i.gadget_id and p.pic_id=i.pic_id and
+                                        i.item_id=c.item_id");
+
+               $stmt->execute();
+               $status=false;
+               while($rows=$stmt->fetch()){
+                   $status=true;
+                   echo $rows[0];
+                   $image="uploaded_file/$rows[4]";
+                   echo "<tr id=$rows[0] >";
+                   echo "<td>"."<img src='.$image.'/>"."<br/>".$rows[1]." ".$rows[2]."</td>";
+                   echo "<td>"."<input type = 'text' id='quantity' onkeyup='Quantity(".$rows[3].",".$rows[0].")'/>"."</td>";
+                   echo "<td>".$rows[3]."</td>";
+                   echo "<td>"."<input type = 'text' id='totalprice' readonly='readonly' />"."</td>";
+                   echo "<td>"."<img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/>"."</td>";
+                   echo "</tr>";
+               }
+               if(!$status){
+                   echo "<tr>";
+                   echo "<td colspan='10'>No Data </td>";
+                   echo "</tr>";
+
+               }
+           $this->close();
+       }
+       function AddToCart($id){
+           $this->open();
+               $stmt=$this->dbh->prepare("Insert into cart values(null,22,?)");
+               $stmt->bindParam(1,$id);
+               $stmt->execute();
+           $this->close();
+
+       }
+       function RemoveFromCArt($id){
+           $this->open();
+           $stmt=$this->dbh->prepare("Delete from cart where cart_id=?");
+           $stmt->bindParam(1,$id);
+           $stmt->execute();
+           $this->close();
+
+       }
       /*-----------------------------LogInAdmin-----------------------------------------------------*/
        function LogInAdmin($username,$password){
+=======
+        /*-----------------------------LogInAdmin-----------------------------------------------------*/
+       function LogInAdmin($adminUser,$adminPass){
+>>>>>>> 667d520f578667879bc0071ca9a06cec701d582e
            $this->open();
 
+           $stmt=$this->dbh->prepare("SELECT adminUser, adminPass from admin where adminUser=?  and adminPass=password(?)  ");
+           $stmt->bindParam(1,$adminUser);
+           $stmt->bindParam(2,$adminPass);
+           $stmt->execute();
+
            $this->close();
+
+           $row = $stmt->fetch();
+           return $row[0];
+
+
        }
 
 
@@ -274,22 +339,19 @@
        function loginMember($username,$password){
            $this->open();
 
-               $stmt=$this->dbh->prepare("SELECT username,password from customer where username=?  and password=password(?)  ");
+               $stmt=$this->dbh->prepare("SELECT customer_id from customer where username=?  and password=password(?)  ");
                $stmt->bindParam(1,$username);
                $stmt->bindParam(2,$password);
                $stmt->execute();
 
-               if($stmt->fetch()){
+               $row = $stmt->fetch();
+                  return $row[0];
 
-                   return "true";
-               }else{
-                   return false;
-               }
            $this->close();
        }
        function SearchUser($username,$password){
            $this->open();
-           $stmt=$this->dbh->prepare("SELECT customer_id,username from customer where username=?  and password=password(?)");
+           $stmt=$this->dbh->prepare("SELECT customer_id from customer where username=?  and password=password(?)");
            $stmt->bindParam(1,$username);
            $stmt->bindParam(2,$password);
            $stmt->execute();
@@ -297,7 +359,7 @@
            $rows=$stmt->fetch();
 
                 echo $rows[0];
-                echo $rows[1];
+
            $this->close();
        }
 
@@ -375,9 +437,8 @@
             $this->close();
 
        }
-       function AddToCart($id,$name,$brand,$price){
 
-       }
+
 
    }
 ?>
