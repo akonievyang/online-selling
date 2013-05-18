@@ -43,7 +43,7 @@
     <div id="tabs">
 
         <ul>
-
+               <p class="lead"> <strong> Phones </strong> </p>
             <li> <a href="#tabs-1"> <strong> A888 Duo </strong> </a></li>
             <li> <a href="#tabs-2"> <strong> A919 Duo </strong> </a> </li>
             <li> <a href="#tabs-3"> <strong> A818i Duo </strong> </a></li>
@@ -83,7 +83,7 @@
         <div id="tabs-3">
 
             <td> <h3> <input type="checkbox"> A818i Duo </h3> </td>
-            <p. Check if you want this item!! </p>
+            <p> Check if you want this item!! </p>
             <img src="images/A818i Duo.png"/>
             <p>This is the perfect Android phone for budget-conscious mobile users like you! For an affordable price, you can already get your hands on our 3.5” Android phone offering. This phone equipped with 1 GHz processor, runs on Android 2.3 Gingerbread and lets you enjoy over 100,000 of applications that cater your needs and interests. It also has a 3.2 MP camera to capture every precious moment; and through its WiFi capability, you can now connect to the nearest hotspot near you and share the online world your every status-worthy moment.
             </p>

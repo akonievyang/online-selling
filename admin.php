@@ -151,6 +151,57 @@
                     </div>
                     <!--- end content ---->
 
+<<<<<<< HEAD
+=======
+        </div>
+
+
+        <div class="page">
+                <div class="main">
+
+                <div class="content">
+
+
+
+                        <div class="view_item">
+                            <input type="text" class="search-query input-medium" id="search" placeholder="search"/>                                            <hr>
+                            <table  class="table table-bordered table-hover ">
+                                <tr>
+                                <td></td>
+                                <td>Name</td>
+                                <td>Brand</td>
+                                <td>Cost</td>
+                                <td>Action</td>
+                                </tr>
+                                <tr>
+                                <tbody id="items"></tbody>
+                                </tr>
+                            </table>
+                             <input type="button" id="delete_item" value="delete" class="btn btn-primary"/>
+                         </div>
+                        <!--- end view_item --->
+                        <br/>
+                        <div class="member">
+                            <input type="text" class="search-query input-medium" id="searchM" placeholder="search"/>
+                            <hr>
+                            <table style="width: 750px;" class="table table-bordered table-hover">
+                                    <tr>
+                                    <td>Fullname</td>
+                                    <td>Username</td>
+                                    <td>Gender</td>
+                                    <td>Age</td>
+                                    <td>Address</td>
+                                    <td>Contact</td>
+                                    </tr>
+                                <tr>
+                                    <tbody id="member"></tbody>
+                                </tr>
+                            </table>
+                            <input type="button" id="edit_member" value="edit" class="btn btn-primary"/>
+                            <input type="button" id="save_member" value="save" class="btn btn-primary"/>
+                        </div>
+                        <!--- end content ---->
+>>>>>>> fdb45a2ee57720dee83059d6352848083a4ee6ae
                 </div>
                 <!--- main ---->
 
