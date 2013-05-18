@@ -1,5 +1,12 @@
 $(function(){
+   /* $('#photoimg').live('change', function(){
+        $("#preview").html('');
+        $("#preview").html('<img src="images/loader.gif" alt="Uploading...."/>');
+        $("#imageform").ajaxForm({
+            target: '#preview'
+        }).submit();
 
+    });*/
     $("#shop_more").click(function(){
         $(".content").show();
         $(".overlay").hide();
@@ -31,16 +38,29 @@ $(function(){
 
     $("#addToCart").click(function(){
 
+        $(".overlay").show();
         var id=$("#dbh_itemID").val();
+        //$("#item_picture").html("<img src="+pic+" />");
+        var price=$("#itemp").html();
 
-        $.ajax({
+        var name=$("#itemN").html();
+        var brand=$("#itemB").html();
+
+        $("#cart").append("<tr>" +
+                          "<td>"+name+"</td>"+
+                          "<td>"+"<input type='tect' id='choice_pcs'  />"+"</td>"+
+                          "<td>"+price+"</td>"+
+                          "<td>"+"<input type='text' readonly='readonly'/>"+"</td>"+
+                          "</tr>");
+
+       /* $.ajax({
             type:"POST",
             url:"addToCart.php",
             data:{"id":id},
             success:function(data){
                console.log(data);
                 $("#cart").append(data);
-                $("#shopping_cart").show();
+
                 $(".overlay").show();
 
             },
@@ -49,7 +69,7 @@ $(function(){
 
             }
 
-        });
+        });*/
     });
 
     $(".closed").click(function(){

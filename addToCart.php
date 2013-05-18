@@ -6,5 +6,4 @@ $id=$_POST['id'];
 $action= new OnlineSelling();
 $action->AddToCart($id);
 
-
 ?>

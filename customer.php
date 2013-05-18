@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 098bf529f7a9357c7aa3cf4ce6b5ef75bd20e3bb
 <?php
 session_start();
 
@@ -15,8 +12,9 @@ if(!isset($_SESSION['customer_id'])){
 <head>
     <script src="js/jquery-latest.js"></script>
     <script src="js/customer.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.form.js"></script>
 
+    <script src="bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/jquery-ui-sample.css"/>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/customer.css"/>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
@@ -95,6 +93,20 @@ if(!isset($_SESSION['customer_id'])){
 
 
 <div class="page">
+
+
+
+        <div class="profile_pic">
+            <div id='preview'> </div>
+            <form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
+                <p>Upload your image</p>
+                <input type="file" name="photoimg" id="photoimg"  >
+                <br/>
+            </form>
+
+        </div>
+
+
     <div class="main">
         <div style="margin-bottom: 20px;">
             <input class="input-xxlarge" type="text" placeholder="What you want?:" id="search">
@@ -129,10 +141,7 @@ if(!isset($_SESSION['customer_id'])){
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 098bf529f7a9357c7aa3cf4ce6b5ef75bd20e3bb
             <div class="firstcontent">
                 <h1>Welcome!</h1>
                 <div class="post">
@@ -143,10 +152,7 @@ if(!isset($_SESSION['customer_id'])){
             <div class="wholePage">
                 <div class="main">
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 098bf529f7a9357c7aa3cf4ce6b5ef75bd20e3bb
 
                         </div>
                         <!-- end .inner -->
