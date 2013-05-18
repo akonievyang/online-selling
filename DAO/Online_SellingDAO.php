@@ -220,34 +220,36 @@ function LogInAdmin($username,$password){
         $this->close();
     }
 
-    function save_member($customer_id,$firstname,$middlename,$lastname,$age,$address,$gender,$username,$password){
+    function delete_member($customer_id){
+
+        $this-open();
+
+        $stmt = $this->dbh->prepeare("DELETE FROM customer WHERE customer_id = ?");
+
+        $stmt->bindParam(1,$customer_id);
+
+        $stmt->execute();
+
+        $this->close();
+
+             }
+
+        }
+
+    function retrieve($customer_id){
 
         $this->open();
 
-        $stmt = $this->dbh->prepare("UPDATE customer set firstname = ?, middlename = ?, lastname = ?, age = ?, address = ?, gender = ?, username = ?, password = ? WHERE customer_id = ?");
-        $stmt->bindParam(1,$firstname);
-        $stmt->bindParam(2,$middlename);
-        $stmt->bindParam(3,$lastname);
-        $stmt->bindParam(4,$age);
-        $stmt->bindParam(5,$address);
-        $stmt->bindParam(6,$gender);
-        $stmt->bindParam(7,$username);
-        $stmt->bindParam(8,$password);
-        $stmt->bindParam(9,$customer_id);
+        $stmt = $this->dbh->prepare("SELECT * FROM customer WHERE customer_id = ?");
+        $stmt->bindParam(1,$customer_id);
         $stmt->execute();
 
+        $row = $stmt->fetch();
 
-        echo "<td><input type='checkbox' name='checkVideo'
-                    onclick='btn_edit(".$customer_id.")'/></td>";
-        echo "<td>".$firstname."</td>";
-        echo "<td>".$middlename."</td>";
-        echo "<td>".$lastname."</td>";
-        echo "<td>".$age."</td>";
-        echo "<td>".$address."</td>";
-        echo "<td>".$gender."</td>";
-        echo "<td>".$username."</td>";
-        echo "<td>".$password."</td>";
-        echo "<td><input type='button'  value='edit' onclick='btn_edit(".$customer_id.")'/>";
+        $entry = array("customer_id"=>$row[0],"firstname"=>$row[1],"middlename"=>$row[2],"lastname"=>$row[3],"age"=>$row[4],"address"=>$row[5],"gender"=>$row[6],"username"=>$row[7],"password"=>$row[8]);
+        $json_string = json_encode($entry);
+
+        echo $json_string;
 
         $this->close();
 
@@ -302,7 +304,7 @@ function LogInAdmin($username,$password){
 
         $rows=$stmt->fetch();
         $video_retrieve=array('id'=>$rows[0],'name'=>$rows[1],'brand'=>$rows[2],
-            'desc'=>$rows[3],''=>$rows[4]);
+            'desc'=>$rows[3],'price'=>$rows[4]);
         $json_string=json_encode($video_retrieve);
 
         echo $json_string;
@@ -437,6 +439,7 @@ function LogInAdmin($username,$password){
         $this->close();
 
     }
+
 
 }
 

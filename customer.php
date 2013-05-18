@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 <?php
 session_start();
 echo $_SESSION['customer_id'];
@@ -8,7 +5,7 @@ if(!isset($_SESSION['customer_id'])){
     header("location: myhome.php");
 }
 ?>
->>>>>>> 667d520f578667879bc0071ca9a06cec701d582e
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -67,7 +64,7 @@ if(!isset($_SESSION['customer_id'])){
 
         <div class="navigation">
             <div class="category">
-                <h4 style=" color: #FFFFFF;">Category</h4>
+                <h4 style=" color: #ffeefe;">Category</h4>
                 <ul>
                     <li> Cellphones </li>
                     <li> Laptops </li>
@@ -127,18 +124,16 @@ if(!isset($_SESSION['customer_id'])){
 
 
 
-<<<<<<< HEAD
             <div class="firstcontent">
                 <h1>Welcome!</h1>
                 <div class="post">
                     <p class="meta">Products </p>
                     <div id="body">
                         <div class="product">
-=======
+
             <div class="wholePage">
                 <div class="main">
 
->>>>>>> 667d520f578667879bc0071ca9a06cec701d582e
 
                         </div>
                         <!-- end .inner -->
