@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> 098bf529f7a9357c7aa3cf4ce6b5ef75bd20e3bb
 <?php
 session_start();
 
@@ -65,7 +68,7 @@ if(!isset($_SESSION['customer_id'])){
 
         <div class="navigation">
             <div class="category">
-                <h4 style=" color: #FFFFFF;">Category</h4>
+                <h4 style=" color: #ffeefe;">Category</h4>
                 <ul>
                     <li> Cellphones </li>
                     <li> Laptops </li>
@@ -126,7 +129,10 @@ if(!isset($_SESSION['customer_id'])){
 
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 098bf529f7a9357c7aa3cf4ce6b5ef75bd20e3bb
             <div class="firstcontent">
                 <h1>Welcome!</h1>
                 <div class="post">
@@ -137,7 +143,10 @@ if(!isset($_SESSION['customer_id'])){
             <div class="wholePage">
                 <div class="main">
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 098bf529f7a9357c7aa3cf4ce6b5ef75bd20e3bb
 
                         </div>
                         <!-- end .inner -->
