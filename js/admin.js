@@ -3,16 +3,14 @@ $(function(){
     SearchItem();
     SearchMember();
 
-    $("div.pickcolor").click(function(){
-     var id=document.getElementById(this.id);
-        $().show()
 
-    });
-    $(".closed").click(function(){
+    $("#closed").click(function(){
 
         $(".overlay").slideUp();
 
     });
+
+
 
 
     $("#display_add").click(function(){
@@ -71,7 +69,7 @@ $(function(){
 
         }
         if(status){
-            $(".warning").html("Some fields missing").fadeIn().fadeOut(5000).css({"color":"red"});
+            $(".warning").html("<h5>Some fields missing</h5>").fadeIn().fadeOut(5000).css({"color":"red"});
         }else{
 
             var obj = {"name":$("#name").val(),
@@ -88,7 +86,7 @@ $(function(){
                 data:obj,
                 success:function(data){
                     SearchItem();
-                //    $(".overlay").slideUp();
+                   $(".overlay").slideUp();
 
                 },
                 error:function(data){
@@ -99,7 +97,49 @@ $(function(){
         }
     });
 
+    $("#save_changes").click(function(){
 
+        var inputfield=$("#form_item").serializeArray();
+        var status=false;
+        for(var ctr=0;ctr<inputfield.length;ctr++){
+
+            if(inputfield[ctr].value==="" || inputfield[ctr].value=== NaN || inputfield[ctr].value===null || inputfield[ctr].value=== " "){
+                status=true;
+                break;
+            }else{
+                status=false;
+            }
+
+        }
+        if(status){
+            $(".warning").html("<h5>Some fields missing</h5>").fadeIn().fadeOut(5000).css({"color":"red"});
+        }else{
+
+            var obj = {"id":$("#id").val(),
+                "name":$("#name").val(),
+                "brand":$("#brand").val(),
+                "features":$("#features").val(),
+                "price":$("#price").val(),
+                "picture":$("#photoimg").val()
+            };
+            alert(obj.id)
+
+            $.ajax({
+                type:"POST",
+                url:"save_item_changes.php",
+                data:obj,
+                success:function(data){
+                    SearchItem();
+                    $(".overlay").slideUp();
+
+                },
+                error:function(data){
+                    alert(data);
+                }
+            });
+
+        }
+    });
 
 
 
@@ -156,17 +196,25 @@ function DeleteItem(){
     }
 
     function Edit_item(id){
+        alert(id)
+        $(".overlay").slideDown();
         $.ajax({
             type:"POST",
-            url:"editVideo.php",
+            url:"edit_item.php",
             data:{"id":id},
             success:function(data){
+
+                console.log(data);
                 var obj = JSON.parse(data);
-                $('#id').val(obj.id);
-                $('#title').val(obj.title);
-                $('#genre').val(obj.genre);
-                $('#quantity').val(obj.quantity);
+
+                $('#id').val(obj.item_id);
+                $('#name').val(obj.gadget_name);
+                $('#brand').val(obj.brand);
+                $('#features').val(obj.features);
                 $('#price').val(obj.price);
+                $('#photoimg').val(obj.pic);
+                $('#preview').html("<img src=+'uploaded_file/'+obj.pic");
+
             },
             error:function(data){
                 alert(data);

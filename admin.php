@@ -53,7 +53,7 @@
             <div class="overlay">
                 <div class="add_item">
 
-                    <span style="float: right;" class="closed" ><img src="images/close.png"
+                    <span class="right" id="closed" ><img src="images/close.png"
                     style="border :1px dashed #bbbbbb;"/></span>
                     <br/>
                     <span style="display: none;" class="warning"></span>
@@ -62,7 +62,7 @@
                         <div class="inside">
                         <h4 style=" color: #FFFFFF;">Add Item</h4>
                         <form id="form_item" >
-
+                            <input type="hidden" id="id"/>
                             <label>Name</label>
                             <input type="text"  class="input-medium" id="name" name='name' required/>
                             <label>Brand</label>
@@ -95,8 +95,10 @@
 
 
                     <div style="clear: both;"></div>
-                    <span >
+                    <br/>
+                    <span class="right">
                     <input type="button" id="saveitem"  value="save item" class="btn btn-primary"/>
+                    <input type="button" id="save_changes"  value="save changes" class="btn btn-primary"/>
                     </span>
                     <br/>
 
@@ -151,35 +153,11 @@
                     </div>
                     <!--- end content ---->
 
-<<<<<<< HEAD
-=======
+
         </div>
 
 
-        <div class="page">
-                <div class="main">
 
-                <div class="content">
-
-
-
-                        <div class="view_item">
-                            <input type="text" class="search-query input-medium" id="search" placeholder="search"/>                                            <hr>
-                            <table  class="table table-bordered table-hover ">
-                                <tr>
-                                <td></td>
-                                <td>Name</td>
-                                <td>Brand</td>
-                                <td>Cost</td>
-                                <td>Action</td>
-                                </tr>
-                                <tr>
-                                <tbody id="items"></tbody>
-                                </tr>
-                            </table>
-                             <input type="button" id="delete_item" value="delete" class="btn btn-primary"/>
-                         </div>
-                        <!--- end view_item --->
                         <br/>
                         <div class="member">
                             <input type="text" class="search-query input-medium" id="searchM" placeholder="search"/>
@@ -201,7 +179,6 @@
                             <input type="button" id="save_member" value="save" class="btn btn-primary"/>
                         </div>
                         <!--- end content ---->
->>>>>>> fdb45a2ee57720dee83059d6352848083a4ee6ae
                 </div>
                 <!--- main ---->
 

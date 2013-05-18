@@ -33,7 +33,6 @@
                 $name = explode(" ",$rows[1]);
 
                 echo "<div class='item_id' id='.$rows[0].'>";
-
                 echo "<img src=".$image." title=".$name[0]."&nbsp;". $name[1]." />";
                 echo "<label>"."<h4>$rows[1]</h4>"." "."<h5>$rows[2]</h5>"."</label>";
                 echo "<label>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
@@ -235,7 +234,9 @@
 
           $this->open();
 
-            $stmt = $this->dbh->prepare("UPDATE customer set firstname = ?, middlename = ?, lastname = ?, age = ?, address = ?, gender = ?, username = ?, password = ? WHERE customer_id = ?");
+            $stmt = $this->dbh->prepare("UPDATE customer set firstname = ?, middlename = ?, lastname = ?,
+                                         age = ?, address = ?, gender = ?, username = ?,
+                                         password = ? WHERE customer_id = ?");
             $stmt->bindParam(1,$firstname);
             $stmt->bindParam(2,$middlename);
             $stmt->bindParam(3,$lastname);
@@ -296,7 +297,7 @@
        function DeleteItem($id){
            $this->open();
 
-               $stmt=$this->dbh->prepare(" Delete From gadgets where gadget_id=? ");
+               $stmt=$this->dbh->prepare(" Delete From item where item_id=? ");
                $stmt->bindParam(1, $id);
                $stmt->execute();
 
@@ -307,41 +308,49 @@
 
                $this->open();
 
-               $stmt=$this->dbh->prepare("Select * from gadgets Where gadget_id=?");
+               $stmt=$this->dbh->prepare("SELECT item.item_id ,gadgets.*, picture.* from gadgets, item,picture where
+                                           gadgets.gadget_id=item.gadget_id and picture.pic_id=item.pic_id and item_id=?");
                $stmt->bindParam(1,$id);
                $stmt->execute();
-
                $rows=$stmt->fetch();
-               $video_retrieve=array('id'=>$rows[0],'name'=>$rows[1],'brand'=>$rows[2],
-                   'desc'=>$rows[3],''=>$rows[4]);
-               $json_string=json_encode($video_retrieve);
 
-               echo $json_string;
+
+
+
+               $data_retrieve=array('item_id'=> $rows[0],'gadget_name'=> $rows[2],'brand'=> $rows[3],
+                   'features'=> $rows[6],'price'=> $rows[7],'pic'=>$rows[10]);
+
+               $item_data=json_encode($data_retrieve);
+
+               echo $item_data;
 
 
 
                $this->close();
        }
 
-       function SaveVideo($id,$quantity,$title,$genre,$price){
+       function Save_item_changes($id,$name,$brand,$features,$price,$picture){
 
            $this->open();
 
-           $stmt=$this->dbh->prepare("Update cd SET Copies=?,Title=?,Genre=?,Price=? where video_id=?");
-           $stmt->bindParam(1,$quantity);
-           $stmt->bindParam(2,$title);
-           $stmt->bindParam(3,$genre);
-           $stmt->bindParam(4,$price);
-           $stmt->bindParam(5,$id);
-           $stmt->execute();
+               $stmt=$this->dbh->prepare("Select * from item where item_id=?");
+               $stmt->bindParam(1,$id);
+               $stmt->execute();
+               $rows=$stmt->fetch();
 
-           echo "<td><input type='checkbox' name='checkVideo'
-                    onclick='btnv_edit(".$id.")'/></td>";
-           echo "<td>".$title."</td>";
-           echo "<td>".$genre."</td>";
-           echo "<td>".$quantity."</td>";
-           echo "<td>".$price."</td>";
-           echo "<td><input type='button'  value='edit' onclick='btnv_edit(".$id.")'/>";
+               $stmt=$this->dbh->prepare("Update gadgets SET gadget_name=?,brand=?,features=?,price=? where gadget_id=?");
+               $stmt->bindParam(1,$name);
+               $stmt->bindParam(2,$brand);
+               $stmt->bindParam(3,$features);
+               $stmt->bindParam(4,$price);
+               $stmt->bindParam(5,$rows[1]);
+               $stmt->execute();
+
+
+               $stmt=$this->dbh->prepare("Update picture SET large_pic=? where pic_id=?");
+               $stmt->bindParam(1,$picture);
+               $stmt->bindParam(2,$rows[2]);
+               $stmt->execute();
 
            $this->close();
 
@@ -393,19 +402,23 @@
        }
        function SearchItem($search){
            $this->open();
-               $stmt=$this->dbh->prepare("SELECT * FROM gadgets WHERE gadget_name like '".$search."%' or brand like '".$search."%'
-                                                           or color like '".$search."%' or quantity or  date_added like '".$search."%'   ");
+               $stmt=$this->dbh->prepare("SELECT item.item_id ,gadgets.*, picture.* from gadgets, item,picture where
+                                           gadgets.gadget_id=item.gadget_id and picture.pic_id=item.pic_id and gadgets.gadget_name  like '".$search."%'   ");
                $stmt->execute();
                $status=false;
 
                    while($rows=$stmt->fetch()){
-                        $status=true;
+                       $status=true;
+
+                       $image="uploaded_file/$rows[10]";
+                       $name = explode(" ",$rows[1]);
 
                         echo "<tr id=".$rows[0].">";
                         echo "<td>"."<input type='checkbox'/>"."</td>";
-                        echo "<td>".$rows[1]."</td>";
-                        echo "<td>".$rows[2]."</td>";
-                        echo "<td>".$rows[6]."</td>";
+                        echo "<td>"."<img src=".$image." title=".$name[0]." ". $name[1]."
+                         style='width:30px; height:30px'/>"."&nbsp".$rows[3]."</td>";
+                        echo "<td>".$rows[3]."</td>";
+                        echo "<td>".$rows[7]."</td>";
                         echo "<td><input type='button'  value='edit' onclick='Edit_item(".$rows[0].")'/>"."</td>";
                         echo "</tr>";
                    }
