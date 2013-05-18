@@ -1,14 +1,12 @@
-<<<<<<< HEAD
 
-=======
 <?php
 session_start();
-echo $_SESSION['customer_id'];
+
 if(!isset($_SESSION['customer_id'])){
     header("location: myhome.php");
 }
 ?>
->>>>>>> 667d520f578667879bc0071ca9a06cec701d582e
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -106,6 +104,7 @@ if(!isset($_SESSION['customer_id'])){
                 <div class="generalview">
                     <div class="left" style="float: left;">
                         <div id="item_picture" ></div>
+                        <input type='hidden'  id='dbh_itemID'/>
                         <input type='hidden' id="id"/>
                         <h4>Brand:</h4><span id="itemB"></span>
                         <h4>Unit:</h4><span id="itemN"></span>
@@ -120,25 +119,25 @@ if(!isset($_SESSION['customer_id'])){
                     </div>
                     <div style="clear: both"></div>
 
-                    <input type="button" value="Buy" id="buyclick" class="btn btn-primary">
+                    <input type="button" value="buy now" id="addToCart" class="btn btn-primary">
                 </div>
             </div>
             <!--- end secondcontent --->
 
 
 
-<<<<<<< HEAD
+
             <div class="firstcontent">
                 <h1>Welcome!</h1>
                 <div class="post">
                     <p class="meta">Products </p>
                     <div id="body">
                         <div class="product">
-=======
+
             <div class="wholePage">
                 <div class="main">
 
->>>>>>> 667d520f578667879bc0071ca9a06cec701d582e
+
 
                         </div>
                         <!-- end .inner -->

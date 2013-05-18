@@ -33,10 +33,11 @@
                 $name = explode(" ",$rows[1]);
 
                 echo "<div class='item_id' id='.$rows[0].'>";
+
                 echo "<img src=".$image." title=".$name[0]."&nbsp;". $name[1]." />";
                 echo "<label>"."<h4>$rows[1]</h4>"." "."<h5>$rows[2]</h5>"."</label>";
                 echo "<label>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
-                echo "<input type='button' value='buy now' onclick=buyNow(".$rows[0].",'".$name[0]."','".$name[1]."','".$rows[2]."','".$rows[3]."','".$image."','".$rows[5]."') />";
+                echo "<input type='button' value='buy now' onclick=displayChoiceInfo(".$rows[0].",'".$name[0]."','".$name[1]."','".$rows[2]."','".$rows[3]."','".$image."','".$rows[5]."') />";
                 echo "</div >";
 
       		}
@@ -44,9 +45,27 @@
       			echo "<div > Not available </div>";
 
       		}
-      	$this->close();
+        $this->close();
       }
-<<<<<<< HEAD
+      function AddToCart($id){
+
+           $this->open();
+              $stmt=$this->dbh->prepare("Select * from gadgets where gadget_id=? ");
+              $stmt->bindParam(1,$id);
+              $stmt->execute();
+
+              $rows=$stmt->feth();
+              echo "<tr id='.$rows[0]'>";
+              echo "<td>$rows[1]</td>";
+              echo "<input type='text' id='choice_quantity' />";
+              echo "<td>$rows[2]</td>";
+              echo "<input type='text' id='choice_total' />";
+              echo "<td><img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/></td>";
+              echo "</tr>";
+           $this->close();
+
+       }
+
       function viewCart(){
            $this->open();
                $stmt=$this->dbh->prepare("Select c.cart_id,g.brand,g.gadget_name,g.price,p.large_pic
@@ -76,14 +95,7 @@
                }
            $this->close();
        }
-       function AddToCart($id){
-           $this->open();
-               $stmt=$this->dbh->prepare("Insert into cart values(null,22,?)");
-               $stmt->bindParam(1,$id);
-               $stmt->execute();
-           $this->close();
 
-       }
        function RemoveFromCArt($id){
            $this->open();
            $stmt=$this->dbh->prepare("Delete from cart where cart_id=?");
@@ -92,12 +104,11 @@
            $this->close();
 
        }
-      /*-----------------------------LogInAdmin-----------------------------------------------------*/
-       function LogInAdmin($username,$password){
-=======
+
+
         /*-----------------------------LogInAdmin-----------------------------------------------------*/
        function LogInAdmin($adminUser,$adminPass){
->>>>>>> 667d520f578667879bc0071ca9a06cec701d582e
+
            $this->open();
 
            $stmt=$this->dbh->prepare("SELECT adminUser, adminPass from admin where adminUser=?  and adminPass=password(?)  ");
