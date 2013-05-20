@@ -200,4 +200,7 @@ form h4,.category h4 {
 #preview{
     border:1px solid #bbbbbb;
 }
+form#imageform{
+    display: none;
+}
 

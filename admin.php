@@ -124,7 +124,7 @@
                 <table  class="table table-bordered table-hover ">
                     <tr>
                         <td></td>
-                        <td>Name</td>
+                        <td>Item</td>
                         <td>Brand</td>
                         <td>Cost</td>
                         <td>Action</td>
@@ -136,7 +136,21 @@
                 <input type="button" id="delete_item" value="delete" class="btn btn-primary"/>
             </div>
             <!--- end view item --->
+            <div id="viewSales">
+                <table class="table table-bordered ">
+                    <tr>
+                        <td>Item</td>
+                        <td>Brand</td>
+                        <td>total quantity</td>
+                        <td>total price</td>
+                        <td></td>
+                        <tr>
+                        <tbody id="tbod_sales"></tbody>
+                        </tr>
+                    </tr>
+                </table>
 
+            </div>
 
             <br/>
             <div class="member">

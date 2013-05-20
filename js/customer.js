@@ -49,21 +49,21 @@ $(function(){
         var name=$("#itemN").html();
         var brand=$("#itemB").html();
 
-        $("#cart").append("<tr>" +
+      $("#cart").append("<tr>" +
                           "<td>"+name+"</td>"+
-                          "<td>"+"<input type='tect' id='choice_pcs'  />"+"</td>"+
+                          "<td>"+"<input type='text' id='choice_pcs'  />"+"</td>"+
                           "<td>"+price+"</td>"+
                           "<td>"+"<input type='text' readonly='readonly'/>"+"</td>"+
                           "</tr>");
 
-       /* $.ajax({
+
+        $.ajax({
             type:"POST",
             url:"addToCart.php",
             data:{"id":id},
             success:function(data){
-               console.log(data);
+                console.log(data);
                 $("#cart").append(data);
-
                 $(".overlay").show();
 
             },
@@ -72,7 +72,8 @@ $(function(){
 
             }
 
-        });*/
+        });
+
     });
 
     $(".closed").click(function(){
@@ -128,15 +129,15 @@ $(function(){
         });
     }
 
-    function displayChoiceInfo(id,name,brand,price,pic,features){
+    function displayChoiceInfo(id,name1,name2,brand,price,pic){
 
-        alert(name);
+
         $(".secondcontent").show();
         $("#dbh_itemID").val(id);
         $("#item_picture").html("<img src="+pic+" />");
         $("#itemp").html(price);
-        $("#itemF").html(features);
-        $("#itemN").html(name);
+       // $("#itemF").html(features);
+        $("#itemN").html(name1 +" "+name2);
         $("#itemB").html(brand);
     }
     function Quantity(price,id){

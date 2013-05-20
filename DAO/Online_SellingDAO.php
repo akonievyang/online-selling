@@ -31,20 +31,16 @@ class OnlineSelling extends BaseDAO {
 
             $image="uploaded_file/$rows[4]";
             $name = explode(" ",$rows[1]);
-            $features = explode(" ",$rows[5]);
-            for($i=0;$i<count($features);$i++){
-              echo   $features[$i];
-
-            }
 
 
-           /* echo "<div class='item_id' id='.$rows[0].'>";
+
+            echo "<div class='item_id' id='.$rows[0].'>";
             echo "<img src=".$image." title=".$name." />";
             echo "<label>"."<h4>$rows[1]</h4>"." "."<h5>$rows[2]</h5>"."</label>";
             echo "<label>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
             echo "<input type='button' value='buy now'
-            onclick=displayChoiceInfo(".$rows[0].",'".$name."','".$rows[2]."','".$rows[3]."','".$image."','".$rows[5]."') />";
-            echo "</div >";*/
+            onclick=displayChoiceInfo(".$rows[0].",'".$name[0]."','".$name[1]."','".$rows[2]."','".$rows[3]."','".$image."') />";
+            echo "</div >";
 
 
         }
@@ -61,14 +57,35 @@ class OnlineSelling extends BaseDAO {
         $stmt->bindParam(1,$id);
         $stmt->execute();
 
+
         $rows=$stmt->fetch();
-        echo "<tr id='.$rows[0]'>";
-        echo "<td>$rows[1]</td>";
-        echo "<input type='text' id='choice_quantity' />";
-        echo "<td>$rows[2]</td>";
-        echo "<input type='text' id='choice_total' />";
-        echo "<td><img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/></td>";
-        echo "</tr>";
+
+
+        $rows[0]= $_SESSION['item_id'];
+
+        $_SESSION['item_id']=array();
+        $i=0;
+        while ($i<count($_SESSION["item_id"]))
+            $i++;
+        if ($i < count($_SESSION["item_id"]))
+        {
+
+           echo $_SESSION["item"][$i]++;
+        }
+        else
+        {
+            echo   $_SESSION["item_id"][] =$rows[0];
+
+        }
+
+
+        /*  echo "<tr id='.$rows[0]'>";
+          echo "<td>$rows[1]</td>";
+          echo "<input type='text' id='choice_quantity' />";
+          echo "<td>$rows[2]</td>";
+          echo "<input type='text' id='choice_total' />";
+          echo "<td><img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/></td>";
+          echo "</tr>";*/
         $this->close();
 
     }
@@ -114,20 +131,19 @@ class OnlineSelling extends BaseDAO {
 
 
     /*-----------------------------LogInAdmin-----------------------------------------------------*/
-    function LogInAdmin($adminUser,$adminPass){
+    function LogInAdmin($username, $password){
 
         $this->open();
 
-        $stmt=$this->dbh->prepare("SELECT admin_ID from admin where adminUser=?  and adminPass=password(?)  ");
-        $stmt->bindParam(1,$adminUser);
-        $stmt->bindParam(2,$adminPass);
-        $stmt->execute();
+            $stmt=$this->dbh->prepare(" SELECT admin_ID from admin where userAdmin=?  and passAdmin=password(?) ");
+                $stmt->bindParam(1,$username);
+                $stmt->bindParam(2,$password);
+                $stmt->execute();
+
+                $row = $stmt->fetch();
+                return $row[0];
 
         $this->close();
-
-        $row = $stmt->fetch();
-        return $row[0];
-
 
     }
 

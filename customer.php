@@ -98,7 +98,7 @@ if(!isset($_SESSION['customer_id'])){
 
 
         <div class="profile_pic">
-            <div id='preview' class="thumbnail"> </div>
+            <div id='preview' class="thumbnail"> </div> <p>edit profile</p>
             <form id="imageform" method="post" enctype="multipart/form-data" action='uploadCustomerProfile.php'>
                 <p>Upload your image</p>
                 <input type="file" name="photoimg" id="photoimg"  >
