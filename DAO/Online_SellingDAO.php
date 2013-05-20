@@ -13,7 +13,35 @@ class OnlineSelling extends BaseDAO {
         echo "<p id='you'>You:</p> ".$msg;
         $this->close();
     }
+    function ViewSales($search){
+        $this->open();
+            $stmt=$this->dbh->prepare(" SELECT s.sales_id,s.total_quantity,total_price,c.firstname,c.lastname,g.gadget_name,g.brand
+                                           from  sales as s , gadgets as g,customer as c, item as i
+                                        where s.item_id = i.item_id AND i.gadget_id = g.gadget_id
+                                            AND s.customer_id = c.customer_id
+                                           ");
 
+
+            $stmt->execute();
+                $status=false;
+                while($rows=$stmt->fetch()){
+                    $status=true;
+
+                    echo "<tr id='.$rows[0].'>";
+                    echo "<td>".$rows[4]." ".$rows[5]."</td>";
+                    echo "<td>".$rows[6]." ".$rows[7]."</td>";
+                    echo "<td>".$rows[1]."</td>";
+                    echo "<td>".$rows[2]."</td>";
+                    echo "<td></td>";
+                    echo "</tr>";
+                }
+                if(!$status){
+                    echo "<div > Not available </div>";
+
+                }
+
+        $this->close();
+    }
     function CustomerViewItem($search){
         $this->open();
         $stmt=$this->dbh->prepare(" SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
@@ -30,17 +58,14 @@ class OnlineSelling extends BaseDAO {
             $status=true;
 
             $image="uploaded_file/$rows[4]";
-            $name = explode(" ",$rows[1]);
+            echo "<ul class='view_display' id='.$rows[0].'>";
+            echo "<li>"."<img src=".$image."  />"."</li>";
+            echo "<li>"."<h5>$rows[1]</h5>"." "."<h6>$rows[2]</h6>"."</li>";
+            echo "<li>"."<h6>"." Only Php ".$rows[3]."</h5>"."</li>";
+            echo "<li>"."<input type='button' value='buy now'
+            onclick=displayChoiceInfo(".$rows[0].") />"."</li>";
 
-
-
-            echo "<div class='item_id' id='.$rows[0].'>";
-            echo "<img src=".$image." title=".$name." />";
-            echo "<label>"."<h4>$rows[1]</h4>"." "."<h5>$rows[2]</h5>"."</label>";
-            echo "<label>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
-            echo "<input type='button' value='buy now'
-            onclick=displayChoiceInfo(".$rows[0].",'".$name[0]."','".$name[1]."','".$rows[2]."','".$rows[3]."','".$image."') />";
-            echo "</div >";
+            echo "</ul>";
 
 
         }
@@ -48,6 +73,11 @@ class OnlineSelling extends BaseDAO {
             echo "<div > Not available </div>";
 
         }
+        $this->close();
+    }
+    function DisplayChoiceInfo($id){
+        $this->open();
+            $stmt=$this->dbh->prepare("");
         $this->close();
     }
     function AddToCart($id){

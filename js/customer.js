@@ -119,6 +119,7 @@ $(function(){
             url:"customerViewItem.php",
             data:{"search":$("#search").val()},
             success:function(data){
+
                 $(".product").html(data);
             },
             error:function(data){
@@ -129,16 +130,22 @@ $(function(){
         });
     }
 
-    function displayChoiceInfo(id,name1,name2,brand,price,pic){
+    function displayChoiceInfo(id){
+        $.ajax({
+            type:"POST",
+            url:"viewCart.php",
+            data:{"id":id},
+            success:function(data){
+                $("#cart").append(data);
+            },
+            error:function(data){
+                alert(data);
+
+            }
+
+        });
 
 
-        $(".secondcontent").show();
-        $("#dbh_itemID").val(id);
-        $("#item_picture").html("<img src="+pic+" />");
-        $("#itemp").html(price);
-       // $("#itemF").html(features);
-        $("#itemN").html(name1 +" "+name2);
-        $("#itemB").html(brand);
     }
     function Quantity(price,id){
 
