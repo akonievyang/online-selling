@@ -31,13 +31,21 @@ class OnlineSelling extends BaseDAO {
 
             $image="uploaded_file/$rows[4]";
             $name = explode(" ",$rows[1]);
+            $features = explode(" ",$rows[5]);
+            for($i=0;$i<count($features);$i++){
+              echo   $features[$i];
 
-            echo "<div class='item_id' id='.$rows[0].'>";
-            echo "<img src=".$image." title=".$name[0]."&nbsp;". $name[1]." style='width:100px; height:150px;' />";
+            }
+
+
+           /* echo "<div class='item_id' id='.$rows[0].'>";
+            echo "<img src=".$image." title=".$name." />";
             echo "<label>"."<h4>$rows[1]</h4>"." "."<h5>$rows[2]</h5>"."</label>";
             echo "<label>"."<h5>"." Only Php ".$rows[3]."</h5>"."</label>";
-            echo "<input type='button' value='buy now' onclick=displayChoiceInfo(".$rows[0].",'".$name[0]."','".$name[1]."','".$rows[2]."','".$rows[3]."','".$image."','".$rows[5]."') />";
-            echo "</div >";
+            echo "<input type='button' value='buy now'
+            onclick=displayChoiceInfo(".$rows[0].",'".$name."','".$rows[2]."','".$rows[3]."','".$image."','".$rows[5]."') />";
+            echo "</div >";*/
+
 
         }
         if(!$status){
@@ -49,18 +57,18 @@ class OnlineSelling extends BaseDAO {
     function AddToCart($id){
 
         $this->open();
-            $stmt=$this->dbh->prepare("Select item.item_id,gadget.*,picture.* from item where item_id=? ");
-            $stmt->bindParam(1,$id);
-            $stmt->execute();
+        $stmt=$this->dbh->prepare("Select item.item_id,gadget.*,picture.* from item where item_id=? ");
+        $stmt->bindParam(1,$id);
+        $stmt->execute();
 
-            $rows=$stmt->fetch();
-            echo "<tr id='.$rows[0]'>";
-            echo "<td>$rows[1]</td>";
-            echo "<input type='text' id='choice_quantity' />";
-            echo "<td>$rows[2]</td>";
-            echo "<input type='text' id='choice_total' />";
-            echo "<td><img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/></td>";
-            echo "</tr>";
+        $rows=$stmt->fetch();
+        echo "<tr id='.$rows[0]'>";
+        echo "<td>$rows[1]</td>";
+        echo "<input type='text' id='choice_quantity' />";
+        echo "<td>$rows[2]</td>";
+        echo "<input type='text' id='choice_total' />";
+        echo "<td><img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/></td>";
+        echo "</tr>";
         $this->close();
 
     }
@@ -110,7 +118,7 @@ class OnlineSelling extends BaseDAO {
 
         $this->open();
 
-        $stmt=$this->dbh->prepare("SELECT adminUser, adminPass from admin where adminUser=?  and adminPass=password(?)  ");
+        $stmt=$this->dbh->prepare("SELECT admin_ID from admin where adminUser=?  and adminPass=password(?)  ");
         $stmt->bindParam(1,$adminUser);
         $stmt->bindParam(2,$adminPass);
         $stmt->execute();
@@ -461,7 +469,26 @@ class OnlineSelling extends BaseDAO {
         $this->close();
 
     }
+    function CustomerProfilePicture($name,$customer_id){
+        $this->open();
+            $stmt=$this->dbh->prepare("Update customer SET profile_picture=? where customer_id=?");
+            $stmt->bindParam(1,$name);
+            $stmt->bindParam(2,$customer_id);
+            $stmt->execute();
+        $this->close();
+    }
 
+    function ViewCustomerPicture($customer_id){
+        $this->open();
+            $stmt=$this->dbh->prepare("Select profile_picture from customer where customer_id=?");
+            $stmt->bindParam(1,$customer_id);
+            $stmt->execute();
+
+            $row=$stmt->fetch();
+            $image="customer_profile/$row[0]";
+            echo "<img src=$image />";
+        $this->close();
+    }
 
 
 }

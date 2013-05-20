@@ -107,7 +107,8 @@ li{
     display: none;
 }
 
-form h4 {
+
+form h4,.category h4 {
     font-size: 1.8em;
     margin: 0;
     padding:5px;
@@ -140,6 +141,10 @@ form h4 {
     width: 150px;
     height: 150px;
     display:inline-block;
+}
+.product div img{
+    width: 150px;
+    height: 150px;
 }
 
 .selling_status{
@@ -186,5 +191,13 @@ form h4 {
 }
 .firstcontent{
 
+}
+
+#preview,#preview img{
+    width: 100px;
+    height: 100px;
+}
+#preview{
+    border:1px solid #bbbbbb;
 }
 

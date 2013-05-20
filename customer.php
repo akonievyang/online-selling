@@ -10,9 +10,10 @@ if(!isset($_SESSION['customer_id'])){
 <!DOCTYPE HTML>
 <html>
 <head>
-    <script src="js/jquery-latest.js"></script>
-    <script src="js/customer.js"></script>
+    <script src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.form.js"></script>
+    <script src="js/customer.js"></script>
+
 
     <script src="bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/jquery-ui-sample.css"/>
@@ -55,8 +56,8 @@ if(!isset($_SESSION['customer_id'])){
 </div>
 <!--- end cart --->
 <div id="header">
-    <h1>The Best SALOS</a></h1>
-    <h2>we coloffer</h2>
+    <h1>The Best GADGETS</a></h1>
+    <h2>we offer</h2>
 
     <div class="topmenu">
 
@@ -78,7 +79,7 @@ if(!isset($_SESSION['customer_id'])){
 
                 <ul>
                     <li>Setting</li>
-                    <li>Log out</li>
+                    <li><a href="log_out_customer.php">Log out</a></li>
 
                 </ul>
             </div>
@@ -97,10 +98,12 @@ if(!isset($_SESSION['customer_id'])){
 
 
         <div class="profile_pic">
-            <div id='preview'> </div>
-            <form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
+            <div id='preview' class="thumbnail"> </div>
+            <form id="imageform" method="post" enctype="multipart/form-data" action='uploadCustomerProfile.php'>
                 <p>Upload your image</p>
                 <input type="file" name="photoimg" id="photoimg"  >
+                <br/>
+                <input type="submit" value="Done" class="btn btn-primary"/>
                 <br/>
             </form>
 

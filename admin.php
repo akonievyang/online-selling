@@ -1,4 +1,11 @@
 
+<?php
+    session_start();
+
+    if(!isset($_SESSION['admin_id'])){
+        header("location: myhome.php");
+    }
+?>
 <!DOCTYPE html>
 
 <html>
@@ -39,7 +46,7 @@
 
                 <ul>
                     <li> <a href="Settings.php"> Setting </a> </li>
-                    <li>Log out</li>
+                    <li><a href="log-inAdmin.php">Log out</a></li>
 
                 </ul>
             </div>
@@ -68,7 +75,7 @@
                     <label>Brand</label>
                     <input type="text" class="input-medium"  id="brand" name='brand' required/>
                     <label>Features</label>
-                    <input type="text" class="input-medium"  id="features" name='features'required/>
+                    <input type="textarea"  rows="3" id="features" name='features'required/>
                     <label>Price</label>
                     <input type="text" class="input-medium"  id="price" name='price' onkeyup="Number()" required/>
                     <br/>

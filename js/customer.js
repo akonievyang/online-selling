@@ -1,12 +1,15 @@
 $(function(){
-   /* $('#photoimg').live('change', function(){
+    CustomerPic();
+    $('#photoimg').live('change', function(){
         $("#preview").html('');
         $("#preview").html('<img src="images/loader.gif" alt="Uploading...."/>');
         $("#imageform").ajaxForm({
             target: '#preview'
+
         }).submit();
 
-    });*/
+    });
+
     $("#shop_more").click(function(){
         $(".content").show();
         $(".overlay").hide();
@@ -125,13 +128,15 @@ $(function(){
         });
     }
 
-    function displayChoiceInfo(id,fname,lname,brand,price,pic,features){
+    function displayChoiceInfo(id,name,brand,price,pic,features){
+
+        alert(name);
         $(".secondcontent").show();
         $("#dbh_itemID").val(id);
         $("#item_picture").html("<img src="+pic+" />");
         $("#itemp").html(price);
         $("#itemF").html(features);
-        $("#itemN").html(fname+" "+lname);
+        $("#itemN").html(name);
         $("#itemB").html(brand);
     }
     function Quantity(price,id){
@@ -200,7 +205,22 @@ $(function(){
                   alert(data);
               }
         });
+    }
 
+    function CustomerPic(){
+
+        $.ajax({
+           type:"POST",
+           url:"customerPic.php",
+           success:function(data){
+
+                $("#preview").html(data);
+           },
+           error:function(){
+               alert(data);
+           }
+
+        });
 
     }
 

@@ -14,7 +14,7 @@ if(isset($_POST['adminUser']) && isset($_POST['adminPass']) ){
 
     if($result){
 
-        $_SESSION['adminUser']=$result;
+        $_SESSION['admin_id']=$result;
         header('location: admin.php');
 
     }else{
