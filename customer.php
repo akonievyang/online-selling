@@ -19,8 +19,8 @@ if(!isset($_SESSION['customer_id'])){
     <link rel="stylesheet" type="text/css" href="bootstrap/css/jquery-ui-sample.css"/>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/customer.css"/>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/design_model.css"/>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+
 </head>
 <title>MyPage</title>
 
