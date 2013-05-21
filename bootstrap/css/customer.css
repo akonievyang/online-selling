@@ -1,68 +1,4 @@
 
-body {
-    background: none repeat scroll 0 0 #4C4C4C;
-    color: #6C7496;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
-    font-size: 13px;
-}
-div.page{
-    width: 770px;
-    margin: 0 auto;
-    background: #FFFFFF url('../../images/img02.gif') repeat-x;
-    border-right: 5px solid #414141;
-
-}
-
-div.main{
-    padding:20px;
-
-}
-div.content{
-    width:700px;
-    border:1px solid #bbbbbb;
-    padding: 20px;
-
-}
-/* Header */
-
-#header {
-    width: 775px;
-    height: 237px;
-    margin: 0 auto;
-    background: url('../../images/img01.jpg') no-repeat;
-}
-
-#header h1, #header h2 {
-    float: left;
-    margin: 0;
-}
-
-#header h1 {
-    padding: 155px 0 0 20px;
-    letter-spacing: 5px;
-    font-size: 3em;
-}
-
-#header h2 {
-    padding: 175px 0 0 5px;
-    font-size: 1.4em;
-}
-.menu{
-
-    position:relative;
-    display:inline;
-    border-bottom: 0 none;
-    border:1px #89c561 solid;
-    border-bottom: 0 none;
-    color: #333333;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 8px 12px;
-    text-decoration: none;
-    text-transform: uppercase;
-    background:transparent;
-
-}
 .topmenu{
 
     float:right;
@@ -107,7 +43,8 @@ li{
     display: none;
 }
 
-form h4 {
+
+form h4,.category h4 {
     font-size: 1.8em;
     margin: 0;
     padding:5px;
@@ -134,13 +71,21 @@ form h4 {
 .product{
     border:1px solid;
 }
-.product div{
+.product ul{
 
     border:1px solid;
     width: 150px;
     height: 150px;
     display:inline-block;
 }
+.product ul img{
+    width: 150px;
+    height: 150px;
+}
+.product ul li{
+
+}
+
 
 .selling_status{
     display: inline-block;
@@ -186,5 +131,16 @@ form h4 {
 }
 .firstcontent{
 
+}
+
+#preview,#preview img{
+    width: 100px;
+    height: 100px;
+}
+#preview{
+    border:1px solid #bbbbbb;
+}
+form#imageform{
+    display: none;
 }
 

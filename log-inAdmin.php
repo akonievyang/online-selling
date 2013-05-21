@@ -10,11 +10,13 @@ if(isset($_POST['adminUser']) && isset($_POST['adminPass']) ){
 
     $action = new OnlineSelling();
 
-    $result=$action->LogInAdmin($adminUser,$adminPass);
-
+    $result=null;
+    $result=$action->LogInAdmin($username, $password);
+    echo $result;
     if($result){
 
-        $_SESSION['adminUser']=$result;
+
+        $_SESSION['admin_id']=$result;
         header('location: admin.php');
 
     }else{

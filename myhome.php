@@ -31,7 +31,8 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
         <script type="text/javascript" src="js/jquery.form.js"></script>
         <script src = "js/customer.js"></script>
         <title>The Best Gadget </title>
-        <link href="bootstrap/css/myhome.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css"  href="bootstrap/css/myhome.css" />
+        <link rel="stylesheet" type="text/css"  href="bootstrap/css/design_model.css"/>
         <link rel = "stylesheet" type = "text/css" href = "bootstrap/css/jquery-ui-1.9.0.custom.min.css" />
         <link rel = "stylesheet" type = "text/css" href = "bootstrap/ccs/jquery-ui-1.9.0.custom.css"/>
 
@@ -40,10 +41,10 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
 
     <body>
         <div id="header">
-            <h1>The Best Gadget</a></h1>
-            <h2>we offer</h2>
+            <h1>The Best SALOS</a></h1>
+            <h2>waray ak coloffer mayda GAHAP</h2>
         </div>
-        <div id="page">
+        <div class="page">
             <div id="content">
                 <div class="post">
 
@@ -113,7 +114,7 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
                 <ul>
                     <div id="logAdmin"">
                         <h3>Login Admin</h3>
-                            <form method="POST" action="admin.php">
+                            <form method="POST" action="log-inAdmin.php">
 
                                 <label>Username: </label>
                                 <input type="text" name="adminUser"/>

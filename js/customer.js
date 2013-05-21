@@ -1,12 +1,15 @@
 $(function(){
-   /* $('#photoimg').live('change', function(){
+    CustomerPic();
+    $('#photoimg').live('change', function(){
         $("#preview").html('');
         $("#preview").html('<img src="images/loader.gif" alt="Uploading...."/>');
         $("#imageform").ajaxForm({
             target: '#preview'
+
         }).submit();
 
-    });*/
+    });
+
     $("#shop_more").click(function(){
         $(".content").show();
         $(".overlay").hide();
@@ -46,21 +49,21 @@ $(function(){
         var name=$("#itemN").html();
         var brand=$("#itemB").html();
 
-        $("#cart").append("<tr>" +
+      $("#cart").append("<tr>" +
                           "<td>"+name+"</td>"+
-                          "<td>"+"<input type='tect' id='choice_pcs'  />"+"</td>"+
+                          "<td>"+"<input type='text' id='choice_pcs'  />"+"</td>"+
                           "<td>"+price+"</td>"+
                           "<td>"+"<input type='text' readonly='readonly'/>"+"</td>"+
                           "</tr>");
 
-       /* $.ajax({
+
+        $.ajax({
             type:"POST",
             url:"addToCart.php",
             data:{"id":id},
             success:function(data){
-               console.log(data);
+                console.log(data);
                 $("#cart").append(data);
-
                 $(".overlay").show();
 
             },
@@ -69,7 +72,8 @@ $(function(){
 
             }
 
-        });*/
+        });
+
     });
 
     $(".closed").click(function(){
@@ -115,6 +119,7 @@ $(function(){
             url:"customerViewItem.php",
             data:{"search":$("#search").val()},
             success:function(data){
+
                 $(".product").html(data);
             },
             error:function(data){
@@ -125,14 +130,22 @@ $(function(){
         });
     }
 
-    function displayChoiceInfo(id,fname,lname,brand,price,pic,features){
-        $(".secondcontent").show();
-        $("#dbh_itemID").val(id);
-        $("#item_picture").html("<img src="+pic+" />");
-        $("#itemp").html(price);
-        $("#itemF").html(features);
-        $("#itemN").html(fname+" "+lname);
-        $("#itemB").html(brand);
+    function displayChoiceInfo(id){
+        $.ajax({
+            type:"POST",
+            url:"viewCart.php",
+            data:{"id":id},
+            success:function(data){
+                $("#cart").append(data);
+            },
+            error:function(data){
+                alert(data);
+
+            }
+
+        });
+
+
     }
     function Quantity(price,id){
 
@@ -200,7 +213,22 @@ $(function(){
                   alert(data);
               }
         });
+    }
 
+    function CustomerPic(){
+
+        $.ajax({
+           type:"POST",
+           url:"customerPic.php",
+           success:function(data){
+
+                $("#preview").html(data);
+           },
+           error:function(){
+               alert(data);
+           }
+
+        });
 
     }
 

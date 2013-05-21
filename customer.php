@@ -10,103 +10,85 @@ if(!isset($_SESSION['customer_id'])){
 <!DOCTYPE HTML>
 <html>
 <head>
-    <script src="js/jquery-latest.js"></script>
-    <script src="js/customer.js"></script>
+    <script src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.form.js"></script>
+    <script src="js/customer.js"></script>
+
 
     <script src="bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/jquery-ui-sample.css"/>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/customer.css"/>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/design_model.css"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+
 </head>
 <title>MyPage</title>
 
 
 <body>
-<div class="overlay">
-    <div class="shopping_cart"  style="overflow:auto;">
-        <span style="float: right;" class="closed" ><img src='images/close.png' style="border :1px dashed #bbbbbb;"/></span>
-        <input type="button" id="clear_list" class="btn" value="clear list"/>
-        <br/>
-        <table class="table table-bordered" id="tb_cart" >
-            <tr >
-                <td>Name</td>
-                <td>Quantity</td>
-                <td>Price</td>
-                <td>Total Price</td>
-                <td></td>
-            </tr>
-            <tr>
-                <tbody id="cart"></tbody>
-            </tr>
-        </table>
-        <br/>
-        <div class="right" >
-            <label>Total Price:<input type="text" class="input-medium" id="total" readonly='readonly'/></label>
-            <input type="button" class="btn btn-primary" id="check_out" value="check out"/>
+    <div class="overlay">
+        <div class="shopping_cart"  style="overflow:auto;">
+            <span style="float: right;" class="closed" ><img src='images/close.png' style="border :1px dashed #bbbbbb;"/></span>
+            <input type="button" id="clear_list" class="btn" value="clear list"/>
             <br/>
-            <label id="shop_more"  style="text-decoration: underline;">or shop more?</label>
-        </div>
-        <div style="clear: both;"></div>
-
-
-    </div>
-</div>
-<!--- end cart --->
-<div id="header">
-    <h1>The Best SALOS</a></h1>
-    <h2>we coloffer</h2>
-
-    <div class="topmenu">
-
-        <div class="menu" id="top_category">category</div>
-        <div class="menu">COmputer</div>
-        <div class="menu" id="top_profile"> profile info </div>
-
-        <div class="navigation">
-            <div class="category">
-                <h4 style=" color: #ffeefe;">Category</h4>
-                <ul>
-                    <li> Cellphones </li>
-                    <li> Laptops </li>
-                    <li> Cameras </li>
-
-                </ul>
-            </div>
-            <div class="profile">
-
-                <ul>
-                    <li>Setting</li>
-                    <li>Log out</li>
-
-                </ul>
-            </div>
-
-
-        </div>
-        <!--- end category --->
-    </div>
-
-</div>
-
-
-
-<div class="page">
-
-
-
-        <div class="profile_pic">
-            <div id='preview'> </div>
-            <form id="imageform" method="post" enctype="multipart/form-data" action='ajaximage.php'>
-                <p>Upload your image</p>
-                <input type="file" name="photoimg" id="photoimg"  >
+            <table class="table table-bordered" id="tb_cart" >
+                <tr >
+                    <td>Name</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                    <td>Total Price</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <tbody id="cart"></tbody>
+                </tr>
+            </table>
+            <br/>
+            <div class="right" >
+                <label>Total Price:<input type="text" class="input-medium" id="total" readonly='readonly'/></label>
+                <input type="button" class="btn btn-primary" id="check_out" value="check out"/>
                 <br/>
-            </form>
+                <label id="shop_more"  style="text-decoration: underline;">or shop more?</label>
+            </div>
+            <div style="clear: both;"></div>
+
 
         </div>
+    </div>
+    <!--- end cart --->
+    <div id="header">
+        <h1>The Best GADGETS</a></h1>
+        <h2>we offer</h2>
 
+        <div class="topmenu">
+            <div class="menu" id="top_category">category</div>
+            <div class="menu">COmputer</div>
+            <div class="menu" id="top_profile"> profile info </div>
 
+            <div class="navigation">
+                <div class="category">
+                    <h4 style=" color: #ffeefe;">Category</h4>
+                    <ul>
+                        <li> Cellphones </li>
+                        <li> Laptops </li>
+                        <li> Cameras </li>
+
+                    </ul>
+                </div>
+                <div class="profile">
+                    <ul>
+                        <li>Setting</li>
+                        <li><a href="log_out_customer.php">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="profile_pic">
+            <div id='preview' class="thumbnail"> </div> <p>edit profile</p>
+        </div>
     <div class="main">
         <div style="margin-bottom: 20px;">
             <input class="input-xxlarge" type="text" placeholder="What you want?:" id="search">
@@ -115,54 +97,17 @@ if(!isset($_SESSION['customer_id'])){
 
 
         <div class="content">
-            <div class="secondcontent">
-                <div class="generalview">
-                    <div class="left" style="float: left;">
-                        <div id="item_picture" ></div>
-                        <input type='hidden'  id='dbh_itemID'/>
-                        <input type='hidden' id="id"/>
-                        <h4>Brand:</h4><span id="itemB"></span>
-                        <h4>Unit:</h4><span id="itemN"></span>
-                        <h4>Price:</h4><span id="itemp"></span>
 
-                    </div>
-                    <div class="right" style="float:right;">
-                        <h3>Features</h3>
-                        <div id="itemF">
-
-                        </div>
-                    </div>
-                    <div style="clear: both"></div>
-
-                    <input type="button" value="buy now" id="addToCart" class="btn btn-primary">
-                </div>
-            </div>
-            <!--- end secondcontent --->
-
-
-
-
-            <div class="firstcontent">
-                <h1>Welcome!</h1>
                 <div class="post">
                     <p class="meta">Products </p>
-                    <div id="body">
-                        <div class="product">
-
-            <div class="wholePage">
-                <div class="main">
+                    <div class="product">
 
 
-
-                        </div>
-                        <!-- end .inner -->
                     </div>
-                    <!-- end #body -->
-                </div>
-                <br/>
 
+                </div>
                 <div class="post">
-                    <p class="meta">The Best Gadgets </p>
+                    <p class="meta">Top Product </p>
                     <div id="body">
                         <div class="entry">
 
@@ -172,85 +117,14 @@ if(!isset($_SESSION['customer_id'])){
                     <!-- end #body -->
                 </div>
                 <br/>
-
-                <div class="post">
-                    <p class="meta">Related Search</p>
-                    <div id="body">
-                        <div class="entry">
-
-                        </div>
-                        <!-- end .inner -->
-                    </div>
-                    <!-- end #body -->
-                </div>
-                <!-- end .post -->
-                <br/>
-                <div class="post">
-                    <p class="meta">Latest Product</p>
-                    <div id="body">
-                        <div class="entry">
-                            <div class="leftbox">
-                            </div>
-                            <!-- end .leftbox -->
-                            <div class="rightbox">
-                            </div>
-                            <!-- end .rightbox -->
-                        </div>
-                        <!-- end .inner -->
-                    </div>
-                    <!-- end #body -->
-                </div>
-                <!-- end .post -->
-                <br/>
-
-                <div class="post">
-                    <p class="meta">Recommended Product</p>
-                    <div id="body">
-                        <div class="entry">
-                            <div class="leftbox">
-                            </div>
-                            <!-- end .leftbox -->
-                            <div class="rightbox">
-                            </div>
-                            <!-- end .rightbox -->
-                        </div>
-                        <!-- end .inner -->
-                    </div>
-                    <!-- end #body -->
-                </div>
-                <!-- end .post -->
-
-                <br/>
-                <div class="post">
-                    <p class="meta">Top Product</p>
-                    <div id="body">
-                        <div class="entry">
-                            <div class="leftbox">
-                            </div>
-                            <!-- end .leftbox -->
-                            <div class="rightbox">
-                            </div>
-                            <!-- end .rightbox -->
-                        </div>
-                        <!-- end .inner -->
-                    </div>
-                    <!-- end #body -->
-                </div>
-                <!-- end .post -->
-            </div>
-            <!--- end firstcontent --->
 
         </div>
         <!--- end content --->
     </div>
     <!--- end main --->
-</div>
+    </div>
 
-<!---end page --->
-
-<!--- end main --->
-<div>
-    <!--- whole page --->
+    <!---end page --->
 
 
 
