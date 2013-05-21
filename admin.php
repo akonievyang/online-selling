@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/admin.css"/>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/design_model.css"/>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
- 
+
 </head>
 <title>admin</title>
 <body>
