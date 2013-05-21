@@ -31,18 +31,18 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
         <script type="text/javascript" src="js/jquery.form.js"></script>
         <script src = "js/customer.js"></script>
         <title>The Best Gadget </title>
+        <link href="images/con.png" rel="shortcut icon">
         <link rel="stylesheet" type="text/css"  href="bootstrap/css/myhome.css" />
         <link rel="stylesheet" type="text/css"  href="bootstrap/css/design_model.css"/>
-        <link rel = "stylesheet" type = "text/css" href = "bootstrap/css/jquery-ui-1.9.0.custom.min.css" />
-        <link rel = "stylesheet" type = "text/css" href = "bootstrap/ccs/jquery-ui-1.9.0.custom.css"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 
 
     </head>
 
     <body>
         <div id="header">
-            <h1>The Best SALOS</a></h1>
-            <h2>waray ak coloffer mayda GAHAP</h2>
+            <h1>The Best GADGETS</h1>
+            <h2>we offer</h2>
         </div>
         <div class="page">
             <div id="content">
@@ -56,56 +56,13 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
              </div>
 
                 <div class="post">
-                    <p class="meta">Latest Product</p>
-                    <div id="body">
-                        <div class="inner">
-                            <div class="leftbox">
-                            </div>
-                            <!-- end .leftbox -->
-                            <div class="rightbox">
-                            </div>
-                            <!-- end .rightbox -->
-                        </div>
-                        <!-- end .inner -->
-                    </div>
-                    <!-- end #body -->
-                </div>
-                <!-- end .post -->
-                <br/>
-                <div class="post">
-                    <p class="meta">Recommended Product</p>
-                    <div id="body">
-                        <div class="inner">
-                            <div class="leftbox">
-                            </div>
-                            <!-- end .leftbox -->
-                            <div class="rightbox">
-                            </div>
-                            <!-- end .rightbox -->
-                        </div>
-                        <!-- end .inner -->
-                    </div>
-                    <!-- end #body -->
-                </div>
-                <!-- end .post -->
+                    <p class="meta">Products </p>
+                    <div class="product" >
 
-                <br/>
-                <div class="post">
-                    <p class="meta">Top Product</p>
-                    <div id="body">
-                        <div class="inner">
-                            <div class="leftbox">
-                            </div>
-                            <!-- end .leftbox -->
-                            <div class="rightbox">
-                            </div>
-                            <!-- end .rightbox -->
-                        </div>
-                        <!-- end .inner -->
+
                     </div>
-                    <!-- end #body -->
+
                 </div>
-                <!-- end .post -->
 
 
             </div>

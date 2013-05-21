@@ -119,7 +119,6 @@ $(function(){
             url:"customerViewItem.php",
             data:{"search":$("#search").val()},
             success:function(data){
-
                 $(".product").html(data);
             },
             error:function(data){
@@ -131,6 +130,8 @@ $(function(){
     }
 
     function displayChoiceInfo(id){
+
+        $(".content").load("pages/item_choice_mainView.php");
         $.ajax({
             type:"POST",
             url:"viewCart.php",

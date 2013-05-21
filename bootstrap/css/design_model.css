@@ -120,3 +120,18 @@ li{
     padding: 20px;
 }
 
+.product{
+    line-height: 50px;
+}
+.product ul{
+
+    border:1px solid;
+    display:inline-block;
+}
+.product ul,.product ul img{
+    width: 100px;
+    height: 100px;
+}
+.product ul li{
+
+}

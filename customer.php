@@ -77,7 +77,7 @@ if(!isset($_SESSION['customer_id'])){
                 </div>
                 <div class="profile">
                     <ul>
-                        <li>Setting</li>
+                        <li><a href="?page=setting">Setting</a></li>
                         <li><a href="log_out_customer.php">Log out</a></li>
                     </ul>
                 </div>

@@ -45,7 +45,7 @@
                 <div class="profile">
 
                     <ul>
-                        <li> <a href="Settings.php"> Setting </a> </li>
+                        <li> <a href="pages/settings.php"> Setting </a> </li>
                         <li><a href="log-inAdmin.php">Log out</a></li>
 
                     </ul>
@@ -73,7 +73,7 @@
                         <label>Brand</label>
                         <input type="text" class="input-medium"  id="brand" name='brand' required/>
                         <label>Features</label>
-                        <input type="textarea"  rows="3" id="features" name='features'required/>
+                        <textarea rows="3" id="features" name='features' required>  </textarea>
                         <label>Price</label>
                         <input type="text" class="input-medium"  id="price" name='price' onkeyup="Number()" required/>
                         <br/>

@@ -68,23 +68,7 @@ form h4,.category h4 {
     text-align: center;
 }
 
-.product{
-    border:1px solid;
-}
-.product ul{
 
-    border:1px solid;
-    width: 150px;
-    height: 150px;
-    display:inline-block;
-}
-.product ul img{
-    width: 150px;
-    height: 150px;
-}
-.product ul li{
-
-}
 
 
 .selling_status{

@@ -64,9 +64,7 @@ class OnlineSelling extends BaseDAO {
             echo "<li>"."<h6>"." Only Php ".$rows[3]."</h5>"."</li>";
             echo "<li>"."<input type='button' value='buy now'
             onclick=displayChoiceInfo(".$rows[0].") />"."</li>";
-
             echo "</ul>";
-
 
         }
         if(!$status){
