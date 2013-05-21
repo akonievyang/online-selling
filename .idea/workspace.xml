@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8deb5d4-7f39-4531-864e-d5de89c5a347" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Settings.php" afterPath="$PROJECT_DIR$/Settings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="c8deb5d4-7f39-4531-864e-d5de89c5a347" name="Default" comment="" />
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="c8deb5d4-7f39-4531-864e-d5de89c5a347" time="1368859343174" ignored="false" />
