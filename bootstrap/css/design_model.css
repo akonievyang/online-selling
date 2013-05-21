@@ -50,13 +50,14 @@ body {
     padding: 175px 0 0 5px;
     font-size: 1.4em;
 }
+h1, h2{
 
-
-h1, h2, h4 {
+    color: #846CCB;
+}
+h1, h2,h4 {
     margin-top: 0;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-weight: normal;
-    color: #846CCB;
 }
 
 h1 {
@@ -64,15 +65,18 @@ h1 {
     font-size: 2.4em;
 }
 
-h2 {
-    font-size: 1.8em;
-}
 
 h3 {
     font-size: 1.2em;
     font-weight: bold;
 }
-
+h4 {
+    background: #FF5DDA;
+    color:#FFFFFF;
+}
+form input{
+    padding: 0px;
+}
 
 
 .menu{
@@ -120,3 +124,23 @@ li{
     padding: 20px;
 }
 
+.product{
+    line-height: 50px;
+
+}
+.product ul{
+    width: 150px;
+    height: 150px;
+    display:inline-block;
+}
+
+.product ul img{
+    width: 90px;
+    height: 100px;
+}
+.product ul li{
+
+}
+img {
+    border: none;
+}

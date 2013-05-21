@@ -61,12 +61,10 @@ class OnlineSelling extends BaseDAO {
             echo "<ul class='view_display' id='.$rows[0].'>";
             echo "<li>"."<img src=".$image."  />"."</li>";
             echo "<li>"."<h5>$rows[1]</h5>"." "."<h6>$rows[2]</h6>"."</li>";
-            echo "<li>"."<h6>"." Only Php ".$rows[3]."</h5>"."</li>";
+            echo "<li>"."<h6>"."&#8369;".money_format('%!.2n',$rows[3])."</h5>"."</li>";
             echo "<li>"."<input type='button' value='buy now'
             onclick=displayChoiceInfo(".$rows[0].") />"."</li>";
-
             echo "</ul>";
-
 
         }
         if(!$status){
@@ -77,48 +75,26 @@ class OnlineSelling extends BaseDAO {
     }
     function DisplayChoiceInfo($id){
         $this->open();
-            $stmt=$this->dbh->prepare("");
-        $this->close();
-    }
-    function AddToCart($id){
+             $stmt=$this->dbh->prepare(" SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
+                                gadgets.price, picture.large_pic,gadgets.features
+                                FROM item, gadgets, picture
+                                WHERE item.gadget_id = gadgets.gadget_id
+                                AND item.pic_id = picture.pic_id and item_id=$id
+                               ");
+            $stmt->execute();
+            $rows=$stmt->fetch();
 
-        $this->open();
-        $stmt=$this->dbh->prepare("Select item.item_id,gadget.*,picture.* from item where item_id=? ");
-        $stmt->bindParam(1,$id);
-        $stmt->execute();
+            $image="<img src='uploaded_file/$rows[4]'>";
 
+            $item_info=array("item_id"=>$rows[0],"item_unit"=>$rows[1],
+                            "item_brand"=>$rows[2],"item_price"=>"&#8369;".money_format('%!.2n',$rows[3]),
+                            "item_pic"=>$image,"item_features"=>$rows[5]);
+            echo json_encode($item_info);
 
-        $rows=$stmt->fetch();
-
-
-        $rows[0]= $_SESSION['item_id'];
-
-        $_SESSION['item_id']=array();
-        $i=0;
-        while ($i<count($_SESSION["item_id"]))
-            $i++;
-        if ($i < count($_SESSION["item_id"]))
-        {
-
-           echo $_SESSION["item"][$i]++;
-        }
-        else
-        {
-            echo   $_SESSION["item_id"][] =$rows[0];
-
-        }
-
-
-        /*  echo "<tr id='.$rows[0]'>";
-          echo "<td>$rows[1]</td>";
-          echo "<input type='text' id='choice_quantity' />";
-          echo "<td>$rows[2]</td>";
-          echo "<input type='text' id='choice_total' />";
-          echo "<td><img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/></td>";
-          echo "</tr>";*/
         $this->close();
 
     }
+
 
     function viewCart(){
         $this->open();
@@ -354,6 +330,22 @@ class OnlineSelling extends BaseDAO {
         $stmt=$this->dbh->prepare(" Delete From item where item_id=? ");
         $stmt->bindParam(1, $id);
         $stmt->execute();
+
+        $this->close();
+
+    }
+    function Retrieve_member($id){
+        $this->open();
+            $stmt=$this->dbh->prepare("SELECT * FROM customer");
+            $stmt->execute();
+
+            $rows=$stmt->fetch();
+            $retrieve_info_member=array("customer_id"=>$rows[0],"firstname"=>$rows[1],
+                                    "middlename"=>$rows[2],"lastname"=>$rows[3],
+                                    "gender"=>$rows[4],"age"=>$rows[5],"address"=>$rows[6],
+                                    "contact"=>$rows[7],"user_password"=>$rows[8]
+                                    ,"user_username"=>$rows[9],"profile_pic"=>$rows[10]);
+            echo json_encode($retrieve_info_member);
 
         $this->close();
 

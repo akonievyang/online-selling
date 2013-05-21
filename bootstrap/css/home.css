@@ -80,49 +80,4 @@ h3{
 #img{
       margin-left: 10px;
 }
-p2{
 
-    color: #000000;
-    margin-left: 10px;
-    font-size: 40px;
-    font-style: normal;
-    background-color: #1c94c4;
-
-}
-p1{
-    font-family: aria;
-    font-size: 30px;
-    color: #000000;
-    background-color: #ffffff;
-
-}
-h1{
-    text-align: center;
-    border-style: ridge;
-    border-color: #000000;
-    background-color: #f2dede;
-}
-h2 {
-    text-align: center;
-    border-style: ridge;
-    border-color: #000000;
-    background-color: #f2dede;
-}
-h4 {
-    text-align: center;
-    border-style: ridge;
-    border-color: #000000;
-    background-color: #f2dede;
-}
-h5 {
-    text-align: center;
-    border-style: ridge;
-    border-color: #000000;
-    background-color: #f2dede;
-}
-h6 {
-    text-align: center;
-    border-style: ridge;
-    border-color: #000000;
-    background-color: #f2dede;
-}

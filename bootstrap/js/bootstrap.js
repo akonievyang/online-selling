@@ -28,6 +28,7 @@
 
   $(function () {
 
+
     $.support.transition = (function () {
 
       var transitionEnd = (function () {

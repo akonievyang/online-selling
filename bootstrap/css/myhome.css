@@ -9,27 +9,11 @@ p, ul, ol {
 
 }
 
-
 li{
 	text-decoration: none;
 	border-bottom: 1px solid #BFC6E3;
 	color: #145BF9;
 }
-
-
-
-
-hr {
-	display: none;
-}
-
-img {
-	border: none;
-}
-
-/* Header */
-
-/* Post */
 
 .post {
 	margin-bottom: 2em;
@@ -43,7 +27,7 @@ img {
 	color: #1451F4;
 }
 
-/* Sidebar */
+
 
 #sidebar {
 	float: right;
@@ -78,13 +62,10 @@ img {
 	font-size: 1.4em;
 	color: #FFFFFF;
 }
-
-
 #sidebar form {
 	margin: 0;
 	padding: 15px;
 }
-
 #sidebar fieldset {
 	border: none;
 }
@@ -93,7 +74,7 @@ img {
 	font: normal 1em Verdana, Arial, Helvetica, sans-serif;
 }
 
-#sidebar #s {
+#sidebar .input_control {
 	width: 190px;
 }
 .inner{
@@ -110,21 +91,6 @@ img {
 }
 #body .rightbox {
     margin-right: 10px;
-}
-#Reg_Form{
-    text-decoration: none;
-    border-bottom: 1px solid #BFC6E3;
-    color: #145BF9;
-    margin-bottom: 10px;
-    background: #FF8DF0;
-
-}
-#Reg_Form h3{
-    margin: 0;
-    padding: 5px 15px;
-    background: #FF5DDA;
-    font-size: 1.4em;
-    color: #FFFFFF;
 }
 #logAdmin{
     text-decoration: none;

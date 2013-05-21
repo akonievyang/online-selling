@@ -1,8 +1,9 @@
-?php
-include "DAO/Online_SellingDAO.php";
+<?php
+    include "DAO/Online_SellingDAO.php";
 
+    $id=$_POST['id'];
 
-$action= new OnlineSelling();
-$action->ViewDisplay();
+    $action= new OnlineSelling();
+    $action->DisplayChoiceInfo($id);
 
 ?>

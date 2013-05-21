@@ -1,5 +1,6 @@
 $(function(){
     CustomerPic();
+
     $('#photoimg').live('change', function(){
         $("#preview").html('');
         $("#preview").html('<img src="images/loader.gif" alt="Uploading...."/>');
@@ -39,28 +40,28 @@ $(function(){
 
     CustomerViewItem();
 
-    $("#addToCart").click(function(){
-
+    $("#choice_add_to_cart").click(function(){
         $(".overlay").show();
-        var id=$("#dbh_itemID").val();
-        //$("#item_picture").html("<img src="+pic+" />");
-        var price=$("#itemp").html();
 
-        var name=$("#itemN").html();
-        var brand=$("#itemB").html();
+        var gadgets=$("#choice_unit").html()+"<br/>"+$("#choice_brand").html();;
+        var price=$("#choice_price").html();
+        $("#choice_features").html();
+        $("#choice_picture").html();
+        var id=$("#id").html();
 
-      $("#cart").append("<tr>" +
-                          "<td>"+name+"</td>"+
-                          "<td>"+"<input type='text' id='choice_pcs'  />"+"</td>"+
-                          "<td>"+price+"</td>"+
-                          "<td>"+"<input type='text' readonly='readonly'/>"+"</td>"+
-                          "</tr>");
+        $("#cart").append("<tr>" +
+            "<td>"+gadgets+"</td>"+
+            "<td>"+"<input type='text' id='choice_quantity' onkeyup=get_totalprice'(+id+)' />"+"</td>"+
+            "<td>"+price+"</td>"+
+            "<td>"+"<input type='text' readonly='readonly'/>"+"</td>"+
+            "<td>"+"<images src='images/remove.png'/>"+"</td>"+
+            "</tr>");
 
 
         $.ajax({
             type:"POST",
             url:"addToCart.php",
-            data:{"id":id},
+            data:{"id":id,"quantity":$("#choice_quantity").val()},
             success:function(data){
                 console.log(data);
                 $("#cart").append(data);
@@ -69,46 +70,18 @@ $(function(){
             },
             error:function(data){
                 alert(data);
-
             }
 
         });
 
+    });
+    $("#li_setting_info").click(function(){
+       retrieve_info_member();
     });
 
     $(".closed").click(function(){
         alert("pass")
         $(".overlay").hide();
-    });
-    $("#register").click(function(){
-
-        var entry = {
-            "firstname":$("input[name = 'firstname']").val(),
-            "middlename":$("input[name = 'middlename']").val(),
-            "lastname": $("input[name ='lastname']").val(),
-            "age": $("input[name = 'age']").val(),
-            "address": $("input[name = 'address']").val(),
-            "gender": $("#gender").val(),
-            "contact": $("input[name = 'contactNum']").val(),
-            "username": $("input[name = 'users']").val(),
-            "password": $("input[name = 'pass']").val()
-        };
-
-
-        $.ajax({
-            type: "POST",
-            url: "Register.php",
-            data: entry,
-            success:function(data){
-                alert("You're Already Registered "+entry.firstname+".");
-                $('#register').append(data);
-
-            },
-            error: function(data){
-
-                alert("Error="+data);
-            }
-        });
     });
 
 
@@ -119,7 +92,6 @@ $(function(){
             url:"customerViewItem.php",
             data:{"search":$("#search").val()},
             success:function(data){
-
                 $(".product").html(data);
             },
             error:function(data){
@@ -131,12 +103,20 @@ $(function(){
     }
 
     function displayChoiceInfo(id){
+
+
         $.ajax({
             type:"POST",
-            url:"viewCart.php",
+            url:"viewDisplay.php",
             data:{"id":id},
             success:function(data){
-                $("#cart").append(data);
+               var obj=JSON.parse(data);
+               $("#choice_unit").html(obj.item_unit);
+               $("#choice_brand").html(obj.item_brand);
+               $("#choice_price").html(obj.item_price);
+               $("#choice_features").html(obj.item_features);
+               $("#choice_picture").html(obj.item_pic);
+               $("#id").html(obj.item_id);
             },
             error:function(data){
                 alert(data);
@@ -155,7 +135,7 @@ $(function(){
 
     }
 
-    //editing customer
+
     function viewCart(){
         $.ajax({
             type:"POST",
@@ -186,16 +166,12 @@ $(function(){
 
         });
     }
-    function edit_member(id){
-        alert("test");
-        var personObj = {"id":id};
 
+    function retrieve_info_member(){
         $.ajax({
 
             type: "POST",
             url: "edit_member.php",
-            async:true,
-            data: personObj,
             success:function(data){
                 var Obj = JSON.parse(data);
                 $("#id").val(obj.id);
@@ -221,7 +197,6 @@ $(function(){
            type:"POST",
            url:"customerPic.php",
            success:function(data){
-
                 $("#preview").html(data);
            },
            error:function(){

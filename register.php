@@ -9,7 +9,7 @@ include "DAO/Online_SellingDAO.php";
  $age = $_POST['age'];
  $gender = $_POST['gender'];
  $contactNum = $_POST['contact'];
-$password = $_POST['password'];
+ $password = $_POST['password'];
  $username = $_POST['username'];
 
 
