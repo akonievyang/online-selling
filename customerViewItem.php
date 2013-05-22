@@ -1,9 +1,9 @@
 <?php
-    include "DAO/Online_SellingDAO.php";
+    include "DAO/product&ordering_transaction.php";
 
     $search=$_POST['search'];
 
-    $action= new OnlineSelling();
+    $action= new Product_and_ordering_transaction();
     $action->CustomerViewItem($search);
 
 

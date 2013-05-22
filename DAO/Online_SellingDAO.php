@@ -1,6 +1,7 @@
 <?php
 
-include "DAO/BaseDAO.php";
+include "BaseDAO.php";
+
 class OnlineSelling extends BaseDAO {
 
     function Messages($msg){
@@ -42,100 +43,6 @@ class OnlineSelling extends BaseDAO {
 
         $this->close();
     }
-    function CustomerViewItem($search){
-        $this->open();
-        $stmt=$this->dbh->prepare(" SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
-                                        gadgets.price, picture.large_pic,gadgets.features
-                                        FROM item, gadgets, picture
-                                        WHERE item.gadget_id = gadgets.gadget_id
-                                        AND item.pic_id = picture.pic_id
-                                       ");
-        $stmt->execute();
-
-
-        $status=false;
-        while($rows=$stmt->fetch()){
-            $status=true;
-
-            $image="uploaded_file/$rows[4]";
-            echo "<ul class='view_display' id='.$rows[0].'>";
-            echo "<li>"."<img src=".$image."  />"."</li>";
-            echo "<li>"."<h5>$rows[1]</h5>"." "."<h6>$rows[2]</h6>"."</li>";
-            echo "<li>"."<h6>"."&#8369;".money_format('%!.2n',$rows[3])."</h5>"."</li>";
-            echo "<li>"."<input type='button' value='buy now'
-            onclick=displayChoiceInfo(".$rows[0].") />"."</li>";
-            echo "</ul>";
-
-        }
-        if(!$status){
-            echo "<div > Not available </div>";
-
-        }
-        $this->close();
-    }
-    function DisplayChoiceInfo($id){
-        $this->open();
-             $stmt=$this->dbh->prepare(" SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
-                                gadgets.price, picture.large_pic,gadgets.features
-                                FROM item, gadgets, picture
-                                WHERE item.gadget_id = gadgets.gadget_id
-                                AND item.pic_id = picture.pic_id and item_id=$id
-                               ");
-            $stmt->execute();
-            $rows=$stmt->fetch();
-
-            $image="<img src='uploaded_file/$rows[4]'>";
-
-            $item_info=array("item_id"=>$rows[0],"item_unit"=>$rows[1],
-                            "item_brand"=>$rows[2],"item_price"=>"&#8369;".money_format('%!.2n',$rows[3]),
-                            "item_pic"=>$image,"item_features"=>$rows[5]);
-            echo json_encode($item_info);
-
-        $this->close();
-
-    }
-
-
-    function viewCart(){
-        $this->open();
-        $stmt=$this->dbh->prepare("Select c.cart_id,g.brand,g.gadget_name,g.price,p.large_pic
-                                        from gadgets as g,picture as p,item as i,cart as c where
-                                        g.gadget_id=i.gadget_id and p.pic_id=i.pic_id and
-                                        i.item_id=c.item_id");
-
-        $stmt->execute();
-        $status=false;
-        while($rows=$stmt->fetch()){
-            $status=true;
-            echo $rows[0];
-            $image="uploaded_file/$rows[4]";
-            echo "<tr id=$rows[0] >";
-            echo "<td>"."<img src='.$image.'/>"."<br/>".$rows[1]." ".$rows[2]."</td>";
-            echo "<td>"."<input type = 'text' id='quantity' onkeyup='Quantity(".$rows[3].",".$rows[0].")'/>"."</td>";
-            echo "<td>".$rows[3]."</td>";
-            echo "<td>"."<input type = 'text' id='totalprice' readonly='readonly' />"."</td>";
-            echo "<td>"."<img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/>"."</td>";
-            echo "</tr>";
-        }
-        if(!$status){
-            echo "<tr>";
-            echo "<td colspan='10'>No Data </td>";
-            echo "</tr>";
-
-        }
-        $this->close();
-    }
-
-    function RemoveFromCArt($id){
-        $this->open();
-        $stmt=$this->dbh->prepare("Delete from cart where cart_id=?");
-        $stmt->bindParam(1,$id);
-        $stmt->execute();
-        $this->close();
-
-    }
-
-
     /*-----------------------------LogInAdmin-----------------------------------------------------*/
     function LogInAdmin($username, $password){
 

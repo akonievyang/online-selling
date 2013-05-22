@@ -2835,7 +2835,7 @@ table th[class*="span"],
 }
 
 .dropdown-toggle {
-  *margin-bottom: -3px;
+  margin-bottom: -3px;
 }
 
 .dropdown-toggle:active,

@@ -31,30 +31,29 @@ if(!isset($_SESSION['customer_id'])){
         <h1>The Best GADGETS</a></h1>
         <h2>we offer</h2>
 
-        <div class="topmenu">
-            <div class="menu" id="top_category">category</div>
-            <div class="menu">COmputer</div>
-            <div class="menu" id="top_profile"> profile info </div>
+      <!--  <ul class="nav nav-tabs">
+            <li class="nav" id="cart"><a href="#">shop cart</a></li>
+            <li class="nav"><a href="#">Computer</a></li>
 
-            <div class="navigation">
-                <div class="category">
-                    <h4 >Category</h4>
-                    <ul>
-                        <li> Cellphones </li>
-                        <li> Laptops </li>
-                        <li> Cameras </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">  category </a>
+                <ul class="dropdown-menu">
+                    <li> <a href="#">Cellphones </a></li>
+                    <li><a href="#"> Laptops </a></li>
+                    <li><a href="#"> Cameras </a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">  category </a>
+                <ul class="dropdown-menu">
+                    <li><a href="?page=setting">Setting</a></li>
+                    <li><a href="log_out_customer.php">Log out</a></li>
+                </ul>
+            </li>
+       </ul> -->
 
-                    </ul>
-                </div>
-                <div class="profile">
-                    <ul>
-                        <li><a href="?page=setting">Setting</a></li>
-                        <li><a href="log_out_customer.php">Log out</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
+
 
     <div class="page">
         <div class="profile_pic">
@@ -116,7 +115,7 @@ if(!isset($_SESSION['customer_id'])){
 
 
             <div class="overlay">
-                <div class="shopping_cart"  style="overflow:auto;">
+                <div class="shopping_cart">
                     <span style="float: right;" class="closed" ><img src='images/close.png' style="border :1px dashed #bbbbbb;"/></span>
                     <input type="button" id="clear_list" class="btn" value="clear list"/>
                     <br/>
@@ -129,12 +128,12 @@ if(!isset($_SESSION['customer_id'])){
                             <td></td>
                         </tr>
                         <tr>
-                            <tbody id="cart"></tbody>
+                            <tbody id="tbod_cart"></tbody>
                         </tr>
                     </table>
                     <br/>
                     <div class="right" >
-                        <label>Total Price:<input type="text" class="input-medium" id="total" readonly='readonly'/></label>
+                        <label>Total Price:<input type="text" class="input-medium" id="total_all_item" readonly='readonly'/></label>
                         <input type="button" class="btn btn-primary" id="check_out" value="check out"/>
                         <br/>
                         <label id="shop_more"  style="text-decoration: underline;">or shop more?</label>

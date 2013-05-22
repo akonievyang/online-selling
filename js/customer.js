@@ -1,6 +1,6 @@
 $(function(){
     CustomerPic();
-
+    viewCart();
     $('#photoimg').live('change', function(){
         $("#preview").html('');
         $("#preview").html('<img src="images/loader.gif" alt="Uploading...."/>');
@@ -16,32 +16,12 @@ $(function(){
         $(".overlay").hide();
 
     });
-    $("#top_category").mouseover(function(){
-        $("#top_category").css({"background-color" : "#ffffff"});
-        $("#top_profile").css({"background-color" : "transparent"});
-        $(".navigation").slideDown(1000);
-        $(".profile").hide();
-        $(".category").show();
 
-
-
-    });
-    $("#top_profile").mouseover(function(){
-        $("#top_profile").css({"background-color" : "#ffffff"});
-        $("#top_category").css({"background-color" : "transparent"});
-
-        $(".navigation").slideDown(1000);
-        $(".category").hide();
-        $(".profile").show();
-
-
-    });
 
 
     CustomerViewItem();
 
     $("#choice_add_to_cart").click(function(){
-        $(".overlay").show();
 
         var gadgets=$("#choice_unit").html()+"<br/>"+$("#choice_brand").html();;
         var price=$("#choice_price").html();
@@ -49,23 +29,13 @@ $(function(){
         $("#choice_picture").html();
         var id=$("#id").html();
 
-        $("#cart").append("<tr>" +
-            "<td>"+gadgets+"</td>"+
-            "<td>"+"<input type='text' id='choice_quantity' onkeyup=get_totalprice'(+id+)' />"+"</td>"+
-            "<td>"+price+"</td>"+
-            "<td>"+"<input type='text' readonly='readonly'/>"+"</td>"+
-            "<td>"+"<images src='images/remove.png'/>"+"</td>"+
-            "</tr>");
-
 
         $.ajax({
             type:"POST",
             url:"addToCart.php",
-            data:{"id":id,"quantity":$("#choice_quantity").val()},
+            data:{"id":id},
             success:function(data){
-                console.log(data);
-                $("#cart").append(data);
-                $(".overlay").show();
+                viewCart();
 
             },
             error:function(data){
@@ -75,12 +45,47 @@ $(function(){
         });
 
     });
+
+    $("#check_out").click(function(){
+
+        var tbod=document.getElementById('tbod_cart');
+        var tr=tbod.getElementsByTagName('tr');
+        var data_arr = new Array();
+
+
+        for(var i=0;i<tr.length;i++){
+           var tr_id=tr[i].id;
+
+            var quantity= $("#quantity".tr_id).val();
+            alert(tr_id);
+            var td = tr[i].getElementsByTagName('td')[1];
+            var quantity = td.getElementsByTagName('input')[0].value;
+            var price = tr[i].getElementsByTagName('td')[2].value;
+            var total = tr[i].getElementsByTagName('td')[3].value;
+
+        }
+        var obj = {"item_id":tr_id,"quantity":quantity,"price":price,"total":total};
+           $.ajax({
+                type:"POST",
+                url:"add_to_sales.php",
+                data:{"id":tr[i].id," quantity": quantity},
+                success:function(data){
+
+                },error:function(data){
+                    alert(data);
+                }
+
+            });
+
+
+
+    })
     $("#li_setting_info").click(function(){
        retrieve_info_member();
     });
 
     $(".closed").click(function(){
-        alert("pass")
+
         $(".overlay").hide();
     });
 
@@ -127,9 +132,14 @@ $(function(){
 
 
     }
-    function Quantity(price,id){
+    function get_cost_by_quantity(id,price,totalcost){
 
-            var total= $("#quantity").val()*price;
+
+            alert(totalcost,price,id);
+            $("#total_all_item").val(parseInt(totalcost));
+
+            var total= $("#quantity".id).val()*price;
+
             $("#totalprice").val(total+id);
             $("#total").val(total);
 
@@ -141,10 +151,14 @@ $(function(){
             type:"POST",
             url:"viewCart.php",
             success:function(data){
-                $("#cart").append(data);
+                console.log(data);
+                $(".overlay").show();
+                $("#tbod_cart").html(data);
+
+
             },
             error:function(data){
-                alert(data);
+                alert(data['statusText']+ " => " + data['status']);
 
             }
 
