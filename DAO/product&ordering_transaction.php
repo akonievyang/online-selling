@@ -81,7 +81,7 @@
             else{
 
                 $_SESSION['cart']=array();
-                $_SESSION['cart'][0]['productid']=$$rows[0];
+                $_SESSION['cart'][0]['productid']=$rows[0];
                 $_SESSION['cart'][0]['qty']=$quantity;
             }
 
@@ -106,16 +106,13 @@
                                             WHERE item.gadget_id = gadgets.gadget_id
                                             AND item.pic_id = picture.pic_id and item_id=$id
                                            ");
-                    $rows=$stmt->fetch();
-
-
-                    echo " SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
+                    echo "SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
                                             gadgets.price, picture.large_pic,gadgets.features
                                             FROM item, gadgets, picture
                                             WHERE item.gadget_id = gadgets.gadget_id
                                             AND item.pic_id = picture.pic_id and item_id=$id";
-
-                   $image="uploaded_file/$rows[4]";
+                    $rows=$stmt->fetch();
+                    $image="uploaded_file/$rows[4]";
                     $price=$rows[3];
                     $sum+=$price*$quantity;
                     $total_price_all_item="&#8369;".money_format('%!.2n',$sum);
@@ -151,9 +148,15 @@
             $_SESSION['cart']=array_values($_SESSION['cart']);
             $this->close();
         }
-        function Add_to_sales($customer_id,$item_id){
+        function Add_to_sales($customer_id, $item_id, $quantity){
             $this->open();
-               // $stmt=$this->dbh->prepare("INSERT INTO sales")
+                $sql = "INSERT INTO sales (item_id, customer_id, total_quantity) VALUES (?, ?, ?)";
+                $stmt=$this->dbh->prepare($sql);
+                $stmt -> bindParam(1, $item_id);
+                $stmt -> bindParam(2, $customer_id);
+                $stmt -> bindParam(3, $quantity);
+                $stmt -> execute();
+
             $this->close();
         }
 

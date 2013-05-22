@@ -48,31 +48,14 @@ $(function(){
 
     $("#check_out").click(function(){
 
-        var tbod=document.getElementById('tbod_cart');
-        var tr=tbod.getElementsByTagName('tr');
-        var data_arr = new Array();
 
-
-        for(var i=0;i<tr.length;i++){
-           var tr_id=tr[i].id;
-
-            var quantity= $("#quantity".tr_id).val();
-            alert(tr_id);
-            var td = tr[i].getElementsByTagName('td')[1];
-            var quantity = td.getElementsByTagName('input')[0].value;
-            var price = tr[i].getElementsByTagName('td')[2].value;
-            var total = tr[i].getElementsByTagName('td')[3].value;
-
-        }
-        var obj = {"item_id":tr_id,"quantity":quantity,"price":price,"total":total};
            $.ajax({
                 type:"POST",
                 url:"add_to_sales.php",
-                data:{"id":tr[i].id," quantity": quantity},
                 success:function(data){
-
-                },error:function(data){
                     alert(data);
+                },error:function(data){
+                    alert(data['statusText']+ " => " + data['status']);
                 }
 
             });
