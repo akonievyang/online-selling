@@ -44,32 +44,32 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
             <h1>The Best GADGETS</a></h1>
             <h2>we offer</h2>
 
-            <div class="topmenu">
-                <div class="menu" id="top_category">category</div>
-                <div class="menu">COmputer</div>
-                <div class="menu" id="top_profile"> login user </div>
-
-                <div class="navigation">
-                    <div class="category">
-                        <h4 >Category</h4>
-                        <ul>
-                            <li> Cellphones </li>
-                            <li> Laptops </li>
-                            <li> Cameras </li>
-
+            <div class="nav-container">
+                <ul >
+                    <li class="menu">
+                        <a  href="#">  Profile Info </a>
+                        <ul >
+                            <li><a href="?page=admin_user">login admin</a></li>
+                            <li><a href="?page=member">login member</a></li>
                         </ul>
-                    </div>
-                    <div class="profile">
-                        <ul>
-                            <li><a href="?page=admin_user">Admin user</a></li>
-                            <li><a href="?page=member">Member user</a></li>
-                            <h4>Not yet a member?</h4>
-                            <li><a href="?page=register_new_user">Register first</a></li>
-
+                    </li>
+                    <li class="menu" id="cart"><a href="#">shop cart</a></li>
+                    <li class="menu"><a href="#">Computer</a></li>
+                    <li class="menu">
+                        <a  href="#">  category </a>
+                        <ul >
+                            <li> <a href="#">Cellphones </a></li>
+                            <li><a href="#"> Laptops </a></li>
+                            <li><a href="#"> Cameras </a></li>
                         </ul>
-                    </div>
-                </div>
+                    </li>
+
+
+                </ul>
             </div>
+
+        </div>
+
         </div>
 
         <div class="page">
@@ -86,9 +86,13 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
                   ?>
 
                   <br/>
-                  <?php
-                    include "pages/product_view.php";
-                  ?>
+                    <div class="post">
+                        <p class="meta">Products </p>
+                        <div class="product">
+
+                        </div>
+
+                    </div>
 
             </div>
             <!-- end content -->

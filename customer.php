@@ -30,27 +30,28 @@ if(!isset($_SESSION['customer_id'])){
     <div id="header">
         <h1>The Best GADGETS</a></h1>
         <h2>we offer</h2>
+       <div class="nav-container">
+           <ul >
+                <li class="menu" id="cart"><a href="#">shop cart</a></li>
+                <li class="menu"><a href="#">Computer</a></li>
+                <li class="menu">
+                    <a  href="#">  category </a>
+                    <ul >
+                        <li> <a href="#">Cellphones </a></li>
+                        <li><a href="#"> Laptops </a></li>
+                        <li><a href="#"> Cameras </a></li>
+                    </ul>
+                </li>
 
-       <ul class=".nav-container"">
-            <li class="menu" id="cart"><a href="#">shop cart</a></li>
-            <li class="menu"><a href="#">Computer</a></li>
-
-            <li class="menu">
-                <a  href="#">  category </a>
-                <ul class="dropdown-menu">
-                    <li> <a href="#">Cellphones </a></li>
-                    <li><a href="#"> Laptops </a></li>
-                    <li><a href="#"> Cameras </a></li>
-                </ul>
-            </li>
-            <li class="menu">
-                <a  href="#">  category </a>
-                <ul class="dropdown-menu">
-                    <li><a href="?page=setting">Setting</a></li>
-                    <li><a href="log_out_customer.php">Log out</a></li>
-                </ul>
-            </li>
-       </ul>
+                <li class="menu">
+                    <a  href="#"> login </a>
+                    <ul >
+                        <li><a href="?page=setting">Setting</a></li>
+                        <li><a href="log_out_customer.php">Log out</a></li>
+                    </ul>
+                </li>
+           </ul>
+       </div>
 
     </div>
 
@@ -68,31 +69,14 @@ if(!isset($_SESSION['customer_id'])){
 
         <div class="content">
 
-                <?php
-                    if($_REQUEST['page']=='setting'){
-                        include "pages/customer_settings.php";
-                    }
-                ?>
-                <div class="post">
-                    <p class="meta">Products </p>
-                    <div class="product">
-
-                    </div>
-
-                </div>
-                <div class="post">
-                    <p class="meta">Top Product </p>
-                    <div id="body">
-
-
-                    </div>
-
-                </div>
-                <br/>
             <div class="choice_view">
                 <input type='hidden'  id='id'/>
+                <div>
                 <div class="left" style="float: left;">
                     <div id="choice_picture" ></div>
+                </div>
+
+                <div clas="right">
                     <input type='hidden' id="id"/>
                     <br/>
                     <span >Unit:<li id="choice_unit"></li></span>
@@ -100,9 +84,13 @@ if(!isset($_SESSION['customer_id'])){
                     <span >Brand:<li id="choice_brand"></li> </span>
                     <br/>
                     <span >Price:<li id="choice_price"></li></span>
-
                 </div>
-                <div class="right" style="float:right;">
+                    <div style="clear:both"></div>
+                </div>
+
+
+
+                <div>
                     <h3>Features</h3>
                     <div id="choice_features">
 
@@ -117,6 +105,7 @@ if(!isset($_SESSION['customer_id'])){
             <div class="overlay">
                 <div class="shopping_cart">
                     <span style="float: right;" class="closed" ><img src='images/close.png' style="border :1px dashed #bbbbbb;"/></span>
+                    <span id="successful"></span>
                     <input type="button" id="clear_list" class="btn" value="clear list"/>
                     <br/>
                     <table class="table table-bordered" id="tb_cart" >
@@ -132,26 +121,50 @@ if(!isset($_SESSION['customer_id'])){
                         </tr>
                     </table>
                     <br/>
-                    <div class="right" >
-                        <label>Total Price:<input type="text" class="input-medium" id="total_all_item" readonly='readonly'/></label>
-                        <input type="button" class="btn btn-primary" id="check_out" value="check out"/>
-                        <br/>
-                        <label id="shop_more"  style="text-decoration: underline;">or shop more?</label>
-                    </div>
-                    <div style="clear: both;"></div>
+                    <form >
+                        <div class="right" >
+                            <label>Total Price:<input type="text" class="input-medium" id="total_all_item" readonly='readonly'/></label>
+                            <input type="button" class="btn btn-primary" id="check_out" value="check out"/>
+                            <br/>
+                            <label id="shop_more"  style="text-decoration: underline;" >or shop more?</label>
+                        </div>
+                        <div class="left">
+                            <label>Place to be delivered</label>
+                            <textarea id="address" placeholder="Complete address" required></textarea>
 
+                        </div>
+                    </form>
+
+                    <div style="clear: both;"></div>
 
                 </div>
             </div>
-            <!--- end cart --->
+                <?php
+                    if($_REQUEST['page']=='setting'){
+
+                        include "pages/customer_settings.php";
+                    }
+                ?>
+
+                <div class="post">
+                    <p class="meta">Products </p>
+                    <div class="product">
+
+                    </div>
+
+                </div>
+                <div class="post">
+                    <p class="meta">Top Product </p>
+                    <div id="body">
+                    </div>
+
+                </div>
+                <br/>
+
 
         </div>
     </div>
    </div>
-
-
-
-
 
 </body>
 
