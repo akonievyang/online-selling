@@ -55,7 +55,7 @@
 
         <div id="tabs-1">
 
-            <td> <h1> <input type="checkbox"> A888 Duo </h1> </td>
+            <td> <h2> <input type="checkbox"> A888 Duo </h2> </td>
             <p> Check if you want this item!! </p>
             <img src = "images/A888Duo.png"/>
             <p>The new MyPhone A888 marries elegance with functionality. This new 3G Android phone is minimalist in design but promises maximum performance with its superb features. It comes neat and sleek at 8.99 mm, and with 4.5” IPS capacitive screen that is as delightful to the eyes as it is to the fingers. Its 8 megapixel rear camera with dual LED flash and 720p HD video recording capacity lets you take photos and videos like a pro. Taking wide-angled shots through the camera’s digital panorama function is also a must-try! Plus, see your photos and videos come to life as you view them with MyPhone A888’s qHD display. Even the phone’s front camera is exceptional at 1.3 MP. The best part is: you get all these add-ons without compromising other features. MyPhone A888 still comes complete with dual core 1GHz processor, Android 4.0.4 OS and 3G and Wi-fi connectivity. Now that’s superb!
@@ -82,7 +82,7 @@
 
         <div id="tabs-3">
 
-            <td> <h3> <input type="checkbox"> A818i Duo </h3> </td>
+            <td> <h2> <input type="checkbox"> A818i Duo </h2> </td>
             <p> Check if you want this item!! </p>
             <img src="images/A818i Duo.png"/>
             <p>This is the perfect Android phone for budget-conscious mobile users like you! For an affordable price, you can already get your hands on our 3.5” Android phone offering. This phone equipped with 1 GHz processor, runs on Android 2.3 Gingerbread and lets you enjoy over 100,000 of applications that cater your needs and interests. It also has a 3.2 MP camera to capture every precious moment; and through its WiFi capability, you can now connect to the nearest hotspot near you and share the online world your every status-worthy moment.
@@ -93,7 +93,7 @@
 
         <div id="tabs-4">
 
-            <td> <h4> <input type="checkbox"> A848i Duo </h4> </td>
+            <td> <h2> <input type="checkbox"> A848i Duo </h2> </td>
             <p> Check if you want this item!</p>
             <img src="images/A848i Duo.png"/>
             <p>MyPhone A848i is your multimedia buddy Android phone upgraded with 3G and other features. Take photos easier anytime, anywhere with a 5MP auto-focusing camera with LED flash. Play mp3 music with standard 3.5mm audio jack even on-the-go and enjoy seamless photo viewing and video watching experience on its wide 4-inch LCD display; all these tasks done flawlessly with its dual-core 1 Ghz processor.  MyPhone A848i still comes with MyPhone’s trademark Pinoy Apps with pure-Filipino contents.
@@ -105,7 +105,7 @@
 
         <div id="tabs-5">
 
-            <td> <h5> <input type="checkbox"> A818g Duo </h5> </td>
+             <h2> <input type="checkbox"> A818g Duo </h2>
             <p> Check if you want thos item!! </p>
             <img src="images/A818gDuo.png"/>
             <p> MyPhone brings a more advanced yet portable gadget for you. The new MyPhone A818g is the top of the line phone under the A818 series. It boasts a high-speed 1Ghz processor, and the latest Android Jelly Bean OS. Its portability lets you have your ultimate music player right at your hands. It is also equipped with a 3.2 MP camera for taking snapshots, and 3G capability for instant downloading or uploading on your favorite social networking site.
@@ -117,7 +117,7 @@
 
         <div id="tabs-6">
 
-            <td> <h6> <input  type="checkbox"> A919i Duo </h6> </td>
+            <td> <h2> <input  type="checkbox"> A919i Duo </h2> </td>
             <p> Check if you want this item!! </p>
             <img src="images/A919i Duo.png"/>
             <p>Specs is not just specifications, but is spectacular for the new MyPhone A919i. Powered by a high-speed 1.2 GHz Quad-core processor, this newest and most powerful offer, yet, from MyPhone will surely give you the best out of your Android experience. Ka-MyPhone’s will surely get their eyes mesmerized with this device’s wide 5” IPS High-Definition LCD. User’s long wait for the Android Jelly Bean OS comes to an end with the coming of this phone. Capturing every moment is a perfect picture with its 8 MP rear camera, and 2 MP front camera. Everything is topped with its 3G capability that lets you surf, view, and share to the online world anytime, anywhere…

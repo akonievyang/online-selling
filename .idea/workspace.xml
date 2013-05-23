@@ -2,25 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05895178-e2a4-457f-953b-c0aa2ca8e8c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/css/choice.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/choice_view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clear_cart.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DAO/function.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/product_view.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/icon.png" afterPath="$PROJECT_DIR$/images/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Sample.php" afterPath="$PROJECT_DIR$/pages/Sample.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_to_sales.php" afterPath="$PROJECT_DIR$/add_to_sales.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/customer.css" afterPath="$PROJECT_DIR$/bootstrap/css/customer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/08-ces2013toshibaunveilsupdatedlineupofsatelliteandaiolaptops.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/6a010535c50a83970b0105371d8bec970b_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/Acer-Aspire-A5560-7414.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/HD-Wallpapers-For-Laptop-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/Increase-Laptop-Performance.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/MyPhone A868 DUO Price and Specs.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/MyPhone-A919-Duo-feature-image.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/MyPhone-Sale-2013.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/QW28-Actual-Product2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/black-laptop.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/canon-0569-41085-1-zoom.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/fujifilm-3326-73695-1-zoom.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/hp-156-amd-e1-1200-4gb-ram-500gb-laptop-d-2012103117125149~6970872w.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myphone a919 duo-iloilo-philippines.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myphone-1388-52624-1-product.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myphone-8425-81624-1-product.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myphone-s60-bb-standby.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myphone10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myphone2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myphone3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myphone4.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/myphone5.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/q22 duo myphone (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/samsung-0859-39464-5-zoom.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/samsung-156in-windows-8-4gb-ram-500gb-laptop-d-2012113018070313~227229_040.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/samsung-3195-39464-1-zoom.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/samsung-4909-91795-1-zoom.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/samsung-ativ-book-5_front-625x1000.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sample.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/Settings.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/saveto.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/customer.js" afterPath="$PROJECT_DIR$/js/customer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer.php" afterPath="$PROJECT_DIR$/customer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/customer_settings.php" afterPath="$PROJECT_DIR$/pages/customer_settings.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/design_model.css" afterPath="$PROJECT_DIR$/bootstrap/css/design_model.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/login_admin.php" afterPath="$PROJECT_DIR$/pages/login_admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/login_customer.php" afterPath="$PROJECT_DIR$/pages/login_customer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhome.php" afterPath="$PROJECT_DIR$/myhome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/product&amp;ordering_transaction.php" afterPath="$PROJECT_DIR$/DAO/product&amp;ordering_transaction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/register_new_customer.php" afterPath="$PROJECT_DIR$/pages/register_new_customer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/shooping_cart.php" afterPath="$PROJECT_DIR$/pages/shooping_cart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/update_item_choice_quantity.php" afterPath="$PROJECT_DIR$/update_item_choice_quantity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laptop.php" afterPath="$PROJECT_DIR$/laptop.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/online.php" afterPath="$PROJECT_DIR$/online.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.php" afterPath="$PROJECT_DIR$/product.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
@@ -75,10 +93,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="design_model.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="design_model.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap/css/design_model.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="4" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.6053812">
+            <state line="201" column="12" selection-start="3043" selection-end="3043" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customer.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/customer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="424" column="43" selection-start="9423" selection-end="9423" vertical-scroll-proportion="0.10313901">
               <folding />
             </state>
           </provider>
@@ -118,12 +145,12 @@
         <option value="$PROJECT_DIR$/add_to_sales.php" />
         <option value="$PROJECT_DIR$/pages/choice_view.php" />
         <option value="$PROJECT_DIR$/js/buying_transaction.js" />
-        <option value="$PROJECT_DIR$/js/customer.js" />
         <option value="$PROJECT_DIR$/bootstrap/css/customer.css" />
         <option value="$PROJECT_DIR$/myhome.php" />
         <option value="$PROJECT_DIR$/customer.php" />
         <option value="$PROJECT_DIR$/DAO/product&amp;ordering_transaction.php" />
         <option value="$PROJECT_DIR$/bootstrap/css/design_model.css" />
+        <option value="$PROJECT_DIR$/js/customer.js" />
       </list>
     </option>
   </component>
@@ -190,6 +217,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,13 +386,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/add_to_sales.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="127" selection-start="393" selection-end="393" vertical-scroll-proportion="0.23255815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/customer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="0" selection-start="590" selection-end="590" vertical-scroll-proportion="1.0089686">
@@ -452,7 +486,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/design_model.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="4" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.6053812">
+        <state line="201" column="12" selection-start="3043" selection-end="3043" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/customer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="424" column="43" selection-start="9423" selection-end="9423" vertical-scroll-proportion="0.10313901">
           <folding />
         </state>
       </provider>
