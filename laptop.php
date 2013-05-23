@@ -1,16 +1,48 @@
 <!doctype HTML>
-    <html>
+
+
+    <html lang="en">
+
 <head>
-    <body>
+
+    <meta charset="utf-8" />
+    <title> just choose it and click !! </title>
+    <script src="js/home.js"> </script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/jquery-ui-sample.css"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css"/>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+</head>
+
+<script>
+    $(function() {
+        $( "#tabs" ).tabs();
+    });
+</script>
+
     <style>
-#main{
+ #tabs{
+
+    background-color: lavender ;
     background-size: 1000px ;
 }
     </style>
+
+    <body id="rl">
+    <div class="menu"> <a href="myhome.php"> <strong> Home </strong> </a> </div>
+    <div class="container">
+
+    <div id="tabs">
+
+
     <div id ="main">
-        <h2>Acer-Aspire-A5560-7414</h2>
+    <td> <h1> <input type="checkbox">Acer-Aspire-A5560-7414 </h1></td>
         <img src="laptop/Acer-Aspire-A5560-7414.png">
-        <h2>price at P</h2>
+        <h2>price at $599.00</h2>
         <p>Our pick: Acer Aspire A5560-7414
             Specs at a glance: Acer Aspire A5560-7414
             Screen 	1366x768 at 15.6" (100 ppi)
@@ -32,8 +64,9 @@
 
             While AMD's processors have trouble matching the raw CPU performance of Intel's chips at the medium and high end, their products still have some appeal to the cost-conscious buyer. Just make sure you go for something like this Acer's A6-3420M chip rather than a slightly cheaper notebook with an E-300 or E-400 series processor—the latter are netbook-class processors that beat Intel's Atom in processing power, but don't do much else. The A6-3420M's integrated graphics solution is better than Intel's (and good graphics are important enough to the operation of the forthcoming Windows 8) to the point that I would recommend AMD over Intel in this case.</p>
 
-        <h2>HP 15.6" LED Window 8, AMD Dual-Core, 4GB RAM, 500GB HDD Laptop Computer with Software</h2>
+    <td><h1><input type="checkbox">HP 15.6" LED Window 8, AMD Dual-Core, 4GB RAM, 500GB HDD Laptop Computer with Software </h1></td>
         <img src="laptop/hp-156-amd-e1-1200-4gb-ram-500gb-laptop-d-2012103117125149~6970872w.jpg">
+        <h2>price at $459.13</h2>
         <p>Windows 8 operating system
 
             Combines speed, reliability and an all-new app interface
@@ -79,8 +112,9 @@
             Kensington MicroSaver lock slot
         </p>
 
-        <h2>15.6" LCD, Windows 8, AMD Dual-Core APU, 4GB RAM, 500GB HDD Laptop</h2>
+    <td><h1><input type="checkbox">15.6" LCD, Windows 8, AMD Dual-Core APU, 4GB RAM, 500GB HDD Laptop </h1></td>
         <img src="laptop/samsung-156in-windows-8-4gb-ram-500gb-laptop-d-2012113018070313~227229_040.jpg">
+        <h2>price at $399.45</h2>
         <p>Windows 8 operating system
 
             Combines speed, reliability and an all-new app interface
@@ -146,8 +180,10 @@
             Gigabit ethernet LAN
             Kensington lock slot
         </p>
-        <h2>Samsung Series 5 NP-535U3C-P01PH 13.3" Laptop (Brown) with Free Haipad Android Tablet</h2>
+
+    <td><h1><input type="checkbox">Samsung Series 5 NP-535U3C-P01PH 13.3" Laptop (Brown) with Free Haipad Android Tablet </h1></td>
         <img src="laptop/samsung-0859-39464-5-zoom.jpg">
+        <h2>price at $499.68</h2>
         <p>
             Product Description of Samsung Series 5 NP-535U3C-P01PH 13.3" Laptop (Brown) with Free Haipad Android Tablet
             What's in the box
@@ -256,8 +292,9 @@
             Features 	Music Player|Bluetooth|Email|Dual Core|HD |HDMI |Internet Ready
             Product warranty 	1 Year Warranty</p>
 
-    <h2>Samsung Series 5 NP-535U3C-P01PH 13.3" Laptop (Brown) with Free Haipad Android Tablet</h2>
+    <td><h1><input type="checkbox">Samsung Series 5 NP-535U3C-P01PH 13.3" Laptop (Brown) with Free Haipad Android Tablet </h1></td>
     <img src="laptop/samsung-3195-39464-1-zoom.jpg">
+    <h2>price at $699.15</h2>
     <p>
         Product Description of Samsung Series 5 NP-535U3C-P01PH 13.3" Laptop (Brown) with Free Haipad Android Tablet
         What's in the box
@@ -366,26 +403,30 @@
         Features 	Music Player|Bluetooth|Email|Dual Core|HD |HDMI |Internet Ready
         Product warranty 	1 Year Warranty</p>
 
-    <h2>Increase Laptop Performance</h2>
+    <td><h1><input type="checkbox">Increase Laptop Performance </h1></td>
     <img src="laptop/Increase-Laptop-Performance.jpg">
+        <h2>price at $600.00</h2>
     <p>Increasing the memory capacity of your Laptop and Computers will result in smooth and faster processing of your system. The Additional RAM comes in handy in various formats based on different memory sizes. As an informed user, you should be totally aware about the specifications of your laptop that whether it supports additional RAM or not. Some Laptops do support additional RAM with slots provided for adding the RAM whereas some might not have the capability of additional RAM which limits the user with a constraint of limited RAM available in the system.The motherboard and BIOS controls the RAM specification in a particular Laptops as well as on a Desktop Computers. Hence, you need to identify the type of specification of your laptop. Moreover you should also figure out the type of memory being use in laptop along with its current speed. This can be identified by restarting your laptop and pressing Delete and F2 key while the system is getting boot up. This will halt the booting process and will drive you towards the system information wherein BIOS and motherboard information is visible. If your system allows you for additional RAM capacity to be installed, then you need to check the current RAM capacity of the system to make a wise decision in upgrading the RAM or not. If you are running your system on Windows XP with less than or equal to 512 MB RAM or Windows Vista or Windows 7 with no more than 1 GB of RAM, then a clear scope of increasing the RAM of the system is available. The enhanced RAM capacity will make your system respond to commands faster and will help in higher processing speed as well.
 
         You have the option of upgrading your RAM in Windows XP or Windows Vista to 2 GB, Windows 7 to 4 GB and Windows 8 to 6 GB for enhancing the performance of your laptops and desktop computers. The feature of upgraded RAM will result in providing a quality user experience while working on laptop with high definitions videos or stuff which requires larger memory for processing. A smarter way to add RAM in the laptop will be through the use of screwdrivers through which you can open the fit parts of the laptop. A multipurpose screwdriver with various types of head will make the work a lot easier. On removing the fit part from the laptop, you can draw out the RAM from the laptop by handling it with its edges. The RAM needs to be handled carefully avoiding any contact to the main parts of the hardware. The memory modules of the system need to be handles with utmost care. SODIMM slots helps in keeping RAM intact and in place. The clips provided at SODIMM slots helps in easy removal and placement of the RAM inside the system. Various Laptops manufacturers have different type of slots which provides ease of removal and addition of RAM quickly. The entire process will aid in faster processing and increased speed of your laptop which will enhance your overall experience.</p>
     
-    <h2>Samsung intros ATIV Book 5 Ultrabook and ATIV Book 6 laptop with touchscreens</h2>
+    <td><h1><input type="checkbox">Samsung intros ATIV Book 5 Ultrabook and ATIV Book 6 laptop with touchscreens </h1></td>
     <img src="laptop/samsung-ativ-book-5_front-625x1000.jpg">
+        <h2>price at $560.24</h2>
     <p>Samsung surprised us today with two new notebooks: the Samsung ATIV Book 5 Ultrabook, and the Samsung ATIV Book 6 laptop. Both are available for pre-order today and serve different needs. The ATIV Book 5 is a sleek machine designed for portability, while the ATIV Book 6 is a computing powerhouse that’s still easy to transport. While both laptops vary in terms of use cases, they mark a change in the way Samsung’s naming its laptops. Previously, Samsung labeled its computers as “Series 7 All-In-One,” “Series 7 Chronos,” or “Series 9.” That’s all been simplified thanks to the ATIV moniker, which the company was using for its convertible Windows 8 PCs. This means the “Series 7 All-In-One” is now the “ATIV One 7,” and the “Series 7 Chronos” is now the “ATIV Book 8.”ds. It features a 14-inch, 1366 x 768 touchscreen display and is powered by a 1.8-GHz Intel Core i5-3337U processor with integrated Intel HD 4000 graphics, and 4GB of RAM. For a speedy boot time and lots of storage, the ATIV Book 5 packs a 500GB hard disk drive coupled with a 24GB solid-state drive. According to Samsung, it’ll last up to 6.5 hours away from an outlet. It’s available for pre-order today for $899.If you’re looking for a high-powered laptop, the Samsung ATIV Book 6 might be right up your alley. Though it may look similar to the ATIV Book 5 above, this laptop features a 15.6-inch 1920 x 1080 full HD touchscreen display for optimal viewing. However, it’s what’s on the inside that really counts with this machine. It’s packed with a 2.4-GHz quad-core Intel Core i7-3635QM processor, discrete AMD Radeon HD 8770M graphics, 8GB of RAM, and 1TB hard drive. While the ATIV Book 6 is poised to be a gaming and multimedia powerhouse, it weighs a very reasonable 5.18 pounds and is only 0.90 inches thin. The ATIV Book 6 is also available for pre-order today for $1,199.
         Both laptops feature Samsung’s new SideSync technology, which allows Samsung smartphone users to switch between the two devices more easily. Connecting an Android-powered Samsung phone via USB to the Samsung notebook lets users answer text messages using their computer, edit files on the phone with their PC, and drag and drop files between the two devices. The idea is that your phone won’t distract you from your computer and vice versa, but this is definitely something we’d like to see in person before making a judgement on it. Hopefully, we’ll have the chance to put both these machines through their paces soon.
     </p>
 
 
-    <h2>CES 2013: Toshiba Unveils Updated Line up of Satellite and AIO Laptops </h2>
+    <td><h1><input type="checkbox">CES 2013: Toshiba Unveils Updated Line up of Satellite and AIO Laptops</h1></td>
     <img src="laptop/08-ces2013toshibaunveilsupdatedlineupofsatelliteandaiolaptops.jpg">
+        <h2>price at $599.23</h2>
     <p>According to Carl Pinto who is vice president of marketing in DPD (Digital products Division) at Toshiba America Information Systems Inc., the new line-up from the company will have something to offer all kinds of PC users, be it basic tasks, latest movies and games, or even innovative PCs that will have advantages such as touchscreens. He said that the computers in the line-up have been optimised for Windows 8 coupled with great performance, Toshiba innovations and stylish designs. The Satellite P series laptops, mainly intended for entertainment features Intel Core processor (third generation) and 1600MHz DDR3 memory. It is designed suitable for multimedia and multitasking. The laptops will have buttonless touchpads which is suitable for Window 8 gestures. The Satellite S, C, L and all-in-one range of laptops feature similar specifications as before but as per the company's revelations, will certainly come with improved performance or features. All the laptops in the line-up will begin shipping by February. The pricing has not been revealed as of now.
     </p>
 
-    <h2>black-laptop</h2>
+    <td><h1><input type="checkbox">black-laptop </h1></td>
     <img src="laptop/black-laptop.jpg">
+        <h2>price at $590.10</h2>
     <p>The terms laptop and notebook are often used interchangeably to refer to any mobile computer, and not everyone agrees on what the differences are between these two terms, or if any exist. The conventional difference is that notebooks were so-named to differentiate this class of mobiles as ultra-light, ultra-thin, and highly portable, compared to original laptops that were comparatively cumbersome. With the advancement of mobile technology, laptops have evolved into what was previous considered a notebook, explaining why the terms have become interchangeable.
 
         Today's ultra-light mobile computers that retain full operating systems and functionality are referred to as subnotebooks or ultraportables. Some models do not include a CD/DVD player, and they can be used with an optional docking station to enhance features. The specifications that qualify a notebook to fall into this category can be somewhat arbitrary but in general, the machine will be significantly smaller and lighter than the average laptop. High-quality, power-efficient components also yield longer periods between battery charges. These favorable attributes make ultraportables two to three times more expensive than their larger, heavier counterparts.Mid-class mobile computers generally weigh close to 6 pounds (2.72 kg) with screens 15-17 inches (about 38-43 cm) measured diagonally. Keyboards are roomy, and the included DVD player might have Blu-ray™ capability. USB and Firewire® ports, built-in WiFi®, Ethernet, Bluetooth®, a Webcam, and a flash card reader have become standard in all but a few of the most affordable machines. Computers in this class have essentially become desktop replacements, blurring yet another distinction previously made to classify desktop mobiles as extremely heavy models geared towards features rather than portability, though some laptops are weightier.
@@ -397,5 +438,4 @@
         Within each of these classes — ultraportables, standard, mid-class and netbooks — there are models that fall between adjacent classes. An ultraportable at the heavier end of its class, for example, or a netbook at the larger and beefier end of its class might both be considered standard laptops by some. Models at the boundaries of classifications might be marketed as the more desirable classification. There are also additional classifications, such as rugged laptops for military or field use and the ultra-small subnetbooks, which can feature displays as small as 2.8 inches (7.11 cm). </p>
     </div>
     </body>
-</head>
     </html>
