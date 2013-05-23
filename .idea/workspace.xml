@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c4bd9e82-29fd-4984-957c-8ae30d18f1e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laptop.php" afterPath="$PROJECT_DIR$/laptop.php" />
+=======
+    <list default="true" id="86a02a9e-32b0-434e-9dc3-34e5f6048b5f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/customer_settings.php" afterPath="$PROJECT_DIR$/pages/customer_settings.php" />
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
+<<<<<<< HEAD
     <file path="/Dummy.txt" changelist="c4bd9e82-29fd-4984-957c-8ae30d18f1e8" time="1369271426435" ignored="false" />
     <file path="/uploadCustomerProfile.php" changelist="c4bd9e82-29fd-4984-957c-8ae30d18f1e8" time="1369020337683" ignored="false" />
     <file path="/Online_SellingDAO.php" changelist="c4bd9e82-29fd-4984-957c-8ae30d18f1e8" time="1369188700128" ignored="false" />
@@ -49,6 +55,10 @@
     <file path="/add_to_sales.php" changelist="c4bd9e82-29fd-4984-957c-8ae30d18f1e8" time="1369216192365" ignored="false" />
     <file path="/viewCart.php" changelist="c4bd9e82-29fd-4984-957c-8ae30d18f1e8" time="1369212606507" ignored="false" />
     <file path="/laptop.php" changelist="c4bd9e82-29fd-4984-957c-8ae30d18f1e8" time="1369275421859" ignored="false" />
+=======
+    <file path="/Dummy.txt" changelist="86a02a9e-32b0-434e-9dc3-34e5f6048b5f" time="1369240555241" ignored="false" />
+    <file path="/customer_settings.php" changelist="86a02a9e-32b0-434e-9dc3-34e5f6048b5f" time="1369240698721" ignored="false" />
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +78,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="customer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/customer.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,20 +114,34 @@
         <entry file="file://$PROJECT_DIR$/myhome.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="54.125">
+=======
+      <file leaf-file-name="add_item.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/add_item.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="33" selection-start="229" selection-end="229" vertical-scroll-proportion="-5.0">
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="product.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="3.75">
+=======
+      <file leaf-file-name="customer_settings.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/customer_settings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="0" selection-start="1556" selection-end="1556" vertical-scroll-proportion="-25.0">
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="online.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/online.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -148,15 +173,28 @@
         <entry file="file://$PROJECT_DIR$/laptop.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="426" column="47" selection-start="24889" selection-end="24889" vertical-scroll-proportion="0.53271025">
+=======
+      <file leaf-file-name="customer.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="camera.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/camera.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="37" column="19" selection-start="1065" selection-end="1065" vertical-scroll-proportion="-8.125">
+=======
+      <file leaf-file-name="customer.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/customer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="29" selection-start="374" selection-end="374" vertical-scroll-proportion="0.30837005">
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
               <folding />
             </state>
           </provider>
@@ -180,6 +218,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/DAO/function.php" />
         <option value="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
         <option value="$PROJECT_DIR$/customerViewItem.php" />
@@ -196,14 +235,18 @@
         <option value="$PROJECT_DIR$/js/customer.js" />
         <option value="$PROJECT_DIR$/add_to_sales.php" />
         <option value="$PROJECT_DIR$/laptop.php" />
+=======
+        <option value="$PROJECT_DIR$/pages/customer_settings.php" />
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="52" />
-    <option name="width" value="1440" />
-    <option name="height" value="824" />
+    <option name="x" value="-1" />
+    <option name="y" value="24" />
+    <option name="width" value="1442" />
+    <option name="height" value="853" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -221,17 +264,16 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
-      <showMembers ProjectPane="true" />
+      <showMembers />
       <showModules />
       <showLibraryContents ProjectPane="true" />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <autoscrollToSource ProjectPane="true" />
+      <autoscrollToSource />
       <autoscrollFromSource />
-      <sortByType ProjectPane="true" />
+      <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -278,6 +320,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+<<<<<<< HEAD
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="online-selling" />
@@ -352,73 +395,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+=======
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shoppingcart" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pages" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c4bd9e82-29fd-4984-957c-8ae30d18f1e8" name="Default" comment="" />
-      <created>1369017492351</created>
-      <updated>1369017492351</updated>
+      <changelist id="86a02a9e-32b0-434e-9dc3-34e5f6048b5f" name="Default" comment="" />
+      <created>1369240538294</created>
+      <updated>1369240538294</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="52" width="1440" height="824" extended-state="7" />
+=======
+    <frame x="-1" y="24" width="1442" height="853" extended-state="6" />
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964029" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.67238915" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32761088" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -485,20 +514,33 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/DAO/product&amp;ordering_transaction.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="157" column="35" selection-start="6777" selection-end="6777" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/add_item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="33" selection-start="229" selection-end="229" vertical-scroll-proportion="-5.0">
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/add_to_sales.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="4" selection-start="128" selection-end="128" vertical-scroll-proportion="-3.75">
+=======
+    <entry file="file://$PROJECT_DIR$/pages/Sample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0">
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/pages/register_new_customer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -577,6 +619,11 @@
     <entry file="file://$PROJECT_DIR$/customer/viewDisplay.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/pages/customer_settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1556" selection-end="1556" vertical-scroll-proportion="-25.0">
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
           <folding />
         </state>
       </provider>
@@ -584,6 +631,7 @@
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <folding />
         </state>
       </provider>
@@ -605,12 +653,15 @@
     <entry file="file://$PROJECT_DIR$/camera.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="19" selection-start="1065" selection-end="1065" vertical-scroll-proportion="-8.125">
+=======
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addMember.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -626,6 +677,9 @@
     <entry file="file://$PROJECT_DIR$/laptop.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="426" column="47" selection-start="24889" selection-end="24889" vertical-scroll-proportion="0.53271025">
+=======
+        <state line="14" column="29" selection-start="374" selection-end="374" vertical-scroll-proportion="0.30837005">
+>>>>>>> dca2f2699093ee07f2fe018658f245b831dea8ae
           <folding />
         </state>
       </provider>
