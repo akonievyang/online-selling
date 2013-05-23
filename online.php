@@ -1,13 +1,40 @@
 <!doctype HTML>
-<html>
+
+<html lang="en">
 <head>
+
+    <meta charset="utf-8" />
+    <title> just choose and click !! </title>
+    <script src="js/home.js"> </script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/jquery-ui-sample.css"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css"/>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
 	<body>
+    </head>
+
+    <script>
+    $(function() {
+        $( "#tabs" ).tabs();
+    });
+</script>
+
 <style>
-    #main {
+    #tabs {
     background-color: lavender;
     }
 </style>
-<div id="main">
+
+<body id="rl">
+    <center><div class="menu"> <a href="myhome.php"> <strong> Home </strong> </a> </div></center>
+    <div class="container">
+
+    <div id="tabs">
+<div id="tabs">
 <h2>Myphone-s60-bb-standby</h2>
 <center><img src="images/myphone-s60-bb-standby.jpg"/></center>
 <p>You can turn your Nokia S60 phone into an iPhone with MMMOOO’s My Phone. you can check out our review of MyPhone .FoneArena has teamed up with creators of this awesome application to giveaway 10 free copies to FoneArena readers.
@@ -437,7 +464,5 @@ You cannot fully say that this is just a myphone a919 downgrade as there are som
     Others: 	MP3/MP4 player, Yamaha amplifier, Sound recorder, Stereo FM radio, SRS WOW HD
     Accessories: 	Stereo Headset, USB Cable</p>
 
-
-</html>
 </body>
-</head>
+</html>
