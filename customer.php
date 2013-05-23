@@ -31,26 +31,26 @@ if(!isset($_SESSION['customer_id'])){
         <h1>The Best GADGETS</a></h1>
         <h2>we offer</h2>
 
-      <!--  <ul class="nav nav-tabs">
-            <li class="nav" id="cart"><a href="#">shop cart</a></li>
-            <li class="nav"><a href="#">Computer</a></li>
+       <ul class=".nav-container"">
+            <li class="menu" id="cart"><a href="#">shop cart</a></li>
+            <li class="menu"><a href="#">Computer</a></li>
 
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">  category </a>
+            <li class="menu">
+                <a  href="#">  category </a>
                 <ul class="dropdown-menu">
                     <li> <a href="#">Cellphones </a></li>
                     <li><a href="#"> Laptops </a></li>
                     <li><a href="#"> Cameras </a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">  category </a>
+            <li class="menu">
+                <a  href="#">  category </a>
                 <ul class="dropdown-menu">
                     <li><a href="?page=setting">Setting</a></li>
                     <li><a href="log_out_customer.php">Log out</a></li>
                 </ul>
             </li>
-       </ul> -->
+       </ul>
 
     </div>
 

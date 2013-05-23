@@ -53,8 +53,9 @@ body {
 /* navigation*/
 
 
-.nav-container ul li {
-    display: inline;
+.nav-container ul li.menu {
+    display: block;
+    padding: 0;
 }
 .nav-container li a {
     display: block;
@@ -64,8 +65,14 @@ body {
     text-align: center;
     text-decoration: none;
     z-index: 1000;
+
 }
-.nav-container li a:hover {
+.nav-container ul li:hover ul {
+    border: 0 none;
+    display: block;
+}
+
+/*.nav-container li a:hover {
     color: #FFFFFF;
 }
 .nav-container ul li ul {
@@ -75,10 +82,7 @@ body {
     position: absolute;
     top: 39.5px;
 }
-.nav-container ul li:hover ul {
-    border: 0 none;
-    display: block;
-}
+
 .nav-container ul li ul li {
 
     border-bottom: 0 none;
@@ -104,7 +108,7 @@ body {
     text-decoration: none;
     z-index: 1000;
 
-}
+}*/
 .nav-container ul li ul li a:hover {
     color: #FFFFFF;
 }

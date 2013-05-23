@@ -101,16 +101,12 @@
 
 
                     $stmt=$this->dbh->query(" SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
-                                            gadgets.price, picture.large_pic,gadgets.features
+                                            gadgets.price, picture.large_pic
                                             FROM item, gadgets, picture
                                             WHERE item.gadget_id = gadgets.gadget_id
                                             AND item.pic_id = picture.pic_id and item_id=$id
                                            ");
-                    echo "SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
-                                            gadgets.price, picture.large_pic,gadgets.features
-                                            FROM item, gadgets, picture
-                                            WHERE item.gadget_id = gadgets.gadget_id
-                                            AND item.pic_id = picture.pic_id and item_id=$id";
+
                     $rows=$stmt->fetch();
                     $image="uploaded_file/$rows[4]";
                     $price=$rows[3];
@@ -119,12 +115,11 @@
 
                     echo "<tr id='".$rows[0]."' >";
                      echo "<td>"."<img src='.$image.'/>"."<br/>".$rows[1]." ".$rows[2]."</td>";
-                     echo "<td>"."<input type = 'text' id='quantity'.$rows[0].'   value ='$quantity'
-                            onkeyup='get_cost_by_quantity(".$rows[0].",".$rows[3].",".$sum.")'>"."</td>";
-                     echo "<td>".$rows[3]."</td>";
-                     echo "<td>". $total_price="<p>"."&#8369;".money_format('%!.2n',$price)."</p>."."</td>";
+                     echo "<td>"."<input type = 'text' id='quantity'.$rows[0].'
+                            onkeyup='get_cost_by_quantity(".$rows[0].",".$rows[3].")'>"."</td>";
+                     echo "<td >"."<p>".$rows[3]."</p>"."</td>";
+                     echo "<td >"."<input type='text' id='choice_total_price'.$rows[0].' readonly='readonly'/>"."</td>";
                      echo "<td>"."<img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/>"."</td>";
-
                      echo "</tr>";
 
                 }
