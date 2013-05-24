@@ -15,11 +15,7 @@ li{
 	color: #145BF9;
 }
 
-.post {
-	margin-bottom: 2em;
-    background-color: #FFFFFF;
 
-}
 
 .post .meta {
 	padding: 5px 20px;
@@ -109,4 +105,23 @@ li{
 }
 #login_admin{
     margin-left: 50px;
+}
+
+.product{
+    padding: 0;
+    line-height: 50px;
+}
+
+.product ul{
+    width: 150px;
+    display:inline-block;
+}
+
+.product ul img{
+    width: 90px;
+    height: 100px;
+}
+.product li{
+    padding: 0;
+
 }

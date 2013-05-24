@@ -88,7 +88,7 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
                   <br/>
                     <div class="post">
                         <p class="meta">Products </p>
-                        <div class="product">
+                        <div class="product" >
 
                         </div>
 

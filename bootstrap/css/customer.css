@@ -63,4 +63,24 @@ form h4,.category h4 {
 form#imageform{
     display: none;
 }
+.product{
+    line-height: 50px;
+
+}
+
+.product ul{
+    width: 150px;
+    display:inline-block;
+}
+
+.product ul img{
+    width: 90px;
+    height: 100px;
+}
+.product li{
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
 

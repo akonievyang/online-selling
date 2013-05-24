@@ -27,34 +27,33 @@
         <h1>The Best Gadget</a></h1>
         <h2>we offer</h2>
 
-        <div class="topmenu">
-            <div class="menu" id="top_category">category</div>
-            <div class="menu">COmputer</div>
-            <div class="menu" id="top_profile" > profile info </div>
-
-            <div class="navigation">
-                <div class="category">
-                    <h4 style=" color: #FFFFFF;">Category</h4>
-                    <ul>
-                        <li id="li_item"><a href="?page=itemRecords">Item</a></li>
-                        <li id="li_customer"><a href="?page=customerRecords">Customer</a></li>
-                        <li id="li_sales"><a href="?page=salesRecords">Sales</a></li>
-
+        <div class="nav-container">
+            <ul >
+                <li class="menu" id="cart"><a href="#">shop cart</a></li>
+                <li class="menu"><a href="#">Computer</a></li>
+                <li class="menu">
+                    <a  href="#">  category </a>
+                    <ul >
+                        <li> <a href="#">Cellphones </a></li>
+                        <li><a href="#"> Laptops </a></li>
+                        <li><a href="#"> Cameras </a></li>
                     </ul>
-                </div>
-                <div class="profile">
+                </li>
 
-                    <ul>
-                        <li> <a href="pages/customer_settings.php"> Setting </a> </li>
-                        <li><a href="log-inAdmin.php">Log out</a></li>
-
+                <li class="menu">
+                    <a  href="#"> login </a>
+                    <ul >
+                        <li><a href="?page=setting">Setting</a></li>
+                        <li><a href="log_out_admin.php">Log out</a></li>
                     </ul>
-                </div>
-           </div>
+                </li>
+            </ul>
+        </div>
             <!--- end category --->
         </div>
 
     </div>
+
     <div class="overlay">
         <div class="add_item">
 
@@ -114,7 +113,9 @@
         <div class="main">
 
             <div class="content">
+
                     <?php
+                        include "pages/item_records.php";
                         if($_REQUEST['page']=='customerRecords'){
                             include "pages/customer_records.php";
                         }elseif($_REQUEST['page']=='itemRecords'){

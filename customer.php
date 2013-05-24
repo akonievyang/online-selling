@@ -139,6 +139,7 @@ if(!isset($_SESSION['customer_id'])){
 
                 </div>
             </div>
+
                 <?php
                     if($_REQUEST['page']=='setting'){
 
@@ -151,7 +152,10 @@ if(!isset($_SESSION['customer_id'])){
                     <div class="product">
 
                     </div>
-
+                    <div class="pagination">
+                            <input type="hidden" id="current_page"  value="0"/>
+                           <span class="customer_pager"></span>
+                    </div>
                 </div>
                 <div class="post">
                     <p class="meta">Top Product </p>

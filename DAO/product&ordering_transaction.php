@@ -142,6 +142,60 @@
             }
             $this->close();
         }
+        function display_customer_pager($per_page){
+            $this->open();
+
+
+            $stmt_count=$this->dbh->query("SELECT COUNT(item_id) from item LIMIT 0,$per_page");
+
+            $rows=$stmt_count->fetch();
+
+            $num_rows=$rows[0];
+            $total_page=ceil($num_rows/$per_page);
+            $list = " ";
+            for($ctr =1 ;$ctr<=$total_page;$ctr++){
+                if($ctr==1){
+                    $list .= "<li><a class=active href='javascript:void(0)'>".$ctr."</a></li>";
+                }else{
+                  $list .= "<li><a href='javascript:void(0)'>".$ctr."</a></li>";
+                }
+            }
+                echo "<ul>"."<li><a href='javascript:void(0)'>  &lsaquo; previous  </a> </li>".$list."<li><a href='javascript:void(0)'> next  &rsaquo; </a> </li>"."</ul>";
+
+
+            $this->close();
+
+        }
+        function Display_paginate_item($current_page){
+            $this->open();
+                $stmt=$this->dbh->query("SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
+                                                gadgets.price, picture.large_pic,gadgets.features
+                                                FROM item, gadgets, picture
+                                                WHERE item.gadget_id = gadgets.gadget_id
+                                                AND item.pic_id = picture.pic_id  LIMIT $current_page,4");
+            while($rows=$stmt->fetch()){
+                $status=true;
+
+                $image="uploaded_file/$rows[4]";
+                echo "<ul class='view_display' id='.$rows[0].'>";
+
+                echo "<li>"."<img src=".$image."  />"."</li>";
+                echo "<li>".$rows[1]." ".$rows[2]."</li>";
+                echo "<li>"."&#8369;".money_format('%!.2n',$rows[3])."</li>";
+                echo "<li>"."<input type='button' value='buy now'
+                    onclick=displayChoiceInfo(".$rows[0].") />"."</li>";
+                echo "</ul>";
+
+            }
+            if(!$status){
+                echo "<div > Not available </div>";
+
+            }
+
+
+
+            $this->close();
+        }
 
         function RemoveFromCArt($id){
             $this->open();
