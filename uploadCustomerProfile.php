@@ -5,7 +5,7 @@ include "DAO/Online_SellingDAO.php";
     $customer_id=$_SESSION['customer_id'];
     $path = "customer_profile/";
 
-    $valid_formats = array("jpg", "png", "gif", "bmp");
+    $valid_formats = array("jpg", "png", "gif", "bmp","jpeg");
     if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST")
     {
         $name = $_FILES['photoimg']['name'];

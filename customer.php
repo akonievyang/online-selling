@@ -58,8 +58,17 @@ if(!isset($_SESSION['customer_id'])){
 
     <div class="page">
         <div class="profile_pic">
-            <div id='preview' class="thumbnail"> </div> <p>edit profile</p>
+            <div id='preview' class="thumbnail"> </div> <p onclick='edit_profile()'>edit profile</p>
+            <form id="imageform"  method="post" enctype="multipart/form-data" action='uploadCustomerProfile.php' style="display: none;">
+                <p>Upload your image</p>
+                    <input type="file" name="photoimg" id="photoimg"  >
+                <br/>
+                <input type="submit" id="save_profile" class="btn btn-primary" value="save"/>
+            </form>
+
         </div>
+
+
     <div class="main">
         <div style="margin-bottom: 20px;">
             <input class="input-xxlarge" type="text" placeholder="What you want?:" id="search">
@@ -84,6 +93,8 @@ if(!isset($_SESSION['customer_id'])){
                     <span >Brand:<li id="choice_brand"></li> </span>
                     <br/>
                     <span >Price:<li id="choice_price"></li></span>
+                    <br/>
+                    <span >Status:<li id="choice_status"></li></span>
                 </div>
                     <div style="clear:both"></div>
                 </div>
@@ -105,6 +116,7 @@ if(!isset($_SESSION['customer_id'])){
             <div class="overlay">
                 <div class="shopping_cart">
                     <span style="float: right;" class="closed" ><img src='images/close.png' style="border :1px dashed #bbbbbb;"/></span>
+
                     <span id="successful"></span>
                     <input type="button" id="clear_list" class="btn" value="clear list"/>
                     <br/>
@@ -124,7 +136,7 @@ if(!isset($_SESSION['customer_id'])){
                     <form >
                         <div class="right" >
                             <label>Total Price:<input type="text" class="input-medium" id="total_all_item" readonly='readonly'/></label>
-                            <input type="button" class="btn btn-primary" id="check_out" value="check out"/>
+                            <input type="submit" class="btn btn-primary" id="check_out" value="check out"/>
                             <br/>
                             <label id="shop_more"  style="text-decoration: underline;" >or shop more?</label>
                         </div>
@@ -157,14 +169,6 @@ if(!isset($_SESSION['customer_id'])){
                            <span class="customer_pager"></span>
                     </div>
                 </div>
-                <div class="post">
-                    <p class="meta">Top Product </p>
-                    <div id="body">
-                    </div>
-
-                </div>
-                <br/>
-
 
         </div>
     </div>

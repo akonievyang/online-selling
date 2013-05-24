@@ -356,12 +356,14 @@ class OnlineSelling extends BaseDAO {
     function SearchItem($search){
         $this->open();
         $stmt=$this->dbh->prepare("SELECT item.item_id ,gadgets.*, picture.* from gadgets, item,picture where
-                                           gadgets.gadget_id=item.gadget_id and picture.pic_id=item.pic_id and gadgets.gadget_name  like '".$search."%'   ");
+                                           gadgets.gadget_id=item.gadget_id and picture.pic_id=item.pic_id and gadgets.gadget_name
+                                           like  '".$search."%'  or gadgets.brand  like  '".$search."%'  or gadgets.price  '".$search."%'   ");
         $stmt->execute();
         $status=false;
 
         while($rows=$stmt->fetch()){
             $status=true;
+
 
             $image="uploaded_file/$rows[10]";
             $name = explode(" ",$rows[1]);
@@ -374,6 +376,9 @@ class OnlineSelling extends BaseDAO {
             echo "<td>".$rows[7]."</td>";
             echo "<td><input type='button'  value='edit' onclick='Edit_item(".$rows[0].")'/>"."</td>";
             echo "</tr>";
+
+
+          
         }
         if(!$status){
             echo "<tr>";

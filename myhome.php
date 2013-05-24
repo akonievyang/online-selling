@@ -47,7 +47,7 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
             <div class="nav-container">
                 <ul >
                     <li class="menu">
-                        <a  href="#">  Profile Info </a>
+                        <a  href="#"> Login user </a>
                         <ul >
                             <li><a href="?page=admin_user">login admin</a></li>
                             <li><a href="?page=member">login member</a></li>
@@ -86,13 +86,16 @@ if(isset($_POST['user']) && isset($_POST['pass']) ){
                   ?>
 
                   <br/>
-                    <div class="post">
-                        <p class="meta">Products </p>
-                        <div class="product" >
-
-                        </div>
+                <div class="post">
+                    <p class="meta">Products </p>
+                    <div class="product">
 
                     </div>
+                    <div class="pagination">
+                        <input type="hidden" id="current_page"  value="0"/>
+                        <span class="customer_pager"></span>
+                    </div>
+                </div>
 
             </div>
             <!-- end content -->

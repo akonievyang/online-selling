@@ -79,7 +79,7 @@ body {
     color: #333333;
     font-size: 12px;
     font-weight: bold;
-    background: #b5ffe9;
+    background:-moz-linear-gradient(top,#B4F6FF 1px,#63D0FE 1px,#58B0E7);
     float:right;
     z-index: 10000;
 
@@ -93,7 +93,7 @@ body {
     color:#000;
 	font-weight: bold;
 	text-align: center;
-    z-index:0.1;
+    z-index:10000;
 
 }
 .nav-containerli a:hover{
@@ -196,11 +196,19 @@ img {
     height: 200px;
 }
 .choice_view{
+    display: none;
     width: 700px;
     padding: 0;
+    border:1px solid #dadada;
 }
+.choice_view span li{
+    text-decoration: none;
+    list-style: none;
+
+}
+
 .overlay{
-    display: none;
+
     top:0;
     position: fixed;
     width: 100%;
@@ -210,11 +218,12 @@ img {
 }
 
 .shopping_cart{
-    display: none;
-    background-color: #fff;
+    position:absolute;
+    background-color: #fff ;
     width: 775px;
     margin:50px 0 0 0px;
+    z-index: 1000;
+    overflow: hidden;
+
 }
-
-
 
