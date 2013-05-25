@@ -33,7 +33,7 @@
     </style>
 
     <body id="rl">
-    <center><div class="menu"> <a href="myhome.php"> <strong> Home </strong> </a> </div></center>
+    <center><div class="menu"> <a href="index.php"> <strong> Home </strong> </a> </div></center>
     <div class="container">
 
     <div id="tabs">

@@ -1,10 +1,20 @@
 
 <?php
-session_start();
+    include "DAO/accountDAO.php";
+    session_start();
 
-if(!isset($_SESSION['customer_id'])){
-    header("location: myhome.php");
-}
+    if(!isset($_SESSION['customer_id'])){
+        header("location: index.php");
+    }else{
+
+        $result=null;
+        $action = new Account();
+        $result=$action->SearchUser($_SESSION['customer_id']);
+
+        $_SESSION['user_name']=$result;
+
+
+    }
 ?>
 
 <!DOCTYPE HTML>
@@ -33,7 +43,7 @@ if(!isset($_SESSION['customer_id'])){
        <div class="nav-container">
            <ul >
                 <li class="menu" id="cart"><a href="#">shop cart</a></li>
-                <li class="menu"><a href="#">Computer</a></li>
+
                 <li class="menu">
                     <a  href="#">  category </a>
                     <ul >
@@ -44,7 +54,7 @@ if(!isset($_SESSION['customer_id'])){
                 </li>
 
                 <li class="menu">
-                    <a  href="#"> login </a>
+                    <a  href="#"> <?php echo $_SESSION['user_name']?></a>
                     <ul >
                         <li><a href="?page=setting">Setting</a></li>
                         <li><a href="log_out_customer.php">Log out</a></li>
@@ -71,7 +81,7 @@ if(!isset($_SESSION['customer_id'])){
 
     <div class="main">
         <div style="margin-bottom: 20px;">
-            <input class="input-xxlarge" type="text" placeholder="What you want?:" id="search">
+            <input class="search_item input-xxlarge" type="text" placeholder="What you want?" >
             <input type="button" class="btn btn-primary btn-large" value="Search"/>
         </div>
 
@@ -133,7 +143,7 @@ if(!isset($_SESSION['customer_id'])){
                         </tr>
                     </table>
                     <br/>
-                    <form >
+                    <form id="form_checkOut">
                         <div class="right" >
                             <label>Total Price:<input type="text" class="input-medium" id="total_all_item" readonly='readonly'/></label>
                             <input type="submit" class="btn btn-primary" id="check_out" value="check out"/>

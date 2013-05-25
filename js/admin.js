@@ -1,9 +1,7 @@
 $(function(){
-
     SearchItem();
     SearchMember();
-
-
+    viewSales();
     $("#closed").click(function(){
 
         $(".overlay").slideUp();
@@ -11,12 +9,11 @@ $(function(){
     });
 
 
-
-
     $("#display_add").click(function(){
 
         $(".overlay").slideDown();
     });
+
     $("#top_category").hover(function(){
         $("#top_category").css({"background-color" : "#ffffff"});
         $(".navigation").slideDown(1000);
@@ -35,17 +32,16 @@ $(function(){
 
     });
 
-
    $("#li_item").click(function(){
         $(".view_item").show();
          $(".member").hide();
     });
 
     $("#li_customer").click(function(){
-
         $(".view_item").hide();
         $(".member").show();
     });
+
     $('#photoimg').live('change', function(){
         $("#preview").html('');
         $("#preview").html('<img src="images/loader.gif" alt="Uploading...."/>');
@@ -69,7 +65,7 @@ $(function(){
 
         }
         if(status){
-            $(".warning").html("<h5>Some fields missing</h5>").fadeIn().fadeOut(5000).css({"color":"red"});
+            $(".warning").html("<h4>Some fields missing</h4>").fadeIn().fadeOut(5000).css({"color":"red"});
         }else{
 
             var obj = {"name":$("#name").val(),
@@ -131,6 +127,7 @@ $(function(){
                 success:function(data){
                     SearchItem();
                     $(".overlay").slideUp();
+                    $("#preview").html("");
 
                 },
                 error:function(data){
@@ -164,7 +161,7 @@ $(function(){
 });
 
 
-function DeleteItem(){
+    function DeleteItem(){
 
         var item_id=new Array();
         var tbod=document.getElementById("items");
@@ -196,7 +193,7 @@ function DeleteItem(){
     }
 
     function Edit_item(id){
-        alert(id)
+
         $(".overlay").slideDown();
         $.ajax({
             type:"POST",
@@ -204,16 +201,16 @@ function DeleteItem(){
             data:{"id":id},
             success:function(data){
 
-                console.log(data);
-                var obj = JSON.parse(data);
 
+                var obj = JSON.parse(data);
+                var filename=obj.filename;
                 $('#id').val(obj.item_id);
                 $('#name').val(obj.gadget_name);
                 $('#brand').val(obj.brand);
                 $('#features').val(obj.features);
                 $('#price').val(obj.price);
-                $('#photoimg').val(obj.pic);
-                $('#preview').html("<img src=+'uploaded_file/'+obj.pic");
+                $('#preview').html(obj.image);
+
 
             },
             error:function(data){
@@ -221,6 +218,20 @@ function DeleteItem(){
             }
         });
 
+    }
+    function viewSales(){
+
+        $.ajax({
+            type:"POST",
+            url:"viewSales.php",
+            data:{"search":$("#search_sales").val()},
+            success:function(data){
+                $("#tbod_sales").html(data);
+            },error:function(data){F
+                alert(data['statusText']+ " => " + data['status']);
+            }
+
+        });
     }
     function Number(){
         var status=/^[0-9]+$/;
@@ -269,7 +280,8 @@ function DeleteItem(){
             url:"search_item.php",
             data:{"search":$("#search").val()},
             success:function(data){
-                $("#items").html(data);
+
+               $("#items").html(data);
             },
             error:function(data){
                 alert(data);

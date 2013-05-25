@@ -4,7 +4,7 @@
 
         function DisplayChoiceInfo($id){
             $this->open();
-            $stmt=$this->dbh->query(" SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
+            $stmt=$this->dbh->query("  SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
                                         gadgets.price, picture.large_pic,gadgets.features,gadgets.quantity
                                         FROM item, gadgets, picture
                                         WHERE item.gadget_id = gadgets.gadget_id
@@ -24,7 +24,7 @@
 
              $item_info=array("item_id"=>$rows[0],"item_unit"=>$rows[1],
                  "item_brand"=>$rows[2],"item_price"=>"&#8369;".money_format('%!.2n',$rows[3]),
-                 "item_pic"=>$image,"item_features"=>$rows[6],"stock_status"=>$status,"stock_quantity"=>$rows[6]);
+                 "item_pic"=>$image,"item_features"=>$rows[5],"stock_status"=>$status,"stock_quantity"=>$rows[6]);
 
              echo json_encode($item_info);
 
@@ -99,11 +99,12 @@
                     $image="uploaded_file/$rows[4]";
                     $price=$rows[3];
                     $sum+=$price*$quantity;
+
                     $total_price_all_item="&#8369;".money_format('%!.2n',$sum);
 
-                    echo "<tr id='".$rows[0]."' >";
+                     echo "<tr id='".$rows[0]."' >";
                      echo "<td>"."<img src='.$image.'/>"."<br/>".$rows[1]." ".$rows[2]."</td>";
-                     echo "<td>"."<input type ='text' id='quantity'
+                     echo "<td>"."<input type ='text' id='quantity' value=$quantity
                             onkeyup='get_cost_by_quantity(".$rows[0].",".$rows[3].")'>"."</td>";
                      echo "<td>".$rows[3]."</td>";
                      echo "<td >"."<input type='text' id='choice_total_price'.$rows[0].' readonly='readonly'/>"."</td>";
@@ -192,15 +193,60 @@
 
             $this->open();
 
-                $sql = "INSERT INTO sales (item_id, customer_id, total_quantity,address) VALUES (?, ?, ?,?)";
-                $stmt=$this->dbh->prepare($sql);
-                $stmt -> bindParam(1, $item_id);
-                $stmt -> bindParam(2, $customer_id);
-                $stmt -> bindParam(3, $quantity);
-                $stmt -> bindParam(4, $address);
-                $stmt -> execute();
+                $sql = "select gadgets.gadget_id,gadgets.quantity from gadgets , item where gadgets.gadget_id=item.gadget_id and item_id=$item_id ";
+                $stmt_id=$this->dbh->prepare($sql);
+                $stmt_id -> execute();
+                $row=$stmt_id->fetch();
 
-                unset($_SESSION['cart']);
+                $sql = "Update gadgets set quantity=$row[1]-quantity where gadget_id=$row[0]";
+                $stmt_id=$this->dbh->prepare($sql);
+                $stmt_id -> execute();
+                if ($quantity>$row[1] ){
+                    echo "Quantity out of range !".$row[1];
+
+                }else{
+                    $sql = "INSERT INTO sales (item_id, customer_id, total_quantity,address) VALUES (?, ?, ?,?)";
+                    $stmt=$this->dbh->prepare($sql);
+                    $stmt -> bindParam(1, $item_id);
+                    $stmt -> bindParam(2, $customer_id);
+                    $stmt -> bindParam(3, $quantity);
+                    $stmt -> bindParam(4, $address);
+                    $stmt -> execute();
+                    unset($_SESSION['cart']);
+                }
+            $this->close();
+        }
+        function SearchGadgets($search){
+            $this->open();
+
+            $stmt=$this->dbh->prepare("SELECT item.item_id, gadgets.gadget_name,
+                                        gadgets.brand,gadgets.price, picture.large_pic FROM item, gadgets, picture
+                                        WHERE item.gadget_id = gadgets.gadget_id AND item.pic_id = picture.pic_id
+                                        AND gadget_name LIKE '".$search."%'  ");
+            $stmt->execute();
+
+            $status=false;
+            while($row=$stmt->fetch()){
+
+                $status=true;
+                $image="uploaded_file/$row[4]";
+                echo "<ul class='view_display' id='.$row[0].'>";
+
+                echo "<li>"."<img src=".$image."  />"."</li>";
+                echo "<li>".$row[1]." ".$row[2]."</li>";
+                echo "<li>"."&#8369;".money_format('%!.2n',$row[3])."</li>";
+                echo "<li>"."<input type='button' value='buy now'
+                    onclick=displayChoiceInfo(".$row[0].") />"."</li>";
+                echo "</ul>";
+
+
+            }
+            if(!$status){
+                echo "<div > Not available </div>";
+
+            }
+
+
             $this->close();
         }
 

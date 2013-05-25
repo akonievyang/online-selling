@@ -1,10 +1,22 @@
 
 <?php
+
+    include "DAO/accountDAO.php";
     session_start();
 
     if(!isset($_SESSION['admin_id'])){
-        header("location: myhome.php");
+        header("location: index.php");
+    }else{
+
+        $result=null;
+        $action = new Account();
+        $result=$action->Search_admin_user($_SESSION['admin_id']);
+
+        $_SESSION['admin_user']=$result;
+
     }
+
+
 ?>
 <!DOCTYPE html>
 
@@ -32,16 +44,16 @@
                 <li class="menu" id="cart"><a href="#">shop cart</a></li>
                 <li class="menu"><a href="#">Computer</a></li>
                 <li class="menu">
-                    <a  href="#">  category </a>
+                    <a  href="#">  Records </a>
                     <ul >
-                        <li> <a href="#">Cellphones </a></li>
-                        <li><a href="#"> Laptops </a></li>
-                        <li><a href="#"> Cameras </a></li>
+                        <li> <a href="?page=itemRecords">item</a></li>
+                        <li><a href="?page=salesRecords"> sales </a></li>
+                        <li><a href="?page=customerRecords"> customer </a></li>
                     </ul>
                 </li>
 
                 <li class="menu">
-                    <a  href="#"> login </a>
+                    <a  href="#"><?php echo  $_SESSION['admin_user'] ?></a>
                     <ul >
                         <li><a href="?page=setting">Setting</a></li>
                         <li><a href="log_out_admin.php">Log out</a></li>
@@ -72,7 +84,7 @@
                         <label>Brand</label>
                         <input type="text" class="input-medium"  id="brand" name='brand' required/>
                         <label>Features</label>
-                        <textarea rows="3" id="features" name='features' required>  </textarea>
+                        <textarea rows="3" cols="200"  id="features" name='features' style="width: 150px;" required>  </textarea>
                         <label>Price</label>
                         <input type="text" class="input-medium"  id="price" name='price' onkeyup="Number()" required/>
                         <br/>
@@ -109,23 +121,25 @@
         </div>
         <!--- end add_item ---->
     </div>
+
     <div class="page">
         <div class="main">
 
             <div class="content">
-
+                  
                     <?php
-                        include "pages/item_records.php";
+
                         if($_REQUEST['page']=='customerRecords'){
                             include "pages/customer_records.php";
-                        }elseif($_REQUEST['page']=='itemRecords'){
+                        }else if($_REQUEST['page']=='itemRecords'){
                             include "pages/item_records.php";
-                        }elseif($_REQUEST['page']=='salesRecords'){
+                        }else if($_REQUEST['page']=='salesRecords'){
                             include "pages/sales_records.php";
                         }
                     ?>
 
             </div>
+
             <!--- end content ---->
 
         </div>
