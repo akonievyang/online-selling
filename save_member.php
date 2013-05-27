@@ -13,7 +13,7 @@
 	$password = $_POST['password'];
 
 	$action = new Online_SellingDAO();
-	$action->edit($customer_id,$firstname,$middlename,$lastname,$age,$address,$gender,$username,$password);
+	$action->save_member($customer_id,$firstname,$middlename,$lastname,$age,$address,$gender,$username,$password);
 
 
 ?>

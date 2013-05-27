@@ -16,7 +16,7 @@
 
             $status=false;
             while($rows=$stmt->fetch()){
-                $status=true;
+                $status=true;x;
 
                 $image="uploaded_file/$rows[4]";
                 echo "<ul class='view_display' id='.$rows[0].'>";
