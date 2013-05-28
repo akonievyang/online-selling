@@ -16,7 +16,7 @@ class OnlineSelling extends BaseDAO {
     }
     function ViewSales($search){
         $this->open();
-            $stmt=$this->dbh->prepare(" SELECT s.sales_id,s.total_quantity,total_price,c.firstname,c.lastname,g.gadget_name,g.brand
+            $stmt=$this->dbh->prepare(" SELECT s.sales_id,s.total_quantity,c.firstname,c.lastname,g.gadget_name,g.brand
                                            from  sales as s , gadgets as g,customer as c, item as i
                                         where s.item_id = i.item_id AND i.gadget_id = g.gadget_id
                                             AND s.customer_id = c.customer_id
@@ -24,15 +24,17 @@ class OnlineSelling extends BaseDAO {
 
 
             $stmt->execute();
+
+
+        $stmt->execute();
                 $status=false;
                 while($rows=$stmt->fetch()){
                     $status=true;
 
                     echo "<tr id='.$rows[0].'>";
+                    echo "<td>".$rows[2]." ".$rows[3]."</td>";
                     echo "<td>".$rows[4]." ".$rows[5]."</td>";
-                    echo "<td>".$rows[6]." ".$rows[7]."</td>";
                     echo "<td>".$rows[1]."</td>";
-                    echo "<td>".$rows[2]."</td>";
                     echo "<td></td>";
                     echo "</tr>";
                 }
@@ -43,22 +45,7 @@ class OnlineSelling extends BaseDAO {
 
         $this->close();
     }
-    /*-----------------------------LogInAdmin-----------------------------------------------------*/
-    function LogInAdmin($username, $password){
 
-        $this->open();
-
-            $stmt=$this->dbh->prepare(" SELECT admin_ID from admin where userAdmin=?  and passAdmin=password(?) ");
-                $stmt->bindParam(1,$username);
-                $stmt->bindParam(2,$password);
-                $stmt->execute();
-
-                $row = $stmt->fetch();
-                return $row[0];
-
-        $this->close();
-
-    }
 
 
 
@@ -104,7 +91,9 @@ class OnlineSelling extends BaseDAO {
     }
     function RegisterCustomer($firstname, $middlename, $lastname, $address, $age, $gender, $contactNum, $username, $password){
         $this->open();
-        $stmt = $this->dbh->prepare("INSERT INTO customer VALUES (null,?, ?, ?, ?, ?, ?, ?,password(?),?) ");
+        $stmt = $this->dbh->prepare("INSERT INTO customer(firstname,middlename,lastname,gender
+                                    ,age,address,contact,password,username)
+                                    VALUES (?, ?, ?, ?, ?, ?, ?, ?,?) ");
 
 
         $stmt->bindParam(1, $firstname);
@@ -261,17 +250,20 @@ class OnlineSelling extends BaseDAO {
 
         $this->open();
 
-        $stmt=$this->dbh->prepare("SELECT item.item_id ,gadgets.*, picture.* from gadgets, item,picture where
-                                           gadgets.gadget_id=item.gadget_id and picture.pic_id=item.pic_id and item_id=?");
+        $stmt=$this->dbh->prepare("SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
+                                   gadgets.price, picture.large_pic,gadgets.features,gadgets.quantity
+                                   FROM item, gadgets, picture
+                                   WHERE item.gadget_id = gadgets.gadget_id
+                                   AND item.pic_id = picture.pic_id and item_id=?");
         $stmt->bindParam(1,$id);
         $stmt->execute();
         $rows=$stmt->fetch();
 
 
+        $image="<img src='uploaded_file/$rows[4]'>";
 
-
-        $data_retrieve=array('item_id'=> $rows[0],'gadget_name'=> $rows[2],'brand'=> $rows[3],
-            'features'=> $rows[6],'price'=> $rows[7],'pic'=>$rows[10]);
+        $data_retrieve=array('item_id'=> $rows[0],'gadget_name'=> $rows[1],'brand'=> $rows[2],
+            'features'=> $rows[5],'price'=> $rows[3],'filename'=>$rows[4],'image'=>$image);
 
         $item_data=json_encode($data_retrieve);
 
@@ -309,32 +301,7 @@ class OnlineSelling extends BaseDAO {
 
     }
     /*-----------------------------Log-In CUSTOMER-----------------------------------------------------*/
-    function loginMember($username,$password){
-        $this->open();
 
-        $stmt=$this->dbh->prepare("SELECT customer_id from customer where username=?  and password=password(?)  ");
-        $stmt->bindParam(1,$username);
-        $stmt->bindParam(2,$password);
-        $stmt->execute();
-
-        $row = $stmt->fetch();
-        return $row[0];
-
-        $this->close();
-    }
-    function SearchUser($username,$password){
-        $this->open();
-        $stmt=$this->dbh->prepare("SELECT customer_id from customer where username=?  and password=password(?)");
-        $stmt->bindParam(1,$username);
-        $stmt->bindParam(2,$password);
-        $stmt->execute();
-
-        $rows=$stmt->fetch();
-
-        echo $rows[0];
-
-        $this->close();
-    }
 
     function UploadItemPic($filename){
         $this->open();
@@ -353,17 +320,22 @@ class OnlineSelling extends BaseDAO {
 
 
     }
+
     function SearchItem($search){
         $this->open();
-        $stmt=$this->dbh->prepare("SELECT item.item_id ,gadgets.*, picture.* from gadgets, item,picture where
-                                           gadgets.gadget_id=item.gadget_id and picture.pic_id=item.pic_id and gadgets.gadget_name  like '".$search."%'   ");
+        $status=false;
+        $stmt=$this->dbh->prepare("SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
+                                   gadgets.price, picture.large_pic,gadgets.features,gadgets.quantity
+                                    FROM gadgets, item, picture
+                                    WHERE gadgets.gadget_id = item.gadget_id
+                                    AND picture.pic_id = item.pic_id
+                                    ");
         $stmt->execute();
         $status=false;
-
         while($rows=$stmt->fetch()){
             $status=true;
 
-            $image="uploaded_file/$rows[10]";
+            $image="uploaded_file/$rows[4]";
             $name = explode(" ",$rows[1]);
 
             echo "<tr id=".$rows[0].">";
@@ -383,6 +355,7 @@ class OnlineSelling extends BaseDAO {
         }
         $this->close();
     }
+
     function SearchMember($search){
         $this->open();
         $stmt=$this->dbh->prepare("SELECT * FROM customer WHERE firstname like '".$search."%' or

@@ -1,10 +1,11 @@
+
 <?php
 
 ?>
 
 <div class="view_item">
     <input type="text" class="search-query input-medium" id="search" placeholder="search"/>
-    <span><input type="button" id='display_add' value="add more item" class="btn btn-inverse"/></span>
+
     <hr>
 
     <table  class="table table-bordered table-hover ">
@@ -20,4 +21,5 @@
         </tr>
     </table>
     <input type="button" id="delete_item" value="delete" class="btn btn-primary"/>
+    <input type="button" id='display_add' value="add more item" class="btn btn-primary"/>
 </div>

@@ -2,7 +2,7 @@
 
 $path = "uploaded_file/";
 
-$valid_formats = array("jpg", "png", "gif", "bmp");
+$valid_formats = array("jpg", "png", "gif", "bmp","jpeg");
 if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST")
 {
     $name = $_FILES['photoimg']['name'];

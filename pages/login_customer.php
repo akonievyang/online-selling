@@ -1,10 +1,12 @@
 <?php
+
+
 ?>
     <ul>
     <li>
-        <h2>Login User</h2>
+        <h2>LOGIN MEMBER</h2>
         <fieldset>
-            <form method="POST" action="myhome.php">
+            <form method="POST" action="login_customer.php">
                 <label>Username:</label>
                 <input type="text" class="input_control" name="user"  />
                 <br/>

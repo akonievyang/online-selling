@@ -12,7 +12,6 @@
             <td>Age</td>
             <td>Address</td>
             <td>Contact</td>
-            <td>Action</td>
         </tr>
         <tr>
             <tbody id="member"></tbody>

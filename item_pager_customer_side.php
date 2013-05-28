@@ -1,10 +1,9 @@
 <?php
     include "DAO/product&ordering_transaction.php";
-
-    $search=$_POST['search'];
+    $per_page=$_POST['per_page'];
 
     $action= new Product_and_ordering_transaction();
-    $action->CustomerViewItem($search);
+   $action->display_customer_pager($per_page);
 
 
 ?>

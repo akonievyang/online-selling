@@ -1,10 +1,22 @@
 
 <?php
+
+    include "DAO/accountDAO.php";
     session_start();
 
     if(!isset($_SESSION['admin_id'])){
-        header("location: myhome.php");
+        header("location: index.php");
+    }else{
+
+        $result=null;
+        $action = new Account();
+        $result=$action->Search_admin_user($_SESSION['admin_id']);
+
+        $_SESSION['admin_user']=$result;
+
     }
+
+
 ?>
 <!DOCTYPE html>
 
@@ -27,34 +39,33 @@
         <h1>The Best Gadget</a></h1>
         <h2>we offer</h2>
 
-        <div class="topmenu">
-            <div class="menu" id="top_category">category</div>
-            <div class="menu">COmputer</div>
-            <div class="menu" id="top_profile" > profile info </div>
-
-            <div class="navigation">
-                <div class="category">
-                    <h4 style=" color: #FFFFFF;">Category</h4>
-                    <ul>
-                        <li id="li_item"><a href="?page=itemRecords">Item</a></li>
-                        <li id="li_customer"><a href="?page=customerRecords">Customer</a></li>
-                        <li id="li_sales"><a href="?page=salesRecords">Sales</a></li>
-
+        <div class="nav-container">
+            <ul >
+                <li class="menu" id="cart"><a href="#">shop cart</a></li>
+                <li class="menu"><a href="#">Computer</a></li>
+                <li class="menu">
+                    <a  href="#">  Records </a>
+                    <ul >
+                        <li> <a href="?page=itemRecords">item</a></li>
+                        <li><a href="?page=salesRecords"> sales </a></li>
+                        <li><a href="?page=customerRecords"> customer </a></li>
                     </ul>
-                </div>
-                <div class="profile">
+                </li>
 
-                    <ul>
-                        <li> <a href="pages/customer_settings.php"> Setting </a> </li>
-                        <li><a href="log-inAdmin.php">Log out</a></li>
-
+                <li class="menu">
+                    <a  href="#"><?php echo  $_SESSION['admin_user'] ?></a>
+                    <ul >
+                        <li><a href="pages/customer_settings.php">Setting</a></li>
+                        <li><a href="log_out_admin.php">Log out</a></li>
                     </ul>
-                </div>
-           </div>
+                </li>
+            </ul>
+        </div>
             <!--- end category --->
         </div>
 
     </div>
+
     <div class="overlay">
         <div class="add_item">
 
@@ -73,7 +84,7 @@
                         <label>Brand</label>
                         <input type="text" class="input-medium"  id="brand" name='brand' required/>
                         <label>Features</label>
-                        <textarea rows="3" id="features" name='features' required>  </textarea>
+                        <textarea rows="3" cols="200"  id="features" name='features' style="width: 150px;" required>  </textarea>
                         <label>Price</label>
                         <input type="text" class="input-medium"  id="price" name='price' onkeyup="Number()" required/>
                         <br/>
@@ -110,21 +121,25 @@
         </div>
         <!--- end add_item ---->
     </div>
+
     <div class="page">
         <div class="main">
 
             <div class="content">
+                  
                     <?php
+
                         if($_REQUEST['page']=='customerRecords'){
                             include "pages/customer_records.php";
-                        }elseif($_REQUEST['page']=='itemRecords'){
+                        }else if($_REQUEST['page']=='itemRecords'){
                             include "pages/item_records.php";
-                        }elseif($_REQUEST['page']=='salesRecords'){
+                        }else if($_REQUEST['page']=='salesRecords'){
                             include "pages/sales_records.php";
                         }
                     ?>
 
             </div>
+
             <!--- end content ---->
 
         </div>

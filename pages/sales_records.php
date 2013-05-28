@@ -11,7 +11,6 @@
             <td>customer</td>
             <td>item</td>
             <td>total quantity</td>
-            <td>total price</td>
             <td></td>
         <tr>
             <tbody id="tbod_sales"></tbody>

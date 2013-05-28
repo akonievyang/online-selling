@@ -2,11 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39d67450-f318-4224-9917-25780f623785" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/customer_records.php" afterPath="$PROJECT_DIR$/pages/customer_records.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_member.php" afterPath="$PROJECT_DIR$/edit_member.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer_profile/QP29-myphone.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer_profile/QT7-myphone.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer_profile/QTV20-myphone.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer_profile/QV27-Duo-myphone.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer_profile/q22 duo myphone (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer_profile/rf.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/samsung-4894-02795-1-zoom.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DAO/accountDAO.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/css/choice.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/choice_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clear_cart.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/item_pager_customer_side.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login_admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login_customer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginate_item.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/update_item_choice_quantity.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DAO/function.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sample.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/camera.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/home.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log-inAdmin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/online_selling.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/product_view.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/shooping_cart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/saveto.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/customerViewItem.php" afterPath="$PROJECT_DIR$/search_gadgets.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/display_choice_info.phtml" afterPath="$PROJECT_DIR$/display_choice_info.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myhome.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/icon.png" afterPath="$PROJECT_DIR$/images/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_file/myphone10.jpg" afterPath="$PROJECT_DIR$/uploaded_file/myphone10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" afterPath="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Sample.php" afterPath="$PROJECT_DIR$/pages/Sample.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Settings.js" afterPath="$PROJECT_DIR$/js/Settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_to_sales.php" afterPath="$PROJECT_DIR$/add_to_sales.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/admin.css" afterPath="$PROJECT_DIR$/bootstrap/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin.js" afterPath="$PROJECT_DIR$/js/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajaximage.php" afterPath="$PROJECT_DIR$/ajaximage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/customer.css" afterPath="$PROJECT_DIR$/bootstrap/css/customer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/customer.js" afterPath="$PROJECT_DIR$/js/customer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer.php" afterPath="$PROJECT_DIR$/customer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/design_model.css" afterPath="$PROJECT_DIR$/bootstrap/css/design_model.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/item_records.php" afterPath="$PROJECT_DIR$/pages/item_records.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laptop.php" afterPath="$PROJECT_DIR$/laptop.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log_out_admin.php" afterPath="$PROJECT_DIR$/log_out_admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log_out_customer.php" afterPath="$PROJECT_DIR$/log_out_customer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/login_admin.php" afterPath="$PROJECT_DIR$/pages/login_admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/login_customer.php" afterPath="$PROJECT_DIR$/pages/login_customer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/myhome.css" afterPath="$PROJECT_DIR$/bootstrap/css/myhome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/online.php" afterPath="$PROJECT_DIR$/online.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/product&amp;ordering_transaction.php" afterPath="$PROJECT_DIR$/DAO/product&amp;ordering_transaction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/save_member.php" afterPath="$PROJECT_DIR$/save_member.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.php" afterPath="$PROJECT_DIR$/product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/register_new_customer.php" afterPath="$PROJECT_DIR$/pages/register_new_customer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/sales_records.php" afterPath="$PROJECT_DIR$/pages/sales_records.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadCustomerProfile.php" afterPath="$PROJECT_DIR$/uploadCustomerProfile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewCart.php" afterPath="$PROJECT_DIR$/viewCart.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
@@ -101,8 +155,13 @@
       <file leaf-file-name="customer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/customer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1369637431673" expanded="true" signature="126:1273" placeholder="{...}" />
+                <marker date="1369637431673" expanded="true" signature="3991:4958" placeholder="{&quot;type&quot;: &quot;POST&quot;...}" />
+                <marker date="1369637431673" expanded="true" signature="4612:4947" placeholder="{...}" />
+                <marker date="1369637431673" expanded="true" signature="8851:10281" placeholder="{&quot;type&quot;: &quot;POST&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,7 +187,7 @@
       <file leaf-file-name="item_records.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/item_records.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="25" selection-start="408" selection-end="408" vertical-scroll-proportion="-8.75">
+            <state line="14" column="25" selection-start="306" selection-end="306" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
@@ -178,8 +237,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="52" />
+    <option name="x" value="12" />
+    <option name="y" value="80" />
     <option name="width" value="1440" />
     <option name="height" value="880" />
   </component>
@@ -291,8 +350,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="52" width="1440" height="880" extended-state="1" />
-    <editor active="true" />
+    <frame x="12" y="80" width="1440" height="880" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -374,11 +433,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/product_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/register_new_customer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -392,20 +446,6 @@
     <entry file="file://$PROJECT_DIR$/pages/Sample.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="29.041666" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/shooping_cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_choice_info.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/edit_member.php">
@@ -452,7 +492,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/item_records.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="408" selection-end="408" vertical-scroll-proportion="-8.75">
+        <state line="14" column="25" selection-start="306" selection-end="306" vertical-scroll-proportion="-8.75">
           <folding />
         </state>
       </provider>
@@ -466,8 +506,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/customer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1369637431673" expanded="true" signature="126:1273" placeholder="{...}" />
+            <marker date="1369637431673" expanded="true" signature="3991:4958" placeholder="{&quot;type&quot;: &quot;POST&quot;...}" />
+            <marker date="1369637431673" expanded="true" signature="4612:4947" placeholder="{...}" />
+            <marker date="1369637431673" expanded="true" signature="8851:10281" placeholder="{&quot;type&quot;: &quot;POST&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>

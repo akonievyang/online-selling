@@ -1,6 +1,6 @@
 
 body {
-    background: none repeat scroll 0 0 #4C4C4C;
+    background: none repeat 0 0 #4C4C4C;
     color: #6C7496;
     font-family: Verdana,Arial,Helvetica,sans-serif;
     font-size: 13px;
@@ -52,61 +52,86 @@ body {
 }
 /* navigation*/
 
+.nav-container{
+    position: relative;
+    display: inline-block;
+    height: 22px;
+    margin-bottom: 100px;
+    width: 100%;
+    text-decoration: none;
+    margin-right: 15px;
+    font-family: arial,helvitica,serif,sans-serif;
+    text-transform: uppercase;
 
-.nav-container ul li {
-    display: inline;
+}
+.nav-container ul{
+    margin-top: 0;
+    list-style: none;
+
+}
+
+.nav-container li{
+    position:relative;
+    display:inline-block;
+    border-left: 1px solid #CCCCCC ;
+    border-bottom: 0 none;
+    border-top: 1px solid #CCCCCC;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    background:-moz-linear-gradient(top,#B4F6FF 1px,#63D0FE 1px,#58B0E7);
+    float:right;
+    z-index: 10000;
+
 }
 .nav-container li a {
     display: block;
-    font-weight: bold;
-    padding: 14px 43px 13px 44px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    z-index: 1000;
+	text-decoration: none;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 0;
+	position:relative;
+    color:#000;
+	font-weight: bold;
+	text-align: center;
+    z-index:10000;
+
 }
-.nav-container li a:hover {
-    color: #FFFFFF;
-}
-.nav-container ul li ul {
-    background: #FFFFFF;
+.nav-containerli a:hover{
+    color:#000;
+ }
+.nav-container ul li ul{
     display: none;
-    padding: 1px 0 0;
-    position: absolute;
     top: 39.5px;
+    padding: 1px 0 0 0;
+    position: absolute;
 }
-.nav-container ul li:hover ul {
-    border: 0 none;
+.nav-container ul li:hover ul{
     display: block;
+    border: 0 none;
 }
-.nav-container ul li ul li {
+.nav-container ul li ul li{
 
     border-bottom: 0 none;
     display: block;
-    font-family: arial,helvitica,serif,sans-serif;
     font-size: 12px;
     height: 27px;
     margin: 0;
     padding: 0;
     position: relative;
-    width: 300px;
+    width: 250px;
 }
-.nav-container ul li ul li:hover {
-    background: #bbbbbb;
-}
-.nav-container ul li ul li a {
-    color: #387038;
-    display: block;
+
+.nav-container ul li ul li a{
+    font-weight: normal;
+    color: #0088cc;
     font-weight: bold;
-    padding: 6px 10px 10px;
+    display: block;
+    padding: 10px;
     position: relative;
     text-align: start;
-    text-decoration: none;
-    z-index: 1000;
-
 }
-.nav-container ul li ul li a:hover {
-    color: #FFFFFF;
+.nav-container ul li ul li a:hover{
+    color: #fff;
 }
 
 
@@ -127,12 +152,12 @@ h1, h2{
 
     color: #846CCB;
 }
+
 h1, h2,h4 {
     margin-top: 0;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-weight: normal;
 }
-
 h1 {
     letter-spacing: -1px;
     font-size: 2.4em;
@@ -151,29 +176,54 @@ form input{
     padding: 0px;
 }
 
-
-
 .main{
     padding: 20px;
 }
 
-.product{
-    line-height: 50px;
 
-}
-.product ul{
-    width: 150px;
-    height: 150px;
-    display:inline-block;
-}
-
-.product ul img{
-    width: 90px;
-    height: 100px;
-}
-.product ul li{
-
-}
 img {
     border: none;
 }
+
+#choice_picture{
+    float:left;
+    width:250px;
+    height:250px;
+}
+#choice_picture img{
+    width: 200px;
+    height: 200px;
+}
+.choice_view{
+    display: none;
+    width: 700px;
+    padding: 0;
+    border:1px solid #dadada;
+}
+.choice_view span li{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.overlay{
+    display: none;
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(225,225,225, .50);
+    }
+.shopping_cart{
+    background-color: #fff ;
+    width: 775px;
+    margin: 0 auto;
+    margin-top:250px;
+    z-index: 1000;
+    overflow: scroll;
+
+
+
+}
+
