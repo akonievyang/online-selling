@@ -32,6 +32,7 @@
                     </li>
                     <li class="menu" id="cart"><a href="#">shop cart</a></li>
                     <li class="menu"><a href="#">Computer</a></li>
+
                     <li class="menu">
                         <a  href="#">  category </a>
                         <ul >
@@ -40,6 +41,7 @@
                             <li><a href="#"> Cameras </a></li>
                         </ul>
                     </li>
+                    <li class="menu" id="cart"><a href="?page=product">Home</a></li>
 
 
                 </ul>
@@ -62,20 +64,15 @@
                         }else if($_REQUEST['page']=='register'){
                             include "pages/register_new_customer.php";
 
+                        }else if($_REQUEST['product']){
+                            include "pages/product.php";
+                        }else{
+                            include "pages/product.php";
                         }
                   ?>
 
                   <br/>
-                <div class="post">
-                    <p class="meta">Products </p>
-                    <div class="product">
 
-                    </div>
-                    <div class="pagination">
-                        <input type="hidden" id="current_page"  value="0"/>
-                        <span class="customer_pager"></span>
-                    </div>
-                </div>
 
             </div>
             <!-- end content -->

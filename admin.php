@@ -126,7 +126,7 @@
         <div class="main">
 
             <div class="content">
-                  
+
                     <?php
 
                         if($_REQUEST['page']=='customerRecords'){
@@ -135,6 +135,8 @@
                             include "pages/item_records.php";
                         }else if($_REQUEST['page']=='salesRecords'){
                             include "pages/sales_records.php";
+                        }else{
+                            include "pages/item_records.php";
                         }
                     ?>
 
