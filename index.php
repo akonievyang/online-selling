@@ -31,7 +31,7 @@
                 </ul>
             </li>
             <li class="menu" id="cart"><a href="#">shop cart</a></li>
-            <li class="menu"><a href="#">Computer</a></li>
+
 
             <li class="menu">
                 <a  href="#">  category </a>
