@@ -1,5 +1,6 @@
 
 $(function(){
+
     display_limit_item();
     display_pager();
     CustomerPic();
@@ -373,17 +374,18 @@ $(function(){
         })
     }
 
-    function display_limit_item(){
+   function display_limit_item(){
         var current_page=$("#current_page").val();
         var per_page=4;
         var data={"current_page":current_page*per_page};
         var view_data=ajax_request("paginate_item.php",data,"catch_data");
             view_data.success(function(data){
-
+                console.log(JSON.stringify(data));
                 $(".product").html(data);
             });
     }
-    function display_pager(){
+   function display_pager(){
+
         var per_page=4;
         var data={"per_page":per_page};
         var pager=ajax_request("item_pager_customer_side.php",data,"catch_data");
