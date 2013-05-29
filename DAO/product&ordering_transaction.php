@@ -2,6 +2,41 @@
     include "BaseDAO.php";
     class Product_and_ordering_transaction extends BaseDAO{
 
+<<<<<<< HEAD
+
+        function CustomerViewItem($search){
+            $this->open();
+            $stmt=$this->dbh->prepare(" SELECT item.item_id, gadgets.gadget_name, gadgets.brand,
+                                                gadgets.price, picture.large_pic,gadgets.features
+                                                FROM item, gadgets, picture
+                                                WHERE item.gadget_id = gadgets.gadget_id
+                                                AND item.pic_id = picture.pic_id
+                                               ");
+            $stmt->execute();
+
+
+            $status=false;
+            while($rows=$stmt->fetch()){
+                $status=true;x;
+
+                $image="uploaded_file/$rows[4]";
+                echo "<ul class='view_display' id='.$rows[0].'>";
+                echo "<li>"."<img src=".$image."  />"."</li>";
+                echo "<li>"."<h5>$rows[1]</h5>"." "."<h6>$rows[2]</h6>"."</li>";
+                echo "<li>"."<h6>"."&#8369;".money_format('%!.2n',$rows[3])."</h5>"."</li>";
+                echo "<li>"."<input type='button' value='buy now'
+                    onclick=displayChoiceInfo(".$rows[0].") />"."</li>";
+                echo "</ul>";
+
+            }
+            if(!$status){
+                echo "<div > Not available </div>";
+
+            }
+            $this->close();
+        }
+=======
+>>>>>>> d9f07b97d829da13851fc0bf1d5e5e3d533793c7
         function DisplayChoiceInfo($id){
             $this->open();
             $stmt=$this->dbh->query("  SELECT item.item_id, gadgets.gadget_name, gadgets.brand,

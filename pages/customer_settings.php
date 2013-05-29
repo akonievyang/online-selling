@@ -42,29 +42,29 @@
                     <li><a href="#tabs-3"> Profile Settings </a></li>
                 </ul>
                 <div id="tabs-1">
-                    <h2>Personal Settings</h2>
+                   
+                        <h2>Personal Settings</h2>
 
-                    <label>Firstname</label>
-                    <input type="text" name="firstname"/>
-                    <label>Middlename</label>
-                    <input type="text" name="middlename"/>
-                    <label>Lastname</label>
-                    <input type="text" name="lastname"/>
-                    <label>Age</label>
-                    <input type="text" name="age"/>
-                    <label>Gender</label>
-                    <select name="gender">
-                        <option>Male</option>
-                        <option>Female</option>
-                    </select>
-                    <label>Address</label>
-                    <input type="text" name="address"/>
-                    <label>Contact</label>
-                    <input type="text" name="contact"/>
+                            <label>Firstname</label>
+                            <input type="text" name="firstname"/>
+                            <label>Middlename</label>
+                            <input type="text" name="middlename"/>
+                            <label>Lastname</label>
+                            <input type="text" name="lastname"/>
+                            <label>Age</label>
+                            <input type="text" name="age"/>
+                            <label>Gender</label>
+                            <select name="gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                            <label>Address</label>
+                            <input type="text" name="address"/>
+                            <label>Contact</label>
+                            <input type="text" name="contact"/>
 
-                    <input id="saveto" type="submit" value="save" />
-                    </form>
-
+                            <input id="saveto" type="submit" value="save" />
+                            
                 </div>
                 <div id="tabs-2">
                     <h2>Account Settings</h2>

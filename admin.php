@@ -55,7 +55,7 @@
                 <li class="menu">
                     <a  href="#"><?php echo  $_SESSION['admin_user'] ?></a>
                     <ul >
-                        <li><a href="?page=setting">Setting</a></li>
+                        <li><a href="pages/customer_settings.php">Setting</a></li>
                         <li><a href="log_out_admin.php">Log out</a></li>
                     </ul>
                 </li>
