@@ -62,7 +62,7 @@
                     }else if($_REQUEST['page']=='register'){
                         include "pages/register_new_customer.php";
 
-                    }else if($_REQUEST['product']){
+                    }else{
                         include "pages/product.php";
                     }
                 }else{

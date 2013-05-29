@@ -123,7 +123,7 @@ $(function(){
         var next=($(".customer_pager ul li").length)-1;
         var selected_page=$(this).html();
         var current_page=parseInt($("#current_page").val());
-      
+
 
         if(li_index==0){
             if(current_page != 0){
