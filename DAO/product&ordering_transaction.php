@@ -136,11 +136,12 @@
 
                     $total_price_all_item="&#8369;".money_format('%!.2n',$sum);
 
+
                      echo "<tr id='".$rows[0]."' >";
                      echo "<td>"."<img src='.$image.'/>"."<br/>".$rows[1]." ".$rows[2]."</td>";
                      echo "<td>"."<input type ='text' id='quantity' value=$quantity
                             onkeyup='get_cost_by_quantity(".$rows[0].",".$rows[3].")'>"."</td>";
-                     echo "<td>".$rows[3]."</td>";
+                     echo "<td>"."&#8369;".money_format('%!.2n',$rows[3])."</td>";
                      echo "<td >"."<input type='text' id='choice_total_price'.$rows[0].' readonly='readonly'/>"."</td>";
                      echo "<td>"."<img src='images/remove.png' onclick='removeFromCArt(".$rows[0].")'/>"."</td>";
                      echo "</tr>";
