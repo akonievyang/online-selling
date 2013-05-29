@@ -388,7 +388,6 @@ $(function(){
         var data={"per_page":per_page};
         var pager=ajax_request("item_pager_customer_side.php",data,"catch_data");
             pager.success(function(data){
-
             $(".customer_pager").html(data);
 
         });

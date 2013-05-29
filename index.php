@@ -36,9 +36,9 @@
                     <li class="menu">
                         <a  href="#">  category </a>
                         <ul >
-                            <li> <a href="product.php">Cellphones </a></li>
-                            <li><a href="laptop.php"> Laptops </a></li>
-                            <li><a href="camera.php"> Cameras </a></li>
+                            <li> <a href="#">Cellphones </a></li>
+                            <li><a href="#"> Laptops </a></li>
+                            <li><a href="#"> Cameras </a></li>
                         </ul>
                     </li>
                     <li class="menu" id="cart"><a href="?page=product">Home</a></li>
@@ -54,6 +54,7 @@
         <div class="page">
             <div id="content">
                   <?php
+                include "pages/product.php";
                         if($_REQUEST['page']=='register_new_user'){
                             include "pages/register_new_customer.php";
 
@@ -66,9 +67,9 @@
 
                         }else if($_REQUEST['product']){
                             include "pages/product.php";
-                        }else{
+                        }/*else{
                             include "pages/product.php";
-                        }
+                        }*/
                   ?>
 
                   <br/>
@@ -97,7 +98,21 @@
                             <li>April 2007 (30)</li>
                         </ul>
                     </li>
-                    
+                    <li>
+                        <h2>Categories</h2>
+
+                        <ul>
+                            <li> <a href="product.php"> <strong> Cellphones </strong> </a></li>
+                            <li> <a href="laptop.php"> <strong> Laptops </strong> </a></li>
+                            <li> <a href="camera.php"> <strong> Cameras' </strong> </a></li>
+
+                        </ul>
+                            <div id="Cellphone">
+                            <div id="Computer">
+
+                            </div>
+
+                    </li>
                 </ul>
             </div>
             <!-- end sidebar -->

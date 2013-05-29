@@ -2,26 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05895178-e2a4-457f-953b-c0aa2ca8e8c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/1-5-2011msigt783-1325782097.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/ASUS-Eee-PC-1215B.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/hp-laptop-computers-repairs.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/samsung-4914-91795-4-zoom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_file/small_Dell-XPS-13-2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/customer_records.php" afterPath="$PROJECT_DIR$/pages/customer_records.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/customer_settings.php" afterPath="$PROJECT_DIR$/pages/customer_settings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_member.php" afterPath="$PROJECT_DIR$/edit_member.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/customer.js" afterPath="$PROJECT_DIR$/js/customer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/item_records.php" afterPath="$PROJECT_DIR$/pages/item_records.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAO/product&amp;ordering_transaction.php" afterPath="$PROJECT_DIR$/DAO/product&amp;ordering_transaction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/save_member.php" afterPath="$PROJECT_DIR$/save_member.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/product.php" afterPath="$PROJECT_DIR$/pages/product.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="online-selling.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="05895178-e2a4-457f-953b-c0aa2ca8e8c4" time="1369796147723" ignored="false" />
-    <file path="/customer.js" changelist="05895178-e2a4-457f-953b-c0aa2ca8e8c4" time="1369472427407" ignored="false" />
+    <file path="/customer.js" changelist="05895178-e2a4-457f-953b-c0aa2ca8e8c4" time="1369797174018" ignored="false" />
     <file path="/update_item_choice_quantity.php" changelist="05895178-e2a4-457f-953b-c0aa2ca8e8c4" time="1369383665217" ignored="false" />
     <file path="/customer.php" changelist="05895178-e2a4-457f-953b-c0aa2ca8e8c4" time="1369471254173" ignored="false" />
     <file path="/product&amp;ordering_transaction.php" changelist="05895178-e2a4-457f-953b-c0aa2ca8e8c4" time="1369470457687" ignored="false" />
@@ -51,7 +40,7 @@
     <file path="/register.php" changelist="05895178-e2a4-457f-953b-c0aa2ca8e8c4" time="1369472124546" ignored="false" />
     <file path="/register_new_customer.php" changelist="05895178-e2a4-457f-953b-c0aa2ca8e8c4" time="1369472450903" ignored="false" />
     <file path="/index.php" changelist="05895178-e2a4-457f-953b-c0aa2ca8e8c4" time="1369796498803" ignored="false" />
-    <file path="/product.php" changelist="05895178-e2a4-457f-953b-c0aa2ca8e8c4" time="1369796315342" ignored="false" />
+    <file path="/product.php" changelist="05895178-e2a4-457f-953b-c0aa2ca8e8c4" time="1369797002801" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,19 +60,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="product.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="84" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.764622">
+            <state line="4" column="0" selection-start="31" selection-end="273" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/product.php">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="252" selection-end="252" vertical-scroll-proportion="-7.5">
+            <state line="56" column="44" selection-start="2040" selection-end="2040" vertical-scroll-proportion="-1.7083334">
+              <folding>
+                <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customer.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/customer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="379" column="36" selection-start="9568" selection-end="9568" vertical-scroll-proportion="0.6275862">
               <folding />
             </state>
           </provider>
@@ -116,13 +116,13 @@
         <option value="$PROJECT_DIR$/customer.php" />
         <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/pages/register_new_customer.php" />
-        <option value="$PROJECT_DIR$/js/customer.js" />
         <option value="$PROJECT_DIR$/js/admin.js" />
         <option value="$PROJECT_DIR$/DAO/Online_SellingDAO.php" />
         <option value="$PROJECT_DIR$/pages/sales_records.php" />
         <option value="$PROJECT_DIR$/admin.php" />
         <option value="$PROJECT_DIR$/pages/product.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/customer.js" />
       </list>
     </option>
   </component>
@@ -210,6 +210,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-selling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -371,7 +385,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/customer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="30" selection-start="4755" selection-end="4768" vertical-scroll-proportion="2.0097244" />
+        <state line="145" column="30" selection-start="4755" selection-end="4768" vertical-scroll-proportion="2.0097244">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/item_records.php">
@@ -394,13 +410,6 @@
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="3" selection-start="222" selection-end="222" vertical-scroll-proportion="0.20930232" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/customer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="365" column="0" selection-start="9113" selection-end="9113" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/sales_records.php">
@@ -440,14 +449,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="252" selection-end="252" vertical-scroll-proportion="-7.5">
+        <state line="4" column="0" selection-start="31" selection-end="273" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="84" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.764622">
+        <state line="56" column="44" selection-start="2040" selection-end="2040" vertical-scroll-proportion="-1.7083334">
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/customer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="379" column="36" selection-start="9568" selection-end="9568" vertical-scroll-proportion="0.6275862">
           <folding />
         </state>
       </provider>
