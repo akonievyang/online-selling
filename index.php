@@ -54,22 +54,26 @@
         <div class="page">
             <div id="content">
                   <?php
-                include "pages/product.php";
-                        if($_REQUEST['page']=='register_new_user'){
-                            include "pages/register_new_customer.php";
+                        if(isset($_REQUEST['page'])){
+                            if($_REQUEST['page']=='register_new_user'){
+                                include "pages/register_new_customer.php";
 
-                        }else if($_REQUEST['page']=='admin_user'){
-                            include "pages/login_admin.php";
-                        }else if($_REQUEST['page']=='member'){
-                            include "pages/login_customer.php";
-                        }else if($_REQUEST['page']=='register'){
-                            include "pages/register_new_customer.php";
+                            }else if($_REQUEST['page']=='admin_user'){
+                                include "pages/login_admin.php";
+                            }else if($_REQUEST['page']=='member'){
+                                include "pages/login_customer.php";
+                            }else if($_REQUEST['page']=='register'){
+                                include "pages/register_new_customer.php";
 
-                        }else if($_REQUEST['product']){
-                            include "pages/product.php";
-                        }/*else{
-                            include "pages/product.php";
-                        }*/
+                            }else if($_REQUEST['product']){
+                                include "pages/product.php";
+
+                             }else{
+                                    include "pages/product.php";
+                             }
+                         }else{
+                                include "pages/product.php";
+                        }
                   ?>
 
                   <br/>
